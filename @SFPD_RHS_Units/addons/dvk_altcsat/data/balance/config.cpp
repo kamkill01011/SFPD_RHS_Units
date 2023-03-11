@@ -1,0 +1,308 @@
+class CfgPatches
+{
+	class dvk_altcsat_balance_c
+	{
+		units[]={};
+		weapons[]={};
+		author="Davik";
+		requiredversion=1.62;
+		requiredAddons[]=
+		{
+			"A3_Data_F",
+			"A3_Weapons_F",
+			"A3_Characters_F",
+			"A3_Characters_F_Exp"
+		};
+	};
+};
+
+
+
+class CfgVehicles
+{
+	class SoldierEB;
+
+	//uniforme CSAT
+	class O_Soldier_base_F: SoldierEB
+	{
+		author="$STR_A3_Bohemia_Interactive";
+		_generalMacro="O_Soldier_base_F";
+		expansion=1;
+		identityTypes[]=
+		{
+			"LanguagePER_F",
+			"Head_TK",
+			"G_IRAN_default"
+		};
+		faceType="Man_A3";
+		side=0;
+		faction="OPF_F";
+		genericNames="TakistaniMen";
+		vehicleClass="Men";
+		editorSubcategory="EdSubcat_Personnel";
+		portrait="";
+		picture="";
+		icon="iconMan";
+		accuracy=2.3;
+		threat[]={0.80000001,0.1,0.1};
+		camouflage=1.4;
+		minFireTime=7;
+		canCarryBackPack=1;
+		scope=0;
+		class Wounds
+		{
+			tex[]={};
+			mat[]=
+			{
+				"A3\Characters_F\OPFOR\Data\clothing.rvmat",
+				"A3\Characters_F\OPFOR\Data\clothing_injury.rvmat",
+				"A3\Characters_F\OPFOR\Data\clothing_injury.rvmat"
+			};
+		};
+	class HitPoints
+		{
+			class HitFace
+			{
+				armor=1;
+				material=-1;
+				name="face_hub";
+				passThrough=0.80000001;
+				radius=0.079999998;
+				explosionShielding=0.1;
+				minimalHit=0.0099999998;
+			};
+			class HitNeck: HitFace
+			{
+				armor=1;
+				material=-1;
+				name="neck";
+				passThrough=0.80000001;
+				radius=0.1;
+				explosionShielding=0.5;
+				minimalHit=0.0099999998;
+			};
+			class HitHead: HitNeck
+			{
+				armor=1;
+				material=-1;
+				name="head";
+				passThrough=0.80000001;
+				radius=0.2;
+				explosionShielding=0.5;
+				minimalHit=0.0099999998;
+				depends="HitFace max HitNeck";
+			};
+			class HitPelvis: HitHead
+			{
+				armor=6;
+				material=-1;
+				name="pelvis";
+				passThrough=0.80000001;
+				radius=0.23999999;
+				explosionShielding=1;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class HitAbdomen: HitPelvis
+			{
+				armor=1;
+				material=-1;
+				name="spine1";
+				passThrough=0.80000001;
+				radius=0.16;
+				explosionShielding=1;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+			};
+			class HitDiaphragm: HitAbdomen
+			{
+				armor=1;
+				material=-1;
+				name="spine2";
+				passThrough=0.80000001;
+				radius=0.18000001;
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+			};
+			class HitChest: HitDiaphragm
+			{
+				armor=1;
+				material=-1;
+				name="spine3";
+				passThrough=0.80000001;
+				radius=0.18000001;
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+			};
+			class HitBody: HitChest
+			{
+				armor=1000;
+				material=-1;
+				name="body";
+				passThrough=1;
+				radius=0;
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+				depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms: HitBody
+			{
+				armor=3;
+				material=-1;
+				name="arms";
+				passThrough=1;
+				radius=0.1;
+				explosionShielding=1;
+				visual="injury_hands";
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class HitHands: HitArms
+			{
+				armor=3;
+				material=-1;
+				name="hands";
+				passThrough=1;
+				radius=0.1;
+				explosionShielding=1;
+				visual="injury_hands";
+				minimalHit=0.0099999998;
+				depends="HitArms";
+			};
+			class HitLegs: HitHands
+			{
+				armor=3;
+				material=-1;
+				name="legs";
+				passThrough=1;
+				radius=0.14;
+				explosionShielding=1;
+				visual="injury_legs";
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class Incapacitated: HitLegs
+			{
+				armor=1000;
+				material=-1;
+				name="body";
+				passThrough=1;
+				radius=0;
+				explosionShielding=1;
+				visual="";
+				minimalHit=0;
+				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
+			};
+		};
+		armor=2;
+		armorStructural=3;
+		explosionShielding=0.30000001;
+		model="\A3\characters_F\OPFOR\o_soldier_01.p3d";
+		modelSides[]={0,3};
+		nakedUniform="U_BasicBody";
+		uniformClass="U_O_CombatUniform_ocamo";
+		class EventHandlers;
+		weapons[]=
+		{
+			"arifle_Katiba_ACO_pointer_F",
+			"hgun_Rook40_F",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"arifle_Katiba_ACO_pointer_F",
+			"hgun_Rook40_F",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShellRed",
+			"Chemlight_red",
+			"Chemlight_red"
+		};
+		respawnMagazines[]=
+		{
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShellRed",
+			"Chemlight_red",
+			"Chemlight_red"
+		};
+		Items[]=
+		{
+			"FirstAidKit"
+		};
+		RespawnItems[]=
+		{
+			"FirstAidKit"
+		};
+		linkedItems[]=
+		{
+			"V_HarnessO_brn",
+			"H_HelmetO_ocamo",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"NVGoggles_OPFOR"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_HarnessO_brn",
+			"H_HelmetO_ocamo",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"NVGoggles_OPFOR"
+		};
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Characters_F\OPFOR\Data\clothing_co.paa",
+			"\A3\Characters_F\OPFOR\Data\tech_CO.paa"
+		};
+	};
+
+};
