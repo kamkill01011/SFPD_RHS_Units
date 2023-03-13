@@ -9,8 +9,12 @@ _null = _this spawn {
 			[_unit, "ACE_FastRoping", 2] call ace_common_fnc_doAnimation;
 		};
 		_unit setDir (getDir _vehicle);
-		_pos = (getPosWorld _dummy) vectorAdd [0, 0, -0.5];
-		_unit setPosWorld _pos;
+		_dummyPos = getPosWorld _dummy;
+		_posMag = vectorMagnitudeSqr _dummyPos;
+		if (_posMag > 10) then {
+			_pos = (getPosWorld _dummy) vectorAdd [0, 0, -0.5];
+			_unit setPosWorld _pos;
+		};
 		_unit setVelocity [0,0,0];
 		
 		(!(alive _unit)) || {(!(alive (_unit getVariable ['Skyhook', objNull]))) || {(!(alive(_vehicle getVariable ['Skyhook', objNull])))}};

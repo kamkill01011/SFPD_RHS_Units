@@ -24,7 +24,7 @@
 		//_rope = ropeCreate [_from, [0,-0.1,-0.15], _to, [0,-0.1,0.15], _length];
 		_rope = ropeCreate [_from, [0,0,-0.1], _to, [0,0,0.1], _length];
 		
-		_vehicle setVariable ['Skyhook_vehicle', _vehicle, true];
+		_to setVariable ['Skyhook_vehicle', _vehicle, true];
 		
 		_to;
 	};
