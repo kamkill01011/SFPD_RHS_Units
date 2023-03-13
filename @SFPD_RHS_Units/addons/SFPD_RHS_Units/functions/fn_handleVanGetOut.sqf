@@ -9,7 +9,8 @@ _dist = 1;
 
 _wtm = _vehicle worldToModel (_unit modelToWorld [0,0,0]);
 if (_role == "driver") exitWith {
-	_vehicle animateDoor ['Door_1_source', 1];
+	{[[_vehicle,'Door_1_source', 1], {params ["_t", "_s", "_v"]; _t animateDoor [_s, _v];}] remoteExecCall ['call', 0];}
+	//_vehicle animateDoor ['Door_1_source', 1];
 	[[_unit, _vehicle], {
 		params ["_u", "_v"];
 		_pos = _v modelToWorld [-1.2,1.3,-1.62];
@@ -26,7 +27,8 @@ _t1 = _d2 < _d3;
 _t2 = _d2 < _d45;
 _t3 = _d3 < _d45;
 if (_t1 && _t2) exitWith {
-	_vehicle animateDoor ['Door_2_source', 1];
+	{[[_vehicle,'Door_2_source', 1], {params ["_t", "_s", "_v"]; _t animateDoor [_s, _v];}] remoteExecCall ['call', 0];}
+	//_vehicle animateDoor ['Door_2_source', 1];
 	[[_unit, _vehicle], {
 		params ["_u", "_v"];
 		_pos = _v modelToWorld [1.2,1.3,-1.62];
@@ -34,5 +36,11 @@ if (_t1 && _t2) exitWith {
 		_u setPosWorld _pos;
 	}] remoteExec ["call", _unit];
 };
-if (!_t1 && _t3) exitWith {_vehicle animateDoor ['Door_3_source', 1];};
-if (!_t2 && !_t3) exitWith {_vehicle animateDoor ['Door_4_source', 1];};
+if (!_t1 && _t3) exitWith {
+	{[[_vehicle,'Door_3_source', 1], {params ["_t", "_s", "_v"]; _t animateDoor [_s, _v];}] remoteExecCall ['call', 0];}
+	//_vehicle animateDoor ['Door_3_source', 1];
+};
+if (!_t2 && !_t3) exitWith {
+	{[[_vehicle,'Door_4_source', 1], {params ["_t", "_s", "_v"]; _t animateDoor [_s, _v];}] remoteExecCall ['call', 0];}
+	//_vehicle animateDoor ['Door_4_source', 1];
+};
