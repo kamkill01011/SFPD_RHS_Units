@@ -1805,7 +1805,22 @@ class CfgPatches {
 			"SFPD_BLUFOR_GEN_Commander",
 			
 			"Land_rhs_kinder_01_R",
-			"Land_rhs_kinder_01_L"
+			"Land_rhs_kinder_01_L",
+			
+			"Land_Pod_Heli_Transport_04_ammo_black_F",
+			"Land_Pod_Heli_Transport_04_ammo_F",
+			"Land_Pod_Heli_Transport_04_bench_black_F",
+			"Land_Pod_Heli_Transport_04_bench_F",
+			"Land_Pod_Heli_Transport_04_box_black_F",
+			"Land_Pod_Heli_Transport_04_box_F",
+			"Land_Pod_Heli_Transport_04_covered_black_F",
+			"Land_Pod_Heli_Transport_04_covered_F",
+			"Land_Pod_Heli_Transport_04_fuel_black_F",
+			"Land_Pod_Heli_Transport_04_fuel_F",
+			"Land_Pod_Heli_Transport_04_medevac_black_F",
+			"Land_Pod_Heli_Transport_04_medevac_F",
+			"Land_Pod_Heli_Transport_04_repair_black_F",
+			"Land_Pod_Heli_Transport_04_repair_F"
 		};
         weapons[] = {
 			"SFPD_MX_Default",
@@ -3216,6 +3231,8 @@ class CfgVehicles {
 	class Box_IED_Exp_F;
 	class Box_Syndicate_WpsLaunch_F;
 	
+	//class Pod_Heli_Transport_04_base_F;//Land_Pod_Heli_Transport_04_ammo_F,Land_Pod_Heli_Transport_04_box_F,Land_Pod_Heli_Transport_04_fuel_F,Land_Pod_Heli_Transport_04_repair_F
+	//class Pod_Heli_Transport_04_crewed_base_F;//Land_Pod_Heli_Transport_04_bench_F,Land_Pod_Heli_Transport_04_covered_F,Land_Pod_Heli_Transport_04_medevac_F
 	class Land_Pod_Heli_Transport_04_ammo_F;
 	class Land_Pod_Heli_Transport_04_bench_F;
 	class Land_Pod_Heli_Transport_04_box_F;
