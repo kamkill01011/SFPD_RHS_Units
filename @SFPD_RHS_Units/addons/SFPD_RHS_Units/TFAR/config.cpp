@@ -14,7 +14,20 @@ class CfgFunctions {
 		class functions {
 			file = "SFPD_RHS_Units\TFAR\functions";
 			class preparePositionCoordinates {};
+			class doSRTransmit {};
+			class doLRTransmit {};
 			class calcJamming {};
+			class updateRange {};
 		};
 	};
 };
+
+
+
+/*class Extended_Init_EventHandlers {
+	class Man {
+		class KAM_TFAR_on_use_radio {
+			init = "hint str _this;systemChat str _this;_this call TFAR_fnc_updateRange;";
+		};
+	};
+};*/
