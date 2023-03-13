@@ -35,7 +35,7 @@
         class LinkedItems {
             class LinkedItemsOptic {
 				slot = "CowsSlot";
-				item = "optic_Arco_AK_blk_F";
+				item = "optic_Holosight_blk_F";
 			};
             class LinkedItemsAcc {
 				slot = "PointerSlot";
@@ -49,7 +49,7 @@
         class LinkedItems {
             class LinkedItemsOptic {
 				slot = "CowsSlot";
-				item = "rhs_acc_1p78";
+				item = "rhs_acc_pkas";
 			};
         };
     };
@@ -99,7 +99,7 @@
         class LinkedItems {
             class LinkedItemsOptic {
 				slot = "CowsSlot";
-				item = "optic_Arco_AK_blk_F";
+				item = "optic_Holosight_blk_F";
 			};
             class LinkedItemsAcc {
 				slot = "PointerSlot";

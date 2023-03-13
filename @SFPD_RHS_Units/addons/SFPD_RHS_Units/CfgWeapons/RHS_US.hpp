@@ -49,7 +49,7 @@
         class LinkedItems {
             class LinkedItemsOptic {
 				slot = "CowsSlot";
-				item = "rhsusf_acc_ACOG";
+				item = "rhsusf_acc_eotech_552";
 			};
             class LinkedItemsAcc {
 				slot = "PointerSlot";
@@ -241,7 +241,7 @@
         class LinkedItems {
             class LinkedItemsOptic {
 				slot = "CowsSlot";
-				item = "rhsusf_acc_ACOG";
+				item = "rhsusf_acc_eotech_552";
 			};
             class LinkedItemsMuzzle {
 				slot = "MuzzleSlot";
