@@ -41,7 +41,7 @@
 	sleep 2;
 	_vehicle allowDamage _dmg;
 	
-	[_vehicle, [_dummy0, _dummy1, _dummy2, _dummy3]] spawn {
+	/*[_vehicle, [_dummy0, _dummy1, _dummy2, _dummy3]] spawn {
 		params ["_vehicle", "_dummies"];
 		_lastTime = time;
 		waitUntil {
@@ -49,12 +49,6 @@
 				{
 					_unit = _x getVariable ['unit', objNull];
 					if ((alive _unit)) then {
-						/*_vel = velocity _x;
-						_x setVectorDir (vectorDir _vehicle);
-						//_x setDir (getDir _vehicle);
-						//_x setPos getPos _x;
-						//_x setVectorDirAndUp [(vectorDir _vehicle), [0,0,1]];
-						_x setVelocity _vel;*/
 						if (animationState _unit != "ACE_FastRoping") then {
 							_unit disableCollisionWith _x;
 							[_unit, "ACE_FastRoping", 2] call ace_common_fnc_doAnimation;
@@ -70,5 +64,5 @@
 			
 			(!(alive(_vehicle getVariable ['Skyhook', objNull])));
 		};
-	};
+	};*/
 };

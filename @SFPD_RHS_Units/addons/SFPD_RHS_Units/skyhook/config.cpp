@@ -27,26 +27,26 @@ class CfgPatches {
     };
 };
 
+class Extended_Respawn_EventHandlers {
+    class CAManBase {
+        class SFPD_RHS_Units_SkyHook_respawn {
+            respawn = "(_this # 0) setVariable ['Skyhook', objNull, true];hint 'respawn EH'";
+        };
+    };
+};
+
 class CfgFunctions {
 	class SkyHook {
 		tag = "SkyHook";
 		class functions {
 			file = "SFPD_RHS_Units\SkyHook\functions";
 			class skyhook {};
+			class stabilization {};
 		};
 	};
-	/*class SkyHook_Init {
-		class SkyHook_Init {
-			class Init {
-				file = "SFPD_RHS_Units\SkyHook\functions\stabilization.sqf";
-				postInit = 1;
-			};
-		};
-	};*/
 };
 
 class CfgVehicles {
-	
 	class ace_fastroping_helper;
 	class KAM_Skyhook: ace_fastroping_helper {
 		class ACE_Actions {
@@ -54,7 +54,7 @@ class CfgVehicles {
 				displayName = "Attach";
 				condition = "(!(alive(_target getVariable ['unit', objNull])))";
 				//statement = "_target setVariable ['unit', _player, true];_player setVariable ['Skyhook', _target, true];_player attachTo [_target, (_target getVariable ['sykhook_a', [0,0,-1]])];_player setVectorUp (_target getVariable ['sykhook_u', [0,0,1]]);";
-				statement = "_target setVariable ['unit', _player, true];_player setVariable ['Skyhook', _target, true];";
+				statement = "_target setVariable ['unit', _player, true];_player setVariable ['Skyhook', _target, true];[_player, _target] call stabilization_fnc_skyhook";
 				distance = 7;
 				position = [0,0,0];
 			};
@@ -84,7 +84,7 @@ class CfgVehicles {
 				displayName = "Detach";
 				condition = "(alive(_target getVariable ['Skyhook', objNull]))";
 				//statement = "(_target getVariable ['Skyhook', objNull]) setVariable ['unit', objNull, true];_player setVariable ['Skyhook', objNull, true];detach _player;";
-				statement = "(_target getVariable ['Skyhook', objNull]) setVariable ['unit', objNull, true];_player setVariable ['Skyhook', objNull, true];[_player, '', 2] call ace_common_fnc_doAnimation;";
+				statement = "(_target getVariable ['Skyhook', objNull]) setVariable ['unit', objNull, true];_player setVariable ['Skyhook', objNull, true];";
 			};
 		};
 	};
