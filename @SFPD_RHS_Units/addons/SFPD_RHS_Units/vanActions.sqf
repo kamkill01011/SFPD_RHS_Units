@@ -72,20 +72,20 @@ _action = ["CLOSE_DOOR_2_INSIDE","close",_icon,{[[_target,'Door_2_source', 0], {
 [_type, 1, ["ACE_SelfActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 
 // door 3 internal
-_action = ["OPEN_DOOR_3_INSIDE","open",_icon,{_target animateDoor ['Door_3_source', 1];},{(alive _target) && {(_target doorPhase 'Door_3_source') < 0.5 && {_player in [this turretUnit [0]]}};}] call ace_interact_menu_fnc_createAction;
-_action = ["OPEN_DOOR_3_INSIDE","open",_icon,{[[_target,'Door_3_source', 1], {params ["_t", "_s", "_v"]; _t animateDoor [_s, _v];}] remoteExecCall ['call', 0];},{(alive _target) && {(_target doorPhase 'Door_3_source') < 0.5 && {_player in [this turretUnit [0]]}};}] call ace_interact_menu_fnc_createAction;
+_action = ["OPEN_DOOR_3_INSIDE","open",_icon,{_target animateDoor ['Door_3_source', 1];},{(alive _target) && {(_target doorPhase 'Door_3_source') < 0.5 && {_player in [_target turretUnit [0]]}};}] call ace_interact_menu_fnc_createAction;
+_action = ["OPEN_DOOR_3_INSIDE","open",_icon,{[[_target,'Door_3_source', 1], {params ["_t", "_s", "_v"]; _t animateDoor [_s, _v];}] remoteExecCall ['call', 0];},{(alive _target) && {(_target doorPhase 'Door_3_source') < 0.5 && {_player in [_target turretUnit [0]]}};}] call ace_interact_menu_fnc_createAction;
 [_type, 1, ["ACE_SelfActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 
-_action = ["CLOSE_DOOR_3_INSIDE","close",_icon,{_target animateDoor ['Door_3_source', 0];},{(alive _target) && {(_target doorPhase 'Door_3_source') > 0.5 && {_player in [this turretUnit [0]]}};}] call ace_interact_menu_fnc_createAction;
-_action = ["CLOSE_DOOR_3_INSIDE","close",_icon,{[[_target,'Door_3_source', 0], {params ["_t", "_s", "_v"]; _t animateDoor [_s, _v];}] remoteExecCall ['call', 0];},{(alive _target) && {(_target doorPhase 'Door_3_source') > 0.5 && {_player in [this turretUnit [0]]}};}] call ace_interact_menu_fnc_createAction;
+_action = ["CLOSE_DOOR_3_INSIDE","close",_icon,{_target animateDoor ['Door_3_source', 0];},{(alive _target) && {(_target doorPhase 'Door_3_source') > 0.5 && {_player in [_target turretUnit [0]]}};}] call ace_interact_menu_fnc_createAction;
+_action = ["CLOSE_DOOR_3_INSIDE","close",_icon,{[[_target,'Door_3_source', 0], {params ["_t", "_s", "_v"]; _t animateDoor [_s, _v];}] remoteExecCall ['call', 0];},{(alive _target) && {(_target doorPhase 'Door_3_source') > 0.5 && {_player in [_target turretUnit [0]]}};}] call ace_interact_menu_fnc_createAction;
 [_type, 1, ["ACE_SelfActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 
 // door 4/5 internal
-_action = ["OPEN_DOOR_4_INSIDE","open",_icon,{_target animateDoor ['Door_4_source', 1];},{(alive _target) && {(_target doorPhase 'Door_4_source') < 0.5 && {_player in [this turretUnit [1], this turretUnit [2]]}};}] call ace_interact_menu_fnc_createAction;
-_action = ["OPEN_DOOR_4_INSIDE","open",_icon,{[[_target,'Door_4_source', 1], {params ["_t", "_s", "_v"]; _t animateDoor [_s, _v];}] remoteExecCall ['call', 0];},{(alive _target) && {(_target doorPhase 'Door_4_source') < 0.5 && {_player in [this turretUnit [1], this turretUnit [2]]}};}] call ace_interact_menu_fnc_createAction;
+_action = ["OPEN_DOOR_4_INSIDE","open",_icon,{_target animateDoor ['Door_4_source', 1];},{(alive _target) && {(_target doorPhase 'Door_4_source') < 0.5 && {_player in [_target turretUnit [1], _target turretUnit [2]]}};}] call ace_interact_menu_fnc_createAction;
+_action = ["OPEN_DOOR_4_INSIDE","open",_icon,{[[_target,'Door_4_source', 1], {params ["_t", "_s", "_v"]; _t animateDoor [_s, _v];}] remoteExecCall ['call', 0];},{(alive _target) && {(_target doorPhase 'Door_4_source') < 0.5 && {_player in [_target turretUnit [1], _target turretUnit [2]]}};}] call ace_interact_menu_fnc_createAction;
 [_type, 1, ["ACE_SelfActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 
-_action = ["CLOSE_DOOR_4_INSIDE","close",_icon,{_target animateDoor ['Door_4_source', 0];},{(alive _target) && {(_target doorPhase 'Door_4_source') > 0.5 && {_player in [this turretUnit [1], this turretUnit [2]]}};}] call ace_interact_menu_fnc_createAction;
-_action = ["CLOSE_DOOR_4_INSIDE","close",_icon,{[[_target,'Door_4_source', 0], {params ["_t", "_s", "_v"]; _t animateDoor [_s, _v];}] remoteExecCall ['call', 0];},{(alive _target) && {(_target doorPhase 'Door_4_source') > 0.5 && {_player in [this turretUnit [1], this turretUnit [2]]}};}] call ace_interact_menu_fnc_createAction;
+_action = ["CLOSE_DOOR_4_INSIDE","close",_icon,{_target animateDoor ['Door_4_source', 0];},{(alive _target) && {(_target doorPhase 'Door_4_source') > 0.5 && {_player in [_target turretUnit [1], _target turretUnit [2]]}};}] call ace_interact_menu_fnc_createAction;
+_action = ["CLOSE_DOOR_4_INSIDE","close",_icon,{[[_target,'Door_4_source', 0], {params ["_t", "_s", "_v"]; _t animateDoor [_s, _v];}] remoteExecCall ['call', 0];},{(alive _target) && {(_target doorPhase 'Door_4_source') > 0.5 && {_player in [_target turretUnit [1], _target turretUnit [2]]}};}] call ace_interact_menu_fnc_createAction;
 [_type, 1, ["ACE_SelfActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
 

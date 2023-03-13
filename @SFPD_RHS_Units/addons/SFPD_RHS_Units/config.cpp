@@ -2476,6 +2476,22 @@ class CfgVehicles {
 			};
 		};
 	};
+	class Van_02_vehicle_base_F: Van_02_base_F {
+		class UserActions: UserActions {
+			class SideDoor_Open {
+				condition = "false";
+			};
+			class SideDoor_Close: SideDoor_Open {
+				condition = "false";
+			};
+			class Rear_Open: SideDoor_Open {
+				condition = "false";
+			};
+			class Rear_Closed: Rear_Open {
+				condition = "false";
+			};
+		};
+	};
 	
 	
 	//backpack
@@ -3157,7 +3173,6 @@ class CfgVehicles {
 	class Heli_light_03_unarmed_base_F;
 	class Heli_light_03_dynamicLoadout_base_F;
 	class Van_02_medevac_base_F;
-	class Van_02_vehicle_base_F;
 	class I_E_APC_tracked_03_base_F;
 	class Truck_02_MRL_base_F;
 	class Offroad_01_military_base_F;

@@ -54,7 +54,7 @@ class CfgVehicles {
 				displayName = "Attach";
 				condition = "(!(alive(_target getVariable ['unit', objNull])))";
 				//statement = "_target setVariable ['unit', _player, true];_player setVariable ['Skyhook', _target, true];_player attachTo [_target, (_target getVariable ['sykhook_a', [0,0,-1]])];_player setVectorUp (_target getVariable ['sykhook_u', [0,0,1]]);";
-				statement = "_target setVariable ['unit', _player, true];_player setVariable ['Skyhook', _target, true];[_player, _target] call stabilization_fnc_skyhook";
+				statement = "_target setVariable ['unit', _player, true];_player setVariable ['Skyhook', _target, true];[_player, _target] call SkyHook_fnc_stabilization";
 				distance = 7;
 				position = [0,0,0];
 			};
