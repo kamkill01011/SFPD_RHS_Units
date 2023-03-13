@@ -6333,7 +6333,6 @@ class cfgWeapons {
 	class rhsusf_weap_glock17g4;
 	class rhs_weap_hk416d10_LMT_d;
 	class arifle_RPK12_F;
-	class rhs_weap_pkp;
 	class rhs_weap_asval_grip;
 	class rhs_weap_t5000;
 	class srifle_GM6_F;
@@ -6350,6 +6349,11 @@ class cfgWeapons {
 	class rhs_weap_m38_rail;
 	class rhs_weap_aks74;
 	class rhs_weap_m16a4_imod;
+	
+	class rhs_pkp_base;
+    class rhs_weap_pkp: rhs_pkp_base {
+		ACE_Overheating_allowSwapBarrel = 1;
+    };
 	
 	class GrenadeLauncher;
     class Throw: GrenadeLauncher {
