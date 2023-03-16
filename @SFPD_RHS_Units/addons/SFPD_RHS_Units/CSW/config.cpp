@@ -50,12 +50,29 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = 0.1;
         requiredAddons[] = {
-			"a3_characters_F",
 			"A3_Weapons_F",
 			"A3_Weapons_F_Exp",
 			"A3_Weapons_F_Tank",
 			"A3_Functions_F",
-			"rhs_c_weapons"
+			"rhs_c_weapons",
+			"a3_characters_F",
+			"a3_characters_f_beta",
+			"a3_characters_f_gamma",
+			"rhsusf_c_troops",
+			"rhsusf_c_m1117",
+			"rhsusf_c_statics",
+			"rhsgref_c_air",
+			"rhsgref_c_troops",
+			"rhsgref_c_vehicles_ret",
+			"rhsgref_main",
+			"rhsgref_c_a2port_armor",
+			"tfar_core",
+			"tfar_backpacks",
+			"ace_common",
+			"ace_csw",
+			"ace_compat_rhs_usf3",
+			"ace_compat_rhs_afrf3",
+			"ace_compat_rhs_gref3"
 		};
     };
 };
@@ -63,6 +80,35 @@ class CfgPatches {
 
 
 class CfgVehicles {
+	class Man;
+	class CAManBase: Man {
+		class ACE_SelfActions {
+			class ace_csw_deploy {
+				class ACE_CSW_M3_toHight {
+					displayName = "change low tripod to HIGHT tripod";
+					condition = "(secondaryWeapon _target == 'ace_csw_m3CarryTripodLow')";
+					statement = "_target removeWeapon 'ace_csw_m3CarryTripodLow';_target addWeapon 'ace_csw_m3CarryTripod';";
+				};
+				class ACE_CSW_M3_toLow {
+					displayName = "change hight tripod to LOW tripod";
+					condition = "(secondaryWeapon _target == 'ace_csw_m3CarryTripod')";
+					statement = "_target removeWeapon 'ace_csw_m3CarryTripod';_target addWeapon 'ace_csw_m3CarryTripodLow';";
+				};
+				class ACE_CSW_KORD_toHight {
+					displayName = "change low tripod to HIGHT tripod";
+					condition = "(secondaryWeapon _target == 'ace_csw_kordCarryTripodLow')";
+					statement = "_target removeWeapon 'ace_csw_kordCarryTripodLow';_target addWeapon 'ace_csw_kordCarryTripod';";
+				};
+				class ACE_CSW_KORD_toLow {
+					displayName = "change hight tripod to LOW tripod";
+					condition = "(secondaryWeapon _target == 'ace_csw_kordCarryTripod')";
+					statement = "_target removeWeapon 'ace_csw_kordCarryTripod';_target addWeapon 'ace_csw_kordCarryTripodLow';";
+				};
+			};
+		};
+	};
+	
+	
 	class StaticMGWeapon;
 	class rhs_nsv_tripod_base: StaticMGWeapon {
         class ACE_CSW {
