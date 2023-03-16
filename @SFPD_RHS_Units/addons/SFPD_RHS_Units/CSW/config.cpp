@@ -85,22 +85,22 @@ class CfgVehicles {
 		class ACE_SelfActions {
 			class ace_csw_deploy {
 				class ACE_CSW_M3_toHight {
-					displayName = "change low tripod to HIGHT tripod";
+					displayName = "change tripod low -> HIGHT";
 					condition = "(secondaryWeapon _target == 'ace_csw_m3CarryTripodLow')";
 					statement = "_target removeWeapon 'ace_csw_m3CarryTripodLow';_target addWeapon 'ace_csw_m3CarryTripod';";
 				};
 				class ACE_CSW_M3_toLow {
-					displayName = "change hight tripod to LOW tripod";
+					displayName = "change tripod hight -> LOW";
 					condition = "(secondaryWeapon _target == 'ace_csw_m3CarryTripod')";
 					statement = "_target removeWeapon 'ace_csw_m3CarryTripod';_target addWeapon 'ace_csw_m3CarryTripodLow';";
 				};
 				class ACE_CSW_KORD_toHight {
-					displayName = "change low tripod to HIGHT tripod";
+					displayName = "change tripod low -> HIGHT";
 					condition = "(secondaryWeapon _target == 'ace_csw_kordCarryTripodLow')";
 					statement = "_target removeWeapon 'ace_csw_kordCarryTripodLow';_target addWeapon 'ace_csw_kordCarryTripod';";
 				};
 				class ACE_CSW_KORD_toLow {
-					displayName = "change hight tripod to LOW tripod";
+					displayName = "change tripod hight -> LOW";
 					condition = "(secondaryWeapon _target == 'ace_csw_kordCarryTripod')";
 					statement = "_target removeWeapon 'ace_csw_kordCarryTripod';_target addWeapon 'ace_csw_kordCarryTripodLow';";
 				};
