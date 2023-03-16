@@ -30,7 +30,23 @@
 
 class CfgPatches {
     class SFPD_RHS_Units_CSW  {
-        units[] = {};
+        units[] = {
+			"SFPD_CSW_BOX_M2_low_shield",
+			"SFPD_CSW_BOX_M2_hight_shield",
+			"SFPD_CSW_BOX_M2_low",
+			"SFPD_CSW_BOX_M2_hight",
+			"SFPD_CSW_BOX_Mk6_mortar",
+			"SFPD_CSW_BOX_Mk19",
+			"SFPD_CSW_BOX_TOW",
+			"SFPD_CSW_BOX_KORD_low",
+			"SFPD_CSW_BOX_KORD_hight",
+			"SFPD_CSW_BOX_AGS_30",
+			"SFPD_CSW_BOX_Metis",
+			"SFPD_CSW_BOX_Kornet_hight",
+			"SFPD_CSW_BOX_DShK_low",
+			"SFPD_CSW_BOX_DShK_hight",
+			"SFPD_CSW_BOX_SPG_9"
+		};
         weapons[] = {};
         requiredVersion = 0.1;
         requiredAddons[] = {
@@ -84,11 +100,35 @@ class CfgVehicles {
 			proxyWeapon = "ace_compat_rhs_afrf3_rhs_weap_KORD";
         };
     };
+    class rhs_DSHKM_base: StaticMGWeapon {
+        class ACE_CSW {
+			ammoLoadTime = 10;
+			ammoUnloadTime = 8;
+			desiredAmmo = 100;
+			disassembleTurret = "ace_csw_kordTripod";
+			disassembleWeapon = "ace_compat_rhs_gref3_dshkm_carry";
+			enabled = 1;
+			magazineLocation = "_target selectionPosition 'otocvez'";
+			proxyWeapon = "ace_compat_rhs_gref3_rhs_weap_DSHKM";
+        };
+    };
+    class rhs_DSHkM_Mini_TriPod_base: rhs_DSHKM_base {
+        class ACE_CSW: ACE_CSW {
+			ammoLoadTime = 10;
+			ammoUnloadTime = 8;
+			desiredAmmo = 100;
+			disassembleTurret = "ace_csw_kordTripodLow";
+			disassembleWeapon = "ace_compat_rhs_gref3_dshkm_carry";
+			enabled = 1;
+			magazineLocation = "_target selectionPosition 'otocvez'";
+			proxyWeapon = "ace_compat_rhs_gref3_rhs_weap_DSHKM";
+        };
+    };
 	
 	
 	class B_supplyCrate_F;
-	class SFPD_CSW_BOX_M2_low: B_supplyCrate_F {
-        displayname = "[SFPD] M2 low";
+	class SFPD_CSW_BOX_M2_low_shield: B_supplyCrate_F {
+        displayname = "[SFPD CSW] M2 low (shield)";
         scope = 2;
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(ace_csw_100Rnd_127x99_mag_red,10)
@@ -103,8 +143,8 @@ class CfgVehicles {
             TRANSPORT_BACKPACKS(B_Carryall_khk,2)
 		};
     };
-	class SFPD_CSW_BOX_M2_hight: B_supplyCrate_F {
-        displayname = "[SFPD] M2 hight";
+	class SFPD_CSW_BOX_M2_hight_shield: B_supplyCrate_F {
+        displayname = "[SFPD CSW] M2 hight (shield)";
         scope = 2;
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(ace_csw_100Rnd_127x99_mag_red,10)
@@ -120,7 +160,7 @@ class CfgVehicles {
 		};
     };
 	class SFPD_CSW_BOX_M2_low: B_supplyCrate_F {
-        displayname = "[SFPD] M2 low";
+        displayname = "[SFPD CSW] M2 low";
         scope = 2;
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(ace_csw_100Rnd_127x99_mag_red,10)
@@ -136,7 +176,7 @@ class CfgVehicles {
 		};
     };
 	class SFPD_CSW_BOX_M2_hight: B_supplyCrate_F {
-        displayname = "[SFPD RHS] M2 hight";
+        displayname = "[SFPD RHS CSW] M2 hight";
         scope = 2;
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(ace_csw_100Rnd_127x99_mag_red,10)
@@ -152,7 +192,7 @@ class CfgVehicles {
 		};
     };
 	class SFPD_CSW_BOX_Mk6_mortar: B_supplyCrate_F {
-        displayname = "[SFPD] Mk6 mortar";
+        displayname = "[SFPD CSW] Mk6 mortar";
         scope = 2;
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(ACE_1Rnd_82mm_Mo_HE,20)
@@ -170,7 +210,7 @@ class CfgVehicles {
 		};
     };
 	class SFPD_CSW_BOX_Mk19: B_supplyCrate_F {
-        displayname = "[SFPD] Mk19";
+        displayname = "[SFPD CSW] Mk19";
         scope = 2;
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(ace_compat_rhs_usf3_48Rnd_40mm_MK19_M430A1,10)
@@ -186,7 +226,7 @@ class CfgVehicles {
 		};
     };
 	class SFPD_CSW_BOX_TOW: B_supplyCrate_F {
-        displayname = "[SFPD] TOW";
+        displayname = "[SFPD CSW] TOW";
         scope = 2;
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(ace_compat_rhs_usf3_mag_TOW2A,10)
@@ -202,7 +242,7 @@ class CfgVehicles {
 		};
     };
 	class SFPD_CSW_BOX_KORD_low: B_supplyCrate_F {
-        displayname = "[SFPD] KORD low";
+        displayname = "[SFPD CSW] KORD low";
         scope = 2;
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(ace_csw_50Rnd_127x108_mag,10)
@@ -218,7 +258,7 @@ class CfgVehicles {
 		};
     };
 	class SFPD_CSW_BOX_KORD_hight: B_supplyCrate_F {
-        displayname = "[SFPD] KORD hight";
+        displayname = "[SFPD CSW] KORD hight";
         scope = 2;
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(ace_csw_50Rnd_127x108_mag,10)
@@ -234,7 +274,7 @@ class CfgVehicles {
 		};
     };
 	class SFPD_CSW_BOX_AGS_30: B_supplyCrate_F {
-        displayname = "[SFPD] AGS-30";
+        displayname = "[SFPD CSW] AGS-30";
         scope = 2;
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(ace_compat_rhs_afrf3_mag_VOG30_30,10)
@@ -250,7 +290,7 @@ class CfgVehicles {
 		};
     };
 	class SFPD_CSW_BOX_Metis: B_supplyCrate_F {
-        displayname = "[SFPD] Metis low";
+        displayname = "[SFPD CSW] Metis low";
         scope = 2;
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(ace_compat_rhs_afrf3_mag_9M131M,10)
@@ -265,7 +305,7 @@ class CfgVehicles {
 		};
     };
 	class SFPD_CSW_BOX_Kornet_hight: B_supplyCrate_F {
-        displayname = "[SFPD] Kornet hight";
+        displayname = "[SFPD CSW] Kornet hight";
         scope = 2;
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(ace_compat_rhs_afrf3_mag_9m133,10)
@@ -280,7 +320,7 @@ class CfgVehicles {
 		};
     };
 	class SFPD_CSW_BOX_DShK_low: B_supplyCrate_F {
-        displayname = "[SFPD] DShK low";
+        displayname = "[SFPD CSW] DShK low";
         scope = 2;
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(ace_csw_50Rnd_127x108_mag,10)
@@ -296,7 +336,7 @@ class CfgVehicles {
 		};
     };
 	class SFPD_CSW_BOX_DShK_hight: B_supplyCrate_F {
-        displayname = "[SFPD] DShK hight";
+        displayname = "[SFPD CSW] DShK hight";
         scope = 2;
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(ace_csw_50Rnd_127x108_mag,10)
@@ -312,7 +352,7 @@ class CfgVehicles {
 		};
     };
 	class SFPD_CSW_BOX_SPG_9: B_supplyCrate_F {
-        displayname = "[SFPD] SPG-9";
+        displayname = "[SFPD CSW] SPG-9";
         scope = 2;
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(ace_compat_rhs_afrf3_mag_PG9V,20)
