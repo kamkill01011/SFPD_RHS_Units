@@ -1976,6 +1976,7 @@ class CfgPatches {
 			"tfar_backpacks",
 			"ace_common",
 			"ace_csw",
+			"ace_rearm",
 			"ace_compat_rhs_usf3",
 			"ace_compat_rhs_afrf3",
 			"ace_compat_rhs_gref3"
@@ -2099,29 +2100,6 @@ class CfgVehicles {
 			class HitFace;
 		};
 		class ACE_SelfActions {
-			class ace_csw_deploy {
-				class ACE_CSW_M3_toHight {
-				displayName = "to hight";
-				condition = "(secondaryWeapon _target == 'ace_csw_m3CarryTripodLow')";
-				statement = "_target removeWeapon 'ace_csw_m3CarryTripodLow';_target addWeapon 'ace_csw_m3CarryTripod';";
-				};
-				class ACE_CSW_M3_toLow {
-				displayName = "to low";
-				condition = "(secondaryWeapon _target == 'ace_csw_m3CarryTripod')";
-				statement = "_target removeWeapon 'ace_csw_m3CarryTripod';_target addWeapon 'ace_csw_m3CarryTripodLow';";
-				};
-				class ACE_CSW_KORD_toHight {
-				displayName = "to hight";
-				condition = "(secondaryWeapon _target == 'ace_csw_kordCarryTripodLow')";
-				statement = "_target removeWeapon 'ace_csw_kordCarryTripodLow';_target addWeapon 'ace_csw_kordCarryTripod';";
-				};
-				class ACE_CSW_KORD_toLow {
-				displayName = "to low";
-				condition = "(secondaryWeapon _target == 'ace_csw_kordCarryTripod')";
-				statement = "_target removeWeapon 'ace_csw_kordCarryTripod';_target addWeapon 'ace_csw_kordCarryTripodLow';";
-				};
-			};
-			
 			class ACE_Equipment {
 				class ChemicalDetector {
 					displayName = "Chemical Detector";

@@ -303,6 +303,50 @@ class RscSetDeviceObjectModule: RscTestModule {
 	};
 };
 
+class RscSetJammerObjectModule: RscTestModule {
+	onUnload = "_this call zeus_fnc_setJammerObjectExit;";
+	class Controls: Controls {
+		class ControlMain: ControlMain {};
+		class ControlFrame: ControlFrame {
+			text = "set jammer object";
+		};
+		class ControlOK: ControlOK {};
+		class ControlSlider1: ControlSlider {
+			idc = 102;
+			y = KAM_Y * 1;
+			KAM_MIN = 0;
+			KAM_SEL = 1000;
+			KAM_MAX = 10000;
+		};
+		class ControlSlider2: ControlSlider {
+			idc = 103;
+			y = KAM_Y * 2;
+			KAM_MIN = 0;
+			KAM_SEL = 0.1;
+			KAM_MAX = 1;
+		};
+		class ControlSlider3: ControlSlider {
+			idc = 104;
+			y = KAM_Y * 3;
+			KAM_MIN = 0;
+			KAM_SEL = 0.9;
+			KAM_MAX = 1;
+		};
+		class ControlLabel1: ControlLabel {
+			y = KAM_Y * 1;
+			text = "range [m]";
+		};
+		class ControlLabel2: ControlLabel {
+			y = KAM_Y * 2;
+			text = "min";
+		};
+		class ControlLabel3: ControlLabel {
+			y = KAM_Y * 3;
+			text = "max";
+		};
+	};
+};
+
 class RscSetContaminatedObjectModule: RscTestModule {
 	onUnload = "_this call zeus_fnc_setContaminatedObjectExit;";
 	class Controls: Controls {
