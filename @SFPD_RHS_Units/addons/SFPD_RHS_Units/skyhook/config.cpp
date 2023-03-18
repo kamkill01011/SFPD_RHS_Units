@@ -30,7 +30,7 @@ class CfgPatches {
 class Extended_Respawn_EventHandlers {
     class CAManBase {
         class SFPD_RHS_Units_SkyHook_respawn {
-            respawn = "(_this # 0) setVariable ['Skyhook', objNull, true];hint 'respawn EH'";
+            respawn = "(_this # 0) setVariable ['Skyhook', objNull, true];";
         };
     };
 };
