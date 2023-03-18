@@ -12,6 +12,7 @@ class CfgPatches {
 			"SFPD_RHS_Units_Zeus_addCarKey_Module",
 			"SFPD_RHS_Units_Zeus_addK9_Module",
 			"SFPD_RHS_Units_Zeus_setDeviceObject_Module",
+			"SFPD_RHS_Units_Zeus_setJammerObject_Module",
 			"SFPD_RHS_Units_Zeus_setContaminatedObject_Module",
 			"SFPD_RHS_Units_Zeus_spawnPermanentArea_Module",
 			"SFPD_RHS_Units_Zeus_spawnTemporaryArea_Module",
@@ -145,6 +146,12 @@ class CfgVehicles {
 		category = "SFPD_Zeus_common";
 		displayName = "set device object";
 		function = "zeus_fnc_setDeviceObjectEnter";
+	};
+	
+	class SFPD_RHS_Units_Zeus_setJammerObject_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
+		category = "SFPD_Zeus_common";
+		displayName = "set jammer object";
+		function = "zeus_fnc_setJammerObjectEnter";
 	};
 	
 	class SFPD_RHS_Units_Zeus_setContaminatedObject_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
@@ -319,6 +326,8 @@ class CfgFunctions {
 			class addK9Exit {};
 			class setDeviceObjectEnter {};
 			class setDeviceObjectExit {};
+			class setJammerObjectEnter {};
+			class setJammerObjectExit {};
 			class setContaminatedObjectEnter {};
 			class setContaminatedObjectExit {};
 			class spawnPermanentAreaEnter {};
