@@ -263,6 +263,46 @@ class RscAddK9Module: RscTestModule {
 	};
 };
 
+class RscSetDeviceObjectModule: RscTestModule {
+	onUnload = "_this call zeus_fnc_setDeviceObjectExit;";
+	class Controls: Controls {
+		class ControlMain: ControlMain {};
+		class ControlFrame: ControlFrame {
+			text = "set device object";
+		};
+		class ControlOK: ControlOK {};
+		class ControlSlider: ControlSlider {
+			idc = 102;
+			y = KAM_Y * 1;
+			KAM_MIN = -50;
+			KAM_SEL = -20;
+			KAM_MAX = -20;
+		};
+		class ControlText1: ControlText {
+			idc = 103;
+			y = KAM_Y * 2;
+			text = "433.0";
+		};
+		class ControlText2: ControlText {
+			idc = 104;
+			y = KAM_Y * 3;
+			text = "1000";
+		};
+		class ControlLabel1: ControlLabel {
+			y = KAM_Y * 1;
+			text = "strength [db]";
+		};
+		class ControlLabel2: ControlLabel {
+			y = KAM_Y * 2;
+			text = "frequency [Hz]";
+		};
+		class ControlLabel3: ControlLabel {
+			y = KAM_Y * 3;
+			text = "range [m]";
+		};
+	};
+};
+
 class RscSetJammerObjectModule: RscTestModule {
 	onUnload = "_this call zeus_fnc_setJammerObjectExit;";
 	class Controls: Controls {
