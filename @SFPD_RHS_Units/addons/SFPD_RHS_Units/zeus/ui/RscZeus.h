@@ -271,21 +271,21 @@ class RscSetJammerObjectModule: RscTestModule {
 			text = "set jammer object";
 		};
 		class ControlOK: ControlOK {};
-		class ControlSlider: ControlSlider {
+		class ControlSlider1: ControlSlider {
 			idc = 102;
 			y = KAM_Y * 1;
 			KAM_MIN = 0;
 			KAM_SEL = 1000;
 			KAM_MAX = 10000;
 		};
-		class ControlSlider: ControlSlider {
+		class ControlSlider2: ControlSlider {
 			idc = 103;
 			y = KAM_Y * 2;
 			KAM_MIN = 0;
 			KAM_SEL = 0.1;
 			KAM_MAX = 1;
 		};
-		class ControlSlider: ControlSlider {
+		class ControlSlider3: ControlSlider {
 			idc = 104;
 			y = KAM_Y * 3;
 			KAM_MIN = 0;
