@@ -3,7 +3,7 @@
 
 if (isNull _unit) exitWith { deleteVehicle _logic; [objNull, "Must be placed on something!"] call BIS_fnc_showCuratorFeedbackMessage; playSound "FD_Start_F"; };
 
-createDialog "RscSetJammerObjectModule";
+createDialog "RscSetDeviceObjectModule";
 
 localNamespace setVariable ["KAM_ZEUS_POS", _pos];
 localNamespace setVariable ["KAM_ZEUS_UNIT", _unit];

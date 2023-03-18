@@ -1976,6 +1976,7 @@ class CfgPatches {
 			"tfar_backpacks",
 			"ace_common",
 			"ace_csw",
+			"ace_rearm",
 			"ace_compat_rhs_usf3",
 			"ace_compat_rhs_afrf3",
 			"ace_compat_rhs_gref3"

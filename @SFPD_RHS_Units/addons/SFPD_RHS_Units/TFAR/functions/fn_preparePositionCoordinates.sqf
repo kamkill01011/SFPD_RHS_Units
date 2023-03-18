@@ -97,7 +97,7 @@ _jamming = [_jamming, 0, 1] call BIS_fnc_clamp;
 if (_jamming > 0) then {
 	private _curr_radio_range = _unit getVariable ['KAM_TFAR_range', 5000];
 	_curr_radio_range = _curr_radio_range max 1;
-	private _target_range = _curr_radio_range * (1 - _jamming);
+	private _target_range = _curr_radio_range * _jamming;
 	private _jamInterception = (_target_range - _dist) / (7 * (1 + _dist / 2000));
 	_jamInterception = 0 max _jamInterception;
 	_terrainInterception = _terrainInterception + _jamInterception;
