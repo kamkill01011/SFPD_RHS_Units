@@ -2,7 +2,7 @@
         displayname = "Woodland Leader Radio";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_LEADER(SmokeShellGreen)
+			SFPD_BACKPACK_LEADER(SmokeShellGreen)
         };
     };
 	
@@ -10,7 +10,7 @@
         displayname = "Woodland Medic Backpack";
         scope = 1;
 		class TransportItems {
-            SFPD_RHS_BACKPACK_MEDIC
+            SFPD_BACKPACK_MEDIC
         };
     };
 	

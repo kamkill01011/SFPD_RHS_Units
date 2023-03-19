@@ -53,7 +53,7 @@
         displayname = "Woodland Leader Radio";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_LEADER(SmokeShellRed)
+			SFPD_BACKPACK_LEADER(SmokeShellRed)
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
         };
     };
@@ -62,7 +62,7 @@
         displayname = "Desert Leader Radio";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_LEADER(SmokeShellRed)
+			SFPD_BACKPACK_LEADER(SmokeShellRed)
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
         };
     };
@@ -71,7 +71,7 @@
         displayname = "Winter Leader Radio";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_LEADER(SmokeShellRed)
+			SFPD_BACKPACK_LEADER(SmokeShellRed)
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
         };
     };
@@ -80,7 +80,7 @@
         displayname = "Woodland Medic Backpack";
         scope = 1;
 		class TransportItems {
-            SFPD_RHS_BACKPACK_MEDIC
+            SFPD_BACKPACK_MEDIC
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
         };
     };
@@ -89,7 +89,7 @@
         displayname = "Desert Medic Backpack";
         scope = 1;
 		class TransportItems {
-            SFPD_RHS_BACKPACK_MEDIC
+            SFPD_BACKPACK_MEDIC
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
         };
     };
@@ -98,7 +98,7 @@
         displayname = "Winter Medic Backpack";
         scope = 1;
 		class TransportItems {
-            SFPD_RHS_BACKPACK_MEDIC
+            SFPD_BACKPACK_MEDIC
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
         };
     };
@@ -242,7 +242,7 @@
         displayname = "Woodland SF Backpack";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
+			SFPD_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
         };
     };
 	
@@ -250,7 +250,7 @@
         displayname = "Desert SF Backpack";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
+			SFPD_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
         };
     };
 	
@@ -258,7 +258,7 @@
         displayname = "Winter SF Backpack";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
+			SFPD_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
         };
     };
 	
@@ -266,7 +266,7 @@
         displayname = "Woodland SF Grenadier Backpack";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
+			SFPD_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
             TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,6)
         };
     };
@@ -275,7 +275,7 @@
         displayname = "Desert SF Grenadier Backpack";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
+			SFPD_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
             TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,6)
         };
     };
@@ -284,7 +284,7 @@
         displayname = "Winter SF Grenadier Backpack";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
+			SFPD_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
             TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,6)
         };
     };

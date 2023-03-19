@@ -36,7 +36,7 @@
         displayname = "Leader Radio";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_LEADER(SmokeShellGreen)
+			SFPD_BACKPACK_LEADER(SmokeShellGreen)
         };
     };
 	
@@ -44,7 +44,7 @@
         displayname = "Medic Backpack";
         scope = 1;
 		class TransportItems {
-            SFPD_RHS_BACKPACK_MEDIC
+            SFPD_BACKPACK_MEDIC
         };
     };
 	
@@ -52,7 +52,7 @@
         displayname = "JTAC Radio";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_JTAC(I_IR_Grenade)
+			SFPD_BACKPACK_JTAC(I_IR_Grenade)
         };
     };
 	

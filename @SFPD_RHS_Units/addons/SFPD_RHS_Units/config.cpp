@@ -157,35 +157,49 @@
 		scopeCurator = 0; \
 	};
 
+
 // backpack
-#define SFPD_RHS_BACKPACK_LEADER(SMOKE_COLOR) \
+#define SFPD_BACKPACK_LEADER(SMOKE_COLOR) \
 			TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
 			TRANSPORT_ITEMS(ACE_wirecutter,1) \
-			TRANSPORT_ITEMS(SMOKE_COLOR,3) \
+			TRANSPORT_ITEMS(SMOKE_COLOR,3)
 
-#define SFPD_RHS_BACKPACK_MEDIC \
+#define SFPD_BACKPACK_MEDIC \
 			TRANSPORT_ITEMS(ACE_surgicalKit,1) \
 			TRANSPORT_ITEMS(ACE_salineIV_500,10) \
 			TRANSPORT_ITEMS(ACE_elasticBandage,50) \
 			TRANSPORT_ITEMS(ACE_epinephrine,10) \
 			TRANSPORT_ITEMS(ACE_morphine,10) \
-			TRANSPORT_ITEMS(ACE_splint,12) \
+			TRANSPORT_ITEMS(ACE_splint,12)
 
-#define SFPD_RHS_BACKPACK_JTAC(IR_GREN) \
+#define SFPD_BACKPACK_JTAC(IR_GREN) \
 			TRANSPORT_ITEMS(1Rnd_SmokeRed_Grenade_shell,3) \
 			TRANSPORT_ITEMS(1Rnd_SmokeGreen_Grenade_shell,3) \
 			TRANSPORT_ITEMS(1Rnd_SmokeBlue_Grenade_shell,3) \
 			TRANSPORT_ITEMS(IR_GREN,1) \
-			TRANSPORT_ITEMS(Laserbatteries,1) \
+			TRANSPORT_ITEMS(Laserbatteries,1)
 
-#define SFPD_RHS_BACKPACK_SF(AR_MAG) \
+#define SFPD_BACKPACK_SF(AR_MAG) \
 			TRANSPORT_ITEMS(ACE_Clacker,1) \
 			TRANSPORT_ITEMS(ACE_DefusalKit,1) \
 			TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1) \
 			TRANSPORT_ITEMS(ACE_salineIV_500,4) \
 			TRANSPORT_ITEMS(ACE_elasticBandage,10) \
 			TRANSPORT_ITEMS(AR_MAG,8) \
-			TRANSPORT_ITEMS(Laserbatteries,1) \
+			TRANSPORT_ITEMS(Laserbatteries,1)
+
+
+// supply
+#define SFPD_SUPPLY_MEDICAL \
+			TRANSPORT_ITEMS(ACE_elasticBandage,50) \
+			TRANSPORT_ITEMS(ACE_quikclot,50) \
+			TRANSPORT_ITEMS(ACE_bodyBag,10) \
+			TRANSPORT_ITEMS(ACE_epinephrine,10) \
+			TRANSPORT_ITEMS(ACE_morphine,10) \
+			TRANSPORT_ITEMS(ACE_salineIV_500,20) \
+			TRANSPORT_ITEMS(ACE_surgicalKit,2) \
+			TRANSPORT_ITEMS(ACE_tourniquet,10) \
+			TRANSPORT_ITEMS(ACE_splint,20)
 
 
 

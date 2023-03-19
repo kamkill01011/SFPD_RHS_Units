@@ -11,7 +11,7 @@
         displayname = "Desert Leader Radio";
         scope = 1;
         class TransportItems {
-			SFPD_RHS_BACKPACK_LEADER(SmokeShellBlue)
+			SFPD_BACKPACK_LEADER(SmokeShellBlue)
         };
     };
 	
@@ -19,7 +19,7 @@
         displayname = "Desert Medic Backpack";
         scope = 1;
         class TransportItems {
-            SFPD_RHS_BACKPACK_MEDIC
+            SFPD_BACKPACK_MEDIC
         };
     };
 	
@@ -61,7 +61,7 @@
         displayname = "Desert JTAC Radio";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_JTAC(B_IR_Grenade)
+			SFPD_BACKPACK_JTAC(B_IR_Grenade)
         };
     };
 	
@@ -141,7 +141,7 @@
         displayname = "Jungle Leader Radio";
         scope = 1;
         class TransportItems {
-			SFPD_RHS_BACKPACK_LEADER(SmokeShellBlue)
+			SFPD_BACKPACK_LEADER(SmokeShellBlue)
         };
     };
 	
@@ -149,7 +149,7 @@
         displayname = "Jungle Medic Backpack";
         scope = 1;
         class TransportItems {
-            SFPD_RHS_BACKPACK_MEDIC
+            SFPD_BACKPACK_MEDIC
         };
     };
 	
@@ -191,7 +191,7 @@
         displayname = "Jungle JTAC Radio";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_JTAC(B_IR_Grenade)
+			SFPD_BACKPACK_JTAC(B_IR_Grenade)
         };
     };
 	
@@ -254,7 +254,7 @@
         displayname = "Woodland Leader Radio";
         scope = 1;
         class TransportItems {
-			SFPD_RHS_BACKPACK_LEADER(SmokeShellBlue)
+			SFPD_BACKPACK_LEADER(SmokeShellBlue)
         };
     };
 	
@@ -262,7 +262,7 @@
         displayname = "Woodland Medic Backpack";
         scope = 1;
         class TransportItems {
-            SFPD_RHS_BACKPACK_MEDIC
+            SFPD_BACKPACK_MEDIC
         };
     };
 	
@@ -304,7 +304,7 @@
         displayname = "Woodland JTAC Radio";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_JTAC(B_IR_Grenade)
+			SFPD_BACKPACK_JTAC(B_IR_Grenade)
         };
     };
 	
@@ -368,7 +368,7 @@
         displayname = "SF Backpack";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_Mag_F)
+			SFPD_BACKPACK_SF(30Rnd_762x39_Mag_F)
         };
     };
 	
@@ -376,7 +376,7 @@
         displayname = "SF Leader Radio";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_LEADER(SmokeShellBlue)
+			SFPD_BACKPACK_LEADER(SmokeShellBlue)
             TRANSPORT_ITEMS(200Rnd_556x45_Box_Tracer_Red_F,1)
 			TRANSPORT_ITEMS(Laserbatteries,1)
         };
@@ -386,7 +386,7 @@
         displayname = "SF Grenadier Backpack";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_Mag_F)
+			SFPD_BACKPACK_SF(30Rnd_762x39_Mag_F)
 			TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,6)
         };
     };
@@ -414,7 +414,7 @@
         displayname = "SF Backpack";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_Mag_F)
+			SFPD_BACKPACK_SF(30Rnd_762x39_Mag_F)
         };
     };
 	
@@ -422,7 +422,7 @@
         displayname = "SF Leader Radio";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_LEADER(SmokeShellBlue)
+			SFPD_BACKPACK_LEADER(SmokeShellBlue)
             TRANSPORT_ITEMS(200Rnd_556x45_Box_Tracer_Red_F,1)
 			TRANSPORT_ITEMS(Laserbatteries,1)
         };
@@ -432,7 +432,7 @@
         displayname = "SF Grenadier Backpack";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_Mag_F)
+			SFPD_BACKPACK_SF(30Rnd_762x39_Mag_F)
 			TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,6)
         };
     };
@@ -460,7 +460,7 @@
         displayname = "SF Backpack";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_Mag_F)
+			SFPD_BACKPACK_SF(30Rnd_762x39_Mag_F)
         };
     };
 	
@@ -468,7 +468,7 @@
         displayname = "SF Leader Radio";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_LEADER(SmokeShellBlue)
+			SFPD_BACKPACK_LEADER(SmokeShellBlue)
             TRANSPORT_ITEMS(200Rnd_556x45_Box_Tracer_Red_F,1)
 			TRANSPORT_ITEMS(Laserbatteries,1)
         };
@@ -478,7 +478,7 @@
         displayname = "SF Grenadier Backpack";
         scope = 1;
 		class TransportItems {
-			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_Mag_F)
+			SFPD_BACKPACK_SF(30Rnd_762x39_Mag_F)
 			TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,6)
         };
     };

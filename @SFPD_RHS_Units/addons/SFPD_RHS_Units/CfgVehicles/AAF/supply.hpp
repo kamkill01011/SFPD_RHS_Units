@@ -4,15 +4,7 @@
 		class TransportMagazines {};
 		class TransportWeapons {};
 		class TransportItems {
-            TRANSPORT_ITEMS(ACE_elasticBandage,50)
-            TRANSPORT_ITEMS(ACE_quikclot,50)
-            TRANSPORT_ITEMS(ACE_bodyBag,10)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_salineIV_500,20)
-            TRANSPORT_ITEMS(ACE_surgicalKit,2)
-            TRANSPORT_ITEMS(ACE_tourniquet,10)
-            TRANSPORT_ITEMS(ACE_splint,20)
+			SFPD_SUPPLY_MEDICAL
         };
     };
 	
