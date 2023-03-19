@@ -113,8 +113,8 @@
 		displayName = "Desert JTAC";
 		weapons[] = {"SFPD_KATIBA_GL_Default","hgun_Rook40_F","Laserdesignator","Throw","Put"};
 		respawnWeapons[] = {"SFPD_KATIBA_GL_Default","hgun_Rook40_F","Laserdesignator","Throw","Put"};
-		magazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F","Laserbatteries"};
-		respawnMagazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F","Laserbatteries"};
+		magazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F"};
+		respawnMagazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F"};
 	};
 	
 	class SFPD_OPFOR_DESERT_MMG: SFPD_OPFOR_DESERT_Rifleman {
@@ -398,8 +398,8 @@
 		displayName = "Woodland JTAC";
 		weapons[] = {"SFPD_WOODLAND_AK12_GL","hgun_Rook40_F","Laserdesignator","Throw","Put"};
 		respawnWeapons[] = {"SFPD_WOODLAND_AK12_GL","hgun_Rook40_F","Laserdesignator","Throw","Put"};
-		magazines[] = {THREE_TIMES(30rnd_762x39_AK12_Lush_Mag_F),"16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS,"UGL_FlareGreen_F","UGL_FlareRed_F","Laserbatteries"};
-		respawnMagazines[] = {THREE_TIMES(30rnd_762x39_AK12_Lush_Mag_F),"16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS,"UGL_FlareGreen_F","UGL_FlareRed_F","Laserbatteries"};
+		magazines[] = {THREE_TIMES(30rnd_762x39_AK12_Lush_Mag_F),"16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS,"UGL_FlareGreen_F","UGL_FlareRed_F"};
+		respawnMagazines[] = {THREE_TIMES(30rnd_762x39_AK12_Lush_Mag_F),"16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS,"UGL_FlareGreen_F","UGL_FlareRed_F"};
 	};
 	
 	class SFPD_OPFOR_WOODLAND_MMG: SFPD_OPFOR_WOODLAND_Rifleman {
@@ -675,8 +675,8 @@
 		displayName = "Jungle JTAC";
 		weapons[] = {"SFPD_CAR95_GL_Default","hgun_Rook40_F","Laserdesignator","Throw","Put"};
 		respawnWeapons[] = {"SFPD_CAR95_GL_Default","hgun_Rook40_F","Laserdesignator","Throw","Put"};
-		magazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F","Laserbatteries"};
-		respawnMagazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F","Laserbatteries"};
+		magazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F"};
+		respawnMagazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F"};
 	};
 	
 	class SFPD_OPFOR_JUNGLE_MMG: SFPD_OPFOR_JUNGLE_Rifleman {

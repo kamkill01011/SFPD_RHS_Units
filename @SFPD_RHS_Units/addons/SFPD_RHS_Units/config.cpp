@@ -4,6 +4,8 @@
 
 //Defines
 
+#define STRINGIFY(x) #x
+
 #define THREE_TIMES(CLASS_NAME) #CLASS_NAME,#CLASS_NAME,#CLASS_NAME
 
 #define FOUR_TIMES(CLASS_NAME) THREE_TIMES(CLASS_NAME),#CLASS_NAME
@@ -62,6 +64,7 @@
         count = AMOUNT; \
     };
 
+//Transport
 #define SFPD_Transport(AR_MAG, AR_MAG_COUNT, LMG_MAG, LMG_MAG_COUNT, PISTOL_MAG, OPTIONAL_MAG, AT, LIGHT, BACKPACK) \
 	class TransportMagazines { \
 		TRANSPORT_MAGAZINES(AR_MAG,AR_MAG_COUNT) \
@@ -153,7 +156,39 @@
 	class CLASS : PARENT { \
 		scopeCurator = 0; \
 	};
-	
+
+// backpack
+#define SFPD_RHS_BACKPACK_LEADER(SMOKE_COLOR) \
+			TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
+			TRANSPORT_ITEMS(ACE_wirecutter,1) \
+			TRANSPORT_ITEMS(SMOKE_COLOR,3) \
+
+#define SFPD_RHS_BACKPACK_MEDIC \
+			TRANSPORT_ITEMS(ACE_surgicalKit,1) \
+			TRANSPORT_ITEMS(ACE_salineIV_500,10) \
+			TRANSPORT_ITEMS(ACE_elasticBandage,50) \
+			TRANSPORT_ITEMS(ACE_epinephrine,10) \
+			TRANSPORT_ITEMS(ACE_morphine,10) \
+			TRANSPORT_ITEMS(ACE_splint,12) \
+
+#define SFPD_RHS_BACKPACK_JTAC(IR_GREN) \
+			TRANSPORT_ITEMS(1Rnd_SmokeRed_Grenade_shell,3) \
+			TRANSPORT_ITEMS(1Rnd_SmokeGreen_Grenade_shell,3) \
+			TRANSPORT_ITEMS(1Rnd_SmokeBlue_Grenade_shell,3) \
+			TRANSPORT_ITEMS(IR_GREN,1) \
+			TRANSPORT_ITEMS(Laserbatteries,1) \
+
+#define SFPD_RHS_BACKPACK_SF(AR_MAG) \
+			TRANSPORT_ITEMS(ACE_Clacker,1) \
+			TRANSPORT_ITEMS(ACE_DefusalKit,1) \
+			TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1) \
+			TRANSPORT_ITEMS(ACE_salineIV_500,4) \
+			TRANSPORT_ITEMS(ACE_elasticBandage,10) \
+			TRANSPORT_ITEMS(AR_MAG,8) \
+			TRANSPORT_ITEMS(Laserbatteries,1) \
+
+
+
 #define BRDM_HIT_POINTS \
 		class HitPoints: HitPoints { \
 			class HitLBWheel { \

@@ -111,8 +111,8 @@
 		displayName = "Desert JTAC";
 		weapons[] = {"SFPD_RHS_M4_GL_Default","SFPD_RHS_Glock17","Laserdesignator","Throw","Put"};
 		respawnWeapons[] = {"SFPD_RHS_M4_GL_Default","SFPD_RHS_Glock17","Laserdesignator","Throw","Put"};
-		magazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F","Laserbatteries"};
-		respawnMagazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F","Laserbatteries"};
+		magazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F"};
+		respawnMagazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F"};
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_MMG: SFPD_RHS_BLUFOR_DESERT_Rifleman {

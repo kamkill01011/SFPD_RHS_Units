@@ -28,9 +28,7 @@
         displayname = "Desert Leader Radio";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(SmokeShellRed,3)
+			SFPD_RHS_BACKPACK_LEADER(SmokeShellRed)
         };
     };
 	
@@ -38,12 +36,7 @@
         displayname = "Desert Medic Backpack";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(ACE_surgicalKit,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,10)
-            TRANSPORT_ITEMS(ACE_elasticBandage,50)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_splint,12)
+            SFPD_RHS_BACKPACK_MEDIC
         };
     };
 	
@@ -51,12 +44,7 @@
         displayname = "Desert JTAC Radio";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(1Rnd_SmokeRed_Grenade_shell,3)
-            TRANSPORT_ITEMS(1Rnd_SmokeGreen_Grenade_shell,3)
-            TRANSPORT_ITEMS(1Rnd_SmokeBlue_Grenade_shell,3)
-			TRANSPORT_ITEMS(O_IR_Grenade,1)
-			//TRANSPORT_ITEMS(Laserbatteries,1)
-			//TRANSPORT_ITEMS(UGL_FlareRed_F,1)
+			SFPD_RHS_BACKPACK_JTAC(O_IR_Grenade)
         };
     };
 	
@@ -99,13 +87,7 @@
         displayname = "Desert SF Backpack";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(ACE_Clacker,1)
-			TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,4)
-            TRANSPORT_ITEMS(ACE_elasticBandage,10)
-			TRANSPORT_ITEMS(30rnd_762x39_AK12_Arid_Mag_F,11)
-			TRANSPORT_ITEMS(Laserbatteries,1)
+			SFPD_RHS_BACKPACK_SF(30rnd_762x39_AK12_Arid_Mag_F)
         };
     };
 	
@@ -113,10 +95,8 @@
         displayname = "Desert SF Leader Radio";
         scope = 1;
 		class TransportItems {
+			SFPD_RHS_BACKPACK_LEADER(SmokeShellRed)
 			TRANSPORT_ITEMS(30rnd_762x39_AK12_Arid_Mag_F,3)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(SmokeShellRed,3)
             TRANSPORT_ITEMS(Laserbatteries,1)
         };
     };
@@ -125,14 +105,8 @@
         displayname = "Desert SF Grenadier Backpack";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(ACE_Clacker,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,4)
-            TRANSPORT_ITEMS(ACE_elasticBandage,10)
-            TRANSPORT_ITEMS(30rnd_762x39_AK12_Arid_Mag_F,11)
+			SFPD_RHS_BACKPACK_SF(30rnd_762x39_AK12_Arid_Mag_F)
 			TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,6)
-            TRANSPORT_ITEMS(Laserbatteries,1)
         };
     };
 	
@@ -222,10 +196,8 @@
         displayname = "Woodland Leader Radio";
         scope = 1;
 		class TransportItems {
+			SFPD_RHS_BACKPACK_LEADER(SmokeShellRed)
 			TRANSPORT_ITEMS(30rnd_762x39_AK12_Lush_Mag_F,3)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(SmokeShellRed,3)
         };
     };
 	
@@ -249,13 +221,7 @@
         displayname = "Woodland Medic Backpack";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(30rnd_762x39_AK12_Lush_Mag_F,3)
-            TRANSPORT_ITEMS(ACE_surgicalKit,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,10)
-            TRANSPORT_ITEMS(ACE_elasticBandage,50)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_splint,12)
+            SFPD_RHS_BACKPACK_MEDIC
         };
     };
 	
@@ -263,11 +229,8 @@
         displayname = "Woodland JTAC Radio";
         scope = 1;
 		class TransportItems {
+			SFPD_RHS_BACKPACK_JTAC(O_IR_Grenade)
 			TRANSPORT_ITEMS(30rnd_762x39_AK12_Lush_Mag_F,5)
-            TRANSPORT_ITEMS(1Rnd_SmokeRed_Grenade_shell,3)
-            TRANSPORT_ITEMS(1Rnd_SmokeGreen_Grenade_shell,3)
-            TRANSPORT_ITEMS(1Rnd_SmokeBlue_Grenade_shell,3)
-			TRANSPORT_ITEMS(O_IR_Grenade,1)
         };
     };
 	
@@ -314,13 +277,7 @@
         displayname = "Woodland SF Backpack";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(ACE_Clacker,1)
-			TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,4)
-            TRANSPORT_ITEMS(ACE_elasticBandage,10)
-			TRANSPORT_ITEMS(30rnd_762x39_AK12_Lush_Mag_F,11)
-			TRANSPORT_ITEMS(Laserbatteries,1)
+			SFPD_RHS_BACKPACK_SF(30rnd_762x39_AK12_Lush_Mag_F)
         };
     };
 	
@@ -328,11 +285,9 @@
         displayname = "Woodland SF Leader Radio";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(30rnd_762x39_AK12_Lush_Mag_F,3)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(SmokeShellRed,3)
+			SFPD_RHS_BACKPACK_LEADER(SmokeShellRed)
             TRANSPORT_ITEMS(Laserbatteries,1)
+			TRANSPORT_ITEMS(30rnd_762x39_AK12_Lush_Mag_F,3)
         };
     };
 	
@@ -340,14 +295,8 @@
         displayname = "Woodland SF Grenadier Backpack";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(ACE_Clacker,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,4)
-            TRANSPORT_ITEMS(ACE_elasticBandage,10)
-            TRANSPORT_ITEMS(30rnd_762x39_AK12_Lush_Mag_F,11)
+			SFPD_RHS_BACKPACK_SF(30rnd_762x39_AK12_Lush_Mag_F)
 			TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,6)
-            TRANSPORT_ITEMS(Laserbatteries,1)
         };
     };
 	
@@ -400,9 +349,7 @@
         displayname = "Jungle Leader Radio";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(SmokeShellRed,3)
+			SFPD_RHS_BACKPACK_LEADER(SmokeShellRed)
         };
     };
 	
@@ -410,12 +357,7 @@
         displayname = "Jungle Medic Backpack";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(ACE_surgicalKit,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,10)
-            TRANSPORT_ITEMS(ACE_elasticBandage,50)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_splint,12)
+            SFPD_RHS_BACKPACK_MEDIC
         };
     };
 	
@@ -423,10 +365,7 @@
         displayname = "Jungle JTAC Radio";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(1Rnd_SmokeRed_Grenade_shell,3)
-            TRANSPORT_ITEMS(1Rnd_SmokeGreen_Grenade_shell,3)
-            TRANSPORT_ITEMS(1Rnd_SmokeBlue_Grenade_shell,3)
-			TRANSPORT_ITEMS(O_IR_Grenade,1)
+			SFPD_RHS_BACKPACK_JTAC(O_IR_Grenade)
         };
     };
 	
@@ -469,13 +408,7 @@
         displayname = "Jungle SF Backpack";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(ACE_Clacker,1)
-			TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,4)
-            TRANSPORT_ITEMS(ACE_elasticBandage,10)
-			TRANSPORT_ITEMS(30rnd_762x39_AK12_Lush_Mag_F,11)
-			TRANSPORT_ITEMS(Laserbatteries,1)
+			SFPD_RHS_BACKPACK_SF(30rnd_762x39_AK12_Lush_Mag_F)
         };
     };
 	
@@ -483,10 +416,8 @@
         displayname = "Jungle SF Leader Radio";
         scope = 1;
 		class TransportItems {
+			SFPD_RHS_BACKPACK_LEADER(SmokeShellRed)
 			TRANSPORT_ITEMS(30rnd_762x39_AK12_Lush_Mag_F,3)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(SmokeShellRed,3)
             TRANSPORT_ITEMS(Laserbatteries,1)
         };
     };
@@ -495,14 +426,8 @@
         displayname = "Jungle SF Grenadier Backpack";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(ACE_Clacker,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,4)
-            TRANSPORT_ITEMS(ACE_elasticBandage,10)
-            TRANSPORT_ITEMS(30rnd_762x39_AK12_Lush_Mag_F,11)
+			SFPD_RHS_BACKPACK_SF(30rnd_762x39_AK12_Lush_Mag_F)
 			TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,6)
-            TRANSPORT_ITEMS(Laserbatteries,1)
         };
     };
 	

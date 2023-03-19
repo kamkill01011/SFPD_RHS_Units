@@ -53,10 +53,8 @@
         displayname = "Woodland Leader Radio";
         scope = 1;
 		class TransportItems {
+			SFPD_RHS_BACKPACK_LEADER(SmokeShellRed)
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(SmokeShellRed,3)
         };
     };
 	
@@ -64,10 +62,8 @@
         displayname = "Desert Leader Radio";
         scope = 1;
 		class TransportItems {
+			SFPD_RHS_BACKPACK_LEADER(SmokeShellRed)
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(SmokeShellRed,3)
         };
     };
 	
@@ -75,10 +71,8 @@
         displayname = "Winter Leader Radio";
         scope = 1;
 		class TransportItems {
+			SFPD_RHS_BACKPACK_LEADER(SmokeShellRed)
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(SmokeShellRed,3)
         };
     };
 	
@@ -86,12 +80,7 @@
         displayname = "Woodland Medic Backpack";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(ACE_surgicalKit,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,10)
-            TRANSPORT_ITEMS(ACE_elasticBandage,50)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_splint,12)
+            SFPD_RHS_BACKPACK_MEDIC
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
         };
     };
@@ -100,12 +89,7 @@
         displayname = "Desert Medic Backpack";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(ACE_surgicalKit,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,10)
-            TRANSPORT_ITEMS(ACE_elasticBandage,50)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_splint,12)
+            SFPD_RHS_BACKPACK_MEDIC
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
         };
     };
@@ -114,12 +98,7 @@
         displayname = "Winter Medic Backpack";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(ACE_surgicalKit,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,10)
-            TRANSPORT_ITEMS(ACE_elasticBandage,50)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_splint,12)
+            SFPD_RHS_BACKPACK_MEDIC
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
         };
     };
@@ -263,12 +242,7 @@
         displayname = "Woodland SF Backpack";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,8)
-			TRANSPORT_ITEMS(ACE_Clacker,1)
-			TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-			TRANSPORT_ITEMS(ACE_salineIV_500,4)
-			TRANSPORT_ITEMS(ACE_elasticBandage,10)
+			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
         };
     };
 	
@@ -276,12 +250,7 @@
         displayname = "Desert SF Backpack";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,8)
-			TRANSPORT_ITEMS(ACE_Clacker,1)
-			TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-			TRANSPORT_ITEMS(ACE_salineIV_500,4)
-			TRANSPORT_ITEMS(ACE_elasticBandage,10)
+			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
         };
     };
 	
@@ -289,12 +258,7 @@
         displayname = "Winter SF Backpack";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,8)
-			TRANSPORT_ITEMS(ACE_Clacker,1)
-			TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-			TRANSPORT_ITEMS(ACE_salineIV_500,4)
-			TRANSPORT_ITEMS(ACE_elasticBandage,10)
+			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
         };
     };
 	

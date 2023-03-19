@@ -3,9 +3,7 @@
         displayname = "Leader Radio";
         scope = 1;
         class TransportItems {
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(SmokeShellBlue,3)
+			SFPD_RHS_BACKPACK_LEADER(SmokeShellBlue)
         };
     };
 	
@@ -13,12 +11,7 @@
         displayname = "Medic Backpack";
         scope = 1;
         class TransportItems {
-            TRANSPORT_ITEMS(ACE_surgicalKit,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,10)
-            TRANSPORT_ITEMS(ACE_elasticBandage,50)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_splint,12)
+            SFPD_RHS_BACKPACK_MEDIC
         };
     };
 	
@@ -51,10 +44,7 @@
         displayname = "JTAC Radio";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(1Rnd_SmokeRed_Grenade_shell,3)
-            TRANSPORT_ITEMS(1Rnd_SmokeGreen_Grenade_shell,3)
-            TRANSPORT_ITEMS(1Rnd_SmokeBlue_Grenade_shell,3)
-			TRANSPORT_ITEMS(B_IR_Grenade,1)
+			SFPD_RHS_BACKPACK_JTAC(B_IR_Grenade)
         };
     };
 	
@@ -62,13 +52,8 @@
         displayname = "SF Grenadier Backpack";
         scope = 1;
 		class TransportItems {
+			SFPD_RHS_BACKPACK_SF(rhs_mag_30Rnd_556x45_Mk318_Stanag)
 			TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,6)
-			TRANSPORT_ITEMS(rhs_mag_30Rnd_556x45_Mk318_Stanag,8)
-			TRANSPORT_ITEMS(ACE_Clacker,1)
-			TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-			TRANSPORT_ITEMS(ACE_salineIV_500,4)
-			TRANSPORT_ITEMS(ACE_elasticBandage,10)
         };
     };
 	
@@ -85,12 +70,7 @@
         displayname = "SF Backpack";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(rhs_mag_30Rnd_556x45_Mk318_Stanag,8)
-			TRANSPORT_ITEMS(ACE_Clacker,1)
-			TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-			TRANSPORT_ITEMS(ACE_salineIV_500,4)
-			TRANSPORT_ITEMS(ACE_elasticBandage,10)
+			SFPD_RHS_BACKPACK_SF(rhs_mag_30Rnd_556x45_Mk318_Stanag)
         };
     };
 	
@@ -116,12 +96,7 @@
         displayname = "Medic Backpack";
         scope = 1;
         class TransportItems {
-            TRANSPORT_ITEMS(ACE_surgicalKit,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,10)
-            TRANSPORT_ITEMS(ACE_elasticBandage,50)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_splint,12)
+            SFPD_RHS_BACKPACK_MEDIC
         };
     };
 	
@@ -154,13 +129,8 @@
         displayname = "SF Grenadier Backpack";
         scope = 1;
 		class TransportItems {
+			SFPD_RHS_BACKPACK_SF(rhs_mag_30Rnd_556x45_Mk318_Stanag)
 			TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,6)
-			TRANSPORT_ITEMS(rhs_mag_30Rnd_556x45_Mk318_Stanag,8)
-			TRANSPORT_ITEMS(ACE_Clacker,1)
-			TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-			TRANSPORT_ITEMS(ACE_salineIV_500,4)
-			TRANSPORT_ITEMS(ACE_elasticBandage,10)
         };
     };
 	
@@ -177,12 +147,7 @@
         displayname = "SF Backpack";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(rhs_mag_30Rnd_556x45_Mk318_Stanag,8)
-			TRANSPORT_ITEMS(ACE_Clacker,1)
-			TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-			TRANSPORT_ITEMS(ACE_salineIV_500,4)
-			TRANSPORT_ITEMS(ACE_elasticBandage,10)
+			SFPD_RHS_BACKPACK_SF(rhs_mag_30Rnd_556x45_Mk318_Stanag)
         };
     };
 	
