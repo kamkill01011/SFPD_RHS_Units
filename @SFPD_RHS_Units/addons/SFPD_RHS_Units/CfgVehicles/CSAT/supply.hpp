@@ -429,136 +429,35 @@
 	class SFPD_OPFOR_DESERT_BOX_Cargo: O_CargoNet_01_ammo_F {
         displayname = "[SFPD] CSAT (D) Cargo";
         scope = 2;
-		class TransportMagazines {
-            TRANSPORT_MAGAZINES(30Rnd_65x39_caseless_green,40)
-            TRANSPORT_MAGAZINES(150Rnd_762x54_Box_Tracer,5)
-            TRANSPORT_MAGAZINES(16Rnd_9x21_Mag,10)
-            TRANSPORT_MAGAZINES(10Rnd_762x54_Mag,10)
-            TRANSPORT_MAGAZINES(10Rnd_93x64_DMR_05_Mag,10)
-            TRANSPORT_MAGAZINES(150Rnd_93x64_Mag,10)
-            TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,10)
-            TRANSPORT_MAGAZINES(ACE_M14,4)
-            TRANSPORT_MAGAZINES(SmokeShellBlue,3)
-            TRANSPORT_MAGAZINES(HandGrenade,15)
-            TRANSPORT_MAGAZINES(SmokeShell,15)
-            TRANSPORT_MAGAZINES(ACE_M84,15)
-            TRANSPORT_MAGAZINES(RPG32_F,5)
-            TRANSPORT_MAGAZINES(RPG32_HE_F,5)
-		};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(launch_RPG32_F,1)
-            TRANSPORT_WEAPONS(SFPD_KATIBA_Default,2)
-            TRANSPORT_WEAPONS(SFPD_NAVID_Default,1)
-		};
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_elasticBandage,40)
-            TRANSPORT_ITEMS(ACE_quikclot,40)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_salineIV_500,20)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,4)
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(acc_flashlight,10)
-            TRANSPORT_ITEMS(ACE_splint,20)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-		};
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(B_FieldPack_ocamo,2)
-            TRANSPORT_BACKPACKS(B_Carryall_ocamo,2)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,2)
-		};
+		SFPD_SUPPLY_CARGO(
+			30Rnd_65x39_caseless_green,40,
+			150Rnd_762x54_Box_Tracer,6,
+			16Rnd_9x21_Mag,10Rnd_762x54_Mag,10Rnd_93x64_DMR_05_Mag,150Rnd_93x64_Mag,TRANSPORT_MAGAZINES(RPG32_F,5) TRANSPORT_MAGAZINES(RPG32_HE_F,5),
+			SFPD_KATIBA_Default,SFPD_NAVID_Default,launch_RPG32_F,
+			acc_flashlight,B_FieldPack_ocamo,B_Carryall_ocamo
+		)
     };
 	
 	class SFPD_OPFOR_WOODLAND_BOX_Cargo: O_CargoNet_01_ammo_F {
         displayname = "[SFPD] CSAT (W) Cargo";
         scope = 2;
-		class TransportMagazines {
-            TRANSPORT_MAGAZINES(30rnd_762x39_AK12_Lush_Mag_F,50)
-            TRANSPORT_MAGAZINES(75rnd_762x39_AK12_Lush_Mag_Tracer_F,8)
-            TRANSPORT_MAGAZINES(16Rnd_9x21_Mag,10)
-            TRANSPORT_MAGAZINES(10Rnd_93x64_DMR_05_Mag,10)
-            TRANSPORT_MAGAZINES(150Rnd_93x64_Mag,10)
-            TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,10)
-            TRANSPORT_MAGAZINES(ACE_M14,4)
-            TRANSPORT_MAGAZINES(SmokeShellBlue,3)
-            TRANSPORT_MAGAZINES(HandGrenade,15)
-            TRANSPORT_MAGAZINES(SmokeShell,15)
-            TRANSPORT_MAGAZINES(ACE_M84,15)
-            TRANSPORT_MAGAZINES(RPG32_F,5)
-            TRANSPORT_MAGAZINES(RPG32_HE_F,5)
-		};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(launch_RPG32_green_F,1)
-            TRANSPORT_WEAPONS(SFPD_WOODLAND_AK12,2)
-            TRANSPORT_WEAPONS(SFPD_NAVID_Tan,1)
-		};
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_elasticBandage,40)
-            TRANSPORT_ITEMS(ACE_quikclot,40)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_salineIV_500,20)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,4)
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(acc_flashlight,10)
-            TRANSPORT_ITEMS(ACE_splint,20)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-		};
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(B_FieldPack_taiga_F,2)
-            TRANSPORT_BACKPACKS(B_Carryall_taiga_F,2)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,2)
-		};
+		SFPD_SUPPLY_CARGO(
+			30rnd_762x39_AK12_Lush_Mag_F,40,
+			75rnd_762x39_AK12_Lush_Mag_Tracer_F,12,
+			16Rnd_9x21_Mag,10Rnd_762x54_Mag,10Rnd_93x64_DMR_05_Mag,150Rnd_93x64_Mag,TRANSPORT_MAGAZINES(RPG32_F,5) TRANSPORT_MAGAZINES(RPG32_HE_F,5),
+			SFPD_WOODLAND_AK12,SFPD_NAVID_Tan,launch_RPG32_green_F,
+			acc_flashlight,B_FieldPack_taiga_F,B_Carryall_taiga_F
+		)
     };
 	
 	class SFPD_OPFOR_JUNGLE_BOX_Cargo: O_CargoNet_01_ammo_F {
         displayname = "[SFPD] CSAT (J) Cargo";
         scope = 2;
-		class TransportMagazines {
-            TRANSPORT_MAGAZINES(30Rnd_580x42_Mag_F,50)
-            TRANSPORT_MAGAZINES(100Rnd_580x42_Mag_Tracer_F,10)
-            TRANSPORT_MAGAZINES(16Rnd_9x21_Mag,10)
-            TRANSPORT_MAGAZINES(20Rnd_650x39_Cased_Mag_F,10)
-            TRANSPORT_MAGAZINES(10Rnd_93x64_DMR_05_Mag,10)
-            TRANSPORT_MAGAZINES(150Rnd_93x64_Mag,10)
-            TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,10)
-            TRANSPORT_MAGAZINES(ACE_M14,4)
-            TRANSPORT_MAGAZINES(SmokeShellBlue,3)
-            TRANSPORT_MAGAZINES(HandGrenade,15)
-            TRANSPORT_MAGAZINES(SmokeShell,15)
-            TRANSPORT_MAGAZINES(ACE_M84,15)
-            TRANSPORT_MAGAZINES(RPG32_F,5)
-            TRANSPORT_MAGAZINES(RPG32_HE_F,5)
-		};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(launch_RPG32_ghex_F,1)
-            TRANSPORT_WEAPONS(SFPD_CAR95_Default,2)
-            TRANSPORT_WEAPONS(SFPD_NAVID_Tan,1)
-		};
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_elasticBandage,40)
-            TRANSPORT_ITEMS(ACE_quikclot,40)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_salineIV_500,20)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,4)
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(acc_flashlight,10)
-            TRANSPORT_ITEMS(ACE_splint,20)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-		};
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(B_FieldPack_ghex_F,2)
-            TRANSPORT_BACKPACKS(B_Carryall_ghex_F,2)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,2)
-		};
+		SFPD_SUPPLY_CARGO(
+			30Rnd_580x42_Mag_F,40,
+			100Rnd_580x42_Mag_Tracer_F,10,
+			16Rnd_9x21_Mag,20Rnd_650x39_Cased_Mag_F,10Rnd_93x64_DMR_05_Mag,150Rnd_93x64_Mag,TRANSPORT_MAGAZINES(RPG32_F,5) TRANSPORT_MAGAZINES(RPG32_HE_F,5),
+			SFPD_CAR95_Default,SFPD_NAVID_Tan,launch_RPG32_ghex_F,
+			acc_flashlight,B_FieldPack_ghex_F,B_Carryall_ghex_F
+		)
     };
