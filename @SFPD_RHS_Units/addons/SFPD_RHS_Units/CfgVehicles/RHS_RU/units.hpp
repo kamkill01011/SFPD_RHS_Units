@@ -207,8 +207,8 @@
 	class SFPD_RHS_OPFOR_DESERT_SF_AT: SFPD_RHS_OPFOR_DESERT_SF_Leader {
 		backpack = "SFPD_RHS_OPFOR_DESERT_SF_AT_Backpack";
 		displayName = "Desert SF AT";
-		weapons[] += {"rhs_weap_rpg26"};
-		respawnWeapons[] += {"rhs_weap_rpg26"};
+		weapons[] += {"SFPD_RHS_RPG7"};
+		respawnWeapons[] += {"SFPD_RHS_RPG7"};
 	};
 	
 	class SFPD_RHS_OPFOR_DESERT_SF_LMG: SFPD_RHS_OPFOR_DESERT_SF_Leader {

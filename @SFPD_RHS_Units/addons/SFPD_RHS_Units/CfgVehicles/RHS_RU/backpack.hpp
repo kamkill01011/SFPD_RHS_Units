@@ -266,8 +266,8 @@
         displayname = "Woodland SF Grenadier Backpack";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,8)
-            TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,8)
+			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
+            TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,6)
         };
     };
 	
@@ -275,8 +275,8 @@
         displayname = "Desert SF Grenadier Backpack";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,8)
-            TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,8)
+			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
+            TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,6)
         };
     };
 	
@@ -284,8 +284,8 @@
         displayname = "Winter SF Grenadier Backpack";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,8)
-            TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,8)
+			SFPD_RHS_BACKPACK_SF(30Rnd_762x39_AK12_Mag_F)
+            TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,6)
         };
     };
 	
@@ -293,11 +293,7 @@
         displayname = "Woodland SF AT Backpack";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(ACE_Clacker,1)
-			TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-			TRANSPORT_ITEMS(ACE_salineIV_500,4)
-			TRANSPORT_ITEMS(ACE_elasticBandage,10)
+            TRANSPORT_ITEMS(rhs_rpg7_PG7V_mag,2)
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
         };
     };
@@ -306,11 +302,7 @@
         displayname = "Desert SF AT Backpack";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(ACE_Clacker,1)
-			TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-			TRANSPORT_ITEMS(ACE_salineIV_500,4)
-			TRANSPORT_ITEMS(ACE_elasticBandage,10)
+            TRANSPORT_ITEMS(rhs_rpg7_PG7V_mag,2)
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
         };
     };
@@ -319,11 +311,7 @@
         displayname = "Winter SF AT Backpack";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(ACE_Clacker,1)
-			TRANSPORT_ITEMS(ACE_DefusalKit,1)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1)
-			TRANSPORT_ITEMS(ACE_salineIV_500,4)
-			TRANSPORT_ITEMS(ACE_elasticBandage,10)
+            TRANSPORT_ITEMS(rhs_rpg7_PG7V_mag,2)
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
         };
     };

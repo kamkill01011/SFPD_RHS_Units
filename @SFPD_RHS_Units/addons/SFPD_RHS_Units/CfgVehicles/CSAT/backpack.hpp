@@ -124,7 +124,6 @@
         displayname = "Desert SF LMG Backpack";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(16Rnd_9x21_Mag,1)
             TRANSPORT_ITEMS(75rnd_762x39_AK12_Arid_Mag_Tracer_F,7)
             TRANSPORT_ITEMS(Laserbatteries,1)
         };
@@ -314,7 +313,6 @@
         displayname = "Woodland SF LMG Backpack";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(16Rnd_9x21_Mag,1)
             TRANSPORT_ITEMS(75rnd_762x39_AK12_Lush_Mag_Tracer_F,7)
             TRANSPORT_ITEMS(Laserbatteries,1)
         };
@@ -445,7 +443,6 @@
         displayname = "Jungle SF LMG Backpack";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(16Rnd_9x21_Mag,1)
             TRANSPORT_ITEMS(75rnd_762x39_AK12_Lush_Mag_Tracer_F,7)
             TRANSPORT_ITEMS(Laserbatteries,1)
         };
