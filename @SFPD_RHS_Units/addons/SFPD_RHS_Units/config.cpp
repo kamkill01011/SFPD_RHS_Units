@@ -207,7 +207,23 @@
 #define SFPD_SUPPLY_AMMO_SPECIAL \
 
 
-#define SFPD_SUPPLY_GRENADES \
+#define SFPD_SUPPLY_GRENADES(IR_GREN) \
+            TRANSPORT_MAGAZINES(CBRN_CS,3) \
+            TRANSPORT_MAGAZINES(CBRN_CS_GL,3) \
+            TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,20) \
+            TRANSPORT_MAGAZINES(ACE_M14,4) \
+            TRANSPORT_MAGAZINES(IR_GREN,2) \
+            TRANSPORT_MAGAZINES(SmokeShellBlue,5) \
+            TRANSPORT_MAGAZINES(SmokeShellGreen,5) \
+            TRANSPORT_MAGAZINES(SmokeShellRed,5) \
+            TRANSPORT_MAGAZINES(HandGrenade,20) \
+            TRANSPORT_MAGAZINES(SmokeShell,20) \
+            TRANSPORT_MAGAZINES(ACE_M84,20) \
+            TRANSPORT_MAGAZINES(1Rnd_Smoke_Grenade_shell,10) \
+            TRANSPORT_MAGAZINES(UGL_FlareWhite_F,10) \
+            TRANSPORT_MAGAZINES(1Rnd_SmokeRed_Grenade_shell,5) \
+            TRANSPORT_MAGAZINES(1Rnd_SmokeGreen_Grenade_shell,5) \
+            TRANSPORT_MAGAZINES(1Rnd_SmokeBlue_Grenade_shell,5)
 
 
 #define SFPD_SUPPLY_EXPLOSIVES \
