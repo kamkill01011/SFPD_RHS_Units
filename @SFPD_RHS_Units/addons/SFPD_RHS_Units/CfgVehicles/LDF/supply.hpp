@@ -12,9 +12,7 @@
         displayname = "[SFPD] LDF Ammo";
         scope = 2;
 		class TransportMagazines {
-            TRANSPORT_MAGAZINES(30Rnd_65x39_caseless_msbs_mag,40)
-            TRANSPORT_MAGAZINES(200Rnd_65x39_cased_Box_Tracer,8)
-            TRANSPORT_MAGAZINES(9Rnd_45ACP_Mag,20)
+			SFPD_SUPPLY_AMMO(30Rnd_65x39_caseless_msbs_mag, 200Rnd_65x39_cased_Box_Tracer, 5, 9Rnd_45ACP_Mag, 6Rnd_12Gauge_Pellets, 6Rnd_12Gauge_Slug)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -24,10 +22,7 @@
         displayname = "[SFPD] LDF Special Ammo";
         scope = 2;
 		class TransportMagazines {
-            TRANSPORT_MAGAZINES(5Rnd_127x108_APDS_Mag,10)
-            TRANSPORT_MAGAZINES(30Rnd_65x39_caseless_msbs_mag,10)
-            TRANSPORT_MAGAZINES(6Rnd_12Gauge_Pellets,8)
-            TRANSPORT_MAGAZINES(6Rnd_12Gauge_Slug,8)
+			SFPD_SUPPLY_AMMO_SPECIAL(6Rnd_12Gauge_Pellets, 6Rnd_12Gauge_Slug, 20Rnd_762x51_Mag, 5Rnd_127x108_APDS_Mag)
         };
 		class TransportWeapons {};
 		class TransportItems {};

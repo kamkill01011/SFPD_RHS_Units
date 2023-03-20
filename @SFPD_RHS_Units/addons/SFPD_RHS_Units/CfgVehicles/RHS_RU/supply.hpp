@@ -8,14 +8,21 @@
         };
     };
 	
-	class SFPD_RHS_OPFOR_Ammo: Box_NATO_Ammo_F {
+	class SFPD_RHS_OPFOR_Ammo1: Box_NATO_Ammo_F {
         displayname = "[SFPD RHS] RU Ammo";
         scope = 2;
 		class TransportMagazines {
-            TRANSPORT_MAGAZINES(30Rnd_762x39_AK12_Mag_F,50)
-            TRANSPORT_MAGAZINES(75rnd_762x39_AK12_Mag_Tracer_F,10)
-            TRANSPORT_MAGAZINES(rhs_100Rnd_762x54mmR_green,10)
-            TRANSPORT_MAGAZINES(rhs_10Rnd_762x54mmR_7N1,10)
+			SFPD_SUPPLY_AMMO(30Rnd_762x39_AK12_Mag_F, 75rnd_762x39_AK12_Mag_Tracer_F, 12, rhs_mag_9x18_8_57N181S, rhs_10Rnd_762x54mmR_7N1, rhs_5Rnd_338lapua_t5000)
+        };
+		class TransportWeapons {};
+		class TransportItems {};
+    };
+	
+	class SFPD_RHS_OPFOR_Ammo2: Box_NATO_Ammo_F {
+        displayname = "[SFPD RHS] RU Special Ammo";
+        scope = 2;
+		class TransportMagazines {
+			SFPD_SUPPLY_AMMO_SPECIAL(rhs_10Rnd_762x54mmR_7N1, rhs_5Rnd_338lapua_t5000, rhs_100Rnd_762x54mmR_green, 5Rnd_127x108_APDS_Mag)
         };
 		class TransportWeapons {};
 		class TransportItems {};

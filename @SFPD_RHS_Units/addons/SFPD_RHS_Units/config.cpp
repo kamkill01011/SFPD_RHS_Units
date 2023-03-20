@@ -201,11 +201,18 @@
 			TRANSPORT_ITEMS(ACE_tourniquet,10) \
 			TRANSPORT_ITEMS(ACE_splint,20)
 
-#define SFPD_SUPPLY_AMMO \
+#define SFPD_SUPPLY_AMMO(AR_MAG, LMG_MAG, LMG_MAG_COUNT, PISTOL_MAG, MARKS_MAG, SHARP_MAG) \
+            TRANSPORT_MAGAZINES(AR_MAG,40) \
+            TRANSPORT_MAGAZINES(LMG_MAG,LMG_MAG_COUNT) \
+            TRANSPORT_MAGAZINES(PISTOL_MAG,20) \
+            TRANSPORT_MAGAZINES(MARKS_MAG,10) \
+            TRANSPORT_MAGAZINES(SHARP_MAG,10)
 
-
-#define SFPD_SUPPLY_AMMO_SPECIAL \
-
+#define SFPD_SUPPLY_AMMO_SPECIAL(MARKS_MAG, SHARP_MAG, MMG_MAG, SNIPER_MAG) \
+            TRANSPORT_MAGAZINES(MARKS_MAG,10) \
+            TRANSPORT_MAGAZINES(SHARP_MAG,10) \
+            TRANSPORT_MAGAZINES(MMG_MAG,10) \
+            TRANSPORT_MAGAZINES(SNIPER_MAG,10)
 
 #define SFPD_SUPPLY_GRENADES(IR_GREN) \
             TRANSPORT_MAGAZINES(CBRN_CS,3) \
@@ -225,7 +232,6 @@
             TRANSPORT_MAGAZINES(1Rnd_SmokeGreen_Grenade_shell,5) \
             TRANSPORT_MAGAZINES(1Rnd_SmokeBlue_Grenade_shell,5)
 
-
 #define SFPD_SUPPLY_EXPLOSIVES \
 		class TransportMagazines {}; \
 		class TransportWeapons { \
@@ -240,10 +246,6 @@
             TRANSPORT_ITEMS(ClaymoreDirectionalMine_Remote_Mag,4) \
             TRANSPORT_ITEMS(SLAMDirectionalMine_Wire_Mag,4) \
         };
-
-
-#define SFPD_SUPPLY_LAUNCHER \// TODO
-
 
 #define SFPD_SUPPLY_EQUIPMENT(LIGHT, OPTIONAL_ITEMS, BACKPACK, BACKPACK_BIG, RADIO_LR) \
 		class TransportMagazines {}; \
@@ -272,10 +274,32 @@
 
 
 #define SFPD_SUPPLY_WEAPONS \
+/*
 
+
+
+
+
+
+
+
+
+
+*/
 
 #define SFPD_SUPPLY_WEAPONS_SPECIAL \
+/*
 
+
+
+
+
+
+
+
+
+
+*/
 
 #define SFPD_SUPPLY_CARGO(AR_MAG, AR_MAG_COUNT, LMG_MAG, LMG_MAG_COUNT, PISTOL_MAG, MARKS_MAG, SHARP_MAG, MMG_MAG, OPTIONAL_MAG, AR, MMG, AT, LIGHT, BACKPACK, BACKPACK_BIG) \
 		class TransportMagazines { \
@@ -1589,7 +1613,8 @@ class CfgPatches {
 			"SFPD_RHS_BLUFOR_NBC_detector",
 			"SFPD_RHS_BLUFOR_Rappeling",
 			"SFPD_RHS_OPFOR_Medical",
-			"SFPD_RHS_OPFOR_Ammo",
+			"SFPD_RHS_OPFOR_Ammo1",
+			"SFPD_RHS_OPFOR_Ammo2",
 			"SFPD_RHS_OPFOR_Grenades",
 			"SFPD_RHS_OPFOR_Explosives",
 			"SFPD_RHS_OPFOR_Launchers1",

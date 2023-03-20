@@ -12,9 +12,7 @@
         displayname = "[SFPD] NATO (D) Ammo";
         scope = 2;
 		class TransportMagazines {
-            TRANSPORT_MAGAZINES(30Rnd_65x39_caseless_mag,40)
-            TRANSPORT_MAGAZINES(200Rnd_556x45_Box_Tracer_Red_F,6)
-            TRANSPORT_MAGAZINES(16Rnd_9x21_Mag,20)
+			SFPD_SUPPLY_AMMO(30Rnd_65x39_caseless_mag, 200Rnd_556x45_Box_Tracer_Red_F, 5, 16Rnd_9x21_Mag, 20Rnd_762x51_Mag, 10Rnd_338_Mag)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -24,9 +22,7 @@
         displayname = "[SFPD] NATO (W) Ammo";
         scope = 2;
 		class TransportMagazines {
-            TRANSPORT_MAGAZINES(30Rnd_65x39_caseless_khaki_mag,40)
-            TRANSPORT_MAGAZINES(200Rnd_556x45_Box_Tracer_Red_F,6)
-            TRANSPORT_MAGAZINES(16Rnd_9x21_Mag,20)
+			SFPD_SUPPLY_AMMO(30Rnd_65x39_caseless_khaki_mag, 200Rnd_556x45_Box_Tracer_Red_F, 5, 16Rnd_9x21_Mag, 20Rnd_762x51_Mag, 10Rnd_338_Mag)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -36,9 +32,7 @@
         displayname = "[SFPD] NATO (J) Ammo";
         scope = 2;
 		class TransportMagazines {
-            TRANSPORT_MAGAZINES(30Rnd_556x45_Stanag_red,50)
-            TRANSPORT_MAGAZINES(150Rnd_556x45_Drum_Mag_Tracer_F,8)
-            TRANSPORT_MAGAZINES(16Rnd_9x21_Mag,20)
+			SFPD_SUPPLY_AMMO(30Rnd_556x45_Stanag_red, 150Rnd_556x45_Drum_Mag_Tracer_F, 6, 16Rnd_9x21_Mag, 20Rnd_762x51_Mag, 10Rnd_338_Mag)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -48,10 +42,7 @@
         displayname = "[SFPD] NATO Special Ammo";
         scope = 2;
 		class TransportMagazines {
-            TRANSPORT_MAGAZINES(7Rnd_408_Mag,10)
-            TRANSPORT_MAGAZINES(20Rnd_762x51_Mag,10)
-            TRANSPORT_MAGAZINES(10Rnd_338_Mag,10)
-            TRANSPORT_MAGAZINES(130Rnd_338_Mag,10)
+			SFPD_SUPPLY_AMMO_SPECIAL(20Rnd_762x51_Mag, 10Rnd_338_Mag, 130Rnd_338_Mag, 7Rnd_408_Mag)
         };
 		class TransportWeapons {};
 		class TransportItems {};

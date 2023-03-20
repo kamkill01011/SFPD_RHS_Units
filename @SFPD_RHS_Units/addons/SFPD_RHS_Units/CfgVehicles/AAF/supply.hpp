@@ -12,9 +12,7 @@
         displayname = "[SFPD] AAF Ammo";
         scope = 2;
 		class TransportMagazines {
-            TRANSPORT_MAGAZINES(30Rnd_556x45_Stanag,50)
-            TRANSPORT_MAGAZINES(200Rnd_65x39_cased_Box_Tracer,8)
-            TRANSPORT_MAGAZINES(9Rnd_45ACP_Mag,20)
+			SFPD_SUPPLY_AMMO(30Rnd_556x45_Stanag, 200Rnd_65x39_cased_Box_Tracer, 5, 9Rnd_45ACP_Mag, 20Rnd_762x51_Mag, 10Rnd_338_Mag)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -24,8 +22,7 @@
         displayname = "[SFPD] AAF Special Ammo";
         scope = 2;
 		class TransportMagazines {
-            TRANSPORT_MAGAZINES(5Rnd_127x108_APDS_Mag,10)
-            TRANSPORT_MAGAZINES(20Rnd_762x51_Mag,10)
+			SFPD_SUPPLY_AMMO_SPECIAL(20Rnd_762x51_Mag, 10Rnd_338_Mag, 130Rnd_338_Mag, 5Rnd_127x108_APDS_Mag)
         };
 		class TransportWeapons {};
 		class TransportItems {};

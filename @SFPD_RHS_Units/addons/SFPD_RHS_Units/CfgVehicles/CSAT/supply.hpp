@@ -12,9 +12,7 @@
         displayname = "[SFPD] CSAT (D) Ammo";
         scope = 2;
 		class TransportMagazines {
-            TRANSPORT_MAGAZINES(30Rnd_65x39_caseless_green,40)
-            TRANSPORT_MAGAZINES(150Rnd_762x54_Box_Tracer,10)
-            TRANSPORT_MAGAZINES(16Rnd_9x21_Mag,20)
+			SFPD_SUPPLY_AMMO(30Rnd_65x39_caseless_green, 150Rnd_762x54_Box_Tracer, 6, 16Rnd_9x21_Mag, 10Rnd_762x54_Mag, 10Rnd_93x64_DMR_05_Mag)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -24,9 +22,7 @@
         displayname = "[SFPD] CSAT (W) Ammo";
         scope = 2;
 		class TransportMagazines {
-            TRANSPORT_MAGAZINES(30rnd_762x39_AK12_Lush_Mag_F,40)
-            TRANSPORT_MAGAZINES(75rnd_762x39_AK12_Lush_Mag_Tracer_F,20)
-            TRANSPORT_MAGAZINES(16Rnd_9x21_Mag,20)
+			SFPD_SUPPLY_AMMO(30rnd_762x39_AK12_Lush_Mag_F, 75rnd_762x39_AK12_Lush_Mag_Tracer_F, 12, 16Rnd_9x21_Mag, 10Rnd_762x54_Mag, 10Rnd_93x64_DMR_05_Mag)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -36,9 +32,7 @@
         displayname = "[SFPD] CSAT (J) Ammo";
         scope = 2;
 		class TransportMagazines {
-            TRANSPORT_MAGAZINES(30Rnd_580x42_Mag_F,50)
-            TRANSPORT_MAGAZINES(100Rnd_580x42_Mag_Tracer_F,10)
-            TRANSPORT_MAGAZINES(16Rnd_9x21_Mag,20)
+			SFPD_SUPPLY_AMMO(30Rnd_580x42_Mag_F, 100Rnd_580x42_Mag_Tracer_F, 10, 16Rnd_9x21_Mag, 20Rnd_650x39_Cased_Mag_F, 10Rnd_93x64_DMR_05_Mag)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -48,13 +42,8 @@
         displayname = "[SFPD] CSAT Special Ammo";
         scope = 2;
 		class TransportMagazines {
-            TRANSPORT_MAGAZINES(5Rnd_127x108_APDS_Mag,6)
-            TRANSPORT_MAGAZINES(30Rnd_65x39_caseless_green,6)
-            TRANSPORT_MAGAZINES(30Rnd_580x42_Mag_F,6)
-            TRANSPORT_MAGAZINES(10Rnd_93x64_DMR_05_Mag,6)
-            TRANSPORT_MAGAZINES(10Rnd_762x54_Mag,6)
-            TRANSPORT_MAGAZINES(20Rnd_650x39_Cased_Mag_F,6)
-            TRANSPORT_MAGAZINES(150Rnd_93x64_Mag,6)
+			SFPD_SUPPLY_AMMO_SPECIAL(10Rnd_762x54_Mag, 10Rnd_93x64_DMR_05_Mag, 150Rnd_93x64_Mag, 5Rnd_127x108_APDS_Mag)
+            TRANSPORT_MAGAZINES(20Rnd_650x39_Cased_Mag_F,10)
         };
 		class TransportWeapons {};
 		class TransportItems {};
