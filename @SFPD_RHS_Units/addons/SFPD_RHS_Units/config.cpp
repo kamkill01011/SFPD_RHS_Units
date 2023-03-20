@@ -37,28 +37,28 @@
 #define BASIC_ITEMS "ACE_morphine",FOUR_TIMES(ACE_tourniquet),"ACE_MapTools","ACE_Flashlight_KSF1","ACE_EarPlugs","ACE_CableTie","ACE_CableTie","ACE_splint","ACE_splint"
 
 #define TRANSPORT_ITEMS(CLASS_NAME,AMOUNT) \
-	class _xx_##CLASS_NAME \
+	class CLASS_NAME##_xx_ \
     { \
         name = #CLASS_NAME; \
         count = AMOUNT; \
     };
 	
 #define TRANSPORT_MAGAZINES(CLASS_NAME,AMOUNT) \
-	class _xx_##CLASS_NAME \
+	class CLASS_NAME##_xx_ \
     { \
         magazine = #CLASS_NAME; \
         count = AMOUNT; \
     };
 	
 #define TRANSPORT_WEAPONS(CLASS_NAME,AMOUNT) \
-	class _xx_##CLASS_NAME \
+	class CLASS_NAME##_xx_ \
     { \
         weapon = #CLASS_NAME; \
         count = AMOUNT; \
     };
 	
 #define TRANSPORT_BACKPACKS(CLASS_NAME,AMOUNT) \
-	class _xx_##CLASS_NAME \
+	class CLASS_NAME##_xx_ \
     { \
         backpack = #CLASS_NAME; \
         count = AMOUNT; \
