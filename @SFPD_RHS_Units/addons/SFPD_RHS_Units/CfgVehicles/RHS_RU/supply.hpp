@@ -34,19 +34,7 @@
 	class SFPD_RHS_OPFOR_Explosives: Box_NATO_AmmoOrd_F {
         displayname = "[SFPD RHS] RU Explosives";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(ACE_VMH3,2)
-        };
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_DefusalKit,5)
-            TRANSPORT_ITEMS(ACE_Clacker,5)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,10)
-            TRANSPORT_ITEMS(ATMine_Range_Mag,2)
-            TRANSPORT_ITEMS(SatchelCharge_Remote_Mag,2)
-            TRANSPORT_ITEMS(ClaymoreDirectionalMine_Remote_Mag,4)
-            TRANSPORT_ITEMS(SLAMDirectionalMine_Wire_Mag,4)
-        };
+		SFPD_SUPPLY_EXPLOSIVES
     };
 	
 	class SFPD_RHS_OPFOR_Launchers1: Box_NATO_WpsLaunch_F {
@@ -94,32 +82,7 @@
 	class SFPD_RHS_OPFOR_Equipment: Box_NATO_Equip_F {
         displayname = "[SFPD RHS] RU Equipment";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {
-            TRANSPORT_ITEMS(O_NVGoggles_grn_F,10)
-            TRANSPORT_ITEMS(rhs_acc_2dpZenit_ris,20)
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,2)
-            TRANSPORT_ITEMS(rhsusf_acc_anpeq16a,10)
-            TRANSPORT_ITEMS(ToolKit,2)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(ACE_wirecutter,2)
-            TRANSPORT_ITEMS(optic_NVS,4)
-            TRANSPORT_ITEMS(rhs_acc_1pn93_2,2)
-            TRANSPORT_ITEMS(ACE_Tripod,1)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-            TRANSPORT_ITEMS(ACE_artilleryTable,1)
-        };
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(rhssaf_kitbag_smb,4)
-            TRANSPORT_BACKPACKS(ace_gunbag,1)
-            TRANSPORT_BACKPACKS(ace_gunbag_Tan,1)
-            TRANSPORT_BACKPACKS(TFAR_mr3000_rhs,2)
-            TRANSPORT_BACKPACKS(TFAR_mr3000_bwmod,2)
-            TRANSPORT_BACKPACKS(TFAR_mr3000_bwmod_tropen,2)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1)
-		};
+		SFPD_SUPPLY_EQUIPMENT(rhs_acc_2dpZenit_ris, TRANSPORT_ITEMS(O_NVGoggles_grn_F,10) TRANSPORT_ITEMS(rhsusf_acc_anpeq16a,10) TRANSPORT_ITEMS(rhs_acc_1pn93_2,2), rhs_tortila_emr, rhs_tortila_khaki, TFAR_mr3000_bwmod)
     };
 	
 	class SFPD_RHS_OPFOR_Weapons: Box_NATO_Wps_F {

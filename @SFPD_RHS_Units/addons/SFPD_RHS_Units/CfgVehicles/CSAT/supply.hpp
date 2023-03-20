@@ -73,19 +73,7 @@
 	class SFPD_OPFOR_BOX_Explosives: Box_East_AmmoOrd_F {
         displayname = "[SFPD] CSAT Explosives";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(ACE_VMH3,2)
-        };
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_DefusalKit,5)
-            TRANSPORT_ITEMS(ACE_Clacker,5)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,10)
-            TRANSPORT_ITEMS(ATMine_Range_Mag,2)
-            TRANSPORT_ITEMS(SatchelCharge_Remote_Mag,2)
-            TRANSPORT_ITEMS(ClaymoreDirectionalMine_Remote_Mag,4)
-            TRANSPORT_ITEMS(SLAMDirectionalMine_Wire_Mag,4)
-        };
+		SFPD_SUPPLY_EXPLOSIVES
     };
 	
 	class SFPD_OPFOR_DESERT_BOX_Launchers_AT: Box_East_WpsLaunch_F {
@@ -217,79 +205,19 @@
 	class SFPD_OPFOR_DESERT_BOX_Equipment: Box_CSAT_Equip_F {
         displayname = "[SFPD] CSAT (D) Equipment";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,2)
-            TRANSPORT_ITEMS(ToolKit,2)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(ACE_wirecutter,2)
-            TRANSPORT_ITEMS(optic_NVS,4)
-            TRANSPORT_ITEMS(acc_flashlight,20)
-            TRANSPORT_ITEMS(ACE_Tripod,1)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-            TRANSPORT_ITEMS(ACE_artilleryTable,1)
-        };
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(B_FieldPack_ocamo,6)
-            TRANSPORT_BACKPACKS(ace_gunbag_Tan,2)
-            TRANSPORT_BACKPACKS(B_Carryall_ocamo,2)
-            TRANSPORT_BACKPACKS(TFAR_mr3000,2)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1)
-		};
+		SFPD_SUPPLY_EQUIPMENT(acc_flashlight,, B_FieldPack_ocamo, B_Carryall_ocamo, TFAR_mr3000)
     };
 	
 	class SFPD_OPFOR_WOODLAND_BOX_Equipment: Box_CSAT_Equip_F {
         displayname = "[SFPD] CSAT (W) Equipment";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,2)
-            TRANSPORT_ITEMS(ToolKit,2)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(ACE_wirecutter,2)
-            TRANSPORT_ITEMS(optic_NVS,4)
-            TRANSPORT_ITEMS(acc_flashlight,20)
-            TRANSPORT_ITEMS(ACE_Tripod,1)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-            TRANSPORT_ITEMS(ACE_artilleryTable,1)
-        };
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(B_FieldPack_taiga_F,6)
-            TRANSPORT_BACKPACKS(ace_gunbag,2)
-            TRANSPORT_BACKPACKS(B_Carryall_taiga_F,2)
-            TRANSPORT_BACKPACKS(TFAR_mr3000_bwmod,2)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1)
-		};
+		SFPD_SUPPLY_EQUIPMENT(acc_flashlight,, B_FieldPack_taiga_F, B_Carryall_taiga_F, TFAR_mr3000_bwmod)
     };
 	
 	class SFPD_OPFOR_JUNGLE_BOX_Equipment: Box_CSAT_Equip_F {
         displayname = "[SFPD] CSAT (J) Equipment";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,2)
-            TRANSPORT_ITEMS(ToolKit,2)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(ACE_wirecutter,2)
-            TRANSPORT_ITEMS(optic_NVS,4)
-            TRANSPORT_ITEMS(acc_flashlight,20)
-            TRANSPORT_ITEMS(ACE_Tripod,1)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-            TRANSPORT_ITEMS(ACE_artilleryTable,1)
-        };
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(B_FieldPack_ghex_F,6)
-            TRANSPORT_BACKPACKS(ace_gunbag,2)
-            TRANSPORT_BACKPACKS(B_Carryall_ghex_F,2)
-            TRANSPORT_BACKPACKS(TFAR_mr3000_bwmod,2)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1)
-		};
+		SFPD_SUPPLY_EQUIPMENT(acc_flashlight,, B_FieldPack_ghex_F, B_Carryall_ghex_F, TFAR_mr3000_bwmod)
     };
 	
 	class SFPD_OPFOR_DESERT_BOX_Weapons: Box_East_Wps_F {

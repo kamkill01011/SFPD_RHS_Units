@@ -44,19 +44,7 @@
 	class SFPD_AAF_BOX_Explosives: Box_IND_AmmoOrd_F {
         displayname = "[SFPD] AAF Explosives";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(ACE_VMH3,2)
-        };
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_DefusalKit,5)
-            TRANSPORT_ITEMS(ACE_Clacker,5)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,10)
-            TRANSPORT_ITEMS(ATMine_Range_Mag,2)
-            TRANSPORT_ITEMS(SatchelCharge_Remote_Mag,2)
-            TRANSPORT_ITEMS(ClaymoreDirectionalMine_Remote_Mag,4)
-            TRANSPORT_ITEMS(SLAMDirectionalMine_Wire_Mag,4)
-        };
+		SFPD_SUPPLY_EXPLOSIVES
     };
 	
 	class SFPD_AAF_BOX_Launchers_AT: Box_IND_WpsLaunch_F {
@@ -102,27 +90,7 @@
 	class SFPD_AAF_BOX_Equipment: Box_AAF_Equip_F {
         displayname = "[SFPD] AAF Equipment";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,2)
-            TRANSPORT_ITEMS(ToolKit,2)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(ACE_wirecutter,2)
-            TRANSPORT_ITEMS(optic_NVS,4)
-            TRANSPORT_ITEMS(acc_flashlight,20)
-            TRANSPORT_ITEMS(ACE_Tripod,1)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-            TRANSPORT_ITEMS(ACE_artilleryTable,1)
-        };
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(B_AssaultPack_dgtl,6)
-            TRANSPORT_BACKPACKS(ace_gunbag,2)
-            TRANSPORT_BACKPACKS(B_Carryall_oli,2)
-            TRANSPORT_BACKPACKS(TFAR_anprc155,2)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1)
-		};
+		SFPD_SUPPLY_EQUIPMENT(acc_flashlight,, B_AssaultPack_dgtl, B_Carryall_oli, TFAR_anprc155)
     };
 	
 	class SFPD_AAF_BOX_Weapons: Box_IND_Wps_F {

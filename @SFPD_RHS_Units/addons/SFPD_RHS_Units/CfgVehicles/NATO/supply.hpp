@@ -70,19 +70,7 @@
 	class SFPD_BLUFOR_BOX_Explosives: Box_NATO_AmmoOrd_F {
         displayname = "[SFPD] NATO Explosives";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(ACE_VMH3,2)
-        };
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_DefusalKit,5)
-            TRANSPORT_ITEMS(ACE_Clacker,5)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,10)
-            TRANSPORT_ITEMS(ATMine_Range_Mag,2)
-            TRANSPORT_ITEMS(SatchelCharge_Remote_Mag,2)
-            TRANSPORT_ITEMS(ClaymoreDirectionalMine_Remote_Mag,4)
-            TRANSPORT_ITEMS(SLAMDirectionalMine_Wire_Mag,4)
-        };
+		SFPD_SUPPLY_EXPLOSIVES
     };
 	
 	class SFPD_BLUFOR_DESERT_BOX_Launchers_AT: Box_NATO_WpsLaunch_F {
@@ -208,79 +196,19 @@
 	class SFPD_BLUFOR_DESERT_BOX_Equipment: Box_NATO_Equip_F {
         displayname = "[SFPD] NATO (D) Equipment";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,2)
-            TRANSPORT_ITEMS(ToolKit,2)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(ACE_wirecutter,2)
-            TRANSPORT_ITEMS(optic_NVS,4)
-            TRANSPORT_ITEMS(acc_flashlight,20)
-            TRANSPORT_ITEMS(ACE_Tripod,1)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-            TRANSPORT_ITEMS(ACE_artilleryTable,1)
-        };
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(B_AssaultPack_mcamo,6)
-            TRANSPORT_BACKPACKS(ace_gunbag_Tan,2)
-            TRANSPORT_BACKPACKS(B_Carryall_mcamo,2)
-            TRANSPORT_BACKPACKS(TFAR_rt1523g,2)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1)
-		};
+		SFPD_SUPPLY_EQUIPMENT(acc_flashlight,, B_AssaultPack_mcamo, B_Carryall_mcamo, TFAR_rt1523g)
     };
 	
 	class SFPD_BLUFOR_WOODLAND_BOX_Equipment: Box_NATO_Equip_F {
         displayname = "[SFPD] NATO (W) Equipment";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,2)
-            TRANSPORT_ITEMS(ToolKit,2)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(ACE_wirecutter,2)
-            TRANSPORT_ITEMS(optic_NVS,4)
-            TRANSPORT_ITEMS(acc_flashlight,20)
-            TRANSPORT_ITEMS(ACE_Tripod,1)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-            TRANSPORT_ITEMS(ACE_artilleryTable,1)
-        };
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(B_AssaultPack_wdl_F,6)
-            TRANSPORT_BACKPACKS(ace_gunbag,2)
-            TRANSPORT_BACKPACKS(B_Carryall_oli,2)
-            TRANSPORT_BACKPACKS(TFAR_rt1523g_bwmod,2)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1)
-		};
+		SFPD_SUPPLY_EQUIPMENT(acc_flashlight,, B_AssaultPack_wdl_F, B_Carryall_oli, TFAR_rt1523g_bwmod)
     };
 	
 	class SFPD_BLUFOR_JUNGLE_BOX_Equipment: Box_NATO_Equip_F {
         displayname = "[SFPD] NATO (J) Equipment";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,2)
-            TRANSPORT_ITEMS(ToolKit,2)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(ACE_wirecutter,2)
-            TRANSPORT_ITEMS(optic_NVS,4)
-            TRANSPORT_ITEMS(acc_flashlight,20)
-            TRANSPORT_ITEMS(ACE_Tripod,1)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-            TRANSPORT_ITEMS(ACE_artilleryTable,1)
-        };
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(B_AssaultPack_tna_F,6)
-            TRANSPORT_BACKPACKS(ace_gunbag,2)
-            TRANSPORT_BACKPACKS(B_Carryall_oli,2)
-            TRANSPORT_BACKPACKS(TFAR_rt1523g_bwmod,2)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1)
-		};
+		SFPD_SUPPLY_EQUIPMENT(acc_flashlight,, B_AssaultPack_tna_F, B_Carryall_oli, TFAR_rt1523g_bwmod)
     };
 	
 	class SFPD_BLUFOR_DESERT_BOX_Weapons: Box_NATO_Wps_F {

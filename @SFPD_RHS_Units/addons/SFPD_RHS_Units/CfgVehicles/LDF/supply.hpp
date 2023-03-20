@@ -46,19 +46,7 @@
 	class SFPD_LDF_BOX_Explosives: Box_EAF_AmmoOrd_F {
         displayname = "[SFPD] LDF Explosives";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(ACE_VMH3,2)
-        };
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_DefusalKit,5)
-            TRANSPORT_ITEMS(ACE_Clacker,5)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,10)
-            TRANSPORT_ITEMS(ATMine_Range_Mag,2)
-            TRANSPORT_ITEMS(SatchelCharge_Remote_Mag,2)
-            TRANSPORT_ITEMS(ClaymoreDirectionalMine_Remote_Mag,4)
-            TRANSPORT_ITEMS(SLAMDirectionalMine_Wire_Mag,4)
-        };
+		SFPD_SUPPLY_EXPLOSIVES
     };
 	
 	class SFPD_LDF_BOX_Launchers_AT: Box_EAF_WpsLaunch_F {
@@ -104,27 +92,7 @@
 	class SFPD_LDF_BOX_Equipment: Box_EAF_Equip_F {
         displayname = "[SFPD] LDF Equipment";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,2)
-            TRANSPORT_ITEMS(ToolKit,2)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(ACE_wirecutter,2)
-            TRANSPORT_ITEMS(optic_NVS,4)
-            TRANSPORT_ITEMS(acc_flashlight,20)
-            TRANSPORT_ITEMS(ACE_Tripod,1)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-            TRANSPORT_ITEMS(ACE_artilleryTable,1)
-        };
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(B_AssaultPack_eaf_F,6)
-            TRANSPORT_BACKPACKS(ace_gunbag,2)
-            TRANSPORT_BACKPACKS(B_Carryall_oli,2)
-            TRANSPORT_BACKPACKS(B_RadioBag_01_eaf_F,2)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1)
-		};
+		SFPD_SUPPLY_EQUIPMENT(acc_flashlight,, B_AssaultPack_eaf_F, B_Carryall_oli, B_RadioBag_01_eaf_F)
     };
 	
 	class SFPD_LDF_BOX_Weapons: Box_EAF_Wps_F {
@@ -170,5 +138,5 @@
 	class SFPD_LDF_BOX_Cargo: I_E_CargoNet_01_ammo_F {
         displayname = "[SFPD] LDF Cargo";
         scope = 2;
-		SFPD_SUPPLY_CARGO(30Rnd_65x39_caseless_msbs_mag,40,200Rnd_65x39_cased_Box_Tracer,5,9Rnd_45ACP_Mag,20Rnd_762x51_Mag,6Rnd_12Gauge_Pellets,6Rnd_12Gauge_Slug,TRANSPORT_MAGAZINES(MRAWS_HEAT_F,5),SFPD_F2000,SFPD_Stoner,launch_MRAWS_green_F,acc_flashlight,B_AssaultPack_dgtl,B_Carryall_oli)
+		SFPD_SUPPLY_CARGO(30Rnd_65x39_caseless_msbs_mag,40,200Rnd_65x39_cased_Box_Tracer,5,9Rnd_45ACP_Mag,20Rnd_762x51_Mag,6Rnd_12Gauge_Pellets,6Rnd_12Gauge_Slug,TRANSPORT_MAGAZINES(MRAWS_HEAT_F,5),SFPD_F2000,SFPD_Stoner,launch_MRAWS_green_F,acc_flashlight,B_AssaultPack_eaf_F,B_Carryall_oli)
     };

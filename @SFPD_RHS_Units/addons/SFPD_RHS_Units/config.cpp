@@ -227,12 +227,48 @@
 
 
 #define SFPD_SUPPLY_EXPLOSIVES \
+		class TransportMagazines {}; \
+		class TransportWeapons { \
+            TRANSPORT_WEAPONS(ACE_VMH3,2) \
+        }; \
+		class TransportItems { \
+            TRANSPORT_ITEMS(ACE_DefusalKit,5) \
+            TRANSPORT_ITEMS(ACE_Clacker,5) \
+            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,10) \
+            TRANSPORT_ITEMS(ATMine_Range_Mag,2) \
+            TRANSPORT_ITEMS(SatchelCharge_Remote_Mag,2) \
+            TRANSPORT_ITEMS(ClaymoreDirectionalMine_Remote_Mag,4) \
+            TRANSPORT_ITEMS(SLAMDirectionalMine_Wire_Mag,4) \
+        };
 
 
 #define SFPD_SUPPLY_LAUNCHER \// TODO
 
 
-#define SFPD_SUPPLY_EQUIPMENT \
+#define SFPD_SUPPLY_EQUIPMENT(LIGHT, OPTIONAL_ITEMS, BACKPACK, BACKPACK_BIG, RADIO_LR) \
+		class TransportMagazines {}; \
+		class TransportWeapons {}; \
+		class TransportItems { \
+			TRANSPORT_ITEMS(ACE_CableTie,20) \
+			TRANSPORT_ITEMS(ACE_wirecutter,2) \
+			TRANSPORT_ITEMS(ACE_EntrenchingTool,2) \
+			TRANSPORT_ITEMS(ACE_UAVBattery,2) \
+			TRANSPORT_ITEMS(ACE_Tripod,1) \
+			TRANSPORT_ITEMS(ToolKit,2) \
+			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2) \
+			TRANSPORT_ITEMS(ACE_artilleryTable,2) \
+			TRANSPORT_ITEMS(LIGHT,20) \
+			TRANSPORT_ITEMS(optic_NVS,4) \
+			OPTIONAL_ITEMS \
+		}; \
+		class TransportBackpacks { \
+			TRANSPORT_BACKPACKS(BACKPACK,4) \
+			TRANSPORT_BACKPACKS(BACKPACK_BIG,2) \
+			TRANSPORT_BACKPACKS(ace_gunbag,1) \
+			TRANSPORT_BACKPACKS(ace_gunbag_Tan,1) \
+			TRANSPORT_BACKPACKS(RADIO_LR,2) \
+			TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1) \
+		};
 
 
 #define SFPD_SUPPLY_WEAPONS \

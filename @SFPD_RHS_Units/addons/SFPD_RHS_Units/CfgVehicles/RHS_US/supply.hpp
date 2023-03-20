@@ -46,19 +46,7 @@
 	class SFPD_RHS_BLUFOR_Explosives: Box_NATO_AmmoOrd_F {
         displayname = "[SFPD RHS] US Explosives";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(ACE_VMH3,2)
-        };
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_DefusalKit,5)
-            TRANSPORT_ITEMS(ACE_Clacker,5)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,10)
-            TRANSPORT_ITEMS(ATMine_Range_Mag,2)
-            TRANSPORT_ITEMS(SatchelCharge_Remote_Mag,2)
-            TRANSPORT_ITEMS(ClaymoreDirectionalMine_Remote_Mag,4)
-            TRANSPORT_ITEMS(SLAMDirectionalMine_Wire_Mag,4)
-        };
+		SFPD_SUPPLY_EXPLOSIVES
     };
 	
 	class SFPD_RHS_BLUFOR_Launchers1: Box_NATO_WpsLaunch_F {
@@ -121,30 +109,7 @@
 	class SFPD_RHS_BLUFOR_Equipment: Box_NATO_Equip_F {
         displayname = "[SFPD RHS] US Equipment";
         scope = 2;
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {
-            TRANSPORT_ITEMS(rhsusf_ANPVS_15,10)
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,2)
-            TRANSPORT_ITEMS(ToolKit,2)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(rhsusf_acc_M952V,20)
-            TRANSPORT_ITEMS(rhsusf_acc_anpeq16a,10)
-            TRANSPORT_ITEMS(ACE_wirecutter,2)
-            TRANSPORT_ITEMS(optic_NVS,4)
-            TRANSPORT_ITEMS(ACE_Tripod,1)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-            TRANSPORT_ITEMS(ACE_artilleryTable,1)
-        };
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(rhsusf_falconii_coy,6)
-            TRANSPORT_BACKPACKS(ace_gunbag,1)
-            TRANSPORT_BACKPACKS(ace_gunbag_Tan,1)
-            TRANSPORT_BACKPACKS(B_Carryall_khk,2)
-            TRANSPORT_BACKPACKS(TFAR_rt1523g_bwmod,2)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1)
-		};
+		SFPD_SUPPLY_EQUIPMENT(rhsusf_acc_M952V, TRANSPORT_ITEMS(rhsusf_ANPVS_15,10) TRANSPORT_ITEMS(rhsusf_acc_anpeq16a,10), rhsusf_falconii_coy, B_Carryall_khk, TFAR_rt1523g_bwmod)
     };
 	
 	class SFPD_RHS_BLUFOR_Weapons: Box_NATO_Wps_F {
