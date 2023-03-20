@@ -14,8 +14,6 @@
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(30Rnd_65x39_caseless_msbs_mag,40)
             TRANSPORT_MAGAZINES(200Rnd_65x39_cased_Box_Tracer,8)
-            TRANSPORT_MAGAZINES(6Rnd_12Gauge_Pellets,8)
-            TRANSPORT_MAGAZINES(6Rnd_12Gauge_Slug,8)
             TRANSPORT_MAGAZINES(9Rnd_45ACP_Mag,20)
         };
 		class TransportWeapons {};
@@ -28,6 +26,8 @@
 		class TransportMagazines {
             TRANSPORT_MAGAZINES(5Rnd_127x108_APDS_Mag,10)
             TRANSPORT_MAGAZINES(30Rnd_65x39_caseless_msbs_mag,10)
+            TRANSPORT_MAGAZINES(6Rnd_12Gauge_Pellets,8)
+            TRANSPORT_MAGAZINES(6Rnd_12Gauge_Slug,8)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -185,43 +185,5 @@
 	class SFPD_LDF_BOX_Cargo: I_E_CargoNet_01_ammo_F {
         displayname = "[SFPD] LDF Cargo";
         scope = 2;
-		class TransportMagazines {
-            TRANSPORT_MAGAZINES(30Rnd_65x39_caseless_msbs_mag,50)
-            TRANSPORT_MAGAZINES(200Rnd_65x39_cased_Box_Tracer,5)
-            TRANSPORT_MAGAZINES(9Rnd_45ACP_Mag,10)
-            TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,10)
-            TRANSPORT_MAGAZINES(6Rnd_12Gauge_Pellets,8)
-            TRANSPORT_MAGAZINES(6Rnd_12Gauge_Slug,8)
-            TRANSPORT_MAGAZINES(ACE_M14,4)
-            TRANSPORT_MAGAZINES(SmokeShellBlue,3)
-            TRANSPORT_MAGAZINES(HandGrenade,15)
-            TRANSPORT_MAGAZINES(SmokeShell,15)
-            TRANSPORT_MAGAZINES(ACE_M84,15)
-            TRANSPORT_MAGAZINES(MRAWS_HEAT_F,5)
-		};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(launch_MRAWS_green_F,4)
-            TRANSPORT_WEAPONS(SFPD_Promet,2)
-            TRANSPORT_WEAPONS(SFPD_Stoner_Black,1)
-		};
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_elasticBandage,40)
-            TRANSPORT_ITEMS(ACE_quikclot,40)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_salineIV_500,20)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,4)
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(acc_flashlight,10)
-            TRANSPORT_ITEMS(ACE_splint,20)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-		};
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(B_AssaultPack_eaf_F,2)
-            TRANSPORT_BACKPACKS(B_Carryall_oli,2)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,2)
-		};
+		SFPD_SUPPLY_CARGO(30Rnd_65x39_caseless_msbs_mag,40,200Rnd_65x39_cased_Box_Tracer,5,9Rnd_45ACP_Mag,20Rnd_762x51_Mag,6Rnd_12Gauge_Pellets,6Rnd_12Gauge_Slug,TRANSPORT_MAGAZINES(MRAWS_HEAT_F,5),SFPD_F2000,SFPD_Stoner,launch_MRAWS_green_F,acc_flashlight,B_AssaultPack_dgtl,B_Carryall_oli)
     };

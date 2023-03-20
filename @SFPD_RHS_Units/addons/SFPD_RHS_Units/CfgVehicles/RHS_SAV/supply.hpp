@@ -47,39 +47,5 @@
 	class SFPD_RHS_SAV_BOX_Cargo: B_CargoNet_01_ammo_F {
         displayname = "[SFPD RHS] SAV Cargo";
         scope = 2;
-		class TransportMagazines {
-            TRANSPORT_MAGAZINES(rhssaf_30rnd_556x45_EPR_G36,50)
-            TRANSPORT_MAGAZINES(SFPD_RHS_rhsusf_200rnd_556x45_tracer_box,5)
-            TRANSPORT_MAGAZINES(rhssaf_mag_15Rnd_9x19_FMJ,10)
-            TRANSPORT_MAGAZINES(rhsusf_20Rnd_762x51_m80_Mag,10)
-            TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,10)
-            TRANSPORT_MAGAZINES(ACE_M14,4)
-            TRANSPORT_MAGAZINES(SmokeShellBlue,3)
-            TRANSPORT_MAGAZINES(HandGrenade,15)
-            TRANSPORT_MAGAZINES(SmokeShell,15)
-            TRANSPORT_MAGAZINES(ACE_M84,15)
-		};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(rhs_weap_rpg75,4)
-            TRANSPORT_WEAPONS(SFPD_RHS_G36KV,2)
-		};
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_elasticBandage,40)
-            TRANSPORT_ITEMS(ACE_quikclot,40)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_salineIV_500,20)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,4)
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(ACE_splint,20)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-            TRANSPORT_ITEMS(ACE_artilleryTable,1)
-		};
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(B_Kitbag_rgr,4)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,2)
-		};
+		SFPD_SUPPLY_CARGO(rhssaf_30rnd_556x45_EPR_G36,40,SFPD_RHS_rhsusf_200rnd_556x45_tracer_box,5,rhssaf_mag_15Rnd_9x19_FMJ,rhsusf_20Rnd_762x51_m80_Mag,rhs_5Rnd_338lapua_t5000,rhs_100Rnd_762x54mmR_green,,SFPD_RHS_G36KV,SFPD_RHS_MINIMI_PARA,rhs_weap_rpg75,rhsusf_acc_M952V,B_Kitbag_rgr,rhsgref_hidf_alicepack)
     };

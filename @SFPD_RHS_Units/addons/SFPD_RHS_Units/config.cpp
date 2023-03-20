@@ -132,7 +132,7 @@
 
 #define SFPD_RHS_BLUFOR_Transport SFPD_Transport(rhs_mag_30Rnd_556x45_Mk318_Stanag, 10, SFPD_RHS_rhsusf_200rnd_556x45_tracer_box, 3, rhsusf_mag_17Rnd_9x19_JHP,, rhs_weap_M136_hedp, rhsusf_acc_M952V, TRANSPORT_BACKPACKS(rhsusf_falconii_coy,2))
 
-#define SFPD_RHS_OPFOR_Transport SFPD_Transport(30Rnd_762x39_AK12_Mag_F, 10, 75rnd_762x39_AK12_Mag_Tracer_F, 4, rhs_weap_makarov_pm,, rhs_weap_rpg26, rhs_acc_2dpZenit_ris,)
+#define SFPD_RHS_OPFOR_Transport SFPD_Transport(30Rnd_762x39_AK12_Mag_F, 10, 75rnd_762x39_AK12_Mag_Tracer_F, 4, rhs_mag_9x18_8_57N181S,, rhs_weap_rpg26, rhs_acc_2dpZenit_ris,)
 
 #define SFPD_RHS_SAV_Transport SFPD_Transport(rhssaf_30rnd_556x45_EPR_G36, 10, SFPD_RHS_rhsusf_200rnd_556x45_tracer_box, 3, rhssaf_mag_15Rnd_9x19_FMJ,, rhs_weap_rpg75, rhsusf_acc_M952V, TRANSPORT_BACKPACKS(B_Kitbag_rgr,2))
 
@@ -227,49 +227,48 @@
 
 #define SFPD_SUPPLY_CARGO(AR_MAG, AR_MAG_COUNT, LMG_MAG, LMG_MAG_COUNT, PISTOL_MAG, MARKS_MAG, SHARP_MAG, MMG_MAG, OPTIONAL_MAG, AR, MMG, AT, LIGHT, BACKPACK, BACKPACK_BIG) \
 		class TransportMagazines { \
-            TRANSPORT_MAGAZINES(AR_MAG,AR_MAG_COUNT) \
-            TRANSPORT_MAGAZINES(LMG_MAG,LMG_MAG_COUNT) \
-            TRANSPORT_MAGAZINES(PISTOL_MAG,10) \
-            TRANSPORT_MAGAZINES(MARKS_MAG,10) \
-            TRANSPORT_MAGAZINES(SHARP_MAG,10) \
-            TRANSPORT_MAGAZINES(MMG_MAG,10) \
-            TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,10) \
-            TRANSPORT_MAGAZINES(ACE_M14,4) \
-            TRANSPORT_MAGAZINES(SmokeShellBlue,3) \
-            TRANSPORT_MAGAZINES(SmokeShellGreen,3) \
-            TRANSPORT_MAGAZINES(SmokeShellRed,3) \
-            TRANSPORT_MAGAZINES(HandGrenade,15) \
-            TRANSPORT_MAGAZINES(SmokeShell,15) \
-            TRANSPORT_MAGAZINES(ACE_M84,15) \
+			TRANSPORT_MAGAZINES(AR_MAG,AR_MAG_COUNT) \
+			TRANSPORT_MAGAZINES(LMG_MAG,LMG_MAG_COUNT) \
+			TRANSPORT_MAGAZINES(PISTOL_MAG,10) \
+			TRANSPORT_MAGAZINES(MARKS_MAG,10) \
+			TRANSPORT_MAGAZINES(SHARP_MAG,10) \
+			TRANSPORT_MAGAZINES(MMG_MAG,10) \
+			TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,10) \
+			TRANSPORT_MAGAZINES(ACE_M14,4) \
+			TRANSPORT_MAGAZINES(SmokeShellBlue,3) \
+			TRANSPORT_MAGAZINES(SmokeShellGreen,3) \
+			TRANSPORT_MAGAZINES(SmokeShellRed,3) \
+			TRANSPORT_MAGAZINES(HandGrenade,15) \
+			TRANSPORT_MAGAZINES(SmokeShell,15) \
+			TRANSPORT_MAGAZINES(ACE_M84,15) \
 			OPTIONAL_MAG \
 		}; \
 		class TransportWeapons { \
-            TRANSPORT_WEAPONS(AR,2) \
-            TRANSPORT_WEAPONS(MMG,1) \
-            TRANSPORT_WEAPONS(AT,1) \
+			TRANSPORT_WEAPONS(AR,2) \
+			TRANSPORT_WEAPONS(MMG,1) \
+			TRANSPORT_WEAPONS(AT,1) \
 		}; \
 		class TransportItems { \
-            TRANSPORT_ITEMS(ACE_elasticBandage,40) \
-            TRANSPORT_ITEMS(ACE_quikclot,40) \
-            TRANSPORT_ITEMS(ACE_epinephrine,10) \
-            TRANSPORT_ITEMS(ACE_morphine,10) \
-            TRANSPORT_ITEMS(ACE_salineIV_500,20) \
-            TRANSPORT_ITEMS(ACE_splint,20) \
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,4) \
-            TRANSPORT_ITEMS(ACE_CableTie,10) \
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
-            TRANSPORT_ITEMS(ACE_UAVBattery,2) \
-            TRANSPORT_ITEMS(ACE_wirecutter,1) \
-            TRANSPORT_ITEMS(LIGHT,10) \
+			TRANSPORT_ITEMS(ACE_elasticBandage,40) \
+			TRANSPORT_ITEMS(ACE_quikclot,40) \
+			TRANSPORT_ITEMS(ACE_epinephrine,10) \
+			TRANSPORT_ITEMS(ACE_morphine,10) \
+			TRANSPORT_ITEMS(ACE_salineIV_500,20) \
+			TRANSPORT_ITEMS(ACE_splint,20) \
+			TRANSPORT_ITEMS(DemoCharge_Remote_Mag,4) \
+			TRANSPORT_ITEMS(ACE_CableTie,10) \
+			TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
+			TRANSPORT_ITEMS(ACE_UAVBattery,2) \
+			TRANSPORT_ITEMS(ACE_wirecutter,1) \
+			TRANSPORT_ITEMS(LIGHT,10) \
 			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2) \
+			TRANSPORT_ITEMS(ACE_artilleryTable,2) \
 		}; \
 		class TransportBackpacks { \
-            TRANSPORT_BACKPACKS(BACKPACK,2) \
-            TRANSPORT_BACKPACKS(BACKPACK_BIG,2) \
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,2) \
+			TRANSPORT_BACKPACKS(BACKPACK,2) \
+			TRANSPORT_BACKPACKS(BACKPACK_BIG,2) \
+			TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,2) \
 		};
-
-#define SFPD_SUPPLY_NBC \// TODO
 
 
 

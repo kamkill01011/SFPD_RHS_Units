@@ -434,5 +434,5 @@
 	class SFPD_BLUFOR_JUNGLE_BOX_Cargo: B_CargoNet_01_ammo_F {
         displayname = "[SFPD] NATO (J) Cargo";
         scope = 2;
-		SFPD_SUPPLY_CARGO(30Rnd_556x45_Stanag_red,40,150Rnd_556x45_Drum_Mag_Tracer_F,6,16Rnd_9x21_Mag,20Rnd_762x51_Mag,10Rnd_338_Mag,130Rnd_338_Mag,TRANSPORT_MAGAZINES(MRAWS_HEAT_F,5),SFPD_JUNGLE_SPAR_16_Default,SFPD_MMG_Default,launch_MRAWS_green_F,acc_flashlight,B_AssaultPack_tna_F,ACE_TacticalLadder_Pack)
+		SFPD_SUPPLY_CARGO(30Rnd_556x45_Stanag_red,40,150Rnd_556x45_Drum_Mag_Tracer_F,6,16Rnd_9x21_Mag,20Rnd_762x51_Mag,10Rnd_338_Mag,130Rnd_338_Mag,TRANSPORT_MAGAZINES(MRAWS_HEAT_F,5),SFPD_JUNGLE_SPAR_16_Default,SFPD_MMG_Default,launch_MRAWS_green_F,acc_flashlight,B_AssaultPack_tna_F,B_Carryall_oli)
     };

@@ -279,44 +279,5 @@
 	class SFPD_RHS_BLUFOR_BOX_Cargo: B_CargoNet_01_ammo_F {
         displayname = "[SFPD RHS] US Cargo";
         scope = 2;
-		class TransportMagazines {
-            TRANSPORT_MAGAZINES(rhs_mag_30Rnd_556x45_Mk318_Stanag,50)
-            TRANSPORT_MAGAZINES(SFPD_RHS_rhsusf_200rnd_556x45_tracer_box,5)
-            TRANSPORT_MAGAZINES(rhsusf_mag_17Rnd_9x19_JHP,10)
-            TRANSPORT_MAGAZINES(rhsusf_20Rnd_762x51_SR25_m118_special_Mag,10)
-            TRANSPORT_MAGAZINES(rhsusf_100Rnd_762x51_m62_tracer,10)
-            TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,10)
-            TRANSPORT_MAGAZINES(ACE_M14,4)
-            TRANSPORT_MAGAZINES(SmokeShellBlue,3)
-            TRANSPORT_MAGAZINES(HandGrenade,15)
-            TRANSPORT_MAGAZINES(SmokeShell,15)
-            TRANSPORT_MAGAZINES(ACE_M84,15)
-            TRANSPORT_MAGAZINES(rhs_mag_maaws_HEAT,4)
-		};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(rhs_weap_maaws_optic,1)
-            TRANSPORT_WEAPONS(rhs_weap_M136_hedp,4)
-            TRANSPORT_WEAPONS(rhs_weap_m72a7,4)
-            TRANSPORT_WEAPONS(SFPD_RHS_M4_Default,2)
-            TRANSPORT_WEAPONS(SFPD_RHS_M240_Default,1)
-		};
-		class TransportItems {
-            TRANSPORT_ITEMS(ACE_elasticBandage,40)
-            TRANSPORT_ITEMS(ACE_quikclot,40)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_salineIV_500,20)
-            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,4)
-            TRANSPORT_ITEMS(ACE_CableTie,10)
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_UAVBattery,2)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(ACE_splint,20)
-			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2)
-		};
-		class TransportBackpacks {
-            TRANSPORT_BACKPACKS(rhsusf_falconii_coy,2)
-            TRANSPORT_BACKPACKS(B_Carryall_khk,2)
-            TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,2)
-		};
+		SFPD_SUPPLY_CARGO(rhs_mag_30Rnd_556x45_Mk318_Stanag,40,SFPD_RHS_rhsusf_200rnd_556x45_tracer_box,5,rhsusf_mag_17Rnd_9x19_JHP,rhsusf_20Rnd_762x51_SR25_m118_special_Mag,rhsusf_5Rnd_300winmag_xm2010,rhsusf_100Rnd_762x51_m62_tracer,TRANSPORT_MAGAZINES(rhs_mag_maaws_HEAT,5),SFPD_RHS_M4_Default,SFPD_RHS_M240_Default,rhs_weap_maaws_optic,rhsusf_acc_M952V,rhsusf_falconii_coy,B_Carryall_khk)
     };
