@@ -3085,6 +3085,18 @@ class CfgVehicles {
 	class Box_IED_Exp_F;
 	class Box_Syndicate_WpsLaunch_F;
 	
+	class Slingload_01_Base_F;
+	class B_Slingload_01_Cargo_F: Slingload_01_Base_F {
+		SFPD_SUPPLY_CARGO(30Rnd_65x39_caseless_mag,40,200Rnd_556x45_Box_Tracer_Red_F,5,16Rnd_9x21_Mag,20Rnd_762x51_Mag,10Rnd_338_Mag,130Rnd_338_Mag,TRANSPORT_MAGAZINES(MRAWS_HEAT_F,5),SFPD_MX_Default,SFPD_MMG_Default,launch_MRAWS_sand_F,acc_flashlight,B_AssaultPack_mcamo,B_Carryall_mcamo)
+	};
+	class B_Slingload_01_Medevac_F: Slingload_01_Base_F {
+		class TransportMagazines {};
+		class TransportWeapons {};
+		class TransportItems {
+			SFPD_SUPPLY_MEDICAL
+        };
+	};
+	
 	//class Pod_Heli_Transport_04_base_F;//Land_Pod_Heli_Transport_04_ammo_F,Land_Pod_Heli_Transport_04_box_F,Land_Pod_Heli_Transport_04_fuel_F,Land_Pod_Heli_Transport_04_repair_F
 	//class Pod_Heli_Transport_04_crewed_base_F;//Land_Pod_Heli_Transport_04_bench_F,Land_Pod_Heli_Transport_04_covered_F,Land_Pod_Heli_Transport_04_medevac_F
 	class Land_Pod_Heli_Transport_04_ammo_F;
@@ -3106,9 +3118,15 @@ class CfgVehicles {
 		scopeCurator = 2;
 	};
 	
+	class Land_Pod_Heli_Transport_04_box_F : Pod_Heli_Transport_04_base_F {
+		scope = 2;
+		scopeCurator = 2;
+		SFPD_SUPPLY_CARGO(30Rnd_65x39_caseless_green,40,150Rnd_762x54_Box_Tracer,6,16Rnd_9x21_Mag,10Rnd_762x54_Mag,10Rnd_93x64_DMR_05_Mag,150Rnd_93x64_Mag,TRANSPORT_MAGAZINES(RPG32_F,5) TRANSPORT_MAGAZINES(RPG32_HE_F,5),SFPD_KATIBA_Default,SFPD_NAVID_Default,launch_RPG32_F,acc_flashlight,B_FieldPack_ocamo,B_Carryall_ocamo)
+	};
 	class Land_Pod_Heli_Transport_04_box_black_F : Land_Pod_Heli_Transport_04_box_F {
 		scope = 2;
 		scopeCurator = 2;
+		SFPD_SUPPLY_CARGO(30Rnd_580x42_Mag_F,40,100Rnd_580x42_Mag_Tracer_F,10,16Rnd_9x21_Mag,20Rnd_650x39_Cased_Mag_F,10Rnd_93x64_DMR_05_Mag,150Rnd_93x64_Mag,TRANSPORT_MAGAZINES(RPG32_F,5) TRANSPORT_MAGAZINES(RPG32_HE_F,5),SFPD_CAR95_Default,SFPD_NAVID_Tan,launch_RPG32_ghex_F,acc_flashlight,B_FieldPack_ghex_F,B_Carryall_ghex_F)
 	};
 	
 	class Land_Pod_Heli_Transport_04_covered_black_F : Land_Pod_Heli_Transport_04_covered_F {
@@ -3121,9 +3139,23 @@ class CfgVehicles {
 		scopeCurator = 2;
 	};
 	
+	class Land_Pod_Heli_Transport_04_medevac_F : Pod_Heli_Transport_04_crewed_base_F {
+		scope = 2;
+		scopeCurator = 2;
+		class TransportMagazines {};
+		class TransportWeapons {};
+		class TransportItems {
+			SFPD_SUPPLY_MEDICAL
+        };
+	};
 	class Land_Pod_Heli_Transport_04_medevac_black_F : Land_Pod_Heli_Transport_04_medevac_F {
 		scope = 2;
 		scopeCurator = 2;
+		class TransportMagazines {};
+		class TransportWeapons {};
+		class TransportItems {
+			SFPD_SUPPLY_MEDICAL
+        };
 	};
 	
 	class Land_Pod_Heli_Transport_04_repair_black_F : Land_Pod_Heli_Transport_04_repair_F {
