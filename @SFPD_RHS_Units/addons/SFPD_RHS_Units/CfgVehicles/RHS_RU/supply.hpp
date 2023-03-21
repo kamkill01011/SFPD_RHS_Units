@@ -97,15 +97,16 @@
         scope = 2;
 		class TransportMagazines {};
 		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_RHS_AK74MR,8)
-            TRANSPORT_WEAPONS(SFPD_RHS_AK74MR_GL,2)
-            TRANSPORT_WEAPONS(SFPD_RHS_AK_LMG,2)
-            TRANSPORT_WEAPONS(SFPD_RHS_PKP,1)
-            TRANSPORT_WEAPONS(SFPD_RHS_SVD,2)
-            TRANSPORT_WEAPONS(rhs_weap_makarov_pm,8)
+			SFPD_SUPPLY_WEAPONS(SFPD_RHS_AK74MR, SFPD_RHS_AK74MR_GL, SFPD_RHS_AK_LMG, rhs_weap_makarov_pm, SFPD_RHS_SVD)
 		};
 		class TransportItems {};
 		class TransportBackpacks {};
+    };
+	
+	class SFPD_RHS_OPFOR_Special_Weapons: Box_NATO_WpsSpecial_F {
+        displayname = "[SFPD RHS] RU Special Weapons";
+        scope = 2;
+		SFPD_SUPPLY_WEAPONS_SPECIAL(SFPD_RHS_T5000, SFPD_RHS_PKP, SFPD_RHS_LYNX_Black)
     };
 	
 	class SFPD_RHS_OPFOR_NBC_suits: Land_PlasticCase_01_large_black_CBRN_F {

@@ -43,6 +43,8 @@
         scope = 2;
 		class TransportMagazines {
 			SFPD_SUPPLY_AMMO_SPECIAL(20Rnd_762x51_Mag, 10Rnd_338_Mag, 130Rnd_338_Mag, 7Rnd_408_Mag)
+            TRANSPORT_MAGAZINES(30Rnd_762x39_Mag_F,10)
+            TRANSPORT_MAGAZINES(200Rnd_556x45_Box_Tracer_Red_F,5)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -207,11 +209,7 @@
         scope = 2;
 		class TransportMagazines {};
 		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_MX_Default,8)
-            TRANSPORT_WEAPONS(SFPD_MX_GL_Default,2)
-            TRANSPORT_WEAPONS(SFPD_LMG_03_Default,2)
-            TRANSPORT_WEAPONS(SFPD_DESERT_SIG_Default,2)
-            TRANSPORT_WEAPONS(hgun_P07_blk_F,8)
+			SFPD_SUPPLY_WEAPONS(SFPD_MX_Default, SFPD_MX_GL_Default, SFPD_LMG_03_Default, hgun_P07_blk_F, SFPD_DESERT_SIG_Default)
 		};
 		class TransportItems {};
 		class TransportBackpacks {};
@@ -222,11 +220,7 @@
         scope = 2;
 		class TransportMagazines {};
 		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_WOODLAND_MX,8)
-            TRANSPORT_WEAPONS(SFPD_WOODLAND_MX_GL,2)
-            TRANSPORT_WEAPONS(SFPD_LMG_03_Default,2)
-            TRANSPORT_WEAPONS(SFPD_WOODLAND_SIG,2)
-            TRANSPORT_WEAPONS(hgun_P07_blk_F,8)
+			SFPD_SUPPLY_WEAPONS(SFPD_WOODLAND_MX, SFPD_WOODLAND_MX_GL, SFPD_LMG_03_Default, hgun_P07_blk_F, SFPD_WOODLAND_SIG)
 		};
 		class TransportItems {};
 		class TransportBackpacks {};
@@ -237,11 +231,7 @@
         scope = 2;
 		class TransportMagazines {};
 		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_JUNGLE_SPAR_16_Default,8)
-            TRANSPORT_WEAPONS(SFPD_JUNGLE_SPAR_16_GL_Default,2)
-            TRANSPORT_WEAPONS(SFPD_JUNGLE_SPAR_16S_Default,2)
-            TRANSPORT_WEAPONS(SFPD_JUNGLE_SPAR_17_Default,2)
-            TRANSPORT_WEAPONS(hgun_P07_blk_F,8)
+			SFPD_SUPPLY_WEAPONS(SFPD_JUNGLE_SPAR_16_Default, SFPD_JUNGLE_SPAR_16_GL_Default, SFPD_JUNGLE_SPAR_16S_Default, hgun_P07_blk_F, SFPD_JUNGLE_SPAR_17_Default)
 		};
 		class TransportItems {};
 		class TransportBackpacks {};
@@ -250,77 +240,19 @@
 	class SFPD_BLUFOR_DESERT_BOX_Special_Weapons: Box_NATO_WpsSpecial_F {
         displayname = "[SFPD] NATO (D) Special Weapons";
         scope = 2;
-		class TransportMagazines {
-			TRANSPORT_MAGAZINES(Laserbatteries,1)
-		};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_DESERT_Noreen_Default,1)
-            TRANSPORT_WEAPONS(SFPD_MMG_Default,2)
-            TRANSPORT_WEAPONS(SFPD_DESERT_SIG_Silenced,2)
-            TRANSPORT_WEAPONS(SFPD_MXC_Silenced,1)
-            TRANSPORT_WEAPONS(SFPD_CAMO_M200,1)
-			TRANSPORT_WEAPONS(Laserdesignator,1)
-			TRANSPORT_WEAPONS(ACE_Vector,4)
-		};
-		class TransportItems {
-			TRANSPORT_ITEMS(ACE_Tripod,2)
-			TRANSPORT_ITEMS(ACE_SpottingScope,2)
-			TRANSPORT_ITEMS(ACE_ATragMX,2)
-			TRANSPORT_ITEMS(ACE_RangeCard,8)
-			TRANSPORT_ITEMS(ACE_Kestrel4500,4)
-		};
-		class TransportBackpacks {};
+		SFPD_SUPPLY_WEAPONS_SPECIAL(SFPD_DESERT_Noreen_Default, SFPD_MMG_Default, SFPD_CAMO_M200)
     };
 	
 	class SFPD_BLUFOR_WOODLAND_BOX_Special_Weapons: Box_NATO_WpsSpecial_F {
         displayname = "[SFPD] NATO (W) Special Weapons";
         scope = 2;
-		class TransportMagazines {
-			TRANSPORT_MAGAZINES(Laserbatteries,1)
-		};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_WOODLAND_Noreen,1)
-            TRANSPORT_WEAPONS(SFPD_MMG_Default,2)
-            TRANSPORT_WEAPONS(SFPD_WOODLAND_SIG_Silenced,2)
-            TRANSPORT_WEAPONS(SFPD_WOODLAND_MXC_Silenced,1)
-            TRANSPORT_WEAPONS(SFPD_CAMO_M200,1)
-			TRANSPORT_WEAPONS(Laserdesignator,1)
-			TRANSPORT_WEAPONS(ACE_Vector,4)
-		};
-		class TransportItems {
-			TRANSPORT_ITEMS(ACE_Tripod,2)
-			TRANSPORT_ITEMS(ACE_SpottingScope,2)
-			TRANSPORT_ITEMS(ACE_ATragMX,2)
-			TRANSPORT_ITEMS(ACE_RangeCard,8)
-			TRANSPORT_ITEMS(ACE_Kestrel4500,4)
-		};
-		class TransportBackpacks {};
+		SFPD_SUPPLY_WEAPONS_SPECIAL(SFPD_WOODLAND_Noreen, SFPD_MMG_Default, SFPD_CAMO_M200)
     };
 	
 	class SFPD_BLUFOR_JUNGLE_BOX_Special_Weapons: Box_NATO_WpsSpecial_F {
         displayname = "[SFPD] NATO (J) Special Weapons";
         scope = 2;
-		class TransportMagazines {
-			TRANSPORT_MAGAZINES(Laserbatteries,1)
-		};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_JUNGLE_Noreen_Default,1)
-            TRANSPORT_WEAPONS(SFPD_MMG_Default,2)
-            TRANSPORT_WEAPONS(SFPD_JUNGLE_SPAR_17_Silenced,2)
-            TRANSPORT_WEAPONS(SFPD_JUNGLE_SPAR_16_Silenced,1)
-            TRANSPORT_WEAPONS(SFPD_JUNGLE_M200,1)
-			
-			TRANSPORT_WEAPONS(Laserdesignator,1)
-			TRANSPORT_WEAPONS(ACE_Vector,4)
-		};
-		class TransportItems {
-			TRANSPORT_ITEMS(ACE_Tripod,2)
-			TRANSPORT_ITEMS(ACE_SpottingScope,2)
-			TRANSPORT_ITEMS(ACE_ATragMX,2)
-			TRANSPORT_ITEMS(ACE_RangeCard,8)
-			TRANSPORT_ITEMS(ACE_Kestrel4500,4)
-		};
-		class TransportBackpacks {};
+		SFPD_SUPPLY_WEAPONS_SPECIAL(SFPD_JUNGLE_Noreen_Default, SFPD_MMG_Default, SFPD_JUNGLE_M200)
     };
 	
 	class SFPD_BLUFOR_DESERT_BOX_Cargo: B_CargoNet_01_ammo_F {

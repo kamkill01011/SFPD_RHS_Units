@@ -95,11 +95,8 @@
         scope = 2;
 		class TransportMagazines {};
 		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_Promet,8)
-            TRANSPORT_WEAPONS(SFPD_Promet_GL,2)
+			SFPD_SUPPLY_WEAPONS(SFPD_Promet, SFPD_Promet_GL, SFPD_Stoner_Black, SFPD_ACPC2, SFPD_Promet_MR)
             TRANSPORT_WEAPONS(SFPD_Promet_SG,2)
-            TRANSPORT_WEAPONS(SFPD_Stoner_Black,2)
-            TRANSPORT_WEAPONS(SFPD_ACPC2,8)
 		};
 		class TransportItems {};
 		class TransportBackpacks {};
@@ -108,26 +105,7 @@
 	class SFPD_LDF_BOX_Special_Weapons: Box_EAF_WpsSpecial_F {
         displayname = "[SFPD] LDF Special Weapons";
         scope = 2;
-		class TransportMagazines {
-			TRANSPORT_MAGAZINES(Laserbatteries,1)
-		};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_Promet_MR,2)
-            TRANSPORT_WEAPONS(SFPD_Promet_Silenced,1)
-            TRANSPORT_WEAPONS(SFPD_Promet_MR_Silenced,1)
-            TRANSPORT_WEAPONS(SFPD_LYNX_Default,1)
-			
-			TRANSPORT_WEAPONS(Laserdesignator,1)
-			TRANSPORT_WEAPONS(ACE_Vector,4)
-		};
-		class TransportItems {
-			TRANSPORT_ITEMS(ACE_Tripod,2)
-			TRANSPORT_ITEMS(ACE_SpottingScope,2)
-			TRANSPORT_ITEMS(ACE_ATragMX,2)
-			TRANSPORT_ITEMS(ACE_RangeCard,4)
-			TRANSPORT_ITEMS(ACE_Kestrel4500,4)
-		};
-		class TransportBackpacks {};
+		SFPD_SUPPLY_WEAPONS_SPECIAL(SFPD_Promet_MR, SFPD_Stoner_Black, SFPD_LYNX_Default)
     };
 	
 	class SFPD_LDF_BOX_Cargo: I_E_CargoNet_01_ammo_F {

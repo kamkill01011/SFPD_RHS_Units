@@ -43,7 +43,11 @@
         scope = 2;
 		class TransportMagazines {
 			SFPD_SUPPLY_AMMO_SPECIAL(10Rnd_762x54_Mag, 10Rnd_93x64_DMR_05_Mag, 150Rnd_93x64_Mag, 5Rnd_127x108_APDS_Mag)
-            TRANSPORT_MAGAZINES(20Rnd_650x39_Cased_Mag_F,10)
+            TRANSPORT_MAGAZINES(20Rnd_650x39_Cased_Mag_F,5)
+            TRANSPORT_MAGAZINES(30rnd_762x39_AK12_Arid_Mag_F,10)
+            TRANSPORT_MAGAZINES(75rnd_762x39_AK12_Arid_Mag_Tracer_F,5)
+            TRANSPORT_MAGAZINES(30rnd_762x39_AK12_Lush_Mag_F,10)
+            TRANSPORT_MAGAZINES(75rnd_762x39_AK12_Lush_Mag_Tracer_F,5)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -214,11 +218,7 @@
         scope = 2;
 		class TransportMagazines {};
 		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_KATIBA_Default,8)
-            TRANSPORT_WEAPONS(SFPD_KATIBA_GL_Default,2)
-            TRANSPORT_WEAPONS(SFPD_Zafir_Default,2)
-            TRANSPORT_WEAPONS(SFPD_RAHIM_Default,2)
-            TRANSPORT_WEAPONS(hgun_Rook40_F,8)
+			SFPD_SUPPLY_WEAPONS(SFPD_KATIBA_Default, SFPD_KATIBA_GL_Default, SFPD_Zafir_Default, hgun_Rook40_F, SFPD_RAHIM_Default)
 		};
 		class TransportItems {};
 		class TransportBackpacks {};
@@ -229,10 +229,7 @@
         scope = 2;
 		class TransportMagazines {};
 		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_WOODLAND_AK12,8)
-            TRANSPORT_WEAPONS(SFPD_WOODLAND_AK12_GL,2)
-            TRANSPORT_WEAPONS(SFPD_WOODLAND_RPK12,2)
-            TRANSPORT_WEAPONS(hgun_Rook40_F,8)
+			SFPD_SUPPLY_WEAPONS(SFPD_WOODLAND_AK12, SFPD_WOODLAND_AK12_GL, SFPD_WOODLAND_RPK12, hgun_Rook40_F, SFPD_CYRUS_Black)
 		};
 		class TransportItems {};
 		class TransportBackpacks {};
@@ -243,11 +240,7 @@
         scope = 2;
 		class TransportMagazines {};
 		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_CAR95_Default,8)
-            TRANSPORT_WEAPONS(SFPD_CAR95_GL_Default,8,2)
-            TRANSPORT_WEAPONS(SFPD_CAR951_Default,2)
-            TRANSPORT_WEAPONS(SFPD_CMR76_Default,2)
-            TRANSPORT_WEAPONS(hgun_Rook40_F,8)
+			SFPD_SUPPLY_WEAPONS(SFPD_CAR95_Default, SFPD_CAR95_GL_Default, SFPD_CAR951_Default, hgun_Rook40_F, SFPD_CMR76_Default)
 		};
 		class TransportItems {};
 		class TransportBackpacks {};
@@ -256,76 +249,19 @@
 	class SFPD_OPFOR_DESERT_BOX_Special_Weapons: Box_East_WpsSpecial_F {
         displayname = "[SFPD] CSAT (D) Special Weapons";
         scope = 2;
-		class TransportMagazines {
-			TRANSPORT_MAGAZINES(Laserbatteries,1)
-		};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_CYRUS_Default,1)
-            TRANSPORT_WEAPONS(SFPD_NAVID_Default,2)
-            TRANSPORT_WEAPONS(SFPD_KATIBAC_Silenced,2)
-            TRANSPORT_WEAPONS(SFPD_RAHIM_Silenced,2)
-            TRANSPORT_WEAPONS(SFPD_LYNX_DESERT_Default,1)
-			TRANSPORT_WEAPONS(Laserdesignator,1)
-			TRANSPORT_WEAPONS(ACE_Vector,4)
-		};
-		class TransportItems {
-			TRANSPORT_ITEMS(ACE_Tripod,2)
-			TRANSPORT_ITEMS(ACE_SpottingScope,2)
-			TRANSPORT_ITEMS(ACE_ATragMX,2)
-			TRANSPORT_ITEMS(ACE_RangeCard,8)
-			TRANSPORT_ITEMS(ACE_Kestrel4500,4)
-		};
-		class TransportBackpacks {};
+		SFPD_SUPPLY_WEAPONS_SPECIAL(SFPD_CYRUS_Default, SFPD_NAVID_Default, SFPD_LYNX_DESERT_Default)
     };
 	
 	class SFPD_OPFOR_WOODLAND_BOX_Special_Weapons: Box_East_WpsSpecial_F {
         displayname = "[SFPD] CSAT (W) Special Weapons";
         scope = 2;
-		class TransportMagazines {
-			TRANSPORT_MAGAZINES(Laserbatteries,1)
-		};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_CYRUS_Black,1)
-            TRANSPORT_WEAPONS(SFPD_NAVID_Tan,2)
-            TRANSPORT_WEAPONS(SFPD_WOODLAND_AKU12_Silenced,2)
-            TRANSPORT_WEAPONS(SFPD_CYRUS_Black_Silenced,2)
-            TRANSPORT_WEAPONS(SFPD_LYNX_Default,1)
-			TRANSPORT_WEAPONS(Laserdesignator,1)
-			TRANSPORT_WEAPONS(ACE_Vector,4)
-		};
-		class TransportItems {
-			TRANSPORT_ITEMS(ACE_Tripod,2)
-			TRANSPORT_ITEMS(ACE_SpottingScope,2)
-			TRANSPORT_ITEMS(ACE_ATragMX,2)
-			TRANSPORT_ITEMS(ACE_RangeCard,8)
-			TRANSPORT_ITEMS(ACE_Kestrel4500,4)
-		};
-		class TransportBackpacks {};
+		SFPD_SUPPLY_WEAPONS_SPECIAL(SFPD_CYRUS_Black, SFPD_NAVID_Tan, SFPD_LYNX_Default)
     };
 	
 	class SFPD_OPFOR_JUNGLE_BOX_Special_Weapons: Box_East_WpsSpecial_F {
         displayname = "[SFPD] CSAT (J) Special Weapons";
         scope = 2;
-		class TransportMagazines {
-			TRANSPORT_MAGAZINES(Laserbatteries,1)
-		};
-		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_CYRUS_Black,1)
-            TRANSPORT_WEAPONS(SFPD_NAVID_Tan,2)
-            TRANSPORT_WEAPONS(SFPD_CAR95_Silenced,2)
-            TRANSPORT_WEAPONS(SFPD_CMR76_Silenced,2)
-            TRANSPORT_WEAPONS(SFPD_LYNX_JUNGLE_Default,1)
-			TRANSPORT_WEAPONS(Laserdesignator,1)
-			TRANSPORT_WEAPONS(ACE_Vector,4)
-		};
-		class TransportItems {
-			TRANSPORT_ITEMS(ACE_Tripod,2)
-			TRANSPORT_ITEMS(ACE_SpottingScope,2)
-			TRANSPORT_ITEMS(ACE_ATragMX,2)
-			TRANSPORT_ITEMS(ACE_RangeCard,8)
-			TRANSPORT_ITEMS(ACE_Kestrel4500,4)
-		};
-		class TransportBackpacks {};
+		SFPD_SUPPLY_WEAPONS_SPECIAL(SFPD_CYRUS_Black, SFPD_NAVID_Tan, SFPD_LYNX_JUNGLE_Default)
     };
 	
 	class SFPD_OPFOR_DESERT_BOX_Cargo: O_CargoNet_01_ammo_F {

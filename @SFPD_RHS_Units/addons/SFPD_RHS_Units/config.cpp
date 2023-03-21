@@ -272,34 +272,32 @@
 			TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1) \
 		};
 
+#define SFPD_SUPPLY_WEAPONS(AR, AR_GL, LMG, PISTOL, MARKS) \
+			TRANSPORT_WEAPONS(AR,8) \
+			TRANSPORT_WEAPONS(AR_GL,2) \
+			TRANSPORT_WEAPONS(LMG,2) \
+			TRANSPORT_WEAPONS(MARKS,2) \
+			TRANSPORT_WEAPONS(PISTOL,8)
 
-#define SFPD_SUPPLY_WEAPONS \
-/*
-
-
-
-
-
-
-
-
-
-
-*/
-
-#define SFPD_SUPPLY_WEAPONS_SPECIAL \
-/*
-
-
-
-
-
-
-
-
-
-
-*/
+#define SFPD_SUPPLY_WEAPONS_SPECIAL(SHARP, MMG, SNIPER) \
+		class TransportMagazines { \
+			TRANSPORT_MAGAZINES(Laserbatteries,1) \
+		}; \
+		class TransportWeapons { \
+			TRANSPORT_WEAPONS(SHARP,2) \
+			TRANSPORT_WEAPONS(MMG,2) \
+			TRANSPORT_WEAPONS(SNIPER,1) \
+			TRANSPORT_WEAPONS(Laserdesignator,1) \
+			TRANSPORT_WEAPONS(ACE_Vector,4) \
+		}; \
+		class TransportItems { \
+			TRANSPORT_ITEMS(ACE_Tripod,2) \
+			TRANSPORT_ITEMS(ACE_SpottingScope,2) \
+			TRANSPORT_ITEMS(ACE_ATragMX,2) \
+			TRANSPORT_ITEMS(ACE_RangeCard,4) \
+			TRANSPORT_ITEMS(ACE_Kestrel4500,4) \
+		}; \
+		class TransportBackpacks {};
 
 #define SFPD_SUPPLY_CARGO(AR_MAG, AR_MAG_COUNT, LMG_MAG, LMG_MAG_COUNT, PISTOL_MAG, MARKS_MAG, SHARP_MAG, MMG_MAG, OPTIONAL_MAG, AR, MMG, AT, LIGHT, BACKPACK, BACKPACK_BIG) \
 		class TransportMagazines { \
@@ -1622,6 +1620,7 @@ class CfgPatches {
 			"SFPD_RHS_OPFOR_Launchers3",
 			"SFPD_RHS_OPFOR_Equipment",
 			"SFPD_RHS_OPFOR_Weapons",
+			"SFPD_RHS_OPFOR_Special_Weapons",
 			"SFPD_RHS_OPFOR_NBC_suits",
 			"SFPD_RHS_OPFOR_NBC_masks",
 			"SFPD_RHS_OPFOR_NBC_drugs",
@@ -1891,6 +1890,10 @@ class CfgMovesDog_F: CfgMovesAnimal_Base_F {
 			relSpeedMin = 1.05;//0.7
 		};
 	};
+};
+
+class CfgMarkers {
+#include "CfgMarkers.hpp"
 };
 
 class CfgVehicles {

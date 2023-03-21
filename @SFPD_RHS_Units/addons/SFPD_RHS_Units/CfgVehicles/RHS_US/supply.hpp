@@ -112,12 +112,8 @@
         scope = 2;
 		class TransportMagazines {};
 		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_RHS_M4_Default,8)
-            TRANSPORT_WEAPONS(SFPD_RHS_M4_GL_Default,2)
-            TRANSPORT_WEAPONS(SFPD_RHS_M249_Default,2)
-            TRANSPORT_WEAPONS(SFPD_RHS_DESERT_MK11_Default,1)
-            TRANSPORT_WEAPONS(SFPD_RHS_WOODLAND_MK11_Default,1)
-            TRANSPORT_WEAPONS(SFPD_RHS_Glock17,8)
+			SFPD_SUPPLY_WEAPONS(SFPD_RHS_M4_Default, SFPD_RHS_M4_GL_Default, SFPD_RHS_M249_Default, SFPD_RHS_Glock17, SFPD_RHS_DESERT_MK11_Default)
+            TRANSPORT_WEAPONS(SFPD_RHS_WOODLAND_MK11_Default,2)
 		};
 		class TransportItems {};
 		class TransportBackpacks {};
@@ -140,15 +136,15 @@
 	class SFPD_RHS_BLUFOR_Special_Weapons: Box_NATO_WpsSpecial_F {
         displayname = "[SFPD RHS] US Special Weapons";
         scope = 2;
+		//SFPD_SUPPLY_WEAPONS_SPECIAL(SFPD_RHS_DESERT_M2010_Silenced, SFPD_RHS_M240_Default, SFPD_RHS_M200)//SFPD_RHS_WOODLAND_M2010_Silenced
 		class TransportMagazines {
 			TRANSPORT_MAGAZINES(Laserbatteries,1)
 		};
 		class TransportWeapons {
-            TRANSPORT_WEAPONS(SFPD_RHS_M240_Default,2)
-            TRANSPORT_WEAPONS(SFPD_RHS_DESERT_M2010_Silenced,1)
-            TRANSPORT_WEAPONS(SFPD_RHS_WOODLAND_M2010_Silenced,1)
-            TRANSPORT_WEAPONS(SFPD_RHS_M4_Spotter,1)
-            TRANSPORT_WEAPONS(SFPD_RHS_M200,1)
+			TRANSPORT_WEAPONS(SFPD_RHS_DESERT_M2010_Silenced,2)
+			TRANSPORT_WEAPONS(SFPD_RHS_WOODLAND_M2010_Silenced,2)
+			TRANSPORT_WEAPONS(SFPD_RHS_M240_Default,2)
+			TRANSPORT_WEAPONS(SFPD_RHS_M200,1)
 			TRANSPORT_WEAPONS(Laserdesignator,1)
 			TRANSPORT_WEAPONS(ACE_Vector,4)
 		};
@@ -156,7 +152,7 @@
 			TRANSPORT_ITEMS(ACE_Tripod,2)
 			TRANSPORT_ITEMS(ACE_SpottingScope,2)
 			TRANSPORT_ITEMS(ACE_ATragMX,2)
-			TRANSPORT_ITEMS(ACE_RangeCard,8)
+			TRANSPORT_ITEMS(ACE_RangeCard,4)
 			TRANSPORT_ITEMS(ACE_Kestrel4500,4)
 		};
 		class TransportBackpacks {};
