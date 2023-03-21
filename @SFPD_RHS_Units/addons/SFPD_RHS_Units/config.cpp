@@ -1892,10 +1892,6 @@ class CfgMovesDog_F: CfgMovesAnimal_Base_F {
 	};
 };
 
-class CfgMarkers {
-#include "CfgMarkers.hpp"
-};
-
 class CfgVehicles {
 	
 	class DeconShower_01_base_F;
