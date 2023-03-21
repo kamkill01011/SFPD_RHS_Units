@@ -132,7 +132,7 @@
 
 #define SFPD_RHS_BLUFOR_Transport SFPD_Transport(rhs_mag_30Rnd_556x45_Mk318_Stanag, 10, SFPD_RHS_rhsusf_200rnd_556x45_tracer_box, 3, rhsusf_mag_17Rnd_9x19_JHP,, rhs_weap_M136_hedp, rhsusf_acc_M952V, TRANSPORT_BACKPACKS(rhsusf_falconii_coy,2))
 
-#define SFPD_RHS_OPFOR_Transport SFPD_Transport(30Rnd_762x39_AK12_Mag_F, 10, 75rnd_762x39_AK12_Mag_Tracer_F, 4, rhs_mag_9x18_8_57N181S,, rhs_weap_rpg26, rhs_acc_2dpZenit_ris,)
+#define SFPD_RHS_OPFOR_Transport SFPD_Transport(30Rnd_762x39_AK12_Mag_F, 10, 75rnd_762x39_AK12_Mag_Tracer_F, 4, rhs_mag_9x18_8_57N181S,,rhs_weap_rpg26, rhs_acc_2dpZenit_ris,)
 
 #define SFPD_RHS_SAV_Transport SFPD_Transport(rhssaf_30rnd_556x45_EPR_G36, 10, SFPD_RHS_rhsusf_200rnd_556x45_tracer_box, 3, rhssaf_mag_15Rnd_9x19_FMJ,, rhs_weap_rpg75, rhsusf_acc_M952V, TRANSPORT_BACKPACKS(B_Kitbag_rgr,2))
 
@@ -1278,6 +1278,7 @@ class CfgPatches {
 			"SFPD_RHS_IRAQ_WOODLAND_BMD1",
 			"SFPD_RHS_IRAQ_WOODLAND_BMD2",
 			"SFPD_RHS_IRAQ_WOODLAND_ZSU23",
+			"SFPD_RHS_IRAQ_WOODLAND_T55",
 			"SFPD_RHS_IRAQ_WOODLAND_T72",
 			"SFPD_RHS_IRAQ_WOODLAND_Static_D30",
 			"SFPD_RHS_IRAQ_WOODLAND_Static_DSHKM",
@@ -1308,6 +1309,7 @@ class CfgPatches {
 			"SFPD_RHS_INDEP_BMD1",
 			"SFPD_RHS_INDEP_BMD2",
 			"SFPD_RHS_INDEP_ZSU23",
+			"SFPD_RHS_INDEP_T55",
 			"SFPD_RHS_INDEP_T72",
 			"SFPD_RHS_INDEP_Static_D30",
 			"SFPD_RHS_INDEP_Static_DSHKM",
@@ -1335,6 +1337,7 @@ class CfgPatches {
 			"SFPD_RHS_INDEP_WOODLAND_BMD1",
 			"SFPD_RHS_INDEP_WOODLAND_BMD2",
 			"SFPD_RHS_INDEP_WOODLAND_ZSU23",
+			"SFPD_RHS_INDEP_WOODLAND_T55",
 			"SFPD_RHS_INDEP_WOODLAND_T72",
 			"SFPD_RHS_INDEP_WOODLAND_Static_D30",
 			"SFPD_RHS_INDEP_WOODLAND_Static_DSHKM",
@@ -3097,14 +3100,14 @@ class CfgVehicles {
         };
 	};
 	
-	//class Pod_Heli_Transport_04_base_F;//Land_Pod_Heli_Transport_04_ammo_F,Land_Pod_Heli_Transport_04_box_F,Land_Pod_Heli_Transport_04_fuel_F,Land_Pod_Heli_Transport_04_repair_F
-	//class Pod_Heli_Transport_04_crewed_base_F;//Land_Pod_Heli_Transport_04_bench_F,Land_Pod_Heli_Transport_04_covered_F,Land_Pod_Heli_Transport_04_medevac_F
+	class Pod_Heli_Transport_04_base_F;//Land_Pod_Heli_Transport_04_ammo_F,Land_Pod_Heli_Transport_04_box_F,Land_Pod_Heli_Transport_04_fuel_F,Land_Pod_Heli_Transport_04_repair_F
+	class Pod_Heli_Transport_04_crewed_base_F;//Land_Pod_Heli_Transport_04_bench_F,Land_Pod_Heli_Transport_04_covered_F,Land_Pod_Heli_Transport_04_medevac_F
 	class Land_Pod_Heli_Transport_04_ammo_F;
 	class Land_Pod_Heli_Transport_04_bench_F;
-	class Land_Pod_Heli_Transport_04_box_F;
+	//class Land_Pod_Heli_Transport_04_box_F;
 	class Land_Pod_Heli_Transport_04_covered_F;
 	class Land_Pod_Heli_Transport_04_fuel_F;
-	class Land_Pod_Heli_Transport_04_medevac_F;
+	//class Land_Pod_Heli_Transport_04_medevac_F;
 	class Land_Pod_Heli_Transport_04_repair_F;
 	
 	//ADD_ZEUS

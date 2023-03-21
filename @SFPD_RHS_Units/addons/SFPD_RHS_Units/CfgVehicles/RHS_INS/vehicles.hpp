@@ -200,6 +200,14 @@
 		SFPD_RHS_INDEP_Transport
 	};
 	
+	class SFPD_RHS_INDEP_T55: LOP_AFR_T55 {
+		faction = "SFPD_RHS_INDEP_DESERT_Faction";
+		scope = 2;
+		scopeCurator = 2;
+		crew = "SFPD_RHS_INDEP_Rifleman_1";
+		SFPD_RHS_INDEP_Transport
+	};
+	
 	class SFPD_RHS_INDEP_T72: rhsgref_ins_g_t72ba {
 		faction = "SFPD_RHS_INDEP_DESERT_Faction";
 		scope = 2;
@@ -432,6 +440,14 @@
 		scope = 2;
 		scopeCurator = 2;
 		crew = "SFPD_RHS_INDEP_WOODLAND_Rifleman_4";
+		SFPD_RHS_INDEP_Transport
+	};
+	
+	class SFPD_RHS_INDEP_WOODLAND_T55: LOP_AFR_T55 {
+		faction = "SFPD_RHS_INDEP_WOODLAND_Faction";
+		scope = 2;
+		scopeCurator = 2;
+		crew = "SFPD_RHS_INDEP_WOODLAND_Rifleman_1";
 		SFPD_RHS_INDEP_Transport
 	};
 	
