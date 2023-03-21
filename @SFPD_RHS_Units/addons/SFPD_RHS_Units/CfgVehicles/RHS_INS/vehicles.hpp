@@ -112,6 +112,14 @@
 		SFPD_RHS_INDEP_Transport
 	};
 	
+	class SFPD_RHS_INDEP_zil_flatbed: rhsgref_ins_g_zil131_flatbed {
+		faction = "SFPD_RHS_INDEP_DESERT_Faction";
+		scope = 2;
+		scopeCurator = 2;
+		crew = "SFPD_RHS_INDEP_Rifleman_3";
+		SFPD_RHS_INDEP_Transport
+	};
+	
 	class SFPD_RHS_INDEP_BRDM2_TEMP: rhsgref_BRDM2_ins_g {
 		class HitPoints;
 	};
@@ -364,6 +372,14 @@
 	};
 	
 	class SFPD_RHS_INDEP_WOODLAND_zil_open: rhsgref_ins_g_zil131_open {
+		faction = "SFPD_RHS_INDEP_WOODLAND_Faction";
+		scope = 2;
+		scopeCurator = 2;
+		crew = "SFPD_RHS_INDEP_WOODLAND_Rifleman_1";
+		SFPD_RHS_INDEP_Transport
+	};
+	
+	class SFPD_RHS_INDEP_WOODLAND_zil_flatbed: rhsgref_ins_g_zil131_flatbed {
 		faction = "SFPD_RHS_INDEP_WOODLAND_Faction";
 		scope = 2;
 		scopeCurator = 2;

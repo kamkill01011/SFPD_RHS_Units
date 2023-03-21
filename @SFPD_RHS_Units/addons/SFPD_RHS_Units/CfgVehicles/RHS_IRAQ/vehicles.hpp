@@ -70,6 +70,14 @@
 		SFPD_RHS_INDEP_Transport
 	};
 	
+	class SFPD_RHS_IRAQ_WOODLAND_zil_flatbed: rhsgref_ins_g_zil131_flatbed {
+		faction = "SFPD_RHS_IRAQ_WOODLAND_Faction";
+		scope = 2;
+		scopeCurator = 2;
+		crew = "SFPD_RHS_IRAQ_WOODLAND_Rifleman";
+		SFPD_RHS_INDEP_Transport
+	};
+	
 	class SFPD_RHS_IRAQ_WOODLAND_BRDM2_TEMP: rhsgref_BRDM2_ins_g {
 		class HitPoints;
 	};

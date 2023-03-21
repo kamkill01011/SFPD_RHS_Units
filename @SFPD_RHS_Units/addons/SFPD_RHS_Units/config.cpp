@@ -1269,6 +1269,7 @@ class CfgPatches {
 			"SFPD_RHS_IRAQ_WOODLAND_kraz255b1_fuel",
 			"SFPD_RHS_IRAQ_WOODLAND_zil",
 			"SFPD_RHS_IRAQ_WOODLAND_zil_open",
+			"SFPD_RHS_IRAQ_WOODLAND_zil_flatbed",
 			"SFPD_RHS_IRAQ_WOODLAND_BRDM2",
 			"SFPD_RHS_IRAQ_WOODLAND_BRDM2_ATGM",
 			"SFPD_RHS_IRAQ_WOODLAND_BRDM2_HQ",
@@ -1300,6 +1301,7 @@ class CfgPatches {
 			"SFPD_RHS_INDEP_kraz255b1_fuel",
 			"SFPD_RHS_INDEP_zil",
 			"SFPD_RHS_INDEP_zil_open",
+			"SFPD_RHS_INDEP_zil_flatbed",
 			"SFPD_RHS_INDEP_BRDM2",
 			"SFPD_RHS_INDEP_BRDM2_ATGM",
 			"SFPD_RHS_INDEP_BRDM2_HQ",
@@ -1328,6 +1330,7 @@ class CfgPatches {
 			"SFPD_RHS_INDEP_WOODLAND_kraz255b1_fuel",
 			"SFPD_RHS_INDEP_WOODLAND_zil",
 			"SFPD_RHS_INDEP_WOODLAND_zil_open",
+			"SFPD_RHS_INDEP_WOODLAND_zil_flatbed",
 			"SFPD_RHS_INDEP_WOODLAND_BRDM2",
 			"SFPD_RHS_INDEP_WOODLAND_BRDM2_ATGM",
 			"SFPD_RHS_INDEP_WOODLAND_BRDM2_HQ",
@@ -1494,6 +1497,7 @@ class CfgPatches {
 			"SFPD_RHS_OPFOR_DESERT_GAZ_ammo",
 			"SFPD_RHS_OPFOR_DESERT_GAZ_R142",
 			"SFPD_RHS_OPFOR_DESERT_Ural",
+			"SFPD_RHS_OPFOR_DESERT_Ural_flatbed",
 			"SFPD_RHS_OPFOR_DESERT_Ural_fuel",
 			"SFPD_RHS_OPFOR_DESERT_BM21",
 			"SFPD_RHS_OPFOR_DESERT_Ural_Zu23",
@@ -1542,6 +1546,7 @@ class CfgPatches {
 			"SFPD_RHS_OPFOR_WOODLAND_GAZ_ammo",
 			"SFPD_RHS_OPFOR_WOODLAND_GAZ_R142",
 			"SFPD_RHS_OPFOR_WOODLAND_Ural",
+			"SFPD_RHS_OPFOR_WOODLAND_Ural_flatbed",
 			"SFPD_RHS_OPFOR_WOODLAND_Ural_fuel",
 			"SFPD_RHS_OPFOR_WOODLAND_BM21",
 			"SFPD_RHS_OPFOR_WOODLAND_Ural_Zu23",
@@ -2506,6 +2511,8 @@ class CfgVehicles {
 	class RHS_Ural_Zu23_MSV_01;
 	class rhs_zsu234_aa;
 	class rhs_bmp3mera_msv;
+	class RHS_Ural_Open_Flat_MSV_01;
+	class rhsgref_ins_g_zil131_flatbed;
 	//
 	class rhs_t90sm_tv;
 	class SFPD_RHS_rhs_t90sm_tv: rhs_t90sm_tv{
