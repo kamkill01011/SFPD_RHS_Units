@@ -12,7 +12,7 @@
         displayname = "[SFPD] LDF Ammo";
         scope = 2;
 		class TransportMagazines {
-			SFPD_SUPPLY_AMMO(30Rnd_65x39_caseless_msbs_mag, 200Rnd_65x39_cased_Box_Tracer, 5, 9Rnd_45ACP_Mag, 6Rnd_12Gauge_Pellets, 6Rnd_12Gauge_Slug)
+			SFPD_SUPPLY_AMMO(30Rnd_65x39_caseless_msbs_mag,200Rnd_65x39_cased_Box_Tracer,5,9Rnd_45ACP_Mag,6Rnd_12Gauge_Pellets,6Rnd_12Gauge_Slug)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -22,7 +22,7 @@
         displayname = "[SFPD] LDF Special Ammo";
         scope = 2;
 		class TransportMagazines {
-			SFPD_SUPPLY_AMMO_SPECIAL(6Rnd_12Gauge_Pellets, 6Rnd_12Gauge_Slug, 20Rnd_762x51_Mag, 5Rnd_127x108_APDS_Mag)
+			SFPD_SUPPLY_AMMO_SPECIAL(6Rnd_12Gauge_Pellets,6Rnd_12Gauge_Slug,20Rnd_762x51_Mag,5Rnd_127x108_APDS_Mag)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -87,7 +87,7 @@
 	class SFPD_LDF_BOX_Equipment: Box_EAF_Equip_F {
         displayname = "[SFPD] LDF Equipment";
         scope = 2;
-		SFPD_SUPPLY_EQUIPMENT(acc_flashlight,, B_AssaultPack_eaf_F, B_Carryall_oli, B_RadioBag_01_eaf_F)
+		SFPD_SUPPLY_EQUIPMENT(acc_flashlight,,B_AssaultPack_eaf_F,B_Carryall_oli,B_RadioBag_01_eaf_F)
     };
 	
 	class SFPD_LDF_BOX_Weapons: Box_EAF_Wps_F {
@@ -95,7 +95,7 @@
         scope = 2;
 		class TransportMagazines {};
 		class TransportWeapons {
-			SFPD_SUPPLY_WEAPONS(SFPD_Promet, SFPD_Promet_GL, SFPD_Stoner_Black, SFPD_ACPC2, SFPD_Promet_MR)
+			SFPD_SUPPLY_WEAPONS(SFPD_Promet,SFPD_Promet_GL,SFPD_Stoner_Black,SFPD_ACPC2,SFPD_Promet_MR)
             TRANSPORT_WEAPONS(SFPD_Promet_SG,2)
 		};
 		class TransportItems {};
@@ -105,7 +105,7 @@
 	class SFPD_LDF_BOX_Special_Weapons: Box_EAF_WpsSpecial_F {
         displayname = "[SFPD] LDF Special Weapons";
         scope = 2;
-		SFPD_SUPPLY_WEAPONS_SPECIAL(SFPD_Promet_MR, SFPD_Stoner_Black, SFPD_LYNX_Default)
+		SFPD_SUPPLY_WEAPONS_SPECIAL(SFPD_Promet_MR,SFPD_Stoner_Black,SFPD_LYNX_Default)
     };
 	
 	class SFPD_LDF_BOX_Cargo: I_E_CargoNet_01_ammo_F {

@@ -691,7 +691,7 @@
 		
 		hideProxySelections[] = {"ghillie_hide"};
 		model = "\A3\Characters_F_Mark\BLUFOR\b_fullghillie_f.p3d";
-		textureList[] = {"snow", 1};
+		textureList[] = {"snow",1};
 		hiddenSelections[] = {"Camo","camo3","insignia"};
 		hiddenSelectionsTextures[] = {"\SFPD_RHS_Units\ghillie_coverall_snow.paa","\SFPD_RHS_Units\fullghillie_camo_snow.paa"};
 		uniformClass = "U_B_FullGhillie_Snow";

@@ -12,7 +12,7 @@
         displayname = "[SFPD RHS] US Ammo";
         scope = 2;
 		class TransportMagazines {
-			SFPD_SUPPLY_AMMO(rhs_mag_30Rnd_556x45_Mk318_Stanag, SFPD_RHS_rhsusf_200rnd_556x45_tracer_box, 5, rhsusf_mag_17Rnd_9x19_JHP, rhsusf_20Rnd_762x51_SR25_m118_special_Mag, rhsusf_5Rnd_300winmag_xm2010)
+			SFPD_SUPPLY_AMMO(rhs_mag_30Rnd_556x45_Mk318_Stanag,SFPD_RHS_rhsusf_200rnd_556x45_tracer_box,5,rhsusf_mag_17Rnd_9x19_JHP,rhsusf_20Rnd_762x51_SR25_m118_special_Mag,rhsusf_5Rnd_300winmag_xm2010)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -22,7 +22,7 @@
         displayname = "[SFPD RHS] US Special Ammo";
         scope = 2;
 		class TransportMagazines {
-			SFPD_SUPPLY_AMMO_SPECIAL(rhsusf_20Rnd_762x51_SR25_m118_special_Mag, rhsusf_5Rnd_300winmag_xm2010, rhsusf_100Rnd_762x51_m62_tracer, 7Rnd_408_Mag)
+			SFPD_SUPPLY_AMMO_SPECIAL(rhsusf_20Rnd_762x51_SR25_m118_special_Mag,rhsusf_5Rnd_300winmag_xm2010,rhsusf_100Rnd_762x51_m62_tracer,7Rnd_408_Mag)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -104,7 +104,7 @@
 	class SFPD_RHS_BLUFOR_Equipment: Box_NATO_Equip_F {
         displayname = "[SFPD RHS] US Equipment";
         scope = 2;
-		SFPD_SUPPLY_EQUIPMENT(rhsusf_acc_M952V, TRANSPORT_ITEMS(rhsusf_ANPVS_15,10) TRANSPORT_ITEMS(rhsusf_acc_anpeq16a,10), rhsusf_falconii_coy, B_Carryall_khk, TFAR_rt1523g_bwmod)
+		SFPD_SUPPLY_EQUIPMENT(rhsusf_acc_M952V,TRANSPORT_ITEMS(rhsusf_ANPVS_15,10) TRANSPORT_ITEMS(rhsusf_acc_anpeq16a,10),rhsusf_falconii_coy,B_Carryall_khk,TFAR_rt1523g_bwmod)
     };
 	
 	class SFPD_RHS_BLUFOR_Weapons: Box_NATO_Wps_F {
@@ -112,7 +112,7 @@
         scope = 2;
 		class TransportMagazines {};
 		class TransportWeapons {
-			SFPD_SUPPLY_WEAPONS(SFPD_RHS_M4_Default, SFPD_RHS_M4_GL_Default, SFPD_RHS_M249_Default, SFPD_RHS_Glock17, SFPD_RHS_DESERT_MK11_Default)
+			SFPD_SUPPLY_WEAPONS(SFPD_RHS_M4_Default,SFPD_RHS_M4_GL_Default,SFPD_RHS_M249_Default,SFPD_RHS_Glock17,SFPD_RHS_DESERT_MK11_Default)
             TRANSPORT_WEAPONS(SFPD_RHS_WOODLAND_MK11_Default,2)
 		};
 		class TransportItems {};
@@ -136,7 +136,7 @@
 	class SFPD_RHS_BLUFOR_Special_Weapons: Box_NATO_WpsSpecial_F {
         displayname = "[SFPD RHS] US Special Weapons";
         scope = 2;
-		//SFPD_SUPPLY_WEAPONS_SPECIAL(SFPD_RHS_DESERT_M2010_Silenced, SFPD_RHS_M240_Default, SFPD_RHS_M200)//SFPD_RHS_WOODLAND_M2010_Silenced
+		//SFPD_SUPPLY_WEAPONS_SPECIAL(SFPD_RHS_DESERT_M2010_Silenced,SFPD_RHS_M240_Default,SFPD_RHS_M200)//SFPD_RHS_WOODLAND_M2010_Silenced
 		class TransportMagazines {
 			TRANSPORT_MAGAZINES(Laserbatteries,1)
 		};

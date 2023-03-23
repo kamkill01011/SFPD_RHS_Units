@@ -78,8 +78,8 @@
         displayname = "Spotter Radio";
         scope = 1;
 		class TransportItems {
-			TRANSPORT_ITEMS(Laserdesignator, 1)
-			TRANSPORT_ITEMS(Laserbatteries, 1)
+			TRANSPORT_ITEMS(Laserdesignator,1)
+			TRANSPORT_ITEMS(Laserbatteries,1)
 		};
     };
 	

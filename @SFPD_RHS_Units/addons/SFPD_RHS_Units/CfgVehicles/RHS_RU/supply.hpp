@@ -12,7 +12,7 @@
         displayname = "[SFPD RHS] RU Ammo";
         scope = 2;
 		class TransportMagazines {
-			SFPD_SUPPLY_AMMO(30Rnd_762x39_AK12_Mag_F, 75rnd_762x39_AK12_Mag_Tracer_F, 12, rhs_mag_9x18_8_57N181S, rhs_10Rnd_762x54mmR_7N1, rhs_5Rnd_338lapua_t5000)
+			SFPD_SUPPLY_AMMO(30Rnd_762x39_AK12_Mag_F,75rnd_762x39_AK12_Mag_Tracer_F,12,rhs_mag_9x18_8_57N181S,rhs_10Rnd_762x54mmR_7N1,rhs_5Rnd_338lapua_t5000)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -22,7 +22,7 @@
         displayname = "[SFPD RHS] RU Special Ammo";
         scope = 2;
 		class TransportMagazines {
-			SFPD_SUPPLY_AMMO_SPECIAL(rhs_10Rnd_762x54mmR_7N1, rhs_5Rnd_338lapua_t5000, rhs_100Rnd_762x54mmR_green, 5Rnd_127x108_APDS_Mag)
+			SFPD_SUPPLY_AMMO_SPECIAL(rhs_10Rnd_762x54mmR_7N1,rhs_5Rnd_338lapua_t5000,rhs_100Rnd_762x54mmR_green,5Rnd_127x108_APDS_Mag)
         };
 		class TransportWeapons {};
 		class TransportItems {};
@@ -89,7 +89,7 @@
 	class SFPD_RHS_OPFOR_Equipment: Box_NATO_Equip_F {
         displayname = "[SFPD RHS] RU Equipment";
         scope = 2;
-		SFPD_SUPPLY_EQUIPMENT(rhs_acc_2dpZenit_ris, TRANSPORT_ITEMS(O_NVGoggles_grn_F,10) TRANSPORT_ITEMS(rhsusf_acc_anpeq16a,10) TRANSPORT_ITEMS(rhs_acc_1pn93_2,2), rhs_tortila_emr, rhs_tortila_khaki, TFAR_mr3000_bwmod)
+		SFPD_SUPPLY_EQUIPMENT(rhs_acc_2dpZenit_ris,TRANSPORT_ITEMS(O_NVGoggles_grn_F,10) TRANSPORT_ITEMS(rhsusf_acc_anpeq16a,10) TRANSPORT_ITEMS(rhs_acc_1pn93_2,2),rhs_tortila_emr,rhs_tortila_khaki,TFAR_mr3000_bwmod)
     };
 	
 	class SFPD_RHS_OPFOR_Weapons: Box_NATO_Wps_F {
@@ -97,7 +97,7 @@
         scope = 2;
 		class TransportMagazines {};
 		class TransportWeapons {
-			SFPD_SUPPLY_WEAPONS(SFPD_RHS_AK74MR, SFPD_RHS_AK74MR_GL, SFPD_RHS_AK_LMG, rhs_weap_makarov_pm, SFPD_RHS_SVD)
+			SFPD_SUPPLY_WEAPONS(SFPD_RHS_AK74MR,SFPD_RHS_AK74MR_GL,SFPD_RHS_AK_LMG,rhs_weap_makarov_pm,SFPD_RHS_SVD)
 		};
 		class TransportItems {};
 		class TransportBackpacks {};
@@ -106,7 +106,7 @@
 	class SFPD_RHS_OPFOR_Special_Weapons: Box_NATO_WpsSpecial_F {
         displayname = "[SFPD RHS] RU Special Weapons";
         scope = 2;
-		SFPD_SUPPLY_WEAPONS_SPECIAL(SFPD_RHS_T5000, SFPD_RHS_PKP, SFPD_RHS_LYNX_Black)
+		SFPD_SUPPLY_WEAPONS_SPECIAL(SFPD_RHS_T5000,SFPD_RHS_PKP,SFPD_RHS_LYNX_Black)
     };
 	
 	class SFPD_RHS_OPFOR_NBC_suits: Land_PlasticCase_01_large_black_CBRN_F {

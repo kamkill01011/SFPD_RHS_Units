@@ -271,8 +271,8 @@
 		respawnWeapons[] = {"SFPD_TYPE115_Silenced","Laserdesignator","Throw","Put"};
 		magazines[] = {};
 		respawnMagazines[] = {};
-		linkedItems[] = {"V_HarnessOGL_brn", "H_HelmetO_ViperSP_hex_F","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak"};
-		respawnLinkedItems[] = {"V_HarnessOGL_brn", "H_HelmetO_ViperSP_hex_F","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak"};
+		linkedItems[] = {"V_HarnessOGL_brn","H_HelmetO_ViperSP_hex_F","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak"};
+		respawnLinkedItems[] = {"V_HarnessOGL_brn","H_HelmetO_ViperSP_hex_F","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak"};
 		items[] = {BASIC_ITEMS,"ACE_splint","ACE_splint"};
 		respawnItems[] = {BASIC_ITEMS,"ACE_splint","ACE_splint"};
 		uniformClass = "U_O_V_Soldier_Viper_hex_F";
@@ -507,8 +507,8 @@
 		respawnWeapons[] = {"SFPD_WOODLAND_AK12_Silenced","SFPD_ROOK_Silenced","Laserdesignator","Throw","Put"};
 		magazines[] = {"30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS};
 		respawnMagazines[] = {"30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS};
-		linkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F", "H_HelmetAggressor_cover_taiga_F","G_Balaclava_oli","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak","O_NVGoggles_grn_F"};
-		respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F", "H_HelmetAggressor_cover_taiga_F","G_Balaclava_oli","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak","O_NVGoggles_grn_F"};
+		linkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","H_HelmetAggressor_cover_taiga_F","G_Balaclava_oli","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak","O_NVGoggles_grn_F"};
+		respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","H_HelmetAggressor_cover_taiga_F","G_Balaclava_oli","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak","O_NVGoggles_grn_F"};
 		items[] = {BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage),"ACE_epinephrine","ACE_salineIV_500","ACE_salineIV_500","ACE_surgicalKit","ACE_splint","ACE_splint"};
 		respawnItems[] = {BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage),"ACE_epinephrine","ACE_salineIV_500","ACE_salineIV_500","ACE_surgicalKit","ACE_splint","ACE_splint"};
 		camouflage = 0.5;
