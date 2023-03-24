@@ -2,9 +2,7 @@
         displayname = "Woodland Leader Radio";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(SmokeShellGreen,3)
+			SFPD_BACKPACK_LEADER(SmokeShellGreen)
         };
     };
 	
@@ -12,12 +10,7 @@
         displayname = "Woodland Medic Backpack";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(ACE_surgicalKit,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,10)
-            TRANSPORT_ITEMS(ACE_elasticBandage,50)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_splint,12)
+            SFPD_BACKPACK_MEDIC
         };
     };
 	

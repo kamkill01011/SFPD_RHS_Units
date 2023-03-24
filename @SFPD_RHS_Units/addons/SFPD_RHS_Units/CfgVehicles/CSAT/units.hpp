@@ -113,8 +113,8 @@
 		displayName = "Desert JTAC";
 		weapons[] = {"SFPD_KATIBA_GL_Default","hgun_Rook40_F","Laserdesignator","Throw","Put"};
 		respawnWeapons[] = {"SFPD_KATIBA_GL_Default","hgun_Rook40_F","Laserdesignator","Throw","Put"};
-		magazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F","Laserbatteries"};
-		respawnMagazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F","Laserbatteries"};
+		magazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F"};
+		respawnMagazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F"};
 	};
 	
 	class SFPD_OPFOR_DESERT_MMG: SFPD_OPFOR_DESERT_Rifleman {
@@ -271,8 +271,8 @@
 		respawnWeapons[] = {"SFPD_TYPE115_Silenced","Laserdesignator","Throw","Put"};
 		magazines[] = {};
 		respawnMagazines[] = {};
-		linkedItems[] = {"V_HarnessOGL_brn", "H_HelmetO_ViperSP_hex_F","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak"};
-		respawnLinkedItems[] = {"V_HarnessOGL_brn", "H_HelmetO_ViperSP_hex_F","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak"};
+		linkedItems[] = {"V_HarnessOGL_brn","H_HelmetO_ViperSP_hex_F","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak"};
+		respawnLinkedItems[] = {"V_HarnessOGL_brn","H_HelmetO_ViperSP_hex_F","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak"};
 		items[] = {BASIC_ITEMS,"ACE_splint","ACE_splint"};
 		respawnItems[] = {BASIC_ITEMS,"ACE_splint","ACE_splint"};
 		uniformClass = "U_O_V_Soldier_Viper_hex_F";
@@ -398,8 +398,8 @@
 		displayName = "Woodland JTAC";
 		weapons[] = {"SFPD_WOODLAND_AK12_GL","hgun_Rook40_F","Laserdesignator","Throw","Put"};
 		respawnWeapons[] = {"SFPD_WOODLAND_AK12_GL","hgun_Rook40_F","Laserdesignator","Throw","Put"};
-		magazines[] = {THREE_TIMES(30rnd_762x39_AK12_Lush_Mag_F),"16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS,"UGL_FlareGreen_F","UGL_FlareRed_F","Laserbatteries"};
-		respawnMagazines[] = {THREE_TIMES(30rnd_762x39_AK12_Lush_Mag_F),"16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS,"UGL_FlareGreen_F","UGL_FlareRed_F","Laserbatteries"};
+		magazines[] = {THREE_TIMES(30rnd_762x39_AK12_Lush_Mag_F),"16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS,"UGL_FlareGreen_F","UGL_FlareRed_F"};
+		respawnMagazines[] = {THREE_TIMES(30rnd_762x39_AK12_Lush_Mag_F),"16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS,"UGL_FlareGreen_F","UGL_FlareRed_F"};
 	};
 	
 	class SFPD_OPFOR_WOODLAND_MMG: SFPD_OPFOR_WOODLAND_Rifleman {
@@ -507,8 +507,8 @@
 		respawnWeapons[] = {"SFPD_WOODLAND_AK12_Silenced","SFPD_ROOK_Silenced","Laserdesignator","Throw","Put"};
 		magazines[] = {"30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS};
 		respawnMagazines[] = {"30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS};
-		linkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F", "H_HelmetAggressor_cover_taiga_F","G_Balaclava_oli","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak","O_NVGoggles_grn_F"};
-		respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F", "H_HelmetAggressor_cover_taiga_F","G_Balaclava_oli","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak","O_NVGoggles_grn_F"};
+		linkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","H_HelmetAggressor_cover_taiga_F","G_Balaclava_oli","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak","O_NVGoggles_grn_F"};
+		respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","H_HelmetAggressor_cover_taiga_F","G_Balaclava_oli","ItemMap","ItemCompass","ACE_Altimeter","TFAR_fadak","O_NVGoggles_grn_F"};
 		items[] = {BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage),"ACE_epinephrine","ACE_salineIV_500","ACE_salineIV_500","ACE_surgicalKit","ACE_splint","ACE_splint"};
 		respawnItems[] = {BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage),"ACE_epinephrine","ACE_salineIV_500","ACE_salineIV_500","ACE_surgicalKit","ACE_splint","ACE_splint"};
 		camouflage = 0.5;
@@ -675,8 +675,8 @@
 		displayName = "Jungle JTAC";
 		weapons[] = {"SFPD_CAR95_GL_Default","hgun_Rook40_F","Laserdesignator","Throw","Put"};
 		respawnWeapons[] = {"SFPD_CAR95_GL_Default","hgun_Rook40_F","Laserdesignator","Throw","Put"};
-		magazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F","Laserbatteries"};
-		respawnMagazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F","Laserbatteries"};
+		magazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F"};
+		respawnMagazines[] += {"UGL_FlareGreen_F","UGL_FlareRed_F"};
 	};
 	
 	class SFPD_OPFOR_JUNGLE_MMG: SFPD_OPFOR_JUNGLE_Rifleman {

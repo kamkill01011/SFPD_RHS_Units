@@ -112,6 +112,14 @@
 		SFPD_RHS_INDEP_Transport
 	};
 	
+	class SFPD_RHS_INDEP_zil_flatbed: rhsgref_ins_g_zil131_flatbed {
+		faction = "SFPD_RHS_INDEP_DESERT_Faction";
+		scope = 2;
+		scopeCurator = 2;
+		crew = "SFPD_RHS_INDEP_Rifleman_3";
+		SFPD_RHS_INDEP_Transport
+	};
+	
 	class SFPD_RHS_INDEP_BRDM2_TEMP: rhsgref_BRDM2_ins_g {
 		class HitPoints;
 	};
@@ -197,6 +205,14 @@
 		scope = 2;
 		scopeCurator = 2;
 		crew = "SFPD_RHS_INDEP_Rifleman_4";
+		SFPD_RHS_INDEP_Transport
+	};
+	
+	class SFPD_RHS_INDEP_T55: LOP_AFR_T55 {
+		faction = "SFPD_RHS_INDEP_DESERT_Faction";
+		scope = 2;
+		scopeCurator = 2;
+		crew = "SFPD_RHS_INDEP_Rifleman_1";
 		SFPD_RHS_INDEP_Transport
 	};
 	
@@ -363,6 +379,14 @@
 		SFPD_RHS_INDEP_Transport
 	};
 	
+	class SFPD_RHS_INDEP_WOODLAND_zil_flatbed: rhsgref_ins_g_zil131_flatbed {
+		faction = "SFPD_RHS_INDEP_WOODLAND_Faction";
+		scope = 2;
+		scopeCurator = 2;
+		crew = "SFPD_RHS_INDEP_WOODLAND_Rifleman_1";
+		SFPD_RHS_INDEP_Transport
+	};
+	
 	class SFPD_RHS_INDEP_WOODLAND_BRDM2: rhsgref_BRDM2_ins_g {
 		faction = "SFPD_RHS_INDEP_WOODLAND_Faction";
 		scope = 2;
@@ -432,6 +456,14 @@
 		scope = 2;
 		scopeCurator = 2;
 		crew = "SFPD_RHS_INDEP_WOODLAND_Rifleman_4";
+		SFPD_RHS_INDEP_Transport
+	};
+	
+	class SFPD_RHS_INDEP_WOODLAND_T55: LOP_AFR_T55 {
+		faction = "SFPD_RHS_INDEP_WOODLAND_Faction";
+		scope = 2;
+		scopeCurator = 2;
+		crew = "SFPD_RHS_INDEP_WOODLAND_Rifleman_1";
 		SFPD_RHS_INDEP_Transport
 	};
 	

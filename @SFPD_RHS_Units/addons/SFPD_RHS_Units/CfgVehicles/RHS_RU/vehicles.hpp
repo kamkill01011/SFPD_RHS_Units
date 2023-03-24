@@ -200,6 +200,21 @@
 		
 	};
 	
+	class SFPD_RHS_OPFOR_DESERT_Ural_flatbed: RHS_Ural_Open_Flat_MSV_01 {
+		faction = "SFPD_RHS_OPFOR_DESERT_Faction";
+		scope = 2;
+		scopeCurator = 2;
+		crew = "SFPD_RHS_OPFOR_DESERT_Rifleman";
+		SFPD_RHS_OPFOR_Transport
+		
+		hiddenSelectionsTextures[] = {
+			"rhsafrf\addons\rhs_a2port_car_camo\data\ural_kabina_sand_co.paa",
+			"rhsafrf\addons\rhs_a2port_car_camo\data\ural_plachta_sand_co.paa",
+			"rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa"
+		};
+		
+	};
+	
 	class SFPD_RHS_OPFOR_DESERT_Ural_fuel: RHS_Ural_Fuel_MSV_01 {
 		faction = "SFPD_RHS_OPFOR_DESERT_Faction";
 		scope = 2;
@@ -906,6 +921,14 @@
 	};
 	
 	class SFPD_RHS_OPFOR_WOODLAND_Ural: RHS_Ural_MSV_01 {
+		faction = "SFPD_RHS_OPFOR_WOODLAND_Faction";
+		scope = 2;
+		scopeCurator = 2;
+		crew = "SFPD_RHS_OPFOR_WOODLAND_Rifleman";
+		SFPD_RHS_OPFOR_Transport
+	};
+	
+	class SFPD_RHS_OPFOR_WOODLAND_Ural_flatbed: RHS_Ural_Open_Flat_MSV_01 {
 		faction = "SFPD_RHS_OPFOR_WOODLAND_Faction";
 		scope = 2;
 		scopeCurator = 2;

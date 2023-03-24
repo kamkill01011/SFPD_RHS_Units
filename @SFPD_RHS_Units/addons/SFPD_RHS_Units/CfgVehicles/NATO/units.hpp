@@ -17,7 +17,7 @@
 		items[] = {BASIC_ITEMS,TEN_TIMES(ACE_quikclot)};
 		respawnItems[] = {BASIC_ITEMS,TEN_TIMES(ACE_quikclot)};
 		uniformClass = "U_B_CombatUniform_mcam"; //uniform you are using
-		camouflage = 1; //If wanting to edit how hard it is for AI to detect it, wouldn't recommend changing this. 1 is Default and 0.6 is a sniper ghille 
+		camouflage = 1;
 	};
 	
 	class SFPD_BLUFOR_DESERT_NBC_Mask: SFPD_BLUFOR_DESERT_Rifleman {
@@ -204,7 +204,7 @@
 		respawnMagazines[] = {THREE_TIMES(16Rnd_9x21_Mag)};
 		linkedItems[] = {"V_Rangemaster_belt","H_Booniehat_mcamo",BASIC_LINKED_BLUE};
 		respawnLinkedItems[] = {"V_Rangemaster_belt","H_Booniehat_mcamo",BASIC_LINKED_BLUE};
-		camouflage = 0.7; //If wanting to edit how hard it is for AI to detect it, wouldn't recommend changing this. 1 is Default and 0.6 is a sniper ghille  
+		camouflage = 0.7;
 	};
 	
 	class SFPD_BLUFOR_DESERT_Recon: SFPD_BLUFOR_DESERT_Rifleman {
@@ -219,7 +219,7 @@
 		respawnLinkedItems[] = {"V_Chestrig_khk","H_Booniehat_mcamo","G_Bandanna_tan","ItemMap","ItemCompass","ACE_Altimeter","TFAR_anprc152","NVGoggles"};
 		items[] = {"ACE_epinephrine","ACE_Kestrel4500","ACE_RangeCard","ACE_EntrenchingTool",BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage),"ACE_surgicalKit","ACE_salineIV_500","ACE_salineIV_500"};
 		respawnItems[] = {"ACE_epinephrine","ACE_Kestrel4500","ACE_RangeCard","ACE_EntrenchingTool",BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage),"ACE_surgicalKit","ACE_salineIV_500","ACE_salineIV_500"};
-		camouflage = 0.7; //If wanting to edit how hard it is for AI to detect it, wouldn't recommend changing this. 1 is Default and 0.6 is a sniper ghille 
+		camouflage = 0.7;
 	};
 	
 	class SFPD_BLUFOR_DESERT_Recon_Rifle: SFPD_BLUFOR_DESERT_Recon {
@@ -243,7 +243,7 @@
 		items[] = {"ACE_epinephrine","ACE_Kestrel4500","ACE_RangeCard","ACE_ATragMX","ACE_salineIV_500","ACE_salineIV_500","ACE_surgicalKit",BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage)};
 		respawnItems[] = {"ACE_epinephrine","ACE_Kestrel4500","ACE_RangeCard","ACE_ATragMX","ACE_salineIV_500","ACE_salineIV_500","ACE_surgicalKit",BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage)};
 		uniformClass = "U_B_FullGhillie_sard";
-		camouflage = 0.5; //If wanting to edit how hard it is for AI to detect it, wouldn't recommend changing this. 1 is Default and 0.6 is a sniper ghille
+		camouflage = 0.5;
 	};
 	
 	class SFPD_BLUFOR_DESERT_Spotter: SFPD_BLUFOR_DESERT_Sniper {
@@ -506,7 +506,7 @@
 		respawnMagazines[] = {THREE_TIMES(16Rnd_9x21_Mag)};
 		linkedItems[] = {"V_Rangemaster_belt","H_Booniehat_wdl",BASIC_LINKED_BLUE};
 		respawnLinkedItems[] = {"V_Rangemaster_belt","H_Booniehat_wdl",BASIC_LINKED_BLUE};
-		camouflage = 0.7; //If wanting to edit how hard it is for AI to detect it, wouldn't recommend changing this. 1 is Default and 0.6 is a sniper ghille  
+		camouflage = 0.7;
 	};
 	
 	class SFPD_BLUFOR_WOODLAND_Recon: SFPD_BLUFOR_WOODLAND_Rifleman {
@@ -521,7 +521,7 @@
 		respawnLinkedItems[] = {"V_TacChestrig_grn_F","H_Booniehat_wdl","G_Bandanna_oli","ItemMap","ItemCompass","ACE_Altimeter","TFAR_anprc152","NVGoggles_INDEP"};
 		items[] = {"ACE_epinephrine","ACE_Kestrel4500","ACE_RangeCard","ACE_EntrenchingTool",BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage),"ACE_surgicalKit","ACE_salineIV_500","ACE_salineIV_500"};
 		respawnItems[] = {"ACE_epinephrine","ACE_Kestrel4500","ACE_RangeCard","ACE_EntrenchingTool",BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage),"ACE_surgicalKit","ACE_salineIV_500","ACE_salineIV_500"};
-		camouflage = 0.7; //If wanting to edit how hard it is for AI to detect it, wouldn't recommend changing this. 1 is Default and 0.6 is a sniper ghille 
+		camouflage = 0.7;
 	};
 	
 	class SFPD_BLUFOR_WOODLAND_Recon_Rifle: SFPD_BLUFOR_WOODLAND_Recon {
@@ -545,7 +545,7 @@
 		items[] = {"ACE_epinephrine","ACE_Kestrel4500","ACE_RangeCard","ACE_ATragMX","ACE_salineIV_500","ACE_salineIV_500","ACE_surgicalKit",BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage)};
 		respawnItems[] = {"ACE_epinephrine","ACE_Kestrel4500","ACE_RangeCard","ACE_ATragMX","ACE_salineIV_500","ACE_salineIV_500","ACE_surgicalKit",BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage)};
 		uniformClass = "U_B_FullGhillie_lsh";
-		camouflage = 0.5; //If wanting to edit how hard it is for AI to detect it, wouldn't recommend changing this. 1 is Default and 0.6 is a sniper ghille
+		camouflage = 0.5;
 	};
 	
 	class SFPD_BLUFOR_WOODLAND_Spotter: SFPD_BLUFOR_WOODLAND_Sniper {
@@ -808,7 +808,7 @@
 		respawnMagazines[] = {THREE_TIMES(16Rnd_9x21_Mag)};
 		linkedItems[] = {"V_Rangemaster_belt","H_Booniehat_tna_F",BASIC_LINKED_BLUE};
 		respawnLinkedItems[] = {"V_Rangemaster_belt","H_Booniehat_tna_F",BASIC_LINKED_BLUE};
-		camouflage = 0.7; //If wanting to edit how hard it is for AI to detect it, wouldn't recommend changing this. 1 is Default and 0.6 is a sniper ghille  
+		camouflage = 0.7;
 	};
 	
 	class SFPD_BLUFOR_JUNGLE_Recon: SFPD_BLUFOR_JUNGLE_Rifleman {
@@ -823,7 +823,7 @@
 		respawnLinkedItems[] = {"V_TacChestrig_grn_F","H_Booniehat_tna_F","G_Bandanna_oli","ItemMap","ItemCompass","ACE_Altimeter","TFAR_anprc152","NVGoggles_tna_F"};
 		items[] = {"ACE_Kestrel4500","ACE_RangeCard","ACE_EntrenchingTool",BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage),"ACE_epinephrine","ACE_surgicalKit","ACE_salineIV_500","ACE_salineIV_500"};
 		respawnItems[] = {"ACE_Kestrel4500","ACE_RangeCard","ACE_EntrenchingTool",BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage),"ACE_epinephrine","ACE_surgicalKit","ACE_salineIV_500","ACE_salineIV_500"};
-		camouflage = 0.7; //If wanting to edit how hard it is for AI to detect it, wouldn't recommend changing this. 1 is Default and 0.6 is a sniper ghille 
+		camouflage = 0.7;
 	};
 	
 	class SFPD_BLUFOR_JUNGLE_Recon_Rifle: SFPD_BLUFOR_JUNGLE_Recon {
@@ -847,7 +847,7 @@
 		items[] = {"ACE_epinephrine","ACE_Kestrel4500","ACE_RangeCard","ACE_ATragMX","ACE_salineIV_500","ACE_salineIV_500","ACE_surgicalKit",BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage)};
 		respawnItems[] = {"ACE_epinephrine","ACE_Kestrel4500","ACE_RangeCard","ACE_ATragMX","ACE_salineIV_500","ACE_salineIV_500","ACE_surgicalKit",BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage)};
 		uniformClass = "U_B_T_FullGhillie_tna_F";
-		camouflage = 0.5; //If wanting to edit how hard it is for AI to detect it, wouldn't recommend changing this. 1 is Default and 0.6 is a sniper ghille
+		camouflage = 0.5;
 	};
 	
 	class SFPD_BLUFOR_JUNGLE_Spotter: SFPD_BLUFOR_JUNGLE_Sniper {
@@ -956,7 +956,7 @@
 		items[] = {"ACE_epinephrine",BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage),"ACE_surgicalKit","ACE_salineIV_500","ACE_salineIV_500","ACE_RangeCard"};
 		respawnItems[] = {"ACE_epinephrine",BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage),"ACE_surgicalKit","ACE_salineIV_500","ACE_salineIV_500","ACE_RangeCard"};
 		uniformClass = "U_B_CTRG_1";
-		camouflage = 0.5; //If wanting to edit how hard it is for AI to detect it, wouldn't recommend changing this. 1 is Default and 0.6 is a sniper ghille
+		camouflage = 0.5;
 	};
 	
 	class SFPD_BLUFOR_Colonel: SFPD_BLUFOR_DESERT_Commandant {
@@ -972,5 +972,5 @@
 		items[] = {"ACE_MapTools","ACE_Flashlight_KSF1","ACE_EarPlugs"};
 		respawnItems[] = {"ACE_MapTools","ACE_Flashlight_KSF1","ACE_EarPlugs"};
 		uniformClass = "U_B_ParadeUniform_01_US_decorated_F";
-		camouflage = 0.7; //If wanting to edit how hard it is for AI to detect it, wouldn't recommend changing this. 1 is Default and 0.6 is a sniper ghille  
+		camouflage = 0.7;
 	};

@@ -36,9 +36,7 @@
         displayname = "Leader Radio";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(ACE_EntrenchingTool,1)
-            TRANSPORT_ITEMS(ACE_wirecutter,1)
-            TRANSPORT_ITEMS(SmokeShellGreen,3)
+			SFPD_BACKPACK_LEADER(SmokeShellGreen)
         };
     };
 	
@@ -46,12 +44,7 @@
         displayname = "Medic Backpack";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(ACE_surgicalKit,1)
-            TRANSPORT_ITEMS(ACE_salineIV_500,10)
-            TRANSPORT_ITEMS(ACE_elasticBandage,50)
-            TRANSPORT_ITEMS(ACE_epinephrine,10)
-            TRANSPORT_ITEMS(ACE_morphine,10)
-            TRANSPORT_ITEMS(ACE_splint,12)
+            SFPD_BACKPACK_MEDIC
         };
     };
 	
@@ -59,11 +52,7 @@
         displayname = "JTAC Radio";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(1Rnd_SmokeRed_Grenade_shell,3)
-            TRANSPORT_ITEMS(1Rnd_SmokeGreen_Grenade_shell,3)
-            TRANSPORT_ITEMS(1Rnd_SmokeBlue_Grenade_shell,3)
-			TRANSPORT_ITEMS(I_IR_Grenade,1)
-			TRANSPORT_ITEMS(Laserbatteries,1)
+			SFPD_BACKPACK_JTAC(I_IR_Grenade)
         };
     };
 	

@@ -4,6 +4,8 @@
 
 //Defines
 
+#define STRINGIFY(x) #x
+
 #define THREE_TIMES(CLASS_NAME) #CLASS_NAME,#CLASS_NAME,#CLASS_NAME
 
 #define FOUR_TIMES(CLASS_NAME) THREE_TIMES(CLASS_NAME),#CLASS_NAME
@@ -35,38 +37,39 @@
 #define BASIC_ITEMS "ACE_morphine",FOUR_TIMES(ACE_tourniquet),"ACE_MapTools","ACE_Flashlight_KSF1","ACE_EarPlugs","ACE_CableTie","ACE_CableTie","ACE_splint","ACE_splint"
 
 #define TRANSPORT_ITEMS(CLASS_NAME,AMOUNT) \
-	class _xx_##CLASS_NAME \
+	class CLASS_NAME##_xx_ \
     { \
         name = #CLASS_NAME; \
         count = AMOUNT; \
     };
 	
 #define TRANSPORT_MAGAZINES(CLASS_NAME,AMOUNT) \
-	class _xx_##CLASS_NAME \
+	class CLASS_NAME##_xx_ \
     { \
         magazine = #CLASS_NAME; \
         count = AMOUNT; \
     };
 	
 #define TRANSPORT_WEAPONS(CLASS_NAME,AMOUNT) \
-	class _xx_##CLASS_NAME \
+	class CLASS_NAME##_xx_ \
     { \
         weapon = #CLASS_NAME; \
         count = AMOUNT; \
     };
 	
 #define TRANSPORT_BACKPACKS(CLASS_NAME,AMOUNT) \
-	class _xx_##CLASS_NAME \
+	class CLASS_NAME##_xx_ \
     { \
         backpack = #CLASS_NAME; \
         count = AMOUNT; \
     };
 
-#define SFPD_BLUFOR_DESERT_Transport \
+//Transport
+#define SFPD_Transport(AR_MAG,AR_MAG_COUNT,LMG_MAG,LMG_MAG_COUNT,PISTOL_MAG,OPTIONAL_MAG,AT,LIGHT,BACKPACK) \
 	class TransportMagazines { \
-		TRANSPORT_MAGAZINES(30Rnd_65x39_caseless_mag,16) \
-		TRANSPORT_MAGAZINES(200Rnd_556x45_Box_Tracer_Red_F,3) \
-		TRANSPORT_MAGAZINES(16Rnd_9x21_Mag,5) \
+		TRANSPORT_MAGAZINES(AR_MAG,AR_MAG_COUNT) \
+		TRANSPORT_MAGAZINES(LMG_MAG,LMG_MAG_COUNT) \
+		TRANSPORT_MAGAZINES(PISTOL_MAG,5) \
 		TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,5) \
 		TRANSPORT_MAGAZINES(SmokeShellBlue,1) \
 		TRANSPORT_MAGAZINES(SmokeShellGreen,1) \
@@ -74,10 +77,10 @@
 		TRANSPORT_MAGAZINES(HandGrenade,5) \
 		TRANSPORT_MAGAZINES(SmokeShell,5) \
 		TRANSPORT_MAGAZINES(ACE_M84,5) \
-		TRANSPORT_MAGAZINES(MRAWS_HEAT_F,2) \
+		OPTIONAL_MAG \
 	}; \
 	class TransportWeapons { \
-		TRANSPORT_WEAPONS(launch_MRAWS_sand_F,1) \
+		TRANSPORT_WEAPONS(AT,1) \
     }; \
 	class TransportItems { \
 		TRANSPORT_ITEMS(ACE_elasticBandage,10) \
@@ -90,404 +93,49 @@
 		TRANSPORT_ITEMS(ACE_tourniquet,2) \
 		TRANSPORT_ITEMS(ACE_CableTie,10) \
 		TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
-		TRANSPORT_ITEMS(acc_flashlight,5) \
+		TRANSPORT_ITEMS(LIGHT,5) \
 		TRANSPORT_ITEMS(ToolKit,1) \
 		TRANSPORT_ITEMS(ACE_wirecutter,1) \
 		TRANSPORT_ITEMS(ACE_EarPlugs,10) \
 		TRANSPORT_ITEMS(ACE_splint,10) \
 	}; \
 	class TransportBackpacks { \
-		TRANSPORT_BACKPACKS(B_AssaultPack_mcamo,2) \
+		BACKPACK \
 		TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1) \
 	};
-	
-#define SFPD_BLUFOR_WOODLAND_Transport \
-	class TransportMagazines { \
-		TRANSPORT_MAGAZINES(30Rnd_65x39_caseless_khaki_mag,16) \
-		TRANSPORT_MAGAZINES(200Rnd_556x45_Box_Tracer_Red_F,3) \
-		TRANSPORT_MAGAZINES(16Rnd_9x21_Mag,5) \
-		TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,5) \
-		TRANSPORT_MAGAZINES(SmokeShellBlue,1) \
-		TRANSPORT_MAGAZINES(SmokeShellGreen,1) \
-		TRANSPORT_MAGAZINES(SmokeShellRed,1) \
-		TRANSPORT_MAGAZINES(HandGrenade,5) \
-		TRANSPORT_MAGAZINES(SmokeShell,5) \
-		TRANSPORT_MAGAZINES(ACE_M84,5) \
-		TRANSPORT_MAGAZINES(MRAWS_HEAT_F,2) \
-	}; \
-	class TransportWeapons { \
-		TRANSPORT_WEAPONS(launch_MRAWS_green_F,1) \
-    }; \
-	class TransportItems { \
-		TRANSPORT_ITEMS(ACE_elasticBandage,10) \
-		TRANSPORT_ITEMS(ACE_quikclot,20) \
-		TRANSPORT_ITEMS(ACE_bodyBag,1) \
-		TRANSPORT_ITEMS(ACE_epinephrine,2) \
-		TRANSPORT_ITEMS(ACE_morphine,2) \
-		TRANSPORT_ITEMS(ACE_salineIV_500,2) \
-		TRANSPORT_ITEMS(ACE_surgicalKit,1) \
-		TRANSPORT_ITEMS(ACE_tourniquet,2) \
-		TRANSPORT_ITEMS(ACE_CableTie,10) \
-		TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
-		TRANSPORT_ITEMS(acc_flashlight,5) \
-		TRANSPORT_ITEMS(ToolKit,1) \
-		TRANSPORT_ITEMS(ACE_wirecutter,1) \
-		TRANSPORT_ITEMS(ACE_EarPlugs,10) \
-		TRANSPORT_ITEMS(ACE_splint,10) \
-	}; \
-	class TransportBackpacks { \
-		TRANSPORT_BACKPACKS(B_AssaultPack_wdl_F,2) \
-		TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1) \
-	};
-	
-#define SFPD_BLUFOR_JUNGLE_Transport \
-	class TransportMagazines { \
-		TRANSPORT_MAGAZINES(30Rnd_556x45_Stanag_red,20) \
-		TRANSPORT_MAGAZINES(150Rnd_556x45_Drum_Mag_Tracer_F,4) \
-		TRANSPORT_MAGAZINES(16Rnd_9x21_Mag,5) \
-		TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,5) \
-		TRANSPORT_MAGAZINES(SmokeShellBlue,1) \
-		TRANSPORT_MAGAZINES(SmokeShellGreen,1) \
-		TRANSPORT_MAGAZINES(SmokeShellRed,1) \
-		TRANSPORT_MAGAZINES(HandGrenade,5) \
-		TRANSPORT_MAGAZINES(SmokeShell,5) \
-		TRANSPORT_MAGAZINES(ACE_M84,5) \
-		TRANSPORT_MAGAZINES(MRAWS_HEAT_F,2) \
-	}; \
-	class TransportWeapons { \
-		TRANSPORT_WEAPONS(launch_MRAWS_green_F,1) \
-    }; \
-	class TransportItems { \
-		TRANSPORT_ITEMS(ACE_elasticBandage,10) \
-		TRANSPORT_ITEMS(ACE_quikclot,20) \
-		TRANSPORT_ITEMS(ACE_bodyBag,1) \
-		TRANSPORT_ITEMS(ACE_epinephrine,2) \
-		TRANSPORT_ITEMS(ACE_morphine,2) \
-		TRANSPORT_ITEMS(ACE_salineIV_500,2) \
-		TRANSPORT_ITEMS(ACE_surgicalKit,1) \
-		TRANSPORT_ITEMS(ACE_tourniquet,2) \
-		TRANSPORT_ITEMS(ACE_CableTie,10) \
-		TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
-		TRANSPORT_ITEMS(acc_flashlight,5) \
-		TRANSPORT_ITEMS(ToolKit,1) \
-		TRANSPORT_ITEMS(ACE_wirecutter,1) \
-		TRANSPORT_ITEMS(ACE_EarPlugs,10) \
-		TRANSPORT_ITEMS(ACE_splint,10) \
-	}; \
-	class TransportBackpacks { \
-		TRANSPORT_BACKPACKS(B_AssaultPack_tna_F,2) \
-		TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1) \
-	};
-	
-#define SFPD_OPFOR_DESERT_Transport \
-	class TransportMagazines { \
-		TRANSPORT_MAGAZINES(30Rnd_65x39_caseless_green,16) \
-		TRANSPORT_MAGAZINES(150Rnd_762x54_Box_Tracer,6) \
-		TRANSPORT_MAGAZINES(16Rnd_9x21_Mag,5) \
-		TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,5) \
-		TRANSPORT_MAGAZINES(SmokeShellBlue,1) \
-		TRANSPORT_MAGAZINES(SmokeShellGreen,1) \
-		TRANSPORT_MAGAZINES(SmokeShellRed,1) \
-		TRANSPORT_MAGAZINES(HandGrenade,5) \
-		TRANSPORT_MAGAZINES(SmokeShell,5) \
-		TRANSPORT_MAGAZINES(ACE_M84,5) \
-		TRANSPORT_MAGAZINES(RPG32_F,2) \
-	}; \
-	class TransportWeapons { \
-		TRANSPORT_WEAPONS(launch_RPG32_F,1) \
-    }; \
-	class TransportItems { \
-		TRANSPORT_ITEMS(ACE_elasticBandage,10) \
-		TRANSPORT_ITEMS(ACE_quikclot,20) \
-		TRANSPORT_ITEMS(ACE_bodyBag,1) \
-		TRANSPORT_ITEMS(ACE_epinephrine,2) \
-		TRANSPORT_ITEMS(ACE_morphine,2) \
-		TRANSPORT_ITEMS(ACE_salineIV_500,2) \
-		TRANSPORT_ITEMS(ACE_surgicalKit,1) \
-		TRANSPORT_ITEMS(ACE_tourniquet,2) \
-		TRANSPORT_ITEMS(ACE_CableTie,10) \
-		TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
-		TRANSPORT_ITEMS(acc_flashlight,5) \
-		TRANSPORT_ITEMS(ToolKit,1) \
-		TRANSPORT_ITEMS(ACE_wirecutter,1) \
-		TRANSPORT_ITEMS(ACE_EarPlugs,10) \
-		TRANSPORT_ITEMS(ACE_splint,10) \
-	}; \
-	class TransportBackpacks { \
-		TRANSPORT_BACKPACKS(B_FieldPack_ocamo,2) \
-		TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1) \
-	};
-	
-#define SFPD_OPFOR_WOODLAND_Transport \
-	class TransportMagazines { \
-		TRANSPORT_MAGAZINES(30rnd_762x39_AK12_Lush_Mag_F,20) \
-		TRANSPORT_MAGAZINES(75rnd_762x39_AK12_Lush_Mag_Tracer_F,8) \
-		TRANSPORT_MAGAZINES(16Rnd_9x21_Mag,5) \
-		TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,5) \
-		TRANSPORT_MAGAZINES(SmokeShellBlue,1) \
-		TRANSPORT_MAGAZINES(SmokeShellGreen,1) \
-		TRANSPORT_MAGAZINES(SmokeShellRed,1) \
-		TRANSPORT_MAGAZINES(HandGrenade,5) \
-		TRANSPORT_MAGAZINES(SmokeShell,5) \
-		TRANSPORT_MAGAZINES(ACE_M84,5) \
-		TRANSPORT_MAGAZINES(RPG32_F,2) \
-	}; \
-	class TransportWeapons { \
-		TRANSPORT_WEAPONS(launch_RPG32_green_F,1) \
-    }; \
-	class TransportItems { \
-		TRANSPORT_ITEMS(ACE_elasticBandage,10) \
-		TRANSPORT_ITEMS(ACE_quikclot,20) \
-		TRANSPORT_ITEMS(ACE_bodyBag,1) \
-		TRANSPORT_ITEMS(ACE_epinephrine,2) \
-		TRANSPORT_ITEMS(ACE_morphine,2) \
-		TRANSPORT_ITEMS(ACE_salineIV_500,2) \
-		TRANSPORT_ITEMS(ACE_surgicalKit,1) \
-		TRANSPORT_ITEMS(ACE_tourniquet,2) \
-		TRANSPORT_ITEMS(ACE_CableTie,10) \
-		TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
-		TRANSPORT_ITEMS(acc_flashlight,5) \
-		TRANSPORT_ITEMS(ToolKit,1) \
-		TRANSPORT_ITEMS(ACE_wirecutter,1) \
-		TRANSPORT_ITEMS(ACE_EarPlugs,10) \
-		TRANSPORT_ITEMS(ACE_splint,10) \
-	}; \
-	class TransportBackpacks { \
-		TRANSPORT_BACKPACKS(B_FieldPack_taiga_F,2) \
-		TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1) \
-	};
-	
-#define SFPD_OPFOR_JUNGLE_Transport \
-	class TransportMagazines { \
-		TRANSPORT_MAGAZINES(30Rnd_580x42_Mag_F,20) \
-		TRANSPORT_MAGAZINES(100Rnd_580x42_Mag_Tracer_F,4) \
-		TRANSPORT_MAGAZINES(16Rnd_9x21_Mag,5) \
-		TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,5) \
-		TRANSPORT_MAGAZINES(SmokeShellBlue,1) \
-		TRANSPORT_MAGAZINES(SmokeShellGreen,1) \
-		TRANSPORT_MAGAZINES(SmokeShellRed,1) \
-		TRANSPORT_MAGAZINES(HandGrenade,5) \
-		TRANSPORT_MAGAZINES(SmokeShell,5) \
-		TRANSPORT_MAGAZINES(ACE_M84,5) \
-		TRANSPORT_MAGAZINES(RPG32_F,2) \
-	}; \
-	class TransportWeapons { \
-		TRANSPORT_WEAPONS(launch_RPG32_ghex_F,1) \
-    }; \
-	class TransportItems { \
-		TRANSPORT_ITEMS(ACE_elasticBandage,10) \
-		TRANSPORT_ITEMS(ACE_quikclot,20) \
-		TRANSPORT_ITEMS(ACE_bodyBag,1) \
-		TRANSPORT_ITEMS(ACE_epinephrine,2) \
-		TRANSPORT_ITEMS(ACE_morphine,2) \
-		TRANSPORT_ITEMS(ACE_salineIV_500,2) \
-		TRANSPORT_ITEMS(ACE_surgicalKit,1) \
-		TRANSPORT_ITEMS(ACE_tourniquet,2) \
-		TRANSPORT_ITEMS(ACE_CableTie,10) \
-		TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
-		TRANSPORT_ITEMS(acc_flashlight,5) \
-		TRANSPORT_ITEMS(ToolKit,1) \
-		TRANSPORT_ITEMS(ACE_wirecutter,1) \
-		TRANSPORT_ITEMS(ACE_EarPlugs,10) \
-		TRANSPORT_ITEMS(ACE_splint,10) \
-	}; \
-	class TransportBackpacks { \
-		TRANSPORT_BACKPACKS(B_FieldPack_ghex_F,2) \
-		TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1) \
-	};
-	
-#define SFPD_AAF_Transport \
-	class TransportMagazines { \
-		TRANSPORT_MAGAZINES(30Rnd_556x45_Stanag,20) \
-		TRANSPORT_MAGAZINES(200Rnd_65x39_cased_Box_Tracer,4) \
-		TRANSPORT_MAGAZINES(9Rnd_45ACP_Mag,5) \
-		TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,5) \
-		TRANSPORT_MAGAZINES(6Rnd_12Gauge_Pellets,5) \
-		TRANSPORT_MAGAZINES(6Rnd_12Gauge_Slug,5) \
-		TRANSPORT_MAGAZINES(SmokeShellBlue,1) \
-		TRANSPORT_MAGAZINES(SmokeShellGreen,1) \
-		TRANSPORT_MAGAZINES(SmokeShellRed,1) \
-		TRANSPORT_MAGAZINES(HandGrenade,5) \
-		TRANSPORT_MAGAZINES(SmokeShell,5) \
-		TRANSPORT_MAGAZINES(ACE_M84,5) \
-		TRANSPORT_MAGAZINES(MRAWS_HEAT_F,2) \
-	}; \
-	class TransportWeapons { \
-		TRANSPORT_WEAPONS(launch_MRAWS_green_F,1) \
-    }; \
-	class TransportItems { \
-		TRANSPORT_ITEMS(ACE_elasticBandage,10) \
-		TRANSPORT_ITEMS(ACE_quikclot,20) \
-		TRANSPORT_ITEMS(ACE_bodyBag,1) \
-		TRANSPORT_ITEMS(ACE_epinephrine,2) \
-		TRANSPORT_ITEMS(ACE_morphine,2) \
-		TRANSPORT_ITEMS(ACE_salineIV_500,2) \
-		TRANSPORT_ITEMS(ACE_surgicalKit,1) \
-		TRANSPORT_ITEMS(ACE_tourniquet,2) \
-		TRANSPORT_ITEMS(ACE_CableTie,10) \
-		TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
-		TRANSPORT_ITEMS(acc_flashlight,5) \
-		TRANSPORT_ITEMS(ToolKit,1) \
-		TRANSPORT_ITEMS(ACE_wirecutter,1) \
-		TRANSPORT_ITEMS(ACE_EarPlugs,10) \
-		TRANSPORT_ITEMS(ACE_splint,10) \
-	}; \
-	class TransportBackpacks { \
-		TRANSPORT_BACKPACKS(B_AssaultPack_eaf_F,2) \
-		TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1) \
-	};
-	
-#define SFPD_LDF_Transport \
-	class TransportMagazines { \
-		TRANSPORT_MAGAZINES(30Rnd_65x39_caseless_msbs_mag,16) \
-		TRANSPORT_MAGAZINES(200Rnd_65x39_cased_Box_Tracer,4) \
-		TRANSPORT_MAGAZINES(9Rnd_45ACP_Mag,5) \
-		TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,5) \
-		TRANSPORT_MAGAZINES(SmokeShellBlue,1) \
-		TRANSPORT_MAGAZINES(SmokeShellGreen,1) \
-		TRANSPORT_MAGAZINES(SmokeShellRed,1) \
-		TRANSPORT_MAGAZINES(HandGrenade,5) \
-		TRANSPORT_MAGAZINES(SmokeShell,5) \
-		TRANSPORT_MAGAZINES(ACE_M84,5) \
-		TRANSPORT_MAGAZINES(MRAWS_HEAT_F,2) \
-	}; \
-	class TransportWeapons { \
-		TRANSPORT_WEAPONS(launch_MRAWS_green_F,1) \
-    }; \
-	class TransportItems { \
-		TRANSPORT_ITEMS(ACE_elasticBandage,10) \
-		TRANSPORT_ITEMS(ACE_quikclot,20) \
-		TRANSPORT_ITEMS(ACE_bodyBag,1) \
-		TRANSPORT_ITEMS(ACE_epinephrine,2) \
-		TRANSPORT_ITEMS(ACE_morphine,2) \
-		TRANSPORT_ITEMS(ACE_salineIV_500,2) \
-		TRANSPORT_ITEMS(ACE_surgicalKit,1) \
-		TRANSPORT_ITEMS(ACE_tourniquet,2) \
-		TRANSPORT_ITEMS(ACE_CableTie,10) \
-		TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
-		TRANSPORT_ITEMS(acc_flashlight,5) \
-		TRANSPORT_ITEMS(ToolKit,1) \
-		TRANSPORT_ITEMS(ACE_wirecutter,1) \
-		TRANSPORT_ITEMS(ACE_EarPlugs,10) \
-		TRANSPORT_ITEMS(ACE_splint,10) \
-	}; \
-	class TransportBackpacks { \
-		TRANSPORT_BACKPACKS(B_AssaultPack_dgtl,2) \
-		TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1) \
-	};
+
+
+#define SFPD_BLUFOR_Transport(AR_MAG,AR_MAG_COUNT,LMG_MAG,LMG_MAG_COUNT,AT,BACKPACK) SFPD_Transport(AR_MAG,AR_MAG_COUNT,LMG_MAG,LMG_MAG_COUNT,16Rnd_9x21_Mag,TRANSPORT_MAGAZINES(MRAWS_HEAT_F,2),AT,acc_flashlight,TRANSPORT_BACKPACKS(BACKPACK,2))
+
+#define SFPD_BLUFOR_DESERT_Transport SFPD_BLUFOR_Transport(30Rnd_65x39_caseless_mag,8,200Rnd_556x45_Box_Tracer_Red_F,3,launch_MRAWS_sand_F,B_AssaultPack_mcamo)
+
+#define SFPD_BLUFOR_WOODLAND_Transport SFPD_BLUFOR_Transport(30Rnd_65x39_caseless_khaki_mag,8,200Rnd_556x45_Box_Tracer_Red_F,3,launch_MRAWS_green_F,B_AssaultPack_wdl_F)
+
+#define SFPD_BLUFOR_JUNGLE_Transport SFPD_BLUFOR_Transport(30Rnd_556x45_Stanag_red,10,150Rnd_556x45_Drum_Mag_Tracer_F,4,launch_MRAWS_green_F,B_AssaultPack_tna_F)
+
+
+#define SFPD_OPFOR_Transport(AR_MAG,AR_MAG_COUNT,LMG_MAG,LMG_MAG_COUNT,AT,BACKPACK) SFPD_Transport(AR_MAG,AR_MAG_COUNT,LMG_MAG,LMG_MAG_COUNT,16Rnd_9x21_Mag,TRANSPORT_MAGAZINES(RPG32_F,2),AT,acc_flashlight,TRANSPORT_BACKPACKS(BACKPACK,2))
+
+#define SFPD_OPFOR_DESERT_Transport SFPD_OPFOR_Transport(30Rnd_65x39_caseless_green,8,150Rnd_762x54_Box_Tracer,6,launch_RPG32_F,B_FieldPack_ocamo)
+
+#define SFPD_OPFOR_WOODLAND_Transport SFPD_OPFOR_Transport(30rnd_762x39_AK12_Lush_Mag_F,10,75rnd_762x39_AK12_Lush_Mag_Tracer_F,8,launch_RPG32_green_F,B_FieldPack_taiga_F)
+
+#define SFPD_OPFOR_JUNGLE_Transport SFPD_OPFOR_Transport(30Rnd_580x42_Mag_F,10,100Rnd_580x42_Mag_Tracer_F,4,launch_RPG32_ghex_F,B_FieldPack_ghex_F)
+
+
+#define SFPD_AAF_Transport SFPD_Transport(30Rnd_556x45_Stanag,10,200Rnd_65x39_cased_Box_Tracer,4,9Rnd_45ACP_Mag,TRANSPORT_MAGAZINES(MRAWS_HEAT_F,2),launch_MRAWS_green_F,acc_flashlight,TRANSPORT_BACKPACKS(B_AssaultPack_dgtl,2))
+
+#define SFPD_LDF_Transport SFPD_Transport(30Rnd_65x39_caseless_msbs_mag,8,200Rnd_65x39_cased_Box_Tracer,4,9Rnd_45ACP_Mag,TRANSPORT_MAGAZINES(MRAWS_HEAT_F,2) TRANSPORT_MAGAZINES(6Rnd_12Gauge_Pellets,5) TRANSPORT_MAGAZINES(6Rnd_12Gauge_Slug,5),launch_MRAWS_green_F,acc_flashlight,TRANSPORT_BACKPACKS(B_AssaultPack_eaf_F,2))
+
 
 //RHS
 
-#define SFPD_RHS_BLUFOR_Transport \
-	class TransportMagazines { \
-		TRANSPORT_MAGAZINES(rhs_mag_30Rnd_556x45_Mk318_Stanag,10) \
-		TRANSPORT_MAGAZINES(SFPD_RHS_rhsusf_200rnd_556x45_tracer_box,3) \
-		TRANSPORT_MAGAZINES(rhsusf_mag_17Rnd_9x19_JHP,5) \
-		TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,5) \
-		TRANSPORT_MAGAZINES(SmokeShellBlue,1) \
-		TRANSPORT_MAGAZINES(SmokeShellGreen,1) \
-		TRANSPORT_MAGAZINES(SmokeShellRed,1) \
-		TRANSPORT_MAGAZINES(HandGrenade,5) \
-		TRANSPORT_MAGAZINES(SmokeShell,5) \
-		TRANSPORT_MAGAZINES(ACE_M84,5) \
-	}; \
-	class TransportWeapons { \
-		TRANSPORT_WEAPONS(rhs_weap_M136_hedp,1) \
-    }; \
-	class TransportItems { \
-		TRANSPORT_ITEMS(ACE_elasticBandage,10) \
-		TRANSPORT_ITEMS(ACE_quikclot,20) \
-		TRANSPORT_ITEMS(ACE_bodyBag,1) \
-		TRANSPORT_ITEMS(ACE_epinephrine,2) \
-		TRANSPORT_ITEMS(ACE_morphine,2) \
-		TRANSPORT_ITEMS(ACE_salineIV_500,2) \
-		TRANSPORT_ITEMS(ACE_surgicalKit,1) \
-		TRANSPORT_ITEMS(ACE_tourniquet,2) \
-		TRANSPORT_ITEMS(ACE_CableTie,10) \
-		TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
-		TRANSPORT_ITEMS(rhsusf_acc_M952V,5) \
-		TRANSPORT_ITEMS(ToolKit,1) \
-		TRANSPORT_ITEMS(ACE_wirecutter,1) \
-		TRANSPORT_ITEMS(ACE_EarPlugs,10) \
-		TRANSPORT_ITEMS(ACE_splint,10) \
-	}; \
-	class TransportBackpacks { \
-		TRANSPORT_BACKPACKS(rhsusf_falconii_coy,2) \
-		TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1) \
-	};
-	
-#define SFPD_RHS_OPFOR_Transport \
-	class TransportMagazines { \
-		TRANSPORT_MAGAZINES(30Rnd_762x39_AK12_Mag_F,10) \
-		TRANSPORT_MAGAZINES(75rnd_762x39_AK12_Mag_Tracer_F,3) \
-		TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,5) \
-		TRANSPORT_MAGAZINES(SmokeShellBlue,1) \
-		TRANSPORT_MAGAZINES(SmokeShellGreen,1) \
-		TRANSPORT_MAGAZINES(SmokeShellRed,1) \
-		TRANSPORT_MAGAZINES(HandGrenade,5) \
-		TRANSPORT_MAGAZINES(SmokeShell,5) \
-		TRANSPORT_MAGAZINES(ACE_M84,5) \
-	}; \
-	class TransportWeapons { \
-		TRANSPORT_WEAPONS(rhs_weap_rpg26,1) \
-    }; \
-	class TransportItems { \
-		TRANSPORT_ITEMS(ACE_elasticBandage,10) \
-		TRANSPORT_ITEMS(ACE_quikclot,20) \
-		TRANSPORT_ITEMS(ACE_bodyBag,1) \
-		TRANSPORT_ITEMS(ACE_epinephrine,2) \
-		TRANSPORT_ITEMS(ACE_morphine,2) \
-		TRANSPORT_ITEMS(ACE_salineIV_500,2) \
-		TRANSPORT_ITEMS(ACE_surgicalKit,1) \
-		TRANSPORT_ITEMS(ACE_tourniquet,2) \
-		TRANSPORT_ITEMS(ACE_CableTie,10) \
-		TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
-		TRANSPORT_ITEMS(rhs_acc_2dpZenit_ris,5) \
-		TRANSPORT_ITEMS(ToolKit,1) \
-		TRANSPORT_ITEMS(ACE_wirecutter,1) \
-		TRANSPORT_ITEMS(ACE_EarPlugs,10) \
-		TRANSPORT_ITEMS(ACE_splint,10) \
-	}; \
-	class TransportBackpacks { \
-		TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1) \
-	};
-	
-#define SFPD_RHS_SAV_Transport \
-	class TransportMagazines { \
-		TRANSPORT_MAGAZINES(rhssaf_30rnd_556x45_EPR_G36,10) \
-		TRANSPORT_MAGAZINES(SFPD_RHS_rhsusf_200rnd_556x45_tracer_box,3) \
-		TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,5) \
-		TRANSPORT_MAGAZINES(SmokeShellBlue,1) \
-		TRANSPORT_MAGAZINES(SmokeShellGreen,1) \
-		TRANSPORT_MAGAZINES(SmokeShellRed,1) \
-		TRANSPORT_MAGAZINES(HandGrenade,5) \
-		TRANSPORT_MAGAZINES(SmokeShell,5) \
-		TRANSPORT_MAGAZINES(ACE_M84,5) \
-	}; \
-	class TransportWeapons { \
-		TRANSPORT_WEAPONS(rhs_weap_rpg75,1) \
-    }; \
-	class TransportItems { \
-		TRANSPORT_ITEMS(ACE_elasticBandage,10) \
-		TRANSPORT_ITEMS(ACE_quikclot,20) \
-		TRANSPORT_ITEMS(ACE_bodyBag,1) \
-		TRANSPORT_ITEMS(ACE_epinephrine,2) \
-		TRANSPORT_ITEMS(ACE_morphine,2) \
-		TRANSPORT_ITEMS(ACE_salineIV_500,2) \
-		TRANSPORT_ITEMS(ACE_surgicalKit,1) \
-		TRANSPORT_ITEMS(ACE_tourniquet,2) \
-		TRANSPORT_ITEMS(ACE_CableTie,10) \
-		TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
-		TRANSPORT_ITEMS(ToolKit,1) \
-		TRANSPORT_ITEMS(ACE_wirecutter,1) \
-		TRANSPORT_ITEMS(ACE_EarPlugs,10) \
-		TRANSPORT_ITEMS(ACE_splint,10) \
-	}; \
-	class TransportBackpacks { \
-		TRANSPORT_BACKPACKS(B_Kitbag_rgr,2) \
-		TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1) \
-	};
-	
+#define SFPD_RHS_BLUFOR_Transport SFPD_Transport(rhs_mag_30Rnd_556x45_Mk318_Stanag,10,SFPD_RHS_rhsusf_200rnd_556x45_tracer_box,3,rhsusf_mag_17Rnd_9x19_JHP,,rhs_weap_M136_hedp,rhsusf_acc_M952V,TRANSPORT_BACKPACKS(rhsusf_falconii_coy,2))
+
+#define SFPD_RHS_OPFOR_Transport SFPD_Transport(30Rnd_762x39_AK12_Mag_F,10,75rnd_762x39_AK12_Mag_Tracer_F,4,rhs_mag_9x18_8_57N181S,,rhs_weap_rpg26,rhs_acc_2dpZenit_ris,)
+
+#define SFPD_RHS_SAV_Transport SFPD_Transport(rhssaf_30rnd_556x45_EPR_G36,10,SFPD_RHS_rhsusf_200rnd_556x45_tracer_box,3,rhssaf_mag_15Rnd_9x19_FMJ,,rhs_weap_rpg75,rhsusf_acc_M952V,TRANSPORT_BACKPACKS(B_Kitbag_rgr,2))
+
 #define SFPD_RHS_INDEP_Transport \
 	class TransportMagazines {}; \
 	class TransportWeapons {}; \
@@ -508,7 +156,199 @@
 	class CLASS : PARENT { \
 		scopeCurator = 0; \
 	};
-	
+
+
+// backpack
+#define SFPD_BACKPACK_LEADER(SMOKE_COLOR) \
+			TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
+			TRANSPORT_ITEMS(ACE_wirecutter,1) \
+			TRANSPORT_ITEMS(SMOKE_COLOR,3)
+
+#define SFPD_BACKPACK_MEDIC \
+			TRANSPORT_ITEMS(ACE_surgicalKit,1) \
+			TRANSPORT_ITEMS(ACE_salineIV_500,10) \
+			TRANSPORT_ITEMS(ACE_elasticBandage,50) \
+			TRANSPORT_ITEMS(ACE_epinephrine,10) \
+			TRANSPORT_ITEMS(ACE_morphine,10) \
+			TRANSPORT_ITEMS(ACE_splint,12)
+
+#define SFPD_BACKPACK_JTAC(IR_GREN) \
+			TRANSPORT_ITEMS(1Rnd_SmokeRed_Grenade_shell,3) \
+			TRANSPORT_ITEMS(1Rnd_SmokeGreen_Grenade_shell,3) \
+			TRANSPORT_ITEMS(1Rnd_SmokeBlue_Grenade_shell,3) \
+			TRANSPORT_ITEMS(IR_GREN,1) \
+			TRANSPORT_ITEMS(Laserbatteries,1)
+
+#define SFPD_BACKPACK_SF(AR_MAG) \
+			TRANSPORT_ITEMS(ACE_Clacker,1) \
+			TRANSPORT_ITEMS(ACE_DefusalKit,1) \
+			TRANSPORT_ITEMS(DemoCharge_Remote_Mag,1) \
+			TRANSPORT_ITEMS(ACE_salineIV_500,4) \
+			TRANSPORT_ITEMS(ACE_elasticBandage,10) \
+			TRANSPORT_ITEMS(AR_MAG,8) \
+			TRANSPORT_ITEMS(Laserbatteries,1)
+
+
+// supply
+#define SFPD_SUPPLY_MEDICAL \
+			TRANSPORT_ITEMS(ACE_elasticBandage,50) \
+			TRANSPORT_ITEMS(ACE_quikclot,50) \
+			TRANSPORT_ITEMS(ACE_bodyBag,10) \
+			TRANSPORT_ITEMS(ACE_epinephrine,10) \
+			TRANSPORT_ITEMS(ACE_morphine,10) \
+			TRANSPORT_ITEMS(ACE_salineIV_500,20) \
+			TRANSPORT_ITEMS(ACE_surgicalKit,2) \
+			TRANSPORT_ITEMS(ACE_tourniquet,10) \
+			TRANSPORT_ITEMS(ACE_splint,20)
+
+#define SFPD_SUPPLY_AMMO(AR_MAG,LMG_MAG,LMG_MAG_COUNT,PISTOL_MAG,MARKS_MAG,SHARP_MAG) \
+            TRANSPORT_MAGAZINES(AR_MAG,40) \
+            TRANSPORT_MAGAZINES(LMG_MAG,LMG_MAG_COUNT) \
+            TRANSPORT_MAGAZINES(PISTOL_MAG,20) \
+            TRANSPORT_MAGAZINES(MARKS_MAG,10) \
+            TRANSPORT_MAGAZINES(SHARP_MAG,10)
+
+#define SFPD_SUPPLY_AMMO_SPECIAL(MARKS_MAG,SHARP_MAG,MMG_MAG,SNIPER_MAG) \
+            TRANSPORT_MAGAZINES(MARKS_MAG,10) \
+            TRANSPORT_MAGAZINES(SHARP_MAG,10) \
+            TRANSPORT_MAGAZINES(MMG_MAG,10) \
+            TRANSPORT_MAGAZINES(SNIPER_MAG,10)
+
+#define SFPD_SUPPLY_GRENADES(IR_GREN) \
+            TRANSPORT_MAGAZINES(CBRN_CS,3) \
+            TRANSPORT_MAGAZINES(CBRN_CS_GL,3) \
+            TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,20) \
+            TRANSPORT_MAGAZINES(ACE_M14,4) \
+            TRANSPORT_MAGAZINES(IR_GREN,2) \
+            TRANSPORT_MAGAZINES(SmokeShellBlue,5) \
+            TRANSPORT_MAGAZINES(SmokeShellGreen,5) \
+            TRANSPORT_MAGAZINES(SmokeShellRed,5) \
+            TRANSPORT_MAGAZINES(HandGrenade,20) \
+            TRANSPORT_MAGAZINES(SmokeShell,20) \
+            TRANSPORT_MAGAZINES(ACE_M84,20) \
+            TRANSPORT_MAGAZINES(1Rnd_Smoke_Grenade_shell,10) \
+            TRANSPORT_MAGAZINES(UGL_FlareWhite_F,10) \
+            TRANSPORT_MAGAZINES(1Rnd_SmokeRed_Grenade_shell,5) \
+            TRANSPORT_MAGAZINES(1Rnd_SmokeGreen_Grenade_shell,5) \
+            TRANSPORT_MAGAZINES(1Rnd_SmokeBlue_Grenade_shell,5)
+
+#define SFPD_SUPPLY_EXPLOSIVES \
+		class TransportMagazines {}; \
+		class TransportWeapons { \
+            TRANSPORT_WEAPONS(ACE_VMH3,2) \
+        }; \
+		class TransportItems { \
+            TRANSPORT_ITEMS(ACE_DefusalKit,5) \
+            TRANSPORT_ITEMS(ACE_Clacker,5) \
+            TRANSPORT_ITEMS(DemoCharge_Remote_Mag,10) \
+            TRANSPORT_ITEMS(ATMine_Range_Mag,2) \
+            TRANSPORT_ITEMS(SatchelCharge_Remote_Mag,2) \
+            TRANSPORT_ITEMS(ClaymoreDirectionalMine_Remote_Mag,4) \
+            TRANSPORT_ITEMS(SLAMDirectionalMine_Wire_Mag,4) \
+        };
+
+#define SFPD_SUPPLY_EQUIPMENT(LIGHT,OPTIONAL_ITEMS,BACKPACK,BACKPACK_BIG,RADIO_LR) \
+		class TransportMagazines {}; \
+		class TransportWeapons {}; \
+		class TransportItems { \
+			TRANSPORT_ITEMS(ACE_CableTie,20) \
+			TRANSPORT_ITEMS(ACE_wirecutter,2) \
+			TRANSPORT_ITEMS(ACE_EntrenchingTool,2) \
+			TRANSPORT_ITEMS(ACE_UAVBattery,2) \
+			TRANSPORT_ITEMS(ACE_Tripod,1) \
+			TRANSPORT_ITEMS(ToolKit,2) \
+			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2) \
+			TRANSPORT_ITEMS(ACE_artilleryTable,2) \
+			TRANSPORT_ITEMS(LIGHT,20) \
+			TRANSPORT_ITEMS(optic_NVS,4) \
+			OPTIONAL_ITEMS \
+		}; \
+		class TransportBackpacks { \
+			TRANSPORT_BACKPACKS(BACKPACK,4) \
+			TRANSPORT_BACKPACKS(BACKPACK_BIG,4) \
+			TRANSPORT_BACKPACKS(ace_gunbag,1) \
+			TRANSPORT_BACKPACKS(ace_gunbag_Tan,1) \
+			TRANSPORT_BACKPACKS(RADIO_LR,2) \
+			TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,1) \
+		};
+
+#define SFPD_SUPPLY_WEAPONS(AR,AR_GL,LMG,PISTOL,MARKS) \
+			TRANSPORT_WEAPONS(AR,8) \
+			TRANSPORT_WEAPONS(AR_GL,2) \
+			TRANSPORT_WEAPONS(LMG,2) \
+			TRANSPORT_WEAPONS(MARKS,2) \
+			TRANSPORT_WEAPONS(PISTOL,8)
+
+#define SFPD_SUPPLY_WEAPONS_SPECIAL(SHARP,MMG,SNIPER) \
+		class TransportMagazines { \
+			TRANSPORT_MAGAZINES(Laserbatteries,1) \
+		}; \
+		class TransportWeapons { \
+			TRANSPORT_WEAPONS(SHARP,2) \
+			TRANSPORT_WEAPONS(MMG,2) \
+			TRANSPORT_WEAPONS(SNIPER,1) \
+			TRANSPORT_WEAPONS(Laserdesignator,1) \
+			TRANSPORT_WEAPONS(ACE_Vector,4) \
+		}; \
+		class TransportItems { \
+			TRANSPORT_ITEMS(ACE_Tripod,2) \
+			TRANSPORT_ITEMS(ACE_SpottingScope,2) \
+			TRANSPORT_ITEMS(ACE_ATragMX,2) \
+			TRANSPORT_ITEMS(ACE_RangeCard,4) \
+			TRANSPORT_ITEMS(ACE_Kestrel4500,4) \
+		}; \
+		class TransportBackpacks {};
+
+#define SFPD_SUPPLY_CARGO(AR_MAG,AR_MAG_COUNT,LMG_MAG,LMG_MAG_COUNT,PISTOL_MAG,MARKS_MAG,SHARP_MAG,MMG_MAG,OPTIONAL_MAG,AR,MMG,AT,LIGHT,BACKPACK,BACKPACK_BIG) \
+		class TransportMagazines { \
+			TRANSPORT_MAGAZINES(AR_MAG,AR_MAG_COUNT) \
+			TRANSPORT_MAGAZINES(LMG_MAG,LMG_MAG_COUNT) \
+			TRANSPORT_MAGAZINES(PISTOL_MAG,10) \
+			TRANSPORT_MAGAZINES(MARKS_MAG,10) \
+			TRANSPORT_MAGAZINES(SHARP_MAG,10) \
+			TRANSPORT_MAGAZINES(MMG_MAG,10) \
+			TRANSPORT_MAGAZINES(1Rnd_HE_Grenade_shell,10) \
+			TRANSPORT_MAGAZINES(ACE_M14,4) \
+			TRANSPORT_MAGAZINES(SmokeShellBlue,3) \
+			TRANSPORT_MAGAZINES(SmokeShellGreen,3) \
+			TRANSPORT_MAGAZINES(SmokeShellRed,3) \
+			TRANSPORT_MAGAZINES(HandGrenade,15) \
+			TRANSPORT_MAGAZINES(SmokeShell,15) \
+			TRANSPORT_MAGAZINES(ACE_M84,15) \
+			OPTIONAL_MAG \
+		}; \
+		class TransportWeapons { \
+			TRANSPORT_WEAPONS(AR,2) \
+			TRANSPORT_WEAPONS(MMG,1) \
+			TRANSPORT_WEAPONS(AT,1) \
+		}; \
+		class TransportItems { \
+			TRANSPORT_ITEMS(ACE_elasticBandage,40) \
+			TRANSPORT_ITEMS(ACE_quikclot,40) \
+			TRANSPORT_ITEMS(ACE_epinephrine,10) \
+			TRANSPORT_ITEMS(ACE_morphine,10) \
+			TRANSPORT_ITEMS(ACE_salineIV_500,20) \
+			TRANSPORT_ITEMS(ACE_splint,20) \
+			TRANSPORT_ITEMS(DemoCharge_Remote_Mag,4) \
+			TRANSPORT_ITEMS(ACE_CableTie,10) \
+			TRANSPORT_ITEMS(ACE_EntrenchingTool,1) \
+			TRANSPORT_ITEMS(ACE_UAVBattery,2) \
+			TRANSPORT_ITEMS(ACE_wirecutter,1) \
+			TRANSPORT_ITEMS(LIGHT,10) \
+			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2) \
+			TRANSPORT_ITEMS(ACE_artilleryTable,2) \
+		}; \
+		class TransportBackpacks { \
+			TRANSPORT_BACKPACKS(BACKPACK,4) \
+			TRANSPORT_BACKPACKS(BACKPACK_BIG,4) \
+			TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,2) \
+		};
+
+
+
+
+
+
 #define BRDM_HIT_POINTS \
 		class HitPoints: HitPoints { \
 			class HitLBWheel { \
@@ -1429,6 +1269,7 @@ class CfgPatches {
 			"SFPD_RHS_IRAQ_WOODLAND_kraz255b1_fuel",
 			"SFPD_RHS_IRAQ_WOODLAND_zil",
 			"SFPD_RHS_IRAQ_WOODLAND_zil_open",
+			"SFPD_RHS_IRAQ_WOODLAND_zil_flatbed",
 			"SFPD_RHS_IRAQ_WOODLAND_BRDM2",
 			"SFPD_RHS_IRAQ_WOODLAND_BRDM2_ATGM",
 			"SFPD_RHS_IRAQ_WOODLAND_BRDM2_HQ",
@@ -1438,6 +1279,7 @@ class CfgPatches {
 			"SFPD_RHS_IRAQ_WOODLAND_BMD1",
 			"SFPD_RHS_IRAQ_WOODLAND_BMD2",
 			"SFPD_RHS_IRAQ_WOODLAND_ZSU23",
+			"SFPD_RHS_IRAQ_WOODLAND_T55",
 			"SFPD_RHS_IRAQ_WOODLAND_T72",
 			"SFPD_RHS_IRAQ_WOODLAND_Static_D30",
 			"SFPD_RHS_IRAQ_WOODLAND_Static_DSHKM",
@@ -1459,6 +1301,7 @@ class CfgPatches {
 			"SFPD_RHS_INDEP_kraz255b1_fuel",
 			"SFPD_RHS_INDEP_zil",
 			"SFPD_RHS_INDEP_zil_open",
+			"SFPD_RHS_INDEP_zil_flatbed",
 			"SFPD_RHS_INDEP_BRDM2",
 			"SFPD_RHS_INDEP_BRDM2_ATGM",
 			"SFPD_RHS_INDEP_BRDM2_HQ",
@@ -1468,6 +1311,7 @@ class CfgPatches {
 			"SFPD_RHS_INDEP_BMD1",
 			"SFPD_RHS_INDEP_BMD2",
 			"SFPD_RHS_INDEP_ZSU23",
+			"SFPD_RHS_INDEP_T55",
 			"SFPD_RHS_INDEP_T72",
 			"SFPD_RHS_INDEP_Static_D30",
 			"SFPD_RHS_INDEP_Static_DSHKM",
@@ -1486,6 +1330,7 @@ class CfgPatches {
 			"SFPD_RHS_INDEP_WOODLAND_kraz255b1_fuel",
 			"SFPD_RHS_INDEP_WOODLAND_zil",
 			"SFPD_RHS_INDEP_WOODLAND_zil_open",
+			"SFPD_RHS_INDEP_WOODLAND_zil_flatbed",
 			"SFPD_RHS_INDEP_WOODLAND_BRDM2",
 			"SFPD_RHS_INDEP_WOODLAND_BRDM2_ATGM",
 			"SFPD_RHS_INDEP_WOODLAND_BRDM2_HQ",
@@ -1495,6 +1340,7 @@ class CfgPatches {
 			"SFPD_RHS_INDEP_WOODLAND_BMD1",
 			"SFPD_RHS_INDEP_WOODLAND_BMD2",
 			"SFPD_RHS_INDEP_WOODLAND_ZSU23",
+			"SFPD_RHS_INDEP_WOODLAND_T55",
 			"SFPD_RHS_INDEP_WOODLAND_T72",
 			"SFPD_RHS_INDEP_WOODLAND_Static_D30",
 			"SFPD_RHS_INDEP_WOODLAND_Static_DSHKM",
@@ -1651,6 +1497,7 @@ class CfgPatches {
 			"SFPD_RHS_OPFOR_DESERT_GAZ_ammo",
 			"SFPD_RHS_OPFOR_DESERT_GAZ_R142",
 			"SFPD_RHS_OPFOR_DESERT_Ural",
+			"SFPD_RHS_OPFOR_DESERT_Ural_flatbed",
 			"SFPD_RHS_OPFOR_DESERT_Ural_fuel",
 			"SFPD_RHS_OPFOR_DESERT_BM21",
 			"SFPD_RHS_OPFOR_DESERT_Ural_Zu23",
@@ -1699,6 +1546,7 @@ class CfgPatches {
 			"SFPD_RHS_OPFOR_WOODLAND_GAZ_ammo",
 			"SFPD_RHS_OPFOR_WOODLAND_GAZ_R142",
 			"SFPD_RHS_OPFOR_WOODLAND_Ural",
+			"SFPD_RHS_OPFOR_WOODLAND_Ural_flatbed",
 			"SFPD_RHS_OPFOR_WOODLAND_Ural_fuel",
 			"SFPD_RHS_OPFOR_WOODLAND_BM21",
 			"SFPD_RHS_OPFOR_WOODLAND_Ural_Zu23",
@@ -1771,7 +1619,8 @@ class CfgPatches {
 			"SFPD_RHS_BLUFOR_NBC_detector",
 			"SFPD_RHS_BLUFOR_Rappeling",
 			"SFPD_RHS_OPFOR_Medical",
-			"SFPD_RHS_OPFOR_Ammo",
+			"SFPD_RHS_OPFOR_Ammo1",
+			"SFPD_RHS_OPFOR_Ammo2",
 			"SFPD_RHS_OPFOR_Grenades",
 			"SFPD_RHS_OPFOR_Explosives",
 			"SFPD_RHS_OPFOR_Launchers1",
@@ -1779,6 +1628,7 @@ class CfgPatches {
 			"SFPD_RHS_OPFOR_Launchers3",
 			"SFPD_RHS_OPFOR_Equipment",
 			"SFPD_RHS_OPFOR_Weapons",
+			"SFPD_RHS_OPFOR_Special_Weapons",
 			"SFPD_RHS_OPFOR_NBC_suits",
 			"SFPD_RHS_OPFOR_NBC_masks",
 			"SFPD_RHS_OPFOR_NBC_drugs",
@@ -2661,6 +2511,8 @@ class CfgVehicles {
 	class RHS_Ural_Zu23_MSV_01;
 	class rhs_zsu234_aa;
 	class rhs_bmp3mera_msv;
+	class RHS_Ural_Open_Flat_MSV_01;
+	class rhsgref_ins_g_zil131_flatbed;
 	//
 	class rhs_t90sm_tv;
 	class SFPD_RHS_rhs_t90sm_tv: rhs_t90sm_tv{
@@ -3243,14 +3095,26 @@ class CfgVehicles {
 	class Box_IED_Exp_F;
 	class Box_Syndicate_WpsLaunch_F;
 	
-	//class Pod_Heli_Transport_04_base_F;//Land_Pod_Heli_Transport_04_ammo_F,Land_Pod_Heli_Transport_04_box_F,Land_Pod_Heli_Transport_04_fuel_F,Land_Pod_Heli_Transport_04_repair_F
-	//class Pod_Heli_Transport_04_crewed_base_F;//Land_Pod_Heli_Transport_04_bench_F,Land_Pod_Heli_Transport_04_covered_F,Land_Pod_Heli_Transport_04_medevac_F
+	class Slingload_01_Base_F;
+	class B_Slingload_01_Cargo_F: Slingload_01_Base_F {
+		SFPD_SUPPLY_CARGO(30Rnd_65x39_caseless_mag,40,200Rnd_556x45_Box_Tracer_Red_F,5,16Rnd_9x21_Mag,20Rnd_762x51_Mag,10Rnd_338_Mag,130Rnd_338_Mag,TRANSPORT_MAGAZINES(MRAWS_HEAT_F,5),SFPD_MX_Default,SFPD_MMG_Default,launch_MRAWS_sand_F,acc_flashlight,B_AssaultPack_mcamo,B_Carryall_mcamo)
+	};
+	class B_Slingload_01_Medevac_F: Slingload_01_Base_F {
+		class TransportMagazines {};
+		class TransportWeapons {};
+		class TransportItems {
+			SFPD_SUPPLY_MEDICAL
+        };
+	};
+	
+	class Pod_Heli_Transport_04_base_F;//Land_Pod_Heli_Transport_04_ammo_F,Land_Pod_Heli_Transport_04_box_F,Land_Pod_Heli_Transport_04_fuel_F,Land_Pod_Heli_Transport_04_repair_F
+	class Pod_Heli_Transport_04_crewed_base_F;//Land_Pod_Heli_Transport_04_bench_F,Land_Pod_Heli_Transport_04_covered_F,Land_Pod_Heli_Transport_04_medevac_F
 	class Land_Pod_Heli_Transport_04_ammo_F;
 	class Land_Pod_Heli_Transport_04_bench_F;
-	class Land_Pod_Heli_Transport_04_box_F;
+	//class Land_Pod_Heli_Transport_04_box_F;
 	class Land_Pod_Heli_Transport_04_covered_F;
 	class Land_Pod_Heli_Transport_04_fuel_F;
-	class Land_Pod_Heli_Transport_04_medevac_F;
+	//class Land_Pod_Heli_Transport_04_medevac_F;
 	class Land_Pod_Heli_Transport_04_repair_F;
 	
 	//ADD_ZEUS
@@ -3264,9 +3128,15 @@ class CfgVehicles {
 		scopeCurator = 2;
 	};
 	
+	class Land_Pod_Heli_Transport_04_box_F : Pod_Heli_Transport_04_base_F {
+		scope = 2;
+		scopeCurator = 2;
+		SFPD_SUPPLY_CARGO(30Rnd_65x39_caseless_green,40,150Rnd_762x54_Box_Tracer,6,16Rnd_9x21_Mag,10Rnd_762x54_Mag,10Rnd_93x64_DMR_05_Mag,150Rnd_93x64_Mag,TRANSPORT_MAGAZINES(RPG32_F,5) TRANSPORT_MAGAZINES(RPG32_HE_F,5),SFPD_KATIBA_Default,SFPD_NAVID_Default,launch_RPG32_F,acc_flashlight,B_FieldPack_ocamo,B_Carryall_ocamo)
+	};
 	class Land_Pod_Heli_Transport_04_box_black_F : Land_Pod_Heli_Transport_04_box_F {
 		scope = 2;
 		scopeCurator = 2;
+		SFPD_SUPPLY_CARGO(30Rnd_580x42_Mag_F,40,100Rnd_580x42_Mag_Tracer_F,10,16Rnd_9x21_Mag,20Rnd_650x39_Cased_Mag_F,10Rnd_93x64_DMR_05_Mag,150Rnd_93x64_Mag,TRANSPORT_MAGAZINES(RPG32_F,5) TRANSPORT_MAGAZINES(RPG32_HE_F,5),SFPD_CAR95_Default,SFPD_NAVID_Tan,launch_RPG32_ghex_F,acc_flashlight,B_FieldPack_ghex_F,B_Carryall_ghex_F)
 	};
 	
 	class Land_Pod_Heli_Transport_04_covered_black_F : Land_Pod_Heli_Transport_04_covered_F {
@@ -3279,9 +3149,23 @@ class CfgVehicles {
 		scopeCurator = 2;
 	};
 	
+	class Land_Pod_Heli_Transport_04_medevac_F : Pod_Heli_Transport_04_crewed_base_F {
+		scope = 2;
+		scopeCurator = 2;
+		class TransportMagazines {};
+		class TransportWeapons {};
+		class TransportItems {
+			SFPD_SUPPLY_MEDICAL
+        };
+	};
 	class Land_Pod_Heli_Transport_04_medevac_black_F : Land_Pod_Heli_Transport_04_medevac_F {
 		scope = 2;
 		scopeCurator = 2;
+		class TransportMagazines {};
+		class TransportWeapons {};
+		class TransportItems {
+			SFPD_SUPPLY_MEDICAL
+        };
 	};
 	
 	class Land_Pod_Heli_Transport_04_repair_black_F : Land_Pod_Heli_Transport_04_repair_F {
