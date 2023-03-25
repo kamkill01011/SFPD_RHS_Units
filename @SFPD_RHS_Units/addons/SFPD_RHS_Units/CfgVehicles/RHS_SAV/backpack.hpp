@@ -14,11 +14,11 @@
         };
     };
 	
-	class SFPD_RHS_SAV_WOODLAND_Grenadier_Backpack: B_LegStrapBag_olive_F {
+	class SFPD_RHS_SAV_WOODLAND_Grenadier_Backpack: B_Kitbag_rgr {
         displayname = "Woodland Grenadier Backpack";
         scope = 1;
 		class TransportItems {
-            TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,8)
+			SFPD_BACKPACK_GRENADIER
         };
     };
 	

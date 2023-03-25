@@ -172,6 +172,10 @@
 			TRANSPORT_ITEMS(ACE_morphine,10) \
 			TRANSPORT_ITEMS(ACE_splint,12)
 
+#define SFPD_BACKPACK_GRENADIER \
+			TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,10) \
+			TRANSPORT_ITEMS(1Rnd_Smoke_Grenade_shell,5)
+
 #define SFPD_BACKPACK_JTAC(IR_GREN) \
 			TRANSPORT_ITEMS(1Rnd_SmokeRed_Grenade_shell,3) \
 			TRANSPORT_ITEMS(1Rnd_SmokeGreen_Grenade_shell,3) \

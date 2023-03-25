@@ -26,8 +26,8 @@
         displayname = "Woodland Grenadier Backpack";
         scope = 1;
 		class TransportItems {
+			SFPD_BACKPACK_GRENADIER
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
-            TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,10)
         };
     };
 	
@@ -35,8 +35,8 @@
         displayname = "Desert Grenadier Backpack";
         scope = 1;
 		class TransportItems {
+			SFPD_BACKPACK_GRENADIER
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
-            TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,10)
         };
     };
 	
@@ -44,8 +44,8 @@
         displayname = "Winter Grenadier Backpack";
         scope = 1;
 		class TransportItems {
+			SFPD_BACKPACK_GRENADIER
             TRANSPORT_ITEMS(30Rnd_762x39_AK12_Mag_F,3)
-            TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,10)
         };
     };
 	

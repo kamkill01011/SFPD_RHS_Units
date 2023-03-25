@@ -37,12 +37,10 @@
 	};
 	
 	class SFPD_OPFOR_DESERT_Grenadier: SFPD_OPFOR_DESERT_Rifleman {
-		backpack = "";
+		backpack = "SFPD_CSAT_DESERT_Grenadier_Backpack";
 		displayName = "Desert Grenadier";
 		weapons[] = {"SFPD_KATIBA_GL_Default",BASIC_WEAPONS(hgun_Rook40_F)};
 		respawnWeapons[] = {"SFPD_KATIBA_GL_Default",BASIC_WEAPONS(hgun_Rook40_F)};
-		magazines[] += {SIX_TIMES(1Rnd_HE_Grenade_shell)};
-		respawnMagazines[] += {SIX_TIMES(1Rnd_HE_Grenade_shell)};
 	};
 	
 	class SFPD_OPFOR_DESERT_AT: SFPD_OPFOR_DESERT_Rifleman {
@@ -335,8 +333,8 @@
 		displayName = "Woodland Grenadier";
 		weapons[] = {"SFPD_WOODLAND_AK12_GL",BASIC_WEAPONS(hgun_Rook40_F)};
 		respawnWeapons[] = {"SFPD_WOODLAND_AK12_GL",BASIC_WEAPONS(hgun_Rook40_F)};
-		magazines[] = {FOUR_TIMES(30rnd_762x39_AK12_Lush_Mag_F),"16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS,"1Rnd_HE_Grenade_shell"};
-		respawnMagazines[] = {FOUR_TIMES(30rnd_762x39_AK12_Lush_Mag_F),"16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS,"1Rnd_HE_Grenade_shell"};
+		magazines[] = {FOUR_TIMES(30rnd_762x39_AK12_Lush_Mag_F),"16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS};
+		respawnMagazines[] = {FOUR_TIMES(30rnd_762x39_AK12_Lush_Mag_F),"16Rnd_9x21_Mag","16Rnd_9x21_Mag",BASIC_GRENS};
 	};
 	
 	class SFPD_OPFOR_WOODLAND_AT: SFPD_OPFOR_WOODLAND_Rifleman {
@@ -599,12 +597,10 @@
 	};
 	
 	class SFPD_OPFOR_JUNGLE_Grenadier: SFPD_OPFOR_JUNGLE_Rifleman {
-		backpack = "";
+		backpack = "SFPD_CSAT_JUNGLE_Grenadier_Backpack";
 		displayName = "Jungle Grenadier";
 		weapons[] = {"SFPD_CAR95_GL_Default",BASIC_WEAPONS(hgun_Rook40_F)};
 		respawnWeapons[] = {"SFPD_CAR95_GL_Default",BASIC_WEAPONS(hgun_Rook40_F)};
-		magazines[] += {SIX_TIMES(1Rnd_HE_Grenade_shell)};
-		respawnMagazines[] += {SIX_TIMES(1Rnd_HE_Grenade_shell)};
 	};
 	
 	class SFPD_OPFOR_JUNGLE_AT: SFPD_OPFOR_JUNGLE_Rifleman {

@@ -15,11 +15,11 @@
         };
     };
 	
-	class SFPD_RHS_BLUFOR_Grenadier_Backpack: B_LegStrapBag_coyote_F {
+	class SFPD_RHS_BLUFOR_Grenadier_Backpack: rhsusf_falconii_coy {
         displayname = "Grenadier Backpack";
         scope = 1;
-        class TransportItems {
-            TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,7)
+		class TransportItems {
+			SFPD_BACKPACK_GRENADIER
         };
     };
 	
@@ -100,11 +100,11 @@
         };
     };
 	
-	class SFPD_RHS_BLUFOR_WINTER_Grenadier_Backpack: B_LegStrapBag_black_F {
+	class SFPD_RHS_BLUFOR_WINTER_Grenadier_Backpack: rhsusf_assault_eagleaiii_ucp {
         displayname = "Grenadier Backpack";
         scope = 1;
-        class TransportItems {
-            TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,7)
+		class TransportItems {
+			SFPD_BACKPACK_GRENADIER
         };
     };
 	

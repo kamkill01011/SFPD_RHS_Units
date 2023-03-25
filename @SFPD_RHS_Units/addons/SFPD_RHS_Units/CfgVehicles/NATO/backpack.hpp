@@ -23,6 +23,14 @@
         };
     };
 	
+	class SFPD_NATO_DESERT_Grenadier_Backpack: B_AssaultPack_mcamo {
+        displayname = "Desert Grenadier Backpack";
+        scope = 1;
+		class TransportItems {
+			SFPD_BACKPACK_GRENADIER
+        };
+    };
+	
 	class SFPD_NATO_DESERT_Ammo_Backpack: B_AssaultPack_mcamo {
         displayname = "Desert Ammo Backpack";
         scope = 1;
@@ -153,6 +161,14 @@
         };
     };
 	
+	class SFPD_NATO_JUNGLE_Grenadier_Backpack: B_AssaultPack_tna_F {
+        displayname = "Jungle Grenadier Backpack";
+        scope = 1;
+		class TransportItems {
+			SFPD_BACKPACK_GRENADIER
+        };
+    };
+	
 	class SFPD_NATO_JUNGLE_Ammo_Backpack: B_AssaultPack_tna_F {
         displayname = "Jungle Ammo Backpack";
         scope = 1;
@@ -263,6 +279,14 @@
         scope = 1;
         class TransportItems {
             SFPD_BACKPACK_MEDIC
+        };
+    };
+	
+	class SFPD_NATO_WOODLAND_Grenadier_Backpack: B_AssaultPack_wdl_F {
+        displayname = "Woodland Grenadier Backpack";
+        scope = 1;
+		class TransportItems {
+			SFPD_BACKPACK_GRENADIER
         };
     };
 	
