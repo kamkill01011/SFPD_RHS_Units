@@ -330,7 +330,7 @@ class RscSetJammerObjectModule: RscTestModule {
 			y = KAM_Y * 3;
 			KAM_MIN = 0;
 			KAM_SEL = 0.9;
-			KAM_MAX = 1;
+			KAM_MAX = 2;
 		};
 		class ControlLabel1: ControlLabel {
 			y = KAM_Y * 1;
