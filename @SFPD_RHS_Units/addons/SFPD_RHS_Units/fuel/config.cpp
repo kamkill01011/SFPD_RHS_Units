@@ -67,6 +67,11 @@ class CfgVehicles {
 		KAM_fuel_consumption = 2;
 	};
 	
+	class RHS_AH64_base;
+	class RHS_AH64D: RHS_AH64_base {
+		KAM_fuel_consumption = 0.1;
+	};
+	
 	class Plane_Base_F;
 	class Plane_Fighter_01_Base_F: Plane_Base_F {
 		KAM_fuel_consumption = 20;
