@@ -330,7 +330,7 @@ class RscSetJammerObjectModule: RscTestModule {
 			y = KAM_Y * 3;
 			KAM_MIN = 0;
 			KAM_SEL = 0.9;
-			KAM_MAX = 1;
+			KAM_MAX = 2;
 		};
 		class ControlLabel1: ControlLabel {
 			y = KAM_Y * 1;
@@ -823,21 +823,6 @@ class RscCPZoneModule: RscTestModule {
 			KAM_SEL = 10;
 			KAM_MAX = 50;
 		};
-		class ControlComboBox: ControlComboBox {
-			idc = 103;
-			y = KAM_Y * 3;
-			class Items {
-				class Item0 {
-					text = "Default";
-					data = "true";
-					default = 1;
-				};
-				class Item1 {
-					text = "Taliban";
-					data = "_this setUnitLoadout selectRandom ['LOP_Tak_Civ_Man_06','LOP_Tak_Civ_Man_08','LOP_Tak_Civ_Man_07','LOP_Tak_Civ_Man_05','LOP_Tak_Civ_Man_01','LOP_Tak_Civ_Man_10','LOP_Tak_Civ_Man_02','LOP_Tak_Civ_Man_09','LOP_Tak_Civ_Man_11','LOP_Tak_Civ_Man_12','LOP_Tak_Civ_Man_04','LOP_Tak_Civ_Man_14','LOP_Tak_Civ_Man_13','LOP_Tak_Civ_Man_16','LOP_Tak_Civ_Man_15'];[_this, selectRandom ['Yousuf']] remoteExec ['setIdentity', 0, _this];";
-				};
-			};
-		};
 		class ControlLabel1: ControlLabel {
 			y = KAM_Y * 1;
 			text = "radius";
@@ -845,10 +830,6 @@ class RscCPZoneModule: RscTestModule {
 		class ControlLabel2: ControlLabel {
 			y = KAM_Y * 2;
 			text = "civilian count";
-		};
-		class ControlLabel3: ControlLabel {
-			y = KAM_Y * 3;
-			text = "civilian type";
 		};
 	};
 };

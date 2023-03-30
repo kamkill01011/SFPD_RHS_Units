@@ -40,8 +40,6 @@
 		displayName = "Grenadier";
 		weapons[] = {"SFPD_Promet_GL",BASIC_WEAPONS(SFPD_ACPC2)};
 		respawnWeapons[] = {"SFPD_Promet_GL",BASIC_WEAPONS(SFPD_ACPC2)};
-		magazines[] += {"1Rnd_HE_Grenade_shell"};
-		respawnMagazines[] += {"1Rnd_HE_Grenade_shell"};
 	};
 	
 	class SFPD_LDF_Assaulter: SFPD_LDF_Rifleman {

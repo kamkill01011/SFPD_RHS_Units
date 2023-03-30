@@ -46,11 +46,10 @@
 	};
 	
 	class SFPD_BLUFOR_DESERT_Grenadier: SFPD_BLUFOR_DESERT_Rifleman {
+		backpack = "SFPD_NATO_DESERT_Grenadier_Backpack";
 		displayName = "Desert Grenadier";
 		weapons[] = {"SFPD_MX_GL_Default",BASIC_WEAPONS(hgun_P07_blk_F)};
 		respawnWeapons[] = {"SFPD_MX_GL_Default",BASIC_WEAPONS(hgun_P07_blk_F)};
-		magazines[] += {"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
-		respawnMagazines[] += {"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
 	};
 	
 	class SFPD_BLUFOR_DESERT_AT: SFPD_BLUFOR_DESERT_Rifleman {
@@ -348,11 +347,10 @@
 	};
 	
 	class SFPD_BLUFOR_WOODLAND_Grenadier: SFPD_BLUFOR_WOODLAND_Rifleman {
+		backpack = "SFPD_NATO_WOODLAND_Grenadier_Backpack";
 		displayName = "Woodland Grenadier";
 		weapons[] = {"SFPD_WOODLAND_MX_GL",BASIC_WEAPONS(hgun_P07_blk_F)};
 		respawnWeapons[] = {"SFPD_WOODLAND_MX_GL",BASIC_WEAPONS(hgun_P07_blk_F)};
-		magazines[] += {"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
-		respawnMagazines[] += {"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
 	};
 	
 	class SFPD_BLUFOR_WOODLAND_AT: SFPD_BLUFOR_WOODLAND_Rifleman {
@@ -650,11 +648,10 @@
 	};
 	
 	class SFPD_BLUFOR_JUNGLE_Grenadier: SFPD_BLUFOR_JUNGLE_Rifleman {
+		backpack = "SFPD_NATO_JUNGLE_Grenadier_Backpack";
 		displayName = "Jungle Grenadier";
 		weapons[] = {"SFPD_JUNGLE_SPAR_16_GL_Default",BASIC_WEAPONS(hgun_P07_blk_F)};
 		respawnWeapons[] = {"SFPD_JUNGLE_SPAR_16_GL_Default",BASIC_WEAPONS(hgun_P07_blk_F)};
-		magazines[] += {"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
-		respawnMagazines[] += {"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
 	};
 	
 	class SFPD_BLUFOR_JUNGLE_AT: SFPD_BLUFOR_JUNGLE_Rifleman {

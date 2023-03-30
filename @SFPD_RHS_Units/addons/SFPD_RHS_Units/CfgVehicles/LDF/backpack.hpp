@@ -1,11 +1,4 @@
-	class SFPD_LDF_Grenadier_Backpack: B_LegStrapBag_black_F {
-        displayname = "Grenadier Backpack";
-        scope = 1;
-		class TransportItems {
-			TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,5)
-        };
-    };
-	
+
 	class SFPD_LDF_SFPD_LDF_Assaulter_Backpack: B_LegStrapBag_black_F {
         displayname = "Assaulter Backpack";
         scope = 1;
@@ -45,6 +38,14 @@
         scope = 1;
 		class TransportItems {
             SFPD_BACKPACK_MEDIC
+        };
+    };
+	
+	class SFPD_LDF_Grenadier_Backpack: B_AssaultPack_eaf_F {
+        displayname = "Grenadier Backpack";
+        scope = 1;
+		class TransportItems {
+			SFPD_BACKPACK_GRENADIER
         };
     };
 	

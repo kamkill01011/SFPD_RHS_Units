@@ -66,8 +66,6 @@
 		displayName = "Woodland Grenadier";
 		weapons[] = {"SFPD_RHS_G36KV_GL","rhs_weap_cz99","Binocular","Throw","Put"};
 		respawnWeapons[] = {"SFPD_RHS_G36KV_GL","rhs_weap_cz99","Binocular","Throw","Put"};
-		magazines[] += {"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
-		respawnMagazines[] += {"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
 	};
 	
 	class SFPD_RHS_SAV_WOODLAND_AT: SFPD_RHS_SAV_WOODLAND_Rifleman {

@@ -40,6 +40,14 @@
         };
     };
 	
+	class SFPD_CSAT_DESERT_Grenadier_Backpack: B_FieldPack_ocamo {
+        displayname = "Desert Grenadier Backpack";
+        scope = 1;
+		class TransportItems {
+			SFPD_BACKPACK_GRENADIER
+        };
+    };
+	
 	class SFPD_CSAT_DESERT_JTAC_Backpack: TFAR_mr3000 {
         displayname = "Desert JTAC Radio";
         scope = 1;
@@ -156,15 +164,6 @@
         };
     };
 	
-	class SFPD_CSAT_WOODLAND_Grenadier_Backpack: B_FieldPack_taiga_F {
-        displayname = "Woodland Grenadier Backpack";
-        scope = 1;
-		class TransportItems {
-			TRANSPORT_ITEMS(30rnd_762x39_AK12_Lush_Mag_F,4)
-			TRANSPORT_ITEMS(1Rnd_HE_Grenade_shell,5)
-        };
-    };
-	
 	class SFPD_CSAT_WOODLAND_AT_Backpack: B_Carryall_taiga_F {
         displayname = "Woodland AT Backpack";
         scope = 1;
@@ -221,6 +220,14 @@
         scope = 1;
 		class TransportItems {
             SFPD_BACKPACK_MEDIC
+        };
+    };
+	
+	class SFPD_CSAT_WOODLAND_Grenadier_Backpack: B_FieldPack_taiga_F {
+        displayname = "Woodland Grenadier Backpack";
+        scope = 1;
+		class TransportItems {
+			SFPD_BACKPACK_GRENADIER
         };
     };
 	
@@ -356,6 +363,14 @@
         scope = 1;
 		class TransportItems {
             SFPD_BACKPACK_MEDIC
+        };
+    };
+	
+	class SFPD_CSAT_JUNGLE_Grenadier_Backpack: B_FieldPack_ghex_F {
+        displayname = "Jungle Grenadier Backpack";
+        scope = 1;
+		class TransportItems {
+			SFPD_BACKPACK_GRENADIER
         };
     };
 	

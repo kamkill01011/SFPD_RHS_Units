@@ -67,8 +67,6 @@
 		displayName = "Desert Grenadier";
 		weapons[] = {"SFPD_RHS_M4_GL_Default",BASIC_WEAPONS(SFPD_RHS_Glock17)};
 		respawnWeapons[] = {"SFPD_RHS_M4_GL_Default",BASIC_WEAPONS(SFPD_RHS_Glock17)};
-		magazines[] += {THREE_TIMES(1Rnd_HE_Grenade_shell)};
-		respawnMagazines[] += {THREE_TIMES(1Rnd_HE_Grenade_shell)};
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_AT: SFPD_RHS_BLUFOR_DESERT_Rifleman {

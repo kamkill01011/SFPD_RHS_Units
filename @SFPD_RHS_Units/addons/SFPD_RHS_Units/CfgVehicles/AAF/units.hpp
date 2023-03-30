@@ -38,8 +38,6 @@
 		displayName = "Grenadier";
 		weapons[] = {"SFPD_F2000_GL",BASIC_WEAPONS(SFPD_ACPC2)};
 		respawnWeapons[] = {"SFPD_F2000_GL",BASIC_WEAPONS(SFPD_ACPC2)};
-		magazines[] += {"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
-		respawnMagazines[] += {"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
 	};
 	
 	class SFPD_AAF_AT: SFPD_AAF_Rifleman {
