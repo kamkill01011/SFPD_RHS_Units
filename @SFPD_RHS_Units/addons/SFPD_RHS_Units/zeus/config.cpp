@@ -26,16 +26,15 @@ class CfgPatches {
 			"SFPD_RHS_Units_Zeus_setStationFuel_Module",
 			"SFPD_RHS_Units_Zeus_showVehicleFuelInfo_Module",
 			"SFPD_RHS_Units_Zeus_giveTracer_Module",
-			
 			"SFPD_RHS_Units_Zeus_giveAK_Module",
 			"SFPD_RHS_Units_Zeus_givePistol_Module",
 			"SFPD_RHS_Units_Zeus_giveRifle_Module",
-			
 			"SFPD_RHS_Units_Zeus_garbageSmall_Module",
 			"SFPD_RHS_Units_Zeus_garbageBig_Module",
 			"SFPD_RHS_Units_Zeus_garbageClean_Module",
 			"SFPD_RHS_Units_Zeus_addIntel_Module",
 			"SFPD_RHS_Units_Zeus_setBlood_Module",
+			"SFPD_RHS_Units_Zeus_setSleep_Module",
 			"SFPD_RHS_Units_Zeus_disableAutoCombat_Module",
 			"SFPD_RHS_Units_Zeus_disablePath_Module",
 			"SFPD_RHS_Units_Zeus_stayInImmobile_Module",
@@ -292,6 +291,12 @@ class CfgVehicles {
 		function = "zeus_fnc_setBloodEnter";
 	};
 	
+	class SFPD_RHS_Units_Zeus_setSleep_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
+		category = "SFPD_Zeus_medical";
+		displayName = "set sleep";
+		function = "zeus_fnc_setSleepEnter";
+	};
+	
 	class SFPD_RHS_Units_Zeus_disableAutoCombat_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
 		category = "SFPD_Zeus_common";
 		displayName = "disable auto combat";
@@ -397,6 +402,8 @@ class CfgFunctions {
 			class addIntelExit {};
 			class setBloodEnter {};
 			class setBloodExit {};
+			class setSleepEnter {};
+			class setSleepExit {};
 			class disableAutoCombat {};
 			class disablePath {};
 			class stayInImmobile {};
