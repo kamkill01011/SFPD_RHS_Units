@@ -140,7 +140,7 @@ fn_radioAnims_hand = {
         }; 
 
         //-- Use different values if player has weapon
-        if (currentWeapon TFAR_currentUnit != "") then {
+        if (currentWeapon ace_player != "") then {
             radioAnims_dattach = radioAnims_dattach select 1;
             radioAnims_dvector = radioAnims_dvector select 1;
         } else {
@@ -149,26 +149,26 @@ fn_radioAnims_hand = {
         };
 
         //-- Create radio and play animation
-        TFAR_currentUnit playactionnow radioAnims_Hand;
-        radioAnims_radioModel = createSimpleObject [radioAnims_modelToUse,position TFAR_currentUnit];
-        radioAnims_radioModel attachto [TFAR_currentUnit,radioAnims_dattach,"lefthand"];   
+        ace_player playactionnow radioAnims_Hand;
+        radioAnims_radioModel = createSimpleObject [radioAnims_modelToUse,position ace_player];
+        radioAnims_radioModel attachto [ace_player,radioAnims_dattach,"lefthand"];   
         [[radioAnims_radioModel,radioAnims_dvector],"setVectorDirAndUp",true,false] call BIS_fnc_MP;
     }; 
 };
 
 fn_radioAnims_Ear = {
-    if ( (headgear TFAR_currentUnit in radioAnims_cba_Earpieces) || (goggles TFAR_currentUnit in radioAnims_cba_Earpieces) ) then {
-        TFAR_currentUnit playActionNow radioAnims_Ear;
+    if ( (headgear ace_player in radioAnims_cba_Earpieces) || (goggles ace_player in radioAnims_cba_Earpieces) ) then {
+        ace_player playActionNow radioAnims_Ear;
     } else {
         call fn_radioAnims_hand;
     };
 };
 
 fn_radioAnims_vest = {
-    _cond1 = (getNumber (configFile >> "CfgWeapons" >> (vest TFAR_currentUnit) >> "itemInfo" >> "HitpointsProtectionInfo" >> "Chest" >> "armor") > 5);
-    _cond2 = (getNumber (configFile >> "CfgWeapons" >> (vest TFAR_currentUnit) >> "itemInfo" >> "armor") > 5);
-    if (vest TFAR_currentUnit in radioAnims_cba_vests || ((_cond1 || _cond2) && radioAnims_cba_vestarmor) ) then {
-        TFAR_currentUnit playActionNow radioAnims_Vest;
+    _cond1 = (getNumber (configFile >> "CfgWeapons" >> (vest ace_player) >> "itemInfo" >> "HitpointsProtectionInfo" >> "Chest" >> "armor") > 5);
+    _cond2 = (getNumber (configFile >> "CfgWeapons" >> (vest ace_player) >> "itemInfo" >> "armor") > 5);
+    if (vest ace_player in radioAnims_cba_vests || ((_cond1 || _cond2) && radioAnims_cba_vestarmor) ) then {
+        ace_player playActionNow radioAnims_Vest;
     } else {
         call fn_radioAnims_hand;
     };
@@ -180,11 +180,11 @@ fn_radioAnims_vest = {
 		radioAnims_TFAR_currentRadio = _this select 1;
         if (!radioAnims_cba_main) exitWith {};
         if (!(_this select 4)) exitWith {};
-        if (isWeaponDeployed TFAR_currentUnit) exitWith {};
+        if (isWeaponDeployed ace_player) exitWith {};
         if (!isNil "radioAnims_playerProbablyReloading") exitWith {};
-        if ( (radioAnims_cba_vehicles) && (vehicle TFAR_currentUnit != TFAR_currentUnit) ) exitWith {};
-		if ( (radioAnims_cba_ads) && (currentWeapon TFAR_currentUnit != primaryWeapon TFAR_currentUnit) && (cameraView == "GUNNER") ) exitWith {};
-        if ( (binocular TFAR_currentUnit != "") && (currentWeapon TFAR_currentUnit == binocular TFAR_currentUnit) ) exitWith {};
+        if ( (radioAnims_cba_vehicles) && (vehicle ace_player != ace_player) ) exitWith {};
+		if ( (radioAnims_cba_ads) && (currentWeapon ace_player != primaryWeapon ace_player) && (cameraView == "GUNNER") ) exitWith {};
+        if ( (binocular ace_player != "") && (currentWeapon ace_player == binocular ace_player) ) exitWith {};
         if (!isNull (findDisplay 312)) exitWith {};
 
         //-- Figure out which setting to use
@@ -220,15 +220,15 @@ fn_radioAnims_vest = {
     ["TFAR_RadioEventEnd", "OnTangent", {
         //-- Exceptions
         if (!radioAnims_cba_main) exitWith {};
-        if ( (isWeaponDeployed TFAR_currentUnit) && (isNil "radioAnims_playerAnimated") ) exitWith {};  //-- If bipoded and not currently animated, dont do stopping animation
+        if ( (isWeaponDeployed ace_player) && (isNil "radioAnims_playerAnimated") ) exitWith {};  //-- If bipoded and not currently animated, dont do stopping animation
         If (!isNil "radioAnims_playerProbablyReloading") exitWith {};  //-- If reloading, dont do stopping animation
-		if ( (radioAnims_cba_ads) && (currentWeapon TFAR_currentUnit != primaryWeapon TFAR_currentUnit) && (cameraView == "GUNNER") ) exitWith {};
-        if ( (binocular TFAR_currentUnit != "") && (currentWeapon TFAR_currentUnit == binocular TFAR_currentUnit) ) exitWith {};
+		if ( (radioAnims_cba_ads) && (currentWeapon ace_player != primaryWeapon ace_player) && (cameraView == "GUNNER") ) exitWith {};
+        if ( (binocular ace_player != "") && (currentWeapon ace_player == binocular ace_player) ) exitWith {};
         if (!isNull (findDisplay 312)) exitWith {};
 
         if (!(_this select 4)) exitWith {
             if (!isNil "radioAnims_radioModel") then {deletevehicle radioAnims_radioModel;radioAnims_radioModel = nil};  //-- If radio model exists, delete it
-            TFAR_currentUnit playActionNow "radioAnims_Stop";
+            ace_player playActionNow "radioAnims_Stop";
             radioAnims_playerAnimated = nil;
         }; 
     }, ObjNull] call TFAR_fnc_addEventHandler;
@@ -236,11 +236,12 @@ fn_radioAnims_vest = {
 
 //-- Eventhandler (Returns radioAnims_playerProbablyReloading = true if reloading)
     [] spawn {
-        while {true} do {  
-            _playerMagsPast = magazines TFAR_currentUnit;  //-- Save past state of magazines
+	    //TFAR_currentUnit = call TFAR_fnc_currentUnit;
+        while {true} do {
+            _playerMagsPast = magazines ace_player;  //-- Save past state of magazines
             sleep 0.25;
-            if (getText (configfile >> "CfgWeapons" >> (currentWeapon TFAR_currentUnit) >> "EventHandlers" >> "reload") != "radioAnims_playerProbablyReloading = true") then {
-	            if (  (!(magazines TFAR_currentUnit isEqualTo _playerMagsPast)) && (isnull (findDisplay 602))  ) then {
+            if (getText (configfile >> "CfgWeapons" >> (currentWeapon ace_player) >> "EventHandlers" >> "reload") != "radioAnims_playerProbablyReloading = true") then {
+	            if (  (!(magazines ace_player isEqualTo _playerMagsPast)) && (isnull (findDisplay 602))  ) then {
                     radioAnims_playerProbablyReloading = true;
                     sleep 15; //-- Buffer
                     radioAnims_playerProbablyReloading = nil;

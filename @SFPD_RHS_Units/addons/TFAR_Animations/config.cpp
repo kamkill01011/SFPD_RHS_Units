@@ -1,5 +1,5 @@
 class CfgPatches {
-	class Radio_Animations {
+	class TFAR_Animations {
 		author="ASmallDinosaur & JetBlack164";
 		url="http://thespeshalplatoon.com/";
 		units[] = {"Jet_Radio"};
@@ -14,7 +14,7 @@ class CfgVehicles {
 	class Jet_Radio: House_F {
 		scope = 2; 
 		displayName = "Jet's Radio"; 
-		model = "Radio_Animations\h189.p3d"; // filepath
+		model = "TFAR_Animations\h189.p3d"; // filepath
 		vehicleClass = Structures; // Object in the in-game editor
 		mapSize = 20.27; 
 		cost = 40000;		
@@ -23,15 +23,15 @@ class CfgVehicles {
 
 //-- Run init.sqf on player existance
 class Extended_PostInit_EventHandlers {
-	class Radio_Animations_PostInitHandler {
-		init="nul = [] execVM '\Radio_Animations\fnc\Init.sqf'";
+	class TFAR_Animations_PostInitHandler {
+		init="nul = [] execVM '\TFAR_Animations\fnc\Init.sqf'";
 	};
 };
 
 //-- Add CBA settings
 class Extended_PreInit_EventHandlers {
-	class Radio_Animations_PreInitHandler {
-		init="call compile preprocessFileLineNumbers '\Radio_Animations\fnc\cba_settings.sqf'";
+	class TFAR_Animations_PreInitHandler {
+		init="call compile preprocessFileLineNumbers '\TFAR_Animations\fnc\cba_settings.sqf'";
 	};
 };
 
@@ -158,7 +158,7 @@ class CfgGesturesMale {
 			mask="mask_OnlyAffectLeftArm";
 		};
 		class radioAnims_Hand: radioAnims_main {
-			file="Radio_Animations\radio_Hand.rtm";
+			file="TFAR_Animations\radio_Hand.rtm";
 			looped=1;
 			mask="mask_OnlyAffectLeftArm";		
 		};
