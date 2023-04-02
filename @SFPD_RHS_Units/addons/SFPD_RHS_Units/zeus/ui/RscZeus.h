@@ -779,24 +779,24 @@ class RscAddIntelModule: RscTestModule {
 	};
 };
 
-class RscSetBloodModule: RscTestModule {
-	onUnload = "_this call zeus_fnc_setBloodExit;";
+class RscSetSleepModule: RscTestModule {
+	onUnload = "_this call zeus_fnc_setSleepExit;";
 	class Controls: Controls {
 		class ControlMain: ControlMain {};
 		class ControlFrame: ControlFrame {
-			text = "set blood";
+			text = "set sleep";
 		};
 		class ControlOK: ControlOK {};
 		class ControlSlider: ControlSlider {
 			idc = 102;
 			y = KAM_Y * 1;
-			KAM_MIN = 3.0;
-			KAM_SEL = 5.2;
-			KAM_MAX = 6.0;
+			KAM_MIN = 0.0;
+			KAM_SEL = 1.0;
+			KAM_MAX = 7.0;
 		};
 		class ControlLabel1: ControlLabel {
 			y = KAM_Y * 1;
-			text = "blood volume";
+			text = "days without sleep";
 		};
 	};
 };

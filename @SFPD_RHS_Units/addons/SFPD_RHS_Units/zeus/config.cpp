@@ -4,6 +4,7 @@ class CfgPatches {
 		units[] = {
 			"SFPD_RHS_Units_Zeus_medicalStatus_Module",
 			"SFPD_RHS_Units_Zeus_CPR_Module",
+			"SFPD_RHS_Units_Zeus_addBlindfold_Module",
 			"SFPD_RHS_Units_Zeus_addDemoCharge_Module",
 			"SFPD_RHS_Units_Zeus_addGasGrenades_Module",
 			"SFPD_RHS_Units_Zeus_putNBCMask_Module",
@@ -25,11 +26,15 @@ class CfgPatches {
 			"SFPD_RHS_Units_Zeus_setStationFuel_Module",
 			"SFPD_RHS_Units_Zeus_showVehicleFuelInfo_Module",
 			"SFPD_RHS_Units_Zeus_giveTracer_Module",
+			"SFPD_RHS_Units_Zeus_giveAK_Module",
+			"SFPD_RHS_Units_Zeus_givePistol_Module",
+			"SFPD_RHS_Units_Zeus_giveRifle_Module",
 			"SFPD_RHS_Units_Zeus_garbageSmall_Module",
 			"SFPD_RHS_Units_Zeus_garbageBig_Module",
 			"SFPD_RHS_Units_Zeus_garbageClean_Module",
 			"SFPD_RHS_Units_Zeus_addIntel_Module",
 			"SFPD_RHS_Units_Zeus_setBlood_Module",
+			"SFPD_RHS_Units_Zeus_setSleep_Module",
 			"SFPD_RHS_Units_Zeus_disableAutoCombat_Module",
 			"SFPD_RHS_Units_Zeus_disablePath_Module",
 			"SFPD_RHS_Units_Zeus_stayInImmobile_Module",
@@ -106,6 +111,34 @@ class CfgVehicles {
 		category = "SFPD_Zeus_equipment";
 		displayName = "add gas grenades";
 		function = "zeus_fnc_addGasGrenades";
+		isGlobal = 1;// TODO
+	};
+	
+	class SFPD_RHS_Units_Zeus_addBlindfold_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
+		category = "SFPD_Zeus_equipment";
+		displayName = "add blindfold";
+		function = "zeus_fnc_addBlindfold";
+		isGlobal = 1;// TODO
+	};
+	
+	class SFPD_RHS_Units_Zeus_giveAK_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
+		category = "SFPD_Zeus_equipment";
+		displayName = "give AK";
+		function = "zeus_fnc_giveAK";
+		isGlobal = 1;// TODO
+	};
+	
+	class SFPD_RHS_Units_Zeus_givePistol_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
+		category = "SFPD_Zeus_equipment";
+		displayName = "give Pistol";
+		function = "zeus_fnc_givePistol";
+		isGlobal = 1;// TODO
+	};
+	
+	class SFPD_RHS_Units_Zeus_giveRifle_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
+		category = "SFPD_Zeus_equipment";
+		displayName = "give Rifle";
+		function = "zeus_fnc_giveRifle";
 		isGlobal = 1;// TODO
 	};
 	
@@ -258,6 +291,12 @@ class CfgVehicles {
 		function = "zeus_fnc_setBloodEnter";
 	};
 	
+	class SFPD_RHS_Units_Zeus_setSleep_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
+		category = "SFPD_Zeus_medical";
+		displayName = "set sleep";
+		function = "zeus_fnc_setSleepEnter";
+	};
+	
 	class SFPD_RHS_Units_Zeus_disableAutoCombat_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
 		category = "SFPD_Zeus_common";
 		displayName = "disable auto combat";
@@ -315,6 +354,7 @@ class CfgFunctions {
 			file = "SFPD_RHS_Units\zeus\functions";
 			class medicalStatus {};
 			class cpr {};
+			class addBlindfold {};
 			class addDemoCharge {};
 			class addGasGrenades {};
 			class putNBCMask {};
@@ -349,6 +389,9 @@ class CfgFunctions {
 			class showVehicleFuelInfo {};
 			class giveTracerEnter {};
 			class giveTracerExit {};
+			class giveAK {};
+			class givePistol {};
+			class giveRifle {};
 			class garbageSmallEnter {};
 			class garbageSmallExit {};
 			class garbageBigEnter {};
@@ -359,6 +402,8 @@ class CfgFunctions {
 			class addIntelExit {};
 			class setBloodEnter {};
 			class setBloodExit {};
+			class setSleepEnter {};
+			class setSleepExit {};
 			class disableAutoCombat {};
 			class disablePath {};
 			class stayInImmobile {};
