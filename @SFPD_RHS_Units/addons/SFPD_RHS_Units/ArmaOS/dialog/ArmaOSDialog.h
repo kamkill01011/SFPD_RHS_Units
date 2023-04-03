@@ -181,7 +181,6 @@ class RscTestModule {
 
 class ArmaOSDialog: RscTestModule {
 	idd = 1337;
-	onload = "_this call zeus_fnc_setDeviceObjectExit;";
 	class Controls: Controls {
 		class ControlMain: ControlMain {};
 		class ControlFrame: ControlFrame {

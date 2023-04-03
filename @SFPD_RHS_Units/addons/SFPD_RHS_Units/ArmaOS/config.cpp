@@ -39,25 +39,6 @@ class CfgFunctions {
 	};
 };
 
-/*class CfgVehicles {
-	class Land_Laptop_unfolded_F;
-	class Land_Laptop_device_F: Land_Laptop_unfolded_F {
-		class ACE_Actions {
-			class ACE_MainActions {
-				distance = 2;
-				condition = "(vehicle _player == _player)";
-				class KAM_login {
-					distance = 2;
-					displayName = "login";
-					condition = "true";
-					statement = "[_player, _target] spawn ArmaOS_fnc_displayArmaOS";
-					icon = "";
-				};
-			};
-		};
-	};
-};*/
-
 
 #include "dialog\ArmaOSDialog.h"
 

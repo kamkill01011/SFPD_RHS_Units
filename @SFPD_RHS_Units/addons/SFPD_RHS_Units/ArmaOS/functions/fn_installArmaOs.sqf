@@ -6,7 +6,7 @@ params ["_object", "_data"];
 
 _folderBin = createHashMap;
 _folderUsr = createHashMap;
-_folderDev = createHashMap;
+//_folderDev = createHashMap;
 _folderMnt = createHashMap;
 _folderTmp = createHashMap;
 _folderSys = createHashMap;
@@ -14,7 +14,7 @@ _folderSys = createHashMap;
 _diskC = createHashMapFromArray [
 	["bin/",_folderBin], 
 	["usr/",_folderUsr], 
-	["dev/",_folderDev], 
+	//["dev/",_folderDev], 
 	["mnt/",_folderMnt], 
 	["tmp/",_folderTmp], 
 	["sys/",_folderSys]
@@ -27,11 +27,11 @@ _folderBin set ["chmod", "0x06dffd70b08326526796b1e63ac4dbbb"];
 
 _folderUsr set ["root", "0x05997c805b97c483ff02bc4e42fe4065"];
 _folderUsr set ["user", "0x21e02024b10751e6176d7efd00896376"];
-
+/*
 _folderDev set ["console", "0x4bfbaa57cef9f0271b5875924c01c7c8"];
 _folderDev set ["core", "0xa539ef161ffe51f919fd4651f3480e9b"];
 _folderDev set ["autofs", "0x2861ece0baf14c86cf53c03904fec633"];
-
+*/
 _folderMnt set ["usb1", "0x29efe445bf67ee5fd3e53c3e0aa21cfa"];
 _folderMnt set ["usb2", "0xb5f42b07b98c939ee56fe8c35ee12351"];
 //_folderMnt set ["exHDD", "0x2f01da11ce31c433e0798349cb4f6a9d"];
@@ -47,7 +47,7 @@ _folderSys set ["shutdown", "0x96d9763cc391e8d8fa027f18b389b74a"];
 _selFolder = _diskC get (selectRandom (keys _diskC));
 _selFile = _selFolder set [(selectRandom (keys _selFolder)), _data];
 
-_object setvariable ["KAM_ArmaOS_fs", _diskC];
+_object setvariable ["KAM_ArmaOS_fs", _diskC, true];
 
 
 _action = ["ArmaOslogin","login","",{

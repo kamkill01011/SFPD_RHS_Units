@@ -12,6 +12,7 @@ class CfgPatches {
 			"SFPD_RHS_Units_Zeus_holsterWeapon_Module",
 			"SFPD_RHS_Units_Zeus_addCarKey_Module",
 			"SFPD_RHS_Units_Zeus_addK9_Module",
+			"SFPD_RHS_Units_Zeus_setupArmaOs_Module",
 			"SFPD_RHS_Units_Zeus_setDeviceObject_Module",
 			"SFPD_RHS_Units_Zeus_setJammerObject_Module",
 			"SFPD_RHS_Units_Zeus_setContaminatedObject_Module",
@@ -173,6 +174,12 @@ class CfgVehicles {
 		category = "SFPD_Zeus_common";
 		displayName = "add K9";
 		function = "zeus_fnc_addK9Enter";
+	};
+	
+	class SFPD_RHS_Units_Zeus_setupArmaOs_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
+		category = "SFPD_Zeus_common";
+		displayName = "setup Arma Os";
+		function = "zeus_fnc_setupArmaOsEnter";
 	};
 	
 	class SFPD_RHS_Units_Zeus_setDeviceObject_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
@@ -364,6 +371,8 @@ class CfgFunctions {
 			class addCarKeyExit {};
 			class addK9Enter {};
 			class addK9Exit {};
+			class setupArmaOsEnter {};
+			class setupArmaOsExit {};
 			class setDeviceObjectEnter {};
 			class setDeviceObjectExit {};
 			class setJammerObjectEnter {};
