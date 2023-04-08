@@ -1868,11 +1868,6 @@ class CfgOpticsEffect {
 		priority = 2550;
 		type = "colorInversion";
 	};
-	/*class TankCommanderOptics1 {
-		params[] = {0,0,0};
-		priority = 2550;
-		type = "colorInversion";
-	};*/
 };
 
 class CBA_Extended_EventHandlers_base;
