@@ -1862,6 +1862,14 @@ class cfgUnitInsignia {
 #include "CfgUnitInsignia.hpp"
 };
 
+class CfgOpticsEffect {
+	class BWTV {
+		params[] = {0,0,0};
+		priority = 2550;
+		type = "colorInversion";
+	};
+};
+
 class CBA_Extended_EventHandlers_base;
 
 class Extended_Init_EventHandlers {

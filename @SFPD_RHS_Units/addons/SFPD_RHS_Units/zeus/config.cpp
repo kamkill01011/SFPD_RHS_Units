@@ -12,6 +12,7 @@ class CfgPatches {
 			"SFPD_RHS_Units_Zeus_holsterWeapon_Module",
 			"SFPD_RHS_Units_Zeus_addCarKey_Module",
 			"SFPD_RHS_Units_Zeus_addK9_Module",
+			"SFPD_RHS_Units_Zeus_setupArmaOs_Module",
 			"SFPD_RHS_Units_Zeus_setDeviceObject_Module",
 			"SFPD_RHS_Units_Zeus_setJammerObject_Module",
 			"SFPD_RHS_Units_Zeus_setContaminatedObject_Module",
@@ -32,6 +33,8 @@ class CfgPatches {
 			"SFPD_RHS_Units_Zeus_garbageSmall_Module",
 			"SFPD_RHS_Units_Zeus_garbageBig_Module",
 			"SFPD_RHS_Units_Zeus_garbageClean_Module",
+			"SFPD_RHS_Units_Zeus_addRuin_Module",
+			"SFPD_RHS_Units_Zeus_removeRuin_Module",
 			"SFPD_RHS_Units_Zeus_addIntel_Module",
 			"SFPD_RHS_Units_Zeus_setBlood_Module",
 			"SFPD_RHS_Units_Zeus_setSleep_Module",
@@ -53,6 +56,11 @@ class CfgPatches {
 class CfgFactionClasses {
 	class SFPD_Zeus_common {
 		displayName = "[SFPD] common";
+		priority = 2;
+		side = 7;
+	};
+	class SFPD_Zeus_area {
+		displayName = "[SFPD] area";
 		priority = 2;
 		side = 7;
 	};
@@ -175,6 +183,12 @@ class CfgVehicles {
 		function = "zeus_fnc_addK9Enter";
 	};
 	
+	class SFPD_RHS_Units_Zeus_setupArmaOs_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
+		category = "SFPD_Zeus_common";
+		displayName = "setup Arma Os";
+		function = "zeus_fnc_setupArmaOsEnter";
+	};
+	
 	class SFPD_RHS_Units_Zeus_setDeviceObject_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
 		category = "SFPD_Zeus_common";
 		displayName = "set device object";
@@ -262,21 +276,33 @@ class CfgVehicles {
 	};
 	
 	class SFPD_RHS_Units_Zeus_garbageSmall_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
-		category = "SFPD_Zeus_common";
+		category = "SFPD_Zeus_area";
 		displayName = "garbage (small)";
 		function = "zeus_fnc_garbageSmallEnter";
 	};
 	
 	class SFPD_RHS_Units_Zeus_garbageBig_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
-		category = "SFPD_Zeus_common";
+		category = "SFPD_Zeus_area";
 		displayName = "garbage (big)";
 		function = "zeus_fnc_garbageBigEnter";
 	};
 	
 	class SFPD_RHS_Units_Zeus_garbageClean_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
-		category = "SFPD_Zeus_common";
+		category = "SFPD_Zeus_area";
 		displayName = "garbage (clean)";
 		function = "zeus_fnc_garbageCleanEnter";
+	};
+	
+	class SFPD_RHS_Units_Zeus_addRuin_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
+		category = "SFPD_Zeus_area";
+		displayName = "ruin (add)";
+		function = "zeus_fnc_addRuin";
+	};
+	
+	class SFPD_RHS_Units_Zeus_removeRuin_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
+		category = "SFPD_Zeus_area";
+		displayName = "ruin (remove)";
+		function = "zeus_fnc_removeRuin";
 	};
 	
 	class SFPD_RHS_Units_Zeus_addIntel_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
@@ -316,26 +342,26 @@ class CfgVehicles {
 	};
 	
 	class SFPD_RHS_Units_Zeus_CPZone_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
-		category = "SFPD_Zeus_common";
+		category = "SFPD_Zeus_area";
 		displayName = "CP Zone";
 		function = "zeus_fnc_CPZoneEnter";
 	};
 	
 	class SFPD_RHS_Units_Zeus_CPSpawn_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
-		category = "SFPD_Zeus_common";
+		category = "SFPD_Zeus_area";
 		displayName = "CP Spawn";
 		function = "zeus_fnc_CPSpawn";
 		isGlobal = 1;// TODO
 	};
 	
 	class SFPD_RHS_Units_Zeus_CPPath_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
-		category = "SFPD_Zeus_common";
+		category = "SFPD_Zeus_area";
 		displayName = "CP Path";
 		function = "zeus_fnc_CPPathEnter";
 	};
 	
 	class SFPD_RHS_Units_Zeus_CPCover_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
-		category = "SFPD_Zeus_common";
+		category = "SFPD_Zeus_area";
 		displayName = "CP Cover";
 		function = "zeus_fnc_CPCoverEnter";
 	};
@@ -364,6 +390,8 @@ class CfgFunctions {
 			class addCarKeyExit {};
 			class addK9Enter {};
 			class addK9Exit {};
+			class setupArmaOsEnter {};
+			class setupArmaOsExit {};
 			class setDeviceObjectEnter {};
 			class setDeviceObjectExit {};
 			class setJammerObjectEnter {};
@@ -398,6 +426,8 @@ class CfgFunctions {
 			class garbageBigExit {};
 			class garbageCleanEnter {};
 			class garbageCleanExit {};
+			class addRuin {};
+			class removeRuin {};
 			class addIntelEnter {};
 			class addIntelExit {};
 			class setBloodEnter {};

@@ -263,6 +263,26 @@ class RscAddK9Module: RscTestModule {
 	};
 };
 
+class RscSetupArmaOsModule: RscTestModule {
+	onUnload = "_this call zeus_fnc_setupArmaOsExit;";
+	class Controls: Controls {
+		class ControlMain: ControlMain {};
+		class ControlFrame: ControlFrame {
+			text = "setup Arma Os";
+		};
+		class ControlOK: ControlOK {};
+		class ControlText1: ControlText {
+			idc = 103;
+			y = KAM_Y * 1;
+			text = "SECRET CODE: *1234*";
+		};
+		class ControlLabel1: ControlLabel {
+			y = KAM_Y * 1;
+			text = "data";
+		};
+	};
+};
+
 class RscSetDeviceObjectModule: RscTestModule {
 	onUnload = "_this call zeus_fnc_setDeviceObjectExit;";
 	class Controls: Controls {

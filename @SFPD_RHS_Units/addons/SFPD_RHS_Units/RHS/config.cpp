@@ -11,6 +11,8 @@ class CfgPatches {
 			"rhsusf_c_troops",
 			"rhsusf_c_m1117",
 			"rhsusf_c_statics",
+			"RHS_US_A2_AirImport",
+			"rhsusf_c_airweapons",
 			"rhsgref_c_air",
 			"rhsgref_c_troops",
 			"rhsgref_c_vehicles_ret",
@@ -28,6 +30,13 @@ class CfgPatches {
 };
 
 class CfgFunctions {
+	class SFPD_RHS_Units_RHS {
+		tag = "RHS";
+		class functions {
+			file = "SFPD_RHS_Units\RHS\functions";
+			class ah64_gunnerUI_KAM {};
+		};
+	};
 	class SFPD_RHS_Units_RHS_Custom_Init {
 		class SFPD_RHS_Units_RHS_Custom_Init {
 			class Init {
@@ -35,6 +44,13 @@ class CfgFunctions {
 				postInit = 1;
 			};
 		};
+	};
+};
+
+class RscInGameUI {
+	class RscUnitInfo;
+	class RHS_RscOptics_Heli_Attack_01_gunner: RscUnitInfo {
+		onLoad = "['onLoad',_this,'RscUnitInfo','IGUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay'); _this spawn RHS_fnc_ah64_gunnerUI_KAM";
 	};
 };
 
