@@ -10,7 +10,7 @@ _wpCount = count _wps;
 if (_wpCount > 0) then {
 	_wpLast = _wps # (_wpCount - 1);
 	_wpLast setWaypointType "LOITER";
-	_wpLast setWaypointLoiterRadius 2000;
+	_wpLast setWaypointLoiterRadius 1500;
 	_wpLast setWaypointLoiterType "CIRCLE_L";
 	[_unit, _asl] spawn {
 		params ["_unit", "_asl"];
