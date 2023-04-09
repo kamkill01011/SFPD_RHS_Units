@@ -55,5 +55,5 @@ _action = ["ArmaOslogin","login","",{
 	[_player, _target] spawn ArmaOS_fnc_displayArmaOS;
 },{true},{},[],[0,0,0],3] call ace_interact_menu_fnc_createAction;
 
-[_object, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
-
+//[_object, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+[_object, 0, ["ACE_MainActions"], _action] remoteExec ["ace_interact_menu_fnc_addActionToObject", 0, _object];

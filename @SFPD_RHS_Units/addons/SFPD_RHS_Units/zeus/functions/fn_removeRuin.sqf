@@ -18,13 +18,15 @@ if (!local _logic) exitWith {};
 	
 	if (!(isNull _new)) exitWith {
 		deleteVehicle _new;
-		_building hideObjectGlobal false;
+		//_building hideObjectGlobal false;
+		[_building, false] remoteExec ["hideObjectGlobal", 2];
 		_building setVariable ["KAM_Ruin_new", nil, true];
 	};
 	
 	if (!(isNull _original)) exitWith {
 		deleteVehicle _building;
-		_original hideObjectGlobal false;
+		//_original hideObjectGlobal false;
+		[_original, false] remoteExec ["hideObjectGlobal", 2];
 		_original setVariable ["KAM_Ruin_new", nil, true];
 	};
 	
