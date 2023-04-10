@@ -320,11 +320,45 @@
 			TRANSPORT_MAGAZINES(SmokeShell,15) \
 			TRANSPORT_MAGAZINES(ACE_M84,15) \
 			OPTIONAL_MAG \
+			delete _xx_100Rnd_65x39_caseless_mag; \
+			delete _xx_16Rnd_9x21_Mag; \
+			delete _xx_1Rnd_HE_Grenade_shell; \
+			delete _xx_1Rnd_Smoke_Grenade_shell; \
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell; \
+			delete _xx_20Rnd_762x51_Mag; \
+			delete _xx_30Rnd_45ACP_Mag_SMG_01; \
+			delete _xx_30Rnd_65x39_caseless_mag; \
+			delete _xx_chemlight_green; \
+			delete _xx_HandGrenade; \
+			delete _xx_Laserbatteries; \
+			delete _xx_MiniGrenade; \
+			delete _xx_NLAW_F; \
+			delete _xx_SmokeShell; \
+			delete _xx_SmokeShellGreen; \
+			delete _xx_UGL_FlareGreen_F; \
+			delete _xx_UGL_FlareWhite_F; \
+			delete _xx_10Rnd_762x54_Mag; \
+			delete _xx_150Rnd_762x54_Box; \
+			delete _xx_1Rnd_SmokeRed_Grenade_shell; \
+			delete _xx_30Rnd_65x39_caseless_green; \
+			delete _xx_30Rnd_9x21_Mag; \
+			delete _xx_chemlight_red; \
+			delete _xx_RPG32_F; \
+			delete _xx_RPG32_HE_F; \
+			delete _xx_SmokeShellRed; \
+			delete _xx_UGL_FlareRed_F; \
+			delete _xx_UGL_FlareYellow_F; \
 		}; \
 		class TransportWeapons { \
 			TRANSPORT_WEAPONS(AR,2) \
 			TRANSPORT_WEAPONS(MMG,1) \
 			TRANSPORT_WEAPONS(AT,1) \
+			delete _xx_arifle_MX_F; \
+			delete _xx_arifle_MX_SW_F; \
+			delete _xx_launch_NLAW_F; \
+			delete _xx_arifle_Katiba_F; \
+			delete _xx_launch_RPG32_F; \
+			delete _xx_LMG_Zafir_F; \
 		}; \
 		class TransportItems { \
 			TRANSPORT_ITEMS(ACE_elasticBandage,40) \
@@ -341,11 +375,16 @@
 			TRANSPORT_ITEMS(LIGHT,10) \
 			TRANSPORT_ITEMS(ACE_SpareBarrel_Item,2) \
 			TRANSPORT_ITEMS(ACE_artilleryTable,2) \
+			delete _xx_acc_flashlight; \
+			delete _xx_FirstAidKit; \
+			delete _xx_Laserdesignator; \
 		}; \
 		class TransportBackpacks { \
 			TRANSPORT_BACKPACKS(BACKPACK,4) \
 			TRANSPORT_BACKPACKS(BACKPACK_BIG,4) \
 			TRANSPORT_BACKPACKS(ACE_TacticalLadder_Pack,2) \
+			delete _xx_B_Kitbag_mcamo; \
+			delete _xx_B_FieldPack_ocamo; \
 		};
 
 
@@ -1816,6 +1855,7 @@ class CfgPatches {
 			"a3_characters_F",
 			"a3_characters_f_beta",
 			"a3_characters_f_gamma",
+			"A3_Supplies_F_Heli_Slingload",
 			"rhs_c_weapons",
 			"rhsusf_c_troops",
 			"rhsusf_c_m1117",
@@ -3116,6 +3156,8 @@ class CfgVehicles {
 		class TransportWeapons {};
 		class TransportItems {
 			SFPD_SUPPLY_MEDICAL
+			delete _xx_FirstAidKit;
+			delete _xx_Medikit;
         };
 	};
 	
@@ -3168,6 +3210,8 @@ class CfgVehicles {
 		class TransportWeapons {};
 		class TransportItems {
 			SFPD_SUPPLY_MEDICAL
+			delete _xx_FirstAidKit;
+			delete _xx_Medikit;
         };
 	};
 	class Land_Pod_Heli_Transport_04_medevac_black_F : Land_Pod_Heli_Transport_04_medevac_F {
@@ -3177,6 +3221,8 @@ class CfgVehicles {
 		class TransportWeapons {};
 		class TransportItems {
 			SFPD_SUPPLY_MEDICAL
+			delete _xx_FirstAidKit;
+			delete _xx_Medikit;
         };
 	};
 	
@@ -5940,8 +5986,6 @@ class ace_csw_groups {
 };
 
 class cfgWeapons {
-	
-	["weapon_VLSBase","MissileLauncher","LauncherCore","Default"]//reloadTime = 10;
 	
 	class weapon_VLSBase;
     class weapon_VLS_01: weapon_VLSBase {
