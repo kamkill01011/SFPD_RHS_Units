@@ -28,6 +28,10 @@ class KAM {
 			file = "\SFPD_RHS_Units\vanActions.sqf";
 			postInit = 1;
 		};
+		class DisableArtilleryComputer {
+			file = "\SFPD_RHS_Units\DisableArtilleryComputer.sqf";
+			postInit = 1;
+		};
 	};
 	class K9 {
 		file = "SFPD_RHS_Units\functions";
