@@ -16,5 +16,7 @@ if (_wpCount > 0) then {
 		params ["_unit", "_asl"];
 		sleep 1;
 		_unit flyInHeightASL [_asl,_asl,_asl];
+		sleep 4;
+		_unit flyInHeightASL [_asl,_asl,_asl];
 	};
 };

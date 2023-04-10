@@ -5235,6 +5235,8 @@ class CfgVehicles {
 	
 	class B_Ship_Gun_01_F : B_Ship_Gun_01_base_F {
 		faction = "SFPD_BLUFOR_DESERT_Faction";
+		
+		KAM_force_artillery = 1;
 	};
 	
 	class B_SAM_System_01_F : SAM_System_01_base_F {
