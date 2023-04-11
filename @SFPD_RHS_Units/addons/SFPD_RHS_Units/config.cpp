@@ -1998,6 +1998,44 @@ class CfgVehicles {
 	
 	class Man;
 	class CAManBase: Man {
+		reportRemoteTargets = 1;
+		class AttributeValues {
+			ReportRemoteTargets = 1;
+		}
+		class Components {
+			class SensorsManagerComponent {
+				class LaserSensorComponent {
+					aimDown = 0;
+					allowsMarking = 1;
+					angleRangeHorizontal = 1;
+					angleRangeVertical = 1;
+					animDirection = "";
+					color = [1,1,1,0];
+					componentType = "LaserSensorComponent";
+					groundNoiseDistanceCoef = -1;
+					maxGroundNoiseDistance = -1;
+					maxSpeedThreshold = 0;
+					maxTrackableATL = 1e+10;
+					maxTrackableSpeed = 1e+10;
+					minSpeedThreshold = 0;
+					minTrackableATL = -1e+10;
+					minTrackableSpeed = -1e+10;
+					typeRecognitionDistance = 0;
+					class AirTarget {
+						maxRange = 6000;
+						minRange = 6000;
+						objectDistanceLimitCoef = -1;
+						viewDistanceLimitCoef = -1;
+					};
+					class GroundTarget {
+						maxRange = 6000;
+						minRange = 6000;
+						objectDistanceLimitCoef = -1;
+						viewDistanceLimitCoef = -1;
+					};
+				};
+			};
+		};
 		class HitPoints {
 			class HitFace;
 		};
