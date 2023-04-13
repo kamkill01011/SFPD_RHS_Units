@@ -6025,11 +6025,6 @@ class ace_csw_groups {
 
 class cfgWeapons {
 	
-	class weapon_VLSBase;
-    class weapon_VLS_01: weapon_VLSBase {
-        reloadTime = 1;
-    };
-	
 	class Launcher;
     class Launcher_Base_F: Launcher {
         class WeaponSlotsInfo;
