@@ -18,7 +18,8 @@ if (!local _logic) exitWith {};
 	_objPos = getPosATL _new;
 	_objDir = getDir _new;
 	
-	_original hideObjectGlobal true;
+	//_original hideObjectGlobal true;
+	[_original, true] remoteExec ["hideObjectGlobal", 2];
 	deleteVehicle _new;
 	
 	//"Land_ChurchRuin_01_F"

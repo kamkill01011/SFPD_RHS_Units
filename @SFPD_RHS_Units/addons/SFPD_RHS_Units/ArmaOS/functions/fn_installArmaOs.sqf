@@ -50,10 +50,18 @@ _selFile = _selFolder set [(selectRandom (keys _selFolder)), _data];
 _object setvariable ["KAM_ArmaOS_fs", _diskC, true];
 
 
-_action = ["ArmaOslogin","login","",{
+/*_action = ["ArmaOslogin","login","",{
 	params ["_target", "_player", "_params"];
 	[_player, _target] spawn ArmaOS_fnc_displayArmaOS;
 },{true},{},[],[0,0,0],3] call ace_interact_menu_fnc_createAction;
 
-[_object, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+[_object, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;*/
 
+[[_object], {
+	params ["_object"];
+	_action = ["ArmaOslogin","login","",{
+		params ["_target", "_player", "_params"];
+		[_player, _target] spawn ArmaOS_fnc_displayArmaOS;
+	},{true},{},[],[0,0,0],3] call ace_interact_menu_fnc_createAction;
+	[_object, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+}] remoteExec ["call", 0, _object];
