@@ -387,6 +387,21 @@
 			delete _xx_B_FieldPack_ocamo; \
 		};
 
+//
+#define SFPD_VEHICLES_CFG(F,C) \
+		faction = #F; \
+		scope = 2; \
+		scopeCurator = 2; \
+		crew = #C;
+
+#define SFPD_VEHICLES_EMPTY_CARGO \
+		class TransportMagazines {}; \
+		class TransportWeapons {}; \
+		class TransportItems {}; \
+		class TransportBackpacks {};
+
+
+
 
 
 

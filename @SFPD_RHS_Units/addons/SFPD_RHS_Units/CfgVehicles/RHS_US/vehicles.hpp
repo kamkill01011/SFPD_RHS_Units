@@ -1,177 +1,111 @@
 	//Desert
 	class SFPD_RHS_BLUFOR_DESERT_M1151: rhsusf_m1151_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1151_M2: rhsusf_m1151_m2_v2_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1151_M240: rhsusf_m1151_m240_v2_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1152_cargo: rhsusf_m1152_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1152_ammo: rhsusf_m1152_rsv_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1152_SICPS: rhsusf_m1152_sicps_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1165_cargo: rhsusf_m1165_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M966_TOW: rhsusf_m966_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1165A1_m134d: rhsusf_m1165a1_gmv_m134d_m240_socom_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1165A1_m2: rhsusf_m1165a1_gmv_m2_m240_socom_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1165A1_mk19: rhsusf_m1165a1_gmv_mk19_m240_socom_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1240: rhsusf_m1240a1_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1240_M2_CROWS: rhsusf_m1240a1_m2crows_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1240_M2: rhsusf_m1240a1_m2_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1240_M240: rhsusf_m1240a1_m240_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1097_4D_open: rhsusf_m998_d_4dr {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1025_M2: rhsusf_m1025_d_m2 {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1237_M2: rhsusf_M1237_M2_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1230_M2: rhsusf_M1230_M2_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1230_MED: rhsusf_M1230a1_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M113: rhsusf_m113d_usarmy {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_stryker: rhsusf_stryker_m1126_m2_wd {//rhsusf_stryker_m1126_m2_d
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_TankCrew";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_TankCrew)
 		SFPD_RHS_BLUFOR_Transport
 
 		hiddenSelectionsTextures[] = {
@@ -191,10 +125,7 @@
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_stryker_engineer: rhsusf_stryker_m1132_m2_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_TankCrew";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_TankCrew)
 		SFPD_RHS_BLUFOR_Transport
 
 		hiddenSelectionsTextures[] = {
@@ -215,10 +146,7 @@
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_stryker_TOW: rhsusf_stryker_m1134_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_TankCrew";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_TankCrew)
 		SFPD_RHS_BLUFOR_Transport
 
 		hiddenSelectionsTextures[] = {
@@ -240,394 +168,235 @@
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M2A2_BUSKI: RHS_M2A3_BUSKIII {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_TankCrew";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_TankCrew)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_m1A2SEP1_TUSKII: rhsusf_m1a2sep1tuskiid_usarmy {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_TankCrew";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_TankCrew)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M978A4_BKIT: rhsusf_M978A4_BKIT_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M977A4_AMMO_BKIT: rhsusf_M977A4_AMMO_BKIT_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1083A1P2: rhsusf_M1083A1P2_B_d_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1083A1P2_M2: rhsusf_M1083A1P2_B_M2_d_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1083A1P2_wide: rhsusf_M1083A1P2_D_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1084A1P2: rhsusf_M1084A1P2_B_D_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1084A1P2_M2: rhsusf_M1084A1P2_B_M2_D_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1084A1P2_wide: rhsusf_M1084A1P2_D_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1078A1P2_CP: rhsusf_M1078A1P2_B_D_CP_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1085A1P2_Med: rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1078A1R_SOV_M2: rhsusf_M1078A1R_SOV_M2_D_fmtv_socom {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1084A1R_SOV_M2: rhsusf_M1084A1R_SOV_M2_D_fmtv_socom {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1117: rhsusf_M1117_D {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_MRZR: rhsusf_mrzr4_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_RG33_M2: rhsusf_rg33_m2_usmc_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M113_Medical: rhsusf_m113d_usarmy_medical {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M109: rhsusf_m109d_usarmy {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_TankCrew";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_TankCrew)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1025: rhsusf_m1025_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M998: rhsusf_m998_d_2dr_halftop {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M977A4_BKIT: rhsusf_M977A4_BKIT_usarmy_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_RG33: rhsusf_rg33_usmc_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1238A1: rhsusf_M1238A1_socom_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1238A1_M2: rhsusf_M1238A1_M2_socom_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1239: rhsusf_M1239_socom_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M1239_M2: rhsusf_M1239_M2_socom_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_CGRCAT1A2: rhsusf_CGRCAT1A2_usmc_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_CGRCAT1A2_M2: rhsusf_CGRCAT1A2_M2_usmc_d {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_M142: rhsusf_M142_usarmy_D {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 		
 		KAM_force_artillery = 1;
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_Static_M2: RHS_M2StaticMG_D {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_Static_M2_mini: RHS_M2StaticMG_MiniTripod_D {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_Static_TOW: RHS_TOW_TriPod_D {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_Static_Mk6: B_Mortar_01_F {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_Static_M119: RHS_M119_D {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_Static_Stinger: RHS_Stinger_AA_pod_D {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_DESERT_Static_Mk19: RHS_MK19_TriPod_D {
-		faction = "SFPD_RHS_BLUFOR_DESERT_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_DESERT_Rifleman";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_DESERT_Faction,SFPD_RHS_BLUFOR_DESERT_Rifleman)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	//Woodland
 	class SFPD_RHS_BLUFOR_WOODLAND_M1151: rhsusf_m1151_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1151_M2: rhsusf_m1151_m2_v2_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1151_M240: rhsusf_m1151_m240_v2_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1152_cargo: rhsusf_m1152_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1152_ammo: rhsusf_m1152_rsv_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1152_SICPS: rhsusf_m1152_sicps_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1165_cargo: rhsusf_m1165_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M966_TOW: rhsusf_m966_w {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1165A1_m134d: rhsusf_m1165a1_gmv_m134d_m240_socom_d {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 		
 		hiddenSelectionsTextures[] = {
@@ -650,10 +419,7 @@
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1165A1_m2: rhsusf_m1165a1_gmv_m2_m240_socom_d {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 		
 		hiddenSelectionsTextures[] = {
@@ -677,10 +443,7 @@
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1165A1_mk19: rhsusf_m1165a1_gmv_mk19_m240_socom_d {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 		
 		hiddenSelectionsTextures[] = {
@@ -704,482 +467,281 @@
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1240: rhsusf_m1240a1_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1240_M2_CROWS: rhsusf_m1240a1_m2crows_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1240_M2: rhsusf_m1240a1_m2_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1240_M240: rhsusf_m1240a1_m240_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1097_4D_open: rhsusf_m998_w_4dr {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1025_M2: rhsusf_m1025_w_m2 {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1237_M2: rhsusf_M1237_M2_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1230_M2: rhsusf_M1230_M2_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1230_MED: rhsusf_M1230a1_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M113: rhsusf_m113_usarmy {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_stryker: rhsusf_stryker_m1126_m2_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_TankCrew";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_TankCrew)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_stryker_engineer: rhsusf_stryker_m1132_m2_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_TankCrew";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_TankCrew)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_stryker_TOW: rhsusf_stryker_m1134_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_TankCrew";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_TankCrew)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M2A2_BUSKI: RHS_M2A3_BUSKIII_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_TankCrew";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_TankCrew)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_m1A2SEP1_TUSKII: rhsusf_m1a2sep1tuskiiwd_usarmy {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_TankCrew";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_TankCrew)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M978A4_BKIT: rhsusf_M978A4_BKIT_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M977A4_AMMO_BKIT: rhsusf_M977A4_AMMO_BKIT_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1083A1P2: rhsusf_M1083A1P2_B_WD_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1083A1P2_M2: rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1083A1P2_wide: rhsusf_M1083A1P2_WD_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1084A1P2: rhsusf_M1084A1P2_B_WD_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1084A1P2_M2: rhsusf_M1084A1P2_B_M2_WD_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1084A1P2_wide: rhsusf_M1084A1P2_WD_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1078A1P2_CP: rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1085A1P2_Med: rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1078A1R_SOV_M2: rhsusf_M1078A1R_SOV_M2_WD_fmtv_socom {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1084A1R_SOV_M2: rhsusf_M1084A1R_SOV_M2_WD_fmtv_socom {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1117: rhsusf_M1117_W {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_MRZR: rhsusf_mrzr4_w {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_RG33_M2: rhsusf_rg33_m2_usmc_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M113_Medical: rhsusf_m113_usarmy_medical {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M109: rhsusf_m109_usarmy {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_TankCrew";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_TankCrew)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1025: rhsusf_m1025_w {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M998: rhsusf_m998_w_2dr_halftop {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M977A4_BKIT: rhsusf_M977A4_BKIT_usarmy_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_RG33: rhsusf_rg33_usmc_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1238A1: rhsusf_M1238A1_socom_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1238A1_M2: rhsusf_M1238A1_M2_socom_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1239: rhsusf_M1239_socom_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M1239_M2: rhsusf_M1239_M2_socom_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_CGRCAT1A2: rhsusf_CGRCAT1A2_usmc_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_CGRCAT1A2_M2: rhsusf_CGRCAT1A2_M2_usmc_wd {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_M142: rhsusf_M142_usarmy_WD {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 		
 		KAM_force_artillery = 1;
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_Static_M2: RHS_M2StaticMG_D {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_Static_M2_mini: RHS_M2StaticMG_MiniTripod_D {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_Static_TOW: RHS_TOW_TriPod_D {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_Static_Mk6: B_Mortar_01_F {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_Static_M119: RHS_M119_D {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_Static_Stinger: RHS_Stinger_AA_pod_D {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_Static_Mk19: RHS_MK19_TriPod_D {
-		faction = "SFPD_RHS_BLUFOR_WOODLAND_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	//Universal
 	class SFPD_RHS_BLUFOR_Chinook: B_Heli_Transport_03_F {
-		faction = "SFPD_RHS_BLUFOR_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_HelicopterPilot";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_Faction,SFPD_RHS_BLUFOR_HelicopterPilot)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_Blackfish_infantery: B_T_VTOL_01_infantry_F {
-		faction = "SFPD_RHS_BLUFOR_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_PlanePilot";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_Faction,SFPD_RHS_BLUFOR_PlanePilot)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_Blackfish_vehicule: B_T_VTOL_01_vehicle_F {
-		faction = "SFPD_RHS_BLUFOR_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_PlanePilot";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_Faction,SFPD_RHS_BLUFOR_PlanePilot)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_Blackfish_armed: B_T_VTOL_01_armed_F {
-		faction = "SFPD_RHS_BLUFOR_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_PlanePilot";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_Faction,SFPD_RHS_BLUFOR_PlanePilot)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_Blackhawk: RHS_UH60M_d {
-		faction = "SFPD_RHS_BLUFOR_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_HelicopterPilot";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_Faction,SFPD_RHS_BLUFOR_HelicopterPilot)
+		SFPD_VEHICLES_EMPTY_CARGO
 		
 		incomingMissileDetectionSystem = 16;
 		
@@ -1195,14 +757,8 @@
 	};
 	
 	class SFPD_RHS_BLUFOR_Blackhawk_med: RHS_UH60M_MEV2_d {
-		faction = "SFPD_RHS_BLUFOR_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_HelicopterPilot";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_Faction,SFPD_RHS_BLUFOR_HelicopterPilot)
+		SFPD_VEHICLES_EMPTY_CARGO
 		
 		incomingMissileDetectionSystem = 16;
 		
@@ -1218,45 +774,24 @@
 	};
 	
 	class SFPD_RHS_BLUFOR_MH6: RHS_MELB_MH6M {
-		faction = "SFPD_RHS_BLUFOR_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_HelicopterPilot";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_Faction,SFPD_RHS_BLUFOR_HelicopterPilot)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_AH6: RHS_MELB_AH6M_L {
-		faction = "SFPD_RHS_BLUFOR_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_HelicopterPilot";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_Faction,SFPD_RHS_BLUFOR_HelicopterPilot)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_UH1Y: RHS_UH1Y {
-		faction = "SFPD_RHS_BLUFOR_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_HelicopterPilot";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_Faction,SFPD_RHS_BLUFOR_HelicopterPilot)
+		SFPD_VEHICLES_EMPTY_CARGO
 		
 		incomingMissileDetectionSystem = 16;
 	};
 	
 	class SFPD_RHS_BLUFOR_Comanche: RHS_AH64D {
-		faction = "SFPD_RHS_BLUFOR_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_HelicopterPilot";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_Faction,SFPD_RHS_BLUFOR_HelicopterPilot)
 		class TransportMagazines {};
 		class TransportWeapons {};
 		class TransportItems {
@@ -1268,31 +803,16 @@
 	};
 	
 	class SFPD_RHS_BLUFOR_A10: B_Plane_CAS_01_dynamicLoadout_F {
-		faction = "SFPD_RHS_BLUFOR_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_PlanePilot";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_Faction,SFPD_RHS_BLUFOR_PlanePilot)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_BlackWasp: B_Plane_Fighter_01_F {
-		faction = "SFPD_RHS_BLUFOR_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_PlanePilot";
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class TransportItems {};
-		class TransportBackpacks {};
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_Faction,SFPD_RHS_BLUFOR_PlanePilot)
+		SFPD_VEHICLES_EMPTY_CARGO
 	};
 	
 	class SFPD_RHS_BLUFOR_MKVSCO: rhsusf_mkvsoc {
-		faction = "SFPD_RHS_BLUFOR_Faction";
-		scope = 2;
-		scopeCurator = 2;
-		crew = "SFPD_RHS_BLUFOR_WOODLAND_Rifleman";
+		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
 	};
