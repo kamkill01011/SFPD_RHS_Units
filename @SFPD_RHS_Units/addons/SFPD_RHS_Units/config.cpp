@@ -400,6 +400,13 @@
 		class TransportItems {}; \
 		class TransportBackpacks {};
 
+// weapons
+/*#define SFPD_WEAPON_CFG(F,C) \
+		faction = #F; \
+		scope = 2; \
+		scopeCurator = 2; \
+		crew = #C;*/
+
 
 
 
