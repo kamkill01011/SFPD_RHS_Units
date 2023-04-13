@@ -35,6 +35,7 @@ class CfgFunctions {
 		class functions {
 			file = "SFPD_RHS_Units\UAV\functions";
 			class disable_autonomous {};
+			class disable_autonomous_loop {};
 		};
 	};
 	class SFPD_RHS_Units_UAV_Init {
