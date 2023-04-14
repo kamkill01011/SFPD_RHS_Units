@@ -425,6 +425,80 @@
 			item = #I; \
 		};
 
+// groups
+#define SFPD_GROUP_UNIT_CFG(C,S,V,R,P) \
+		class C { \
+			side = S; \
+			vehicle = #V; \
+			rank = #R; \
+			position[] = {P,0,0}; \
+		};
+
+#define SFPD_GROUP_UNIT0_CFG(S,V,R) SFPD_GROUP_UNIT_CFG(Unit0,S,V,R,0)
+
+#define SFPD_GROUP_UNIT1_CFG(S,V,R) SFPD_GROUP_UNIT_CFG(Unit1,S,V,R,1.6)
+
+#define SFPD_GROUP_UNIT2_CFG(S,V,R) SFPD_GROUP_UNIT_CFG(Unit2,S,V,R,3.2)
+
+#define SFPD_GROUP_UNIT3_CFG(S,V,R) SFPD_GROUP_UNIT_CFG(Unit3,S,V,R,4.8)
+
+#define SFPD_GROUP_UNIT4_CFG(S,V,R) SFPD_GROUP_UNIT_CFG(Unit4,S,V,R,6.4)
+
+#define SFPD_GROUP_UNIT5_CFG(S,V,R) SFPD_GROUP_UNIT_CFG(Unit5,S,V,R,8)
+
+#define SFPD_GROUP_UNIT6_CFG(S,V,R) SFPD_GROUP_UNIT_CFG(Unit6,S,V,R,9.6)
+
+#define SFPD_GROUP_UNIT7_CFG(S,V,R) SFPD_GROUP_UNIT_CFG(Unit7,S,V,R,11.2)
+
+#define SFPD_GROUP_FT_CFG(S,F,I,U0,U1,U2,U3) \
+		class SFPD_BLUFOR_DESERT_GROUP_FT { \
+			name = "Fire Team"; \
+			side = S; \
+			faction = #F; \
+			icon = #I; \
+			SFPD_GROUP_UNIT0_CFG(S,U0,SERGEANT) \
+			SFPD_GROUP_UNIT1_CFG(S,U1,PRIVATE) \
+			SFPD_GROUP_UNIT2_CFG(S,U2,PRIVATE) \
+			SFPD_GROUP_UNIT3_CFG(S,U3,PRIVATE) \
+		};
+
+#define SFPD_GROUP_SQUAD_CFG(S,F,I,U0,U1,U2,U3,U4,U5,U6,U7) \
+		class SFPD_BLUFOR_DESERT_GROUP_SQUAD { \
+			name = "Squad"; \
+			side = S; \
+			faction = #F; \
+			icon = #I; \
+			SFPD_GROUP_UNIT0_CFG(S,U0,SERGEANT) \
+			SFPD_GROUP_UNIT1_CFG(S,U1,PRIVATE) \
+			SFPD_GROUP_UNIT2_CFG(S,U2,PRIVATE) \
+			SFPD_GROUP_UNIT3_CFG(S,U3,PRIVATE) \
+			SFPD_GROUP_UNIT4_CFG(S,U4,PRIVATE) \
+			SFPD_GROUP_UNIT5_CFG(S,U5,PRIVATE) \
+			SFPD_GROUP_UNIT6_CFG(S,U6,PRIVATE) \
+			SFPD_GROUP_UNIT7_CFG(S,U7,PRIVATE) \
+		};
+
+#define SFPD_GROUP_PATROL_CFG(S,F,I,U0,U1) \
+		class SFPD_BLUFOR_DESERT_GROUP_PATROL { \
+			name = "Patrol"; \
+			side = S; \
+			faction = #F; \
+			icon = #I; \
+			SFPD_GROUP_UNIT0_CFG(S,U0,SERGEANT) \
+			SFPD_GROUP_UNIT1_CFG(S,U1,PRIVATE) \
+		};
+
+#define SFPD_GROUP_SFT_CFG(S,F,I,U0,U1,U2,U3) \
+		class SFPD_BLUFOR_DESERT_GROUP_SFT { \
+			name = "Special Fire Team"; \
+			side = S; \
+			faction = #F; \
+			icon = #I; \
+			SFPD_GROUP_UNIT0_CFG(S,U0,LIEUTENANT) \
+			SFPD_GROUP_UNIT1_CFG(S,U1,LIEUTENANT) \
+			SFPD_GROUP_UNIT2_CFG(S,U2,LIEUTENANT) \
+			SFPD_GROUP_UNIT3_CFG(S,U3,LIEUTENANT) \
+		};
 
 
 
