@@ -401,11 +401,36 @@
 		class TransportBackpacks {};
 
 // weapons
-/*#define SFPD_WEAPON_CFG(F,C) \
-		faction = #F; \
-		scope = 2; \
-		scopeCurator = 2; \
-		crew = #C;*/
+#define SFPD_WEAPON_OPTIC_CFG(I) \
+		class LinkedItemsOptic { \
+			slot = "CowsSlot"; \
+			item = #I; \
+		};
+
+#define SFPD_WEAPON_MUZZLE_CFG(I) \
+		class LinkedItemsMuzzle { \
+			slot = "MuzzleSlot"; \
+			item = #I; \
+		};
+
+#define SFPD_WEAPON_ACC_CFG(I) \
+		class LinkedItemsAcc { \
+			slot = "PointerSlot"; \
+			item = #I; \
+		};
+
+#define SFPD_WEAPON_UNDER_CFG(I) \
+		class LinkedItemsUnder { \
+			slot = "UnderBarrelSlot"; \
+			item = #I; \
+		};
+
+/*
+			SFPD_WEAPON_OPTIC_CFG(AAAAA)
+			SFPD_WEAPON_MUZZLE_CFG(BBBBB)
+			SFPD_WEAPON_ACC_CFG(CCCCC)
+			SFPD_WEAPON_UNDER_CFG(DDDDD)
+*/
 
 
 
