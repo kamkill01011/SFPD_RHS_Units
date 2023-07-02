@@ -98,7 +98,6 @@ class Sh_155mm_AMOS_LG: Sh_82mm_AMOS_LG {
 	triggerDistance = 700;
 }*/
 
-
 class ACE_G_CTS9;
 class ACE_G_CTS2: ACE_G_CTS9 {
     ace_grenades_flashbangBangs = 2;
@@ -107,4 +106,9 @@ class ACE_G_CTS2: ACE_G_CTS9 {
 };
 class ACE_G_CTS3: ACE_G_CTS2 {
     ace_grenades_flashbangBangs = 3;
+};
+
+class rhs_ammo_762x51_M80_Ball;
+class rhs_ammo_762x51_M80A1EPR_Ball: rhs_ammo_762x51_M80_Ball {
+    ACE_caliber = 3;
 };
