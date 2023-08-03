@@ -1,10 +1,7 @@
 	class SFPD_RHS_IRAQ_AKM: rhs_weap_akm {
         scope = 2;
         class LinkedItems {
-            class LinkedItemsAcc {
-				slot = "PointerSlot";
-				item = "rhs_acc_2dpZenit";
-			};
+			SFPD_WEAPON_ACC_CFG(rhs_acc_2dpZenit)
         };
     };
 	
@@ -18,9 +15,6 @@
 	class SFPD_RHS_IRAQ_SVD: rhs_weap_svds_npz {
         scope = 2;
         class LinkedItems {
-            class LinkedItemsOptic {
-				slot = "CowsSlot";
-				item = "optic_KHS_blk";
-			};
+			SFPD_WEAPON_OPTIC_CFG(optic_KHS_blk)
         };
     };
