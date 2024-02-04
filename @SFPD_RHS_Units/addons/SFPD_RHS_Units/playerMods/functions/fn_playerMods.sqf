@@ -6,8 +6,8 @@ _serverMods = allAddonsInfo apply {_x # 0};
 
 [[_serverMods, _player], {
 	_player = _this # 1;
-	_serverMods = (_this # 0) - ["AACC\", "SFPD_Markers\"];
-	_playerMods = (allAddonsInfo apply {_x # 0}) - ["zei\", "dedmen\ArmaZeusCache\"];
+	_serverMods = (_this # 0) - ["AACC\"];
+	_playerMods = (allAddonsInfo apply {_x # 0}) - ["AACC\"];
 	_lessMods = (_serverMods select {!(_x in _playerMods)});
 	_moreMods = (_playerMods select {!(_x in _serverMods)});
 	
