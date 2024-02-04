@@ -30,12 +30,11 @@ class CfgPatches {
 };
 
 class CfgFunctions {
-	class SFPD_RHS_Units_playerMods_Init {
-		class SFPD_RHS_Units_playerMods_Init {
-			class Init {
-				file = "SFPD_RHS_Units\playerMods\functions\init.sqf";
-				postInit = 1;
-			};
+	class SFPD_RHS_Units_playerMods {
+		tag = "playerMods";
+		class functions {
+			file = "SFPD_RHS_Units\playerMods\functions";
+			class playerMods {};
 		};
 	};
 };
