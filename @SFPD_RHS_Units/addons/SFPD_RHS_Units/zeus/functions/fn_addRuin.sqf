@@ -1,9 +1,9 @@
 
-_logic = _this # 0;
-_pos = position _logic;
-_unit = [_logic, false] call Ares_fnc_GetUnitUnderCursor;
-
+params ["_logic"];
 if (!local _logic) exitWith {};
+_unit = attachedTo _logic;
+_pos = position _logic;
+
 
 [_pos] spawn {
 	private _pos = _this # 0;
@@ -48,7 +48,7 @@ if (!local _logic) exitWith {};
 	
 	_original setVariable ["KAM_Ruin_new", _newVeh, true];
 	
-	[[_newVeh], true] call Ares_fnc_AddUnitsToCurator;
+	[_newVeh, true] call zen_common_fnc_updateEditableObjects;
 };
 
 deleteVehicle _logic;

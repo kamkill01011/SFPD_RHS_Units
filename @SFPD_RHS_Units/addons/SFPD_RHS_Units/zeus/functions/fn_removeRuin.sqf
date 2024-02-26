@@ -1,9 +1,8 @@
 
-_logic = _this # 0;
-_pos = position _logic;
-_unit = [_logic, false] call Ares_fnc_GetUnitUnderCursor;
-
+params ["_logic"];
 if (!local _logic) exitWith {};
+_unit = attachedTo _logic;
+_pos = position _logic;
 
 [_pos] spawn {
 	private _pos = _this # 0;

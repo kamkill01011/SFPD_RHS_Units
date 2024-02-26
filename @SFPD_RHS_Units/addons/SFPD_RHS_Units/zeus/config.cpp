@@ -97,8 +97,8 @@ class CfgVehicles {
 		isTriggerActivated = 0;
 		scope = 1;
 		scopeCurator = 2;
-		curatorCanAttach = 0;
 		function = "zeus_fnc_medicalStatus";
+		curatorCanAttach = 1;
 	};
 	
 	class SFPD_RHS_Units_Zeus_CPR_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
@@ -211,12 +211,14 @@ class CfgVehicles {
 		category = "SFPD_Zeus_NBC";
 		displayName = "spawn permanent area";
 		function = "zeus_fnc_spawnPermanentAreaEnter";
+		curatorCanAttach = 0;
 	};
 	
 	class SFPD_RHS_Units_Zeus_spawnTemporaryArea_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
 		category = "SFPD_Zeus_NBC"; 
 		displayName = "spawn temporary area";
 		function = "zeus_fnc_spawnTemporaryAreaEnter";
+		curatorCanAttach = 0;
 	};
 	
 	class SFPD_RHS_Units_Zeus_miDesertCamo_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
@@ -261,6 +263,7 @@ class CfgVehicles {
 		category = "SFPD_Zeus_vehicle";
 		displayName = "set station fuel";
 		function = "zeus_fnc_setStationFuelEnter";
+		curatorCanAttach = 0;
 	};
 	
 	class SFPD_RHS_Units_Zeus_showVehicleFuelInfo_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
@@ -273,36 +276,42 @@ class CfgVehicles {
 		category = "SFPD_Zeus_equipment";
 		displayName = "give tracer";
 		function = "zeus_fnc_giveTracerEnter";
+		curatorCanAttach = 0;
 	};
 	
 	class SFPD_RHS_Units_Zeus_garbageSmall_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
 		category = "SFPD_Zeus_area";
 		displayName = "garbage (small)";
 		function = "zeus_fnc_garbageSmallEnter";
+		curatorCanAttach = 0;
 	};
 	
 	class SFPD_RHS_Units_Zeus_garbageBig_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
 		category = "SFPD_Zeus_area";
 		displayName = "garbage (big)";
 		function = "zeus_fnc_garbageBigEnter";
+		curatorCanAttach = 0;
 	};
 	
 	class SFPD_RHS_Units_Zeus_garbageClean_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
 		category = "SFPD_Zeus_area";
 		displayName = "garbage (clean)";
 		function = "zeus_fnc_garbageCleanEnter";
+		curatorCanAttach = 0;
 	};
 	
 	class SFPD_RHS_Units_Zeus_addRuin_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
 		category = "SFPD_Zeus_area";
 		displayName = "ruin (add)";
 		function = "zeus_fnc_addRuin";
+		curatorCanAttach = 0;
 	};
 	
 	class SFPD_RHS_Units_Zeus_removeRuin_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
 		category = "SFPD_Zeus_area";
 		displayName = "ruin (remove)";
 		function = "zeus_fnc_removeRuin";
+		curatorCanAttach = 0;
 	};
 	
 	class SFPD_RHS_Units_Zeus_addIntel_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
@@ -345,6 +354,7 @@ class CfgVehicles {
 		category = "SFPD_Zeus_area";
 		displayName = "CP Zone";
 		function = "zeus_fnc_CPZoneEnter";
+		curatorCanAttach = 0;
 	};
 	
 	class SFPD_RHS_Units_Zeus_CPSpawn_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
@@ -352,24 +362,28 @@ class CfgVehicles {
 		displayName = "CP Spawn";
 		function = "zeus_fnc_CPSpawn";
 		isGlobal = 1;// TODO
+		curatorCanAttach = 0;
 	};
 	
 	class SFPD_RHS_Units_Zeus_CPPath_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
 		category = "SFPD_Zeus_area";
 		displayName = "CP Path";
 		function = "zeus_fnc_CPPathEnter";
+		curatorCanAttach = 0;
 	};
 	
 	class SFPD_RHS_Units_Zeus_CPCover_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
 		category = "SFPD_Zeus_area";
 		displayName = "CP Cover";
 		function = "zeus_fnc_CPCoverEnter";
+		curatorCanAttach = 0;
 	};
 	
 	class SFPD_RHS_Units_Zeus_breachableDoors_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
 		category = "SFPD_Zeus_common";
 		displayName = "breachable doors";
 		function = "zeus_fnc_breachableDoors";
+		curatorCanAttach = 0;
 	};
 };
 
