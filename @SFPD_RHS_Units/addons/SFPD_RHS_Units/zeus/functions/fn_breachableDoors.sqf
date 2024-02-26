@@ -1,10 +1,9 @@
 
-
-_logic = _this # 0;
-_pos = position _logic;
-_unit = [_logic, false] call Ares_fnc_GetUnitUnderCursor;
-
+params ["_logic"];
 if (!local _logic) exitWith {};
+_unit = attachedTo _logic;
+_pos = position _logic;
+
 
 [_pos] spawn {
 	private _group_logic = createGroup sideLogic;
@@ -115,7 +114,7 @@ if (!local _logic) exitWith {};
 			deleteVehicle (_sourceObject_list # _forEachIndex);
 		};
 	} forEach _logic_list;
-	[_logic_list + _sourceObject_list, true] call Ares_fnc_AddUnitsToCurator;
+	[_logic_list + _sourceObject_list, true] call zen_common_fnc_updateEditableObjects;
 };
 
 deleteVehicle _logic;
