@@ -19,6 +19,21 @@ waitUntil {hintSilent str (screenToWorld [0.5,0.5]);!alive(_this # 1)};
 _u = (_this # 1);_u setUnitTrait ["camouflageCoef", 0];_u setUnitTrait ["audibleCoef", 0];
 [1, [0.3, 0, 0]] remoteExec ["setFog", 0];
 [player] spawn BIS_fnc_traceBullets;
+////////// transfer group //////////
+_g = group (_this # 1);
+{
+	if (alive _x) then { _x setVariable ["KAM_tmpLoadout", getUnitLoadout _x, true]; };
+} forEach units _g;
+[[_g], {
+	params ["_g"];
+	_g setGroupOwner 2;
+	waitUntil {sleep 1; ((local _g) or {(isNull _g) or {({alive _x} count units _g) == 0}});};
+	{
+		private _loadout = _x getVariable ["KAM_tmpLoadout", []];
+		if !(_loadout isEqualTo []) then { _x setUnitLoadout _loadout; };
+		_x setVariable ["KAM_tmpLoadout", nil, true];
+	} forEach units _g;
+}] remoteExec ["spawn", 2, false];
 ////////// bomb //////////
 [_this # 0,_timer,_infoDevices,_dummyDevices,_fakeDevices,_timeTofind,_chanceTofind] execVM "bomb.sqf";
 [_this # 0,50,["Land_Laptop_unfolded_F"],["Land_Laptop_02_unfolded_F"],["Land_Laptop_device_F"],5,0.5] execVM "bomb.sqf";
