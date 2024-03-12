@@ -3161,11 +3161,52 @@ class CfgVehicles {
 	class LSV_01_AT_base_F;
 	class LSV_01_armed_base_F;
 	class Quadbike_01_base_F;
-	class VTOL_01_armed_base_F;
-	class VTOL_01_infantry_base_F;
+	class VTOL_01_base_F;
+	class VTOL_01_armed_base_F: VTOL_01_base_F {
+		class TextureSources {
+			class Blue {
+				displayName = "Blue";
+				factions[] = {};
+				textures[] = {"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT01_blue_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT02_blue_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT03_blue_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT04_blue_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"};
+			};
+			class Olive {
+				displayName = "Olive";
+				factions[] = {};
+				textures[] = {"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT01_olive_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT02_olive_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT03_olive_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT04_olive_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"};
+			};
+		};
+	};
+	class VTOL_01_unarmed_base_F;
+	class VTOL_01_infantry_base_F: VTOL_01_unarmed_base_F {
+		class TextureSources {
+			class Blue {
+				displayName = "Blue";
+				factions[] = {};
+				textures[] = {"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT01_blue_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT02_blue_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT03_blue_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT04_blue_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"};
+			};
+			class Olive {
+				displayName = "Olive";
+				factions[] = {};
+				textures[] = {"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT01_olive_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT02_olive_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT03_olive_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT04_olive_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"};
+			};
+		};
+	};
 	class Heli_Light_01_dynamicLoadout_base_F;
 	class Heli_Transport_03_base_F;
-	class VTOL_01_vehicle_base_F;
+	class VTOL_01_vehicle_base_F: VTOL_01_unarmed_base_F {
+		class TextureSources {
+			class Blue {
+				displayName = "Blue";
+				factions[] = {};
+				textures[] = {"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT01_blue_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT02_blue_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT03_blue_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT04_blue_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"};
+			};
+			class Olive {
+				displayName = "Olive";
+				factions[] = {};
+				textures[] = {"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT01_olive_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT02_olive_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT03_olive_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT04_olive_CO.paa","\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"};
+			};
+		};
+	};
 	class Heli_Transport_03_unarmed_base_F;
 	class Heli_Light_01_unarmed_base_F;
 	class Truck_02_base_F;
