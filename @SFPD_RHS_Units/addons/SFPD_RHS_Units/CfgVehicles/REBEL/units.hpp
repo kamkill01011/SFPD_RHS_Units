@@ -15,6 +15,11 @@
 		respawnItems[] = {"ACE_Cellphone",BASIC_ITEMS,TEN_TIMES(ACE_fieldDressing)};
 		uniformClass = "U_IG_Guerilla1_1";
 		camouflage = 1;
+		
+		class EventHandlers {
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+			init = "if (local (_this select 0)) then {[(_this select 0), 0] call KAM_fnc_randomizeOutfit;};";
+		}
 	};
 	
 	class SFPD_REBEL_Rifleman_AKM_2: SFPD_REBEL_Rifleman_AKM_1 {

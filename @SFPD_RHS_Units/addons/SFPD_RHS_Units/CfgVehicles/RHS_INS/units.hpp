@@ -17,6 +17,11 @@
 		respawnItems[] = {"ACE_DeadManSwitch","ACE_Cellphone","ACE_morphine","ACE_EarPlugs","ACE_tourniquet","ACE_CableTie","ACE_CableTie",TEN_TIMES(ACE_fieldDressing),"ACE_splint","ACE_splint"};
 		uniformClass = "LOP_U_AM_Fatigue_03_6";
 		camouflage = 1;
+		
+		class EventHandlers {
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+			init = "if (local (_this select 0)) then {[(_this select 0), 1] call KAM_fnc_randomizeOutfit;};";
+		}
 	};
 	
 	class SFPD_RHS_TALIBAN_DESERT_Rifleman_2: SFPD_RHS_TALIBAN_DESERT_Rifleman_1 {
@@ -80,6 +85,11 @@
 		respawnLinkedItems[] = {"V_Rangemaster_belt","H_Beret_gen_F","G_Aviator",BASIC_LINKED_GREEN};
 		uniformClass = "U_I_C_Soldier_Camo_F";//U_BG_leader
 		camouflage = 0.7;
+		
+		class EventHandlers {
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+			init = "";
+		}
 	};
 	
 	class SFPD_RHS_TALIBAN_DESERT_AA: SFPD_RHS_TALIBAN_DESERT_Rifleman_3 {
@@ -109,12 +119,22 @@
 		respawnItems[] = {"ACE_DeadManSwitch","ACE_Cellphone","ACE_morphine","ACE_EarPlugs","ACE_tourniquet","ACE_CableTie","ACE_CableTie",TEN_TIMES(ACE_fieldDressing),"ACE_splint","ACE_splint"};
 		uniformClass = "LOP_U_ISTS_Fatigue_12";
 		camouflage = 1;
+		
+		class EventHandlers {
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+			init = "if (local (_this select 0)) then {[(_this select 0), 2] call KAM_fnc_randomizeOutfit;};";
+		}
 	};
 	
 	class SFPD_RHS_INDEP_NBC_Mask: SFPD_RHS_INDEP_Rifleman_1 {
 		displayName = "NBC (Mask)";
 		linkedItems[] = {"LOP_V_6Sh92_WDL","G_RegulatorMask_F",BASIC_LINKED_GREEN};
 		respawnLinkedItems[] = {"LOP_V_6Sh92_WDL","G_RegulatorMask_F",BASIC_LINKED_GREEN};
+		
+		class EventHandlers {
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+			init = "";
+		}
 	};
 	
 	class SFPD_RHS_INDEP_NBC_Suit: SFPD_RHS_INDEP_NBC_Mask {
@@ -183,6 +203,11 @@
 		respawnLinkedItems[] = {"V_Rangemaster_belt","H_Beret_gen_F","G_Aviator",BASIC_LINKED_GREEN};
 		uniformClass = "U_I_C_Soldier_Camo_F";//U_BG_leader
 		camouflage = 0.7;
+		
+		class EventHandlers {
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+			init = "";
+		}
 	};
 	
 	class SFPD_RHS_INDEP_AA: SFPD_RHS_INDEP_Rifleman_3 {
@@ -206,6 +231,11 @@
 		respawnItems[] = {"ACE_DeadManSwitch","ACE_Cellphone",BASIC_ITEMS,TEN_TIMES(ACE_elasticBandage),"ACE_epinephrine","ACE_surgicalKit","ACE_salineIV_500","ACE_salineIV_500","ACE_splint","ACE_splint"};
 		uniformClass = "LOP_U_UVF_Fatigue_BL";
 		camouflage = 0.7;
+		
+		class EventHandlers {
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+			init = "";
+		}
 	};
 	
 	//Woodland
@@ -227,12 +257,22 @@
 		respawnItems[] = {"ACE_DeadManSwitch","ACE_Cellphone","ACE_morphine","ACE_EarPlugs","ACE_tourniquet","ACE_CableTie","ACE_CableTie",TEN_TIMES(ACE_fieldDressing),"ACE_splint","ACE_splint"};
 		uniformClass = "LOP_U_BH_Fatigue_GUE_M81_OLV";
 		camouflage = 1;
+		
+		class EventHandlers {
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+			init = "if (local (_this select 0)) then {[(_this select 0), 3] call KAM_fnc_randomizeOutfit;};";
+		}
 	};
 	
 	class SFPD_RHS_INDEP_WOODLAND_NBC_Mask: SFPD_RHS_INDEP_WOODLAND_Rifleman_1 {
 		displayName = "NBC (Mask)";
 		linkedItems[] = {"LOP_V_6Sh92_CDF","G_RegulatorMask_F",BASIC_LINKED_GREEN};
 		respawnLinkedItems[] = {"LOP_V_6Sh92_CDF","G_RegulatorMask_F",BASIC_LINKED_GREEN};
+		
+		class EventHandlers {
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+			init = "";
+		}
 	};
 	
 	class SFPD_RHS_INDEP_WOODLAND_NBC_Suit: SFPD_RHS_INDEP_WOODLAND_NBC_Mask {
@@ -301,6 +341,11 @@
 		respawnLinkedItems[] = {"V_Rangemaster_belt","rhssaf_beret_green",BASIC_LINKED_GREEN};
 		uniformClass = "rhssaf_uniform_m10_digital_tan_boots";
 		camouflage = 0.7;
+		
+		class EventHandlers {
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+			init = "";
+		}
 	};
 	
 	class SFPD_RHS_INDEP_WOODLAND_AA: SFPD_RHS_INDEP_WOODLAND_Rifleman_3 {
@@ -317,12 +362,22 @@
 		linkedItems[] = {"V_TacChestrig_grn_F","fsg_booniehat_snw",BASIC_LINKED_GREEN};
 		respawnLinkedItems[] = {"V_TacChestrig_grn_F","fsg_booniehat_snw",BASIC_LINKED_GREEN};
 		uniformClass = "rhsgref_uniform_reed";
+		
+		class EventHandlers {
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+			init = "if (local (_this select 0)) then {[(_this select 0), 4] call KAM_fnc_randomizeOutfit;};";
+		}
 	};
 	
 	class SFPD_RHS_INDEP_WINTER_NBC_Mask: SFPD_RHS_INDEP_WINTER_Rifleman_1 {
 		displayName = "NBC (Mask)";
 		linkedItems[] = {"V_TacChestrig_grn_F","G_RegulatorMask_F",BASIC_LINKED_GREEN};
 		respawnLinkedItems[] = {"V_TacChestrig_grn_F","G_RegulatorMask_F",BASIC_LINKED_GREEN};
+		
+		class EventHandlers {
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+			init = "";
+		}
 	};
 	
 	class SFPD_RHS_INDEP_WINTER_NBC_Suit: SFPD_RHS_INDEP_WINTER_NBC_Mask {
@@ -391,6 +446,11 @@
 		respawnLinkedItems[] = {"V_Rangemaster_belt","rhs_beret_milp",BASIC_LINKED_GREEN};
 		uniformClass = "rhsgref_uniform_para_ttsko_mountain";
 		camouflage = 0.7;
+		
+		class EventHandlers {
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+			init = "";
+		}
 	};
 	
 	class SFPD_RHS_INDEP_WINTER_AA: SFPD_RHS_INDEP_WINTER_Rifleman_3 {
