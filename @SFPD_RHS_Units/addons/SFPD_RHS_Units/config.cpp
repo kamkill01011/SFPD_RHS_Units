@@ -2780,8 +2780,54 @@ class CfgVehicles {
 	class Plane_CAS_01_base_F;
 	class Ship_F;
 	class Helicopter_Base_H;
-	class Heli_Transport_01_base_F;
-	class Heli_Transport_02_base_F;
+	class Heli_Transport_01_base_F: Helicopter_Base_H {
+		class TextureSources {
+			class Green {
+				displayName = "Green";
+				factions[] = {};
+				textures[] = {"\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_ext01_BLUFOR_CO.paa","\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_ext02_BLUFOR_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_ext01_CO.paa","\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_ext02_CO.paa"};
+			};
+			class Sand {
+				displayName = "Sand";
+				factions[] = {};
+				textures[] = {"\A3\Air_F_Exp\Heli_Transport_01\Data\Heli_Transport_01_ext01_sand_CO.paa","\A3\Air_F_Exp\Heli_Transport_01\Data\Heli_Transport_01_ext02_sand_CO.paa"};
+			};
+			class Olive {
+				displayName = "Olive";
+				factions[] = {};
+				textures[] = {"\A3\Air_F_Exp\Heli_Transport_01\Data\Heli_Transport_01_ext01_tropic_CO.paa","\A3\Air_F_Exp\Heli_Transport_01\Data\Heli_Transport_01_ext02_tropic_CO.paa"};
+			};
+		};
+	};
+	class Heli_Transport_02_base_F: Helicopter_Base_H {
+		class TextureSources {
+			class AAF {
+				displayName = "AAF";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_1_INDP_CO.paa","A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_2_INDP_CO.paa","A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_3_INDP_CO.paa","A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
+			};
+			class ION {
+				displayName = "Ion";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Beta\Heli_Transport_02\Data\Skins\Heli_Transport_02_1_ION_CO.paa","A3\Air_F_Beta\Heli_Transport_02\Data\Skins\Heli_Transport_02_2_ION_CO.paa","A3\Air_F_Beta\Heli_Transport_02\Data\Skins\Heli_Transport_02_3_ION_CO.paa","A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
+			};
+			class Dahoman {
+				displayName = "Light";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Beta\Heli_Transport_02\Data\Skins\Heli_Transport_02_1_DAHOMAN_CO.paa","A3\Air_F_Beta\Heli_Transport_02\Data\Skins\Heli_Transport_02_2_DAHOMAN_CO.paa","A3\Air_F_Beta\Heli_Transport_02\Data\Skins\Heli_Transport_02_3_DAHOMAN_CO.paa","A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
+			};
+			class IDAP {
+				displayName = "IDAP";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Orange\Heli_Transport_02\Data\Heli_Transport_02_1_IDAP_CO.paa","A3\Air_F_Orange\Heli_Transport_02\Data\Heli_Transport_02_2_IDAP_CO.paa","A3\Air_F_Orange\Heli_Transport_02\Data\Heli_Transport_02_3_IDAP_CO.paa","A3\Air_F_Orange\Heli_Transport_02\Data\Heli_Transport_02_int_02_IDAP_CO.paa"};
+			};
+		};
+	};
 	class Heli_Attack_01_base_F;
 	class Heli_light_03_base_F;
 	class StaticAAWeapon;
@@ -2794,7 +2840,6 @@ class CfgVehicles {
 	class AT_01_base_F;
 	class rhs_tigr_vdv;
 	class OTR21_Base;
-	class Heli_Light_02_base_F;
 	class Heli_Attack_02_base_F;
 	class UAV_02_base_F;
 	class UAV_02_dynamicLoadout_base_F;
@@ -3142,7 +3187,20 @@ class CfgVehicles {
 	class B_MBT_01_base_F;
 	class Heli_Attack_01_dynamicLoadout_base_F;
 	class Plane_CAS_01_dynamicLoadout_base_F;
-	class Plane_Fighter_01_Base_F;
+	class Plane_Fighter_01_Base_F: Plane_Base_F {
+		class TextureSources {
+			class DarkGrey {
+				displayName = "Dark Grey";
+				factions[] = {};
+				textures[] = {"a3\air_f_jets\plane_fighter_01\data\fighter_01_fuselage_01_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_fuselage_02_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_01_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_02_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_03_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_05_co.paa"};
+			};
+			class DarkGreyCamo {
+				displayName = "Dark Grey [Camo]";
+				factions[] = {};
+				textures[] = {"a3\air_f_jets\plane_fighter_01\data\fighter_01_fuselage_01_Camo_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_fuselage_02_Camo_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_01_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_02_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_03_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_05_co.paa"};
+			};
+		};
+	};
 	class SDV_01_base_F;
 	class B_APC_Tracked_01_base_F;
 	class B_APC_Wheeled_01_base_F;
@@ -3157,6 +3215,50 @@ class CfgVehicles {
 	class Truck_01_flatbed_base_F;
 	class MRAP_01_gmg_base_F;
 	class MRAP_01_hmg_base_F;
+	class Car_F;
+	class LSV_01_base_F: Car_F {
+		class TextureSources {
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_black_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
+			};
+			class Olive {
+				displayName = "Olive";
+				factions[] = {};
+				textures[] = {"\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_olive_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
+			};
+			class Sand {
+				displayName = "Sand";
+				factions[] = {};
+				textures[] = {"\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_sand_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_sand_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_sand_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_sand_CO.paa","\A3\weapons_f_beta\launchers\titan\data\launcher_co.paa","\A3\weapons_f_beta\launchers\titan\data\tubem_co.paa"};
+			};
+			class Dazzle {
+				displayName = "Dazzle";
+				factions[] = {};
+				textures[] = {"\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_dazzle_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_olive_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
+			};
+		};
+	};
+	class LSV_02_base_F: Car_F {
+		class TextureSources {
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
+			};
+			class GreenHex {
+				displayName = "Green Hex";
+				factions[] = {};
+				textures[] = {"\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_ghex_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_ghex_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_ghex_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
+			};
+			class Arid {
+				displayName = "Arid";
+				factions[] = {};
+				textures[] = {"\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_arid_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_arid_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_arid_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa"};
+			};
+		};
+	};
 	class LSV_01_unarmed_base_F;
 	class LSV_01_AT_base_F;
 	class LSV_01_armed_base_F;
@@ -3191,8 +3293,6 @@ class CfgVehicles {
 			};
 		};
 	};
-	class Heli_Light_01_dynamicLoadout_base_F;
-	class Heli_Transport_03_base_F;
 	class VTOL_01_vehicle_base_F: VTOL_01_unarmed_base_F {
 		class TextureSources {
 			class Blue {
@@ -3207,6 +3307,21 @@ class CfgVehicles {
 			};
 		};
 	};
+	class Heli_Light_01_dynamicLoadout_base_F;
+	class Heli_Transport_03_base_F: Helicopter_Base_H {
+		class TextureSources {
+			class Green {
+				displayName = "Green";
+				factions[] = {};
+				textures[] = {"\a3\air_f_heli\heli_transport_03\data\heli_transport_03_ext01_co.paa","\a3\air_f_heli\heli_transport_03\data\heli_transport_03_ext02_co.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"\A3\Air_F_Heli\Heli_Transport_03\Data\Heli_Transport_03_ext01_black_CO.paa","\a3\air_f_heli\heli_transport_03\data\heli_transport_03_ext02_black_co.paa"};
+			};
+		};
+	};
 	class Heli_Transport_03_unarmed_base_F;
 	class Heli_Light_01_unarmed_base_F;
 	class Truck_02_base_F;
@@ -3216,10 +3331,57 @@ class CfgVehicles {
 	class LSV_02_armed_base_F;
 	class LSV_02_AT_base_F;
 	class Truck_03_base_F;
+	class Heli_Light_02_base_F: Helicopter_Base_H {
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"\A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_CO.paa"};
+			};
+			class GreenHex {
+				displayName = "Green Hex";
+				factions[] = {};
+				textures[] = {"\dvk_altcsat\data\heli\orca_pla.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"\A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_CO.paa"};
+			};
+			class Blackcustom {
+				displayName = "Black Custom";
+				factions[] = {};
+				textures[] = {"\A3\Air_F_Heli\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_V2_CO.paa"};
+			};
+			class Blue {
+				displayName = "Blue";
+				factions[] = {};
+				textures[] = {"\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"};
+			};
+		};
+	};
 	class Heli_Light_02_dynamicLoadout_base_F;
 	class Heli_Light_02_unarmed_base_F;
 	class Heli_Transport_04_base_F;
-	class Plane_Fighter_02_Base_F;
+	class Plane_Fighter_02_Base_F: Plane_Base_F {
+		class TextureSources {
+			class CamoAridHex {
+				displayName = "Arid Hex [Camo]";
+				factions[] = {};
+				textures[] = {"a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_co.paa","a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_02_co.paa","a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_co.paa","a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_02_co.paa","a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_00_co.paa","a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_01_co.paa","a3\data_f\clear_empty.paa"};
+			};
+			class CamoGreyHex {
+				displayName = "Grey Hex [Camo]";
+				factions[] = {};
+				textures[] = {"a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_Grey_co.paa","a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_02_Grey_co.paa","a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_Grey_co.paa","a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_02_co.paa","a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_00_co.paa","a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_01_co.paa","a3\data_f\clear_empty.paa"};
+			};
+			class CamoBlue {
+				displayName = "Blue";
+				factions[] = {};
+				textures[] = {"a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_Blue_co.paa","a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_02_Blue_co.paa","a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_Blue_co.paa","a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_02_co.paa","a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_00_co.paa","a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_01_co.paa","a3\data_f\clear_empty.paa"};
+			};
+		};
+	};
 	class O_APC_Tracked_02_base_F;
 	class APC_Wheeled_02_base_v2_F;
 	class O_MBT_02_arty_base_F;
@@ -3230,10 +3392,67 @@ class CfgVehicles {
 	class Truck_02_box_base_F;
 	class Truck_02_transport_base_F;
 	class Plane_CAS_02_dynamicLoadout_base_F;
+	class MBT_04_base_F: Tank_F {
+		class TextureSources {
+			class Hex {
+				displayName = "Hex";
+				factions[] = {};
+				textures[] = {"a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_brown_hex_1_CO.paa","a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_brown_hex_2_CO.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"};
+			};
+			class GreenHex {
+				displayName = "Green Hex";
+				factions[] = {};
+				textures[] = {"a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_green_hex_1_CO.paa","a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_green_hex_2_CO.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Green_CO.paa"};
+			};
+			class Jungle {
+				displayName = "Jungle";
+				factions[] = {};
+				textures[] = {"a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_jungle_1_CO.paa","a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_jungle_2_CO.paa","A3\Armor_F\Data\camonet_CSAT_Stripe_Green_CO.paa"};
+			};
+			class Grey {
+				displayName = "Grey";
+				factions[] = {};
+				textures[] = {"a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_1_CO.paa","a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_2_CO.paa","A3\Armor_F\Data\camonet_CSAT_Stripe_Desert_CO.paa"};
+			};
+		};
+	};
 	class MBT_04_cannon_base_F;
 	class MBT_04_command_base_F;
 	class O_MBT_02_base_F;
-	class Heli_Attack_02_dynamicLoadout_base_F;
+	class Heli_Attack_02_dynamicLoadout_base_F: Heli_Attack_02_base_F {
+		class TextureSources {
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body1_black_CO.paa","A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body2_black_CO.paa"};
+			};
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body1_CO.paa","A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body2_CO.paa"};
+			};
+		};
+	};
+	class VTOL_Base_F;
+	class VTOL_02_base_F: VTOL_Base_F {
+		class TextureSources {
+			class Hex {
+				displayName = "Hex";
+				factions[] = {};
+				textures[] = {"\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT01_bhex_CO.paa","\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT02_bhex_CO.paa","\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_L_bhex_CO.paa","\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_R_bhex_CO.paa"};
+			};
+			class GreenHex {
+				displayName = "Green Hex";
+				factions[] = {};
+				textures[] = {"\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT01_ghex_CO.paa","\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT02_ghex_CO.paa","\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_L_ghex_CO.paa","\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_R_ghex_CO.paa"};
+			};
+			class Grey {
+				displayName = "Grey";
+				factions[] = {};
+				textures[] = {"\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT01_CO.paa","\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT02_CO.paa","\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_L_CO.paa","\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_R_CO.paa"};
+			};
+		};
+	};
 	class VTOL_02_infantry_dynamicLoadout_base_F;
 	class VTOL_02_vehicle_dynamicLoadout_base_F;
 	class RHS_L159_base;
@@ -3246,7 +3465,25 @@ class CfgVehicles {
 	class MRAP_03_base_F;
 	class MRAP_03_gmg_base_F;
 	class I_MBT_03_base_F;
-	class Plane_Fighter_04_Base_F;
+	class Plane_Fighter_04_Base_F: Plane_Base_F {
+		class TextureSources {
+			class DigitalCamoGreen {
+				displayName = "Digital Green [Camo]";
+				factions[] = {};
+				textures[] = {"a3\air_f_jets\plane_fighter_04\data\Fighter_04_fuselage_01_green_co.paa","a3\air_f_jets\plane_fighter_04\data\Fighter_04_fuselage_02_green_co.paa","a3\air_f_jets\plane_fighter_04\data\fighter_04_misc_01_co.paa","a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_04_ca.paa","a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_04_ca.paa","a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_08_ca.paa"};
+			};
+			class DigitalCamoGrey {
+				displayName = "Digital Grey [Camo]";
+				factions[] = {};
+				textures[] = {"a3\air_f_jets\plane_fighter_04\data\Fighter_04_fuselage_01_gray_co.paa","a3\air_f_jets\plane_fighter_04\data\Fighter_04_fuselage_02_gray_co.paa","a3\air_f_jets\plane_fighter_04\data\fighter_04_misc_01_co.paa","a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_04_ca.paa","a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_04_ca.paa","a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_08_ca.paa"};
+			};
+			class CamoGrey {
+				displayName = "Grey";
+				factions[] = {};
+				textures[] = {"a3\air_f_jets\plane_fighter_04\data\Fighter_04_fuselage_01_co.paa","a3\air_f_jets\plane_fighter_04\data\Fighter_04_fuselage_02_co.paa","a3\air_f_jets\plane_fighter_04\data\fighter_04_misc_01_co.paa","a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_04_ca.paa","a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_04_ca.paa","a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_08_ca.paa"};
+			};
+		};
+	};
 	class LT_01_cannon_base_F;
 	class LT_01_scout_base_F;
 	class LT_01_AT_base_F;
@@ -3258,7 +3495,26 @@ class CfgVehicles {
 	class Offroad_01_military_base_F;
 	class Offroad_01_military_comms_base_F;
 	class Offroad_01_military_covered_base_F;
-	class I_Plane_Fighter_03_dynamicLoadout_F;
+	class Plane_Fighter_03_dynamicLoadout_base_F;
+	class I_Plane_Fighter_03_dynamicLoadout_F: Plane_Fighter_03_dynamicLoadout_base_F {
+		class TextureSources {
+			class Hex {
+				displayName = "Hex";
+				factions[] = {};
+				textures[] = {"\a3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_brownhex_CO.paa","\a3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_2_brownhex_CO.paa"};
+			};
+			class Green {
+				displayName = "AAF";
+				factions[] = {};
+				textures[] = {"\a3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_INDP_CO.paa","\a3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_2_INDP_CO.paa"};
+			};
+			class Grey {
+				displayName = "Grey";
+				factions[] = {};
+				textures[] = {"\a3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_greyhex_CO.paa","\a3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_2_greyhex_CO.paa"};
+			};
+		};
+	};
 	class B_Soldier_support_base_F;
 	class B_Soldier_03_f;
 	class B_Soldier_04_f;
@@ -5997,7 +6253,61 @@ class CfgVehicles {
 	
 	
 	//civilian
-	class RHS_Mi8t_civilian;
+	class RHS_Mi8T_vvs;
+	class RHS_Mi8t_civilian: RHS_Mi8T_vvs {
+		class TextureSources {
+			class standard {
+				displayName = "Grey";
+				factions[] = {};
+				textures[] = {"rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_body_g_vsr_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_det_g_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8t\mi8t_tv2_g_vsr_co.paa"};
+			};
+			class Civilian {
+				displayName = "Civilian";
+				factions[] = {};
+				textures[] = {"rhsafrf\addons\rhs_a2port_air\mi17\data\mi8civil_body_g_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8civil_det_g_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8t\mi8tcivil_tv2_g_co.paa"};
+			};
+			class Camo {
+				displayName = "CDF";
+				factions[] = {};
+				textures[] = {"rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_body_g_cdf_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_det_g_cdf_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8t\camo\mi8t_tv2_g_cdf_co.paa"};
+			};
+			class Camo1 {
+				displayName = "Chedaki";
+				factions[] = {};
+				textures[] = {"rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_body_g_chdkz_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_det_g_cdf_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8t\camo\mi8t_tv2_g_chdkz_co.paa"};
+			};
+			class Camo2 {
+				displayName = "Camo #1";
+				factions[] = {};
+				textures[] = {"rhsafrf\addons\rhs_a2port_air\mi17\data\camo\mi8_body_g_camo1_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\camo\mi8_det_g_camo1_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8t\camo\mi8t_tv2_g_camo1_co.paa"};
+			};
+			class Camo3 {
+				displayName = "Camo #2";
+				factions[] = {};
+				textures[] = {"rhsafrf\addons\rhs_a2port_air\mi17\data\camo\mi8_body_g_camo2_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\camo\mi8_det_g_camo2_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8t\camo\mi8t_tv2_g_camo2_co.paa"};
+			};
+			class Camo4 {
+				displayName = "Camo #3";
+				factions[] = {};
+				textures[] = {"rhsafrf\addons\rhs_a2port_air\mi17\data\camo\mi8_body_g_camo3_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\camo\mi8_det_g_camo_mvd_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8t\camo\mi8t_tv2_g_camo3_co.paa"};
+			};
+			class Camo5 {
+				displayName = "Camo #4";
+				factions[] = {};
+				textures[] = {"rhsafrf\addons\rhs_a2port_air\mi17\data\camo\mi8_body_g_camo4_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\camo\mi8_det_g_camo3_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8t\camo\mi8t_tv2_g_camo4_co.paa"};
+			};
+			class RHS_SAF_Camo {
+				displayName = "SAF (Camo)";
+				factions[] = {};
+				textures[] = {"rhssaf\addons\rhssaf_t_vehicle_ret\mi8\rhssaf_mi8_body_camo_co.paa","rhssaf\addons\rhssaf_t_vehicle_ret\mi8\rhssaf_mi8_det_camo_co.paa","rhssaf\addons\rhssaf_t_vehicle_ret\mi8\rhssaf_mi8_tv2_camo_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_notext_ca.paa"};
+			};
+			class RHS_SAF_Green {
+				displayName = "SAF (Green)";
+				factions[] = {};
+				textures[] = {"rhssaf\addons\rhssaf_t_vehicle_ret\mi17\data\rhssaf_mi8_body_green_co.paa","rhssaf\addons\rhssaf_t_vehicle_ret\mi8\rhssaf_mi8_det_camo_co.paa","rhssaf\addons\rhssaf_t_vehicle_ret\mi8\rhssaf_mi8_tv2_green_co.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_notext_ca.paa"};
+			};
+		};
+	};
 	class RHS_Mi8amt_civilian;
 	class SFPD_RHS_CIV_DESERT_MI8T: RHS_Mi8t_civilian {
 		scope = 2;
