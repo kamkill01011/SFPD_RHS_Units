@@ -1,11 +1,11 @@
 	//Taliban
-	class SFPD_RHS_TALIBAN_DESERT_Rifleman_1: I_Soldier_base_F {
+	class SFPD_RHS_TALIBAN_DESERT_Rifleman: I_Soldier_base_F {
 		identityTypes[] = {"LanguagePER_F","Head_TK","G_IRAN_default"};
 		genericNames = "TakistaniMen";
 		faction = "SFPD_RHS_TALIBAN_DESERT_Faction";
 		author = "Kamkill";
 		scope = 2;
-		displayName = "Rifleman 1";
+		displayName = "Rifleman";
 		icon = "iconMan";
 		weapons[] = {"SFPD_RHS_AK74","Throw","Put"};
 		respawnWeapons[] = {"SFPD_RHS_AK74","Throw","Put"};
@@ -22,6 +22,10 @@
 			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 			init = "if (local (_this select 0)) then {[(_this select 0), 1] call KAM_fnc_randomizeOutfit;};";
 		}
+	};
+	
+	class SFPD_RHS_TALIBAN_DESERT_Rifleman_1: SFPD_RHS_TALIBAN_DESERT_Rifleman {
+		displayName = "Rifleman 1";
 	};
 	
 	class SFPD_RHS_TALIBAN_DESERT_Rifleman_2: SFPD_RHS_TALIBAN_DESERT_Rifleman_1 {
@@ -101,13 +105,13 @@
 	};
 	
 	//ISIS
-	class SFPD_RHS_INDEP_Rifleman_1: I_Soldier_base_F {
+	class SFPD_RHS_INDEP_Rifleman: I_Soldier_base_F {
 		identityTypes[] = {"LanguagePER_F","Head_TK","G_IRAN_default"};
 		genericNames = "TakistaniMen";
 		faction = "SFPD_RHS_INDEP_DESERT_Faction";
 		author = "Kamkill";
 		scope = 2;
-		displayName = "Rifleman 1";
+		displayName = "Rifleman";
 		icon = "iconMan";
 		weapons[] = {"SFPD_RHS_AK74","Throw","Put"};
 		respawnWeapons[] = {"SFPD_RHS_AK74","Throw","Put"};
@@ -124,6 +128,10 @@
 			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 			init = "if (local (_this select 0)) then {[(_this select 0), 2] call KAM_fnc_randomizeOutfit;};";
 		}
+	};
+	
+	class SFPD_RHS_INDEP_Rifleman_1: SFPD_RHS_INDEP_Rifleman {
+		displayName = "Rifleman 1";
 	};
 	
 	class SFPD_RHS_INDEP_NBC_Mask: SFPD_RHS_INDEP_Rifleman_1 {
@@ -239,13 +247,13 @@
 	};
 	
 	//Woodland
-	class SFPD_RHS_INDEP_WOODLAND_Rifleman_1: I_Soldier_base_F {
+	class SFPD_RHS_INDEP_WOODLAND_Rifleman: I_Soldier_base_F {
 		identityTypes[] = {"LanguageRUS","Head_Euro","Head_Asian"};
 		genericNames = "RussianMen";
 		faction = "SFPD_RHS_INDEP_WOODLAND_Faction";
 		author = "Kamkill";
 		scope = 2;
-		displayName = "Rifleman 1";
+		displayName = "Rifleman";
 		icon = "iconMan";
 		weapons[] = {"SFPD_RHS_AKS74","Throw","Put"};
 		respawnWeapons[] = {"SFPD_RHS_AKS74","Throw","Put"};
@@ -262,6 +270,10 @@
 			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 			init = "if (local (_this select 0)) then {[(_this select 0), 3] call KAM_fnc_randomizeOutfit;};";
 		}
+	};
+	
+	class SFPD_RHS_INDEP_WOODLAND_Rifleman_1: SFPD_RHS_INDEP_WOODLAND_Rifleman {
+		displayName = "Rifleman 1";
 	};
 	
 	class SFPD_RHS_INDEP_WOODLAND_NBC_Mask: SFPD_RHS_INDEP_WOODLAND_Rifleman_1 {
@@ -357,7 +369,7 @@
 	};
 	
 	//Winter
-	class SFPD_RHS_INDEP_WINTER_Rifleman_1: SFPD_RHS_INDEP_WOODLAND_Rifleman_1 {
+	class SFPD_RHS_INDEP_WINTER_Rifleman: SFPD_RHS_INDEP_WOODLAND_Rifleman {
 		faction = "SFPD_RHS_INDEP_WINTER_Faction";
 		linkedItems[] = {"V_TacChestrig_grn_F","fsg_booniehat_snw",BASIC_LINKED_GREEN};
 		respawnLinkedItems[] = {"V_TacChestrig_grn_F","fsg_booniehat_snw",BASIC_LINKED_GREEN};
@@ -367,6 +379,10 @@
 			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 			init = "if (local (_this select 0)) then {[(_this select 0), 4] call KAM_fnc_randomizeOutfit;};";
 		}
+	};
+	
+	class SFPD_RHS_INDEP_WINTER_Rifleman_1: SFPD_RHS_INDEP_WINTER_Rifleman {
+		displayName = "Rifleman 1";
 	};
 	
 	class SFPD_RHS_INDEP_WINTER_NBC_Mask: SFPD_RHS_INDEP_WINTER_Rifleman_1 {
