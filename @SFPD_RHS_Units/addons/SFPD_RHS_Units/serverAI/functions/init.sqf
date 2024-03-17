@@ -8,7 +8,7 @@ _null = [] spawn {
 			_g = _x;
 			_units = (units _g);
 			private _vehicles = [];
-			private _transfer = ((units _g) isNotEqualTo []) && {({!(_x getVariable ["KAM_transfered", local _x])} count (units _g)) > 0};
+			private _transfer = ((units _g) isNotEqualTo []) && {(({(vehicle _x) != _x} count (units _g)) == 0) && {({!(_x getVariable ["KAM_transfered", local _x])} count (units _g)) > 0}};
 			if (_transfer) then {
 				{
 					_u = _x;
