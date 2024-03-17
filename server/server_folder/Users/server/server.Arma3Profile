@@ -1,0 +1,114 @@
+version=1;
+blood=1;
+singleVoice=0;
+gamma=1;
+brightness=1;
+maxSamplesPlayed=96;
+class DifficultyPresets
+{
+	class CustomDifficulty
+	{
+		class Options
+		{
+			groupIndicators=0;
+			friendlyTags=0;
+			enemyTags=0;
+			detectedMines=0;
+			commands=0;
+			waypoints=0;
+			weaponInfo=2;
+			stanceIndicator=2;
+			reducedDamage=0;
+			staminaBar=1;
+			weaponCrosshair=0;
+			visionAid=0;
+			thirdPersonView=0;
+			cameraShake=1;
+			scoreTable=0;
+			deathMessages=0;
+			vonID=1;
+			mapContent=0;
+			autoReport=0;
+			multipleSaves=0;
+			tacticalPing=0;
+		};
+		aiLevelPreset=3;
+		skillAI=0.5;
+		precisionAI=0.5;
+	};
+	class CustomAILevel
+	{
+		skillAI=0.5;
+		precisionAI=0.5;
+	};
+};
+activeKeys[]=
+{
+	"BIS_SFPD_RHS.Takistan_done",
+	"BIS_SFPD.Malden_done",
+	"BIS_SFPD.Altis_done",
+	"BIS_SFPD_RHS.chernarusredux_done",
+	"BIS_SFPD.Enoch_done",
+	"BIS_SFPD_RHS.tem_kujari_done",
+	"BIS_SFPD_RHS.Chernarus_Winter_done",
+	"BIS_Retake_Stratis.Stratis_done",
+	"BIS_Quick.tem_anizay_done",
+	"BIS_SFPD.Tanoa_done",
+	"BIS_Paradrop.Altis_done",
+	"BIS_SFPD_RHS.tem_anizay_done",
+	"BIS_pupuce.chernarusredux_done",
+	"BIS_Factory.Enoch_done",
+	"BIS_SFPD_RHS.fallujah_done",
+	"BIS_Sniper_Drone.Malden_done",
+	"BIS_RetakeRecon.Altis_done",
+	"BIS_Urban.zargabad_done",
+	"BIS_HVT.tem_kujari_done",
+	"BIS_RetakeArmored.Altis_done",
+	"BIS_tom.tem_kujari_done",
+	"BIS_SFPD_RHS.Chernarus_summer_done",
+	"BIS_SFPD_Contact.Altis_done",
+	"BIS_Redux.chernarusredux_done",
+	"BIS_SFPD_RHS.pja306_done",
+	"BIS_Afrique_1.pja319_done",
+	"BIS_Forest.vt7_done",
+	"BIS_SFPD_RHS.pja310_done",
+	"BIS_SFPD_RHS.pja319_done",
+	"BIS_SFPD_RHS.vt7_done",
+	"BIS_SFPD_Contact.Tanoa_done",
+	"BIS_SFPD_Contact.Malden_done",
+	"BIS_SFPD_RHS.UMB_Colombia_done",
+	"BIS_SFPD_Contact.Stratis_done",
+	"BIS_Winter.Chernarus_Winter_done",
+	"BIS_SFPD_RHS.Zargabad_done",
+	"BIS_SFPD_RHS_stalker.chernarusredux_done",
+	"BIS_RHS.UMB_Colombia_done",
+	"BIS_RHS.cup_chernarus_A3_done",
+	"BIS_RHS.vt7_done",
+	"BIS_RHS.lythium_done",
+	"BIS_RHS.tem_anizay_done",
+	"BIS_SFPD.Stratis_done",
+	"BIS_RHS.fallujah_done",
+	"BIS_RHS.chernarusredux_done",
+	"BIS_RHS.Chernarus_Winter_done",
+	"BIS_RHS.tem_kujari_done",
+	"BIS_SFPD_WW2.Staszow_done",
+	"BIS_SFPD_WW2.Baranow_done",
+	"BIS_RHS.Takistan_done"
+};
+playedKeys[]=
+{
+	"lxws_ExtractionKeyDone"
+};
+sceneComplexity=400000;
+shadowZDistance=100;
+viewDistance=1000;
+preferredObjectViewDistance=800;
+pipViewDistance=500;
+terrainGrid=25;
+volumeCD=10;
+volumeFX=10;
+volumeSpeech=10;
+volumeVoN=10;
+vonRecThreshold=0.029999999;
+volumeMapDucking=1;
+volumeUI=1;

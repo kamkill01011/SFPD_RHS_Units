@@ -52,5 +52,6 @@ class KAM {
 		class placeTent {};
 		class fuelConsumption {};
 		class handleVanGetOut {};
+		class randomizeOutfit {};
 	};
 };

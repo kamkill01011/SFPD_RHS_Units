@@ -678,11 +678,27 @@
 	class SFPD_RHS_OPFOR_WOODLAND_TIGR_M: rhs_tigr_m_3camo_msv {
 		SFPD_VEHICLES_CFG(SFPD_RHS_OPFOR_WOODLAND_Faction,SFPD_RHS_OPFOR_WOODLAND_Rifleman)
 		SFPD_RHS_OPFOR_Transport
+		
+		hiddenSelectionsTextures[] = {
+			"rhsafrf\addons\rhs_tigr\data\rhs_tigr_co.paa",
+			"rhsafrf\addons\rhs_tigr\data\rhs_tigr_int_01_co.paa",
+			"rhsafrf\addons\rhs_tigr\data\rhs_tigr_int_02_co.paa",
+			"rhsafrf\addons\rhs_tigr\sts_proxies\data\tigr_ext_ads_co.paa",
+			"rhsafrf\addons\rhs_tigr\m_proxies\data\tigr_m_adds_co.paa"
+		};
 	};
 	
 	class SFPD_RHS_OPFOR_WOODLAND_TIGR_STS: rhs_tigr_sts_3camo_msv {
 		SFPD_VEHICLES_CFG(SFPD_RHS_OPFOR_WOODLAND_Faction,SFPD_RHS_OPFOR_WOODLAND_Rifleman)
 		SFPD_RHS_OPFOR_Transport
+		
+		hiddenSelectionsTextures[] = {
+			"rhsafrf\addons\rhs_tigr\data\rhs_tigr_co.paa",
+			"rhsafrf\addons\rhs_tigr\data\rhs_tigr_int_01_co.paa",
+			"rhsafrf\addons\rhs_tigr\data\rhs_tigr_int_02_co.paa",
+			"rhsafrf\addons\rhs_tigr\sts_proxies\data\tigr_ext_ads_co.paa",
+			"rhsafrf\addons\rhs_tigr\m_proxies\data\tigr_m_adds_co.paa"
+		};
 	};
 	
 	class SFPD_RHS_OPFOR_WOODLAND_BRDM2_HQ_TEMP: rhsgref_BRDM2_HQ_msv {
@@ -817,6 +833,14 @@
 	class SFPD_RHS_OPFOR_WOODLAND_TIGR: rhs_tigr_3camo_msv {
 		SFPD_VEHICLES_CFG(SFPD_RHS_OPFOR_WOODLAND_Faction,SFPD_RHS_OPFOR_WOODLAND_Rifleman)
 		SFPD_RHS_OPFOR_Transport
+		
+		hiddenSelectionsTextures[] = {
+			"rhsafrf\addons\rhs_tigr\data\rhs_tigr_co.paa",
+			"rhsafrf\addons\rhs_tigr\data\rhs_tigr_int_01_co.paa",
+			"rhsafrf\addons\rhs_tigr\data\rhs_tigr_int_02_co.paa",
+			"rhsafrf\addons\rhs_tigr\sts_proxies\data\tigr_ext_ads_co.paa",
+			"rhsafrf\addons\rhs_tigr\m_proxies\data\tigr_m_adds_co.paa"
+		};
 	};
 	
 	class SFPD_RHS_OPFOR_WOODLAND_UAZ: RHS_UAZ_MSV_01 {
@@ -1017,6 +1041,54 @@
 		
 		ace_fastroping_enabled = 1;
 		incomingMissileDetectionSystem = 16;
+		
+		class TextureSources {
+			class standard {
+				displayName = "Grey";
+				factions[] = {};
+				textures[] = {"\rhsgref\addons\rhsgref_tohport_air\superhind\data\mi24sh_001_co.paa","\rhsgref\addons\rhsgref_tohport_air\superhind\data\mi24sh_002_co.paa","\rhsgref\addons\rhsgref_tohport_air\superHind\data\mi35_sh_co.paa"};
+			};
+			class Camo {
+				displayName = "Camo #1";
+				factions[] = {};
+				textures[] = {"\rhsafrf\addons\rhs_a2port_air\mi35\data\mi24v_001_co.paa","\rhsafrf\addons\rhs_a2port_air\mi35\data\mi24v_002_co.paa","\rhsgref\addons\rhsgref_tohport_air\superHind\data\mi35_sh_g_co.paa"};
+			};
+			class Camo1 {
+				displayName = "Camo #2";
+				factions[] = {};
+				textures[] = {"\rhsafrf\addons\rhs_a2port_air\mi35\data\camo\mi24p_001_camo1_co.paa","\rhsafrf\addons\rhs_a2port_air\mi35\data\camo\mi24p_002_camo1_co.paa","\rhsgref\addons\rhsgref_tohport_air\superHind\data\mi35_sh_g_co.paa"};
+			};
+			class Camo2 {
+				displayName = "Camo #3";
+				factions[] = {};
+				textures[] = {"\rhsafrf\addons\rhs_a2port_air\mi35\data\camo\mi24p_001_camo2_co.paa","\rhsafrf\addons\rhs_a2port_air\mi35\data\camo\mi24p_002_camo2_co.paa","\rhsgref\addons\rhsgref_tohport_air\superHind\data\mi35_sh_g3_co.paa"};
+			};
+			class Camo3 {
+				displayName = "Camo #4";
+				factions[] = {};
+				textures[] = {"\rhsafrf\addons\rhs_a2port_air\mi35\data\camo\mi24p_001_camo3_co.paa","\rhsafrf\addons\rhs_a2port_air\mi35\data\camo\mi24p_002_camo3_co.paa","\rhsgref\addons\rhsgref_tohport_air\superHind\data\mi35_sh_co.paa"};
+			};
+			class Camo4 {
+				displayName = "Soot Camo #1";
+				factions[] = {};
+				textures[] = {"\rhsafrf\addons\rhs_a2port_air\mi35\data\soot\mi24p_001_soot1_co.paa","\rhsafrf\addons\rhs_a2port_air\mi35\data\soot\mi24p_002_soot1_co.paa","\rhsgref\addons\rhsgref_tohport_air\superHind\data\mi35_sh_g2_co.paa"};
+			};
+			class Camo5 {
+				displayName = "Soot Camo #2";
+				factions[] = {};
+				textures[] = {"\rhsafrf\addons\rhs_a2port_air\mi35\data\soot\mi24p_001_soot2_co.paa","\rhsafrf\addons\rhs_a2port_air\mi35\data\soot\mi24p_002_soot2_co.paa","\rhsgref\addons\rhsgref_tohport_air\superHind\data\mi35_sh_g2_co.paa"};
+			};
+			class Camo6 {
+				displayName = "Soot Camo #3";
+				factions[] = {};
+				textures[] = {"\rhsafrf\addons\rhs_a2port_air\mi35\data\soot\mi24p_001_soot3_co.paa","\rhsafrf\addons\rhs_a2port_air\mi35\data\soot\mi24p_002_soot3_co.paa","\rhsgref\addons\rhsgref_tohport_air\superHind\data\mi35_sh_g2_co.paa"};
+			};
+			class Camo7 {
+				displayName = "CDF";
+				factions[] = {};
+				textures[] = {"\rhsafrf\addons\rhs_a2port_air\mi35\data\mi35_001_co.paa","\rhsafrf\addons\rhs_a2port_air\mi35\data\mi35_002_co.paa","\rhsgref\addons\rhsgref_tohport_air\superHind\data\mi35_sh_cdf_co.paa"};
+			};
+		};
 	};
 	
 	class SFPD_RHS_OPFOR_MI28: rhs_mi28n_vvsc {
@@ -1025,6 +1097,19 @@
 		SFPD_VEHICLES_EMPTY_CARGO
 		
 		incomingMissileDetectionSystem = 16;
+		
+		class TextureSources {
+			class standard {
+				displayName = "Grey";
+				factions[] = {};
+				textures[] = {"\rhsafrf\addons\rhs_mi28\data\rhs_mi28_01_grey_co.paa","\rhsafrf\addons\rhs_mi28\data\rhs_mi28_02_grey_co.paa","\rhsafrf\addons\rhs_mi28\data\rhs_mi28_03_exterior_grey_co.paa","rhsafrf\addons\rhs_decals\data\labels\aviation\vvs_ca.paa"};
+			};
+			class Camo {
+				displayName = "Camo";
+				factions[] = {};
+				textures[] = {"\rhsafrf\addons\rhs_mi28\data\rhs_mi28_01_camo_co.paa","\rhsafrf\addons\rhs_mi28\data\rhs_mi28_02_camo_co.paa","\rhsafrf\addons\rhs_mi28\data\rhs_mi28_03_exterior_camo_co.paa","rhsafrf\addons\rhs_decals\data\labels\aviation\vvs_ca.paa"};
+			};
+		};
 	};
 	
 	class SFPD_RHS_OPFOR_KA52: RHS_Ka52_vvsc {
@@ -1033,6 +1118,19 @@
 		SFPD_VEHICLES_EMPTY_CARGO
 		
 		incomingMissileDetectionSystem = 16;
+		
+		class TextureSources {
+			class standard {
+				displayName = "Grey";
+				factions[] = {};
+				textures[] = {"\rhsafrf\addons\rhs_a2port_air\ka52\data\ka52_01_co.paa","\rhsafrf\addons\rhs_a2port_air\ka52\data\ka52_02_co.paa"};
+			};
+			class Camo {
+				displayName = "Camo";
+				factions[] = {};
+				textures[] = {"\rhsafrf\addons\rhs_a2port_air\ka52\data\ka52_01_RU_co.paa","\rhsafrf\addons\rhs_a2port_air\ka52\data\ka52_02_RU_co.paa"};
+			};
+		};
 	};
 	
 	class SFPD_RHS_OPFOR_Shirka: O_Plane_Fighter_02_F {

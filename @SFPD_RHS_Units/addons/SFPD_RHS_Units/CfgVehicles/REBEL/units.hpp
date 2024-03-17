@@ -1,9 +1,9 @@
-	class SFPD_REBEL_Rifleman_AKM_1: I_G_Soldier_base_F {
+	class SFPD_REBEL_Rifleman_AKM: I_G_Soldier_base_F {
 		faction = "SFPD_REBEL_Faction";
 		author = "Kamkill";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Rifleman (AKM) 1";
+		displayName = "Rifleman (AKM)";
 		icon = "iconMan";
 		weapons[] = {"arifle_AKM_F","Throw","Put"};
 		respawnWeapons[] = {"arifle_AKM_F","Throw","Put"};
@@ -15,6 +15,15 @@
 		respawnItems[] = {"ACE_Cellphone",BASIC_ITEMS,TEN_TIMES(ACE_fieldDressing)};
 		uniformClass = "U_IG_Guerilla1_1";
 		camouflage = 1;
+		
+		class EventHandlers {
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+			init = "if (local (_this select 0)) then {[(_this select 0), 0] call KAM_fnc_randomizeOutfit;};";
+		}
+	};
+	
+	class SFPD_REBEL_Rifleman_AKM_1: SFPD_REBEL_Rifleman_AKM {
+		displayName = "Rifleman (AKM) 1";
 	};
 	
 	class SFPD_REBEL_Rifleman_AKM_2: SFPD_REBEL_Rifleman_AKM_1 {
@@ -31,8 +40,8 @@
 		uniformClass = "U_IG_Guerilla2_2";
 	};
 	
-	class SFPD_REBEL_Rifleman_AKS_1: SFPD_REBEL_Rifleman_AKM_1 {
-		displayName = "Rifleman (AKS) 1";
+	class SFPD_REBEL_Rifleman_AKS: SFPD_REBEL_Rifleman_AKM_1 {
+		displayName = "Rifleman (AKS)";
 		weapons[] = {"arifle_AKS_F","Throw","Put"};
 		respawnWeapons[] = {"arifle_AKS_F","Throw","Put"};
 		magazines[] = {SEVEN_TIMES(30Rnd_545x39_Mag_F),"minigrenade"};
@@ -40,6 +49,10 @@
 		linkedItems[] = {"V_Chestrig_rgr","H_Bandanna_surfer",BASIC_LINKED_GREEN};
 		respawnLinkedItems[] = {"V_Chestrig_rgr","H_Bandanna_surfer",BASIC_LINKED_GREEN};
 		uniformClass = "U_IG_Guerilla2_3";
+	};
+	
+	class SFPD_REBEL_Rifleman_AKS_1: SFPD_REBEL_Rifleman_AKS {
+		displayName = "Rifleman (AKS) 1";
 	};
 	
 	class SFPD_REBEL_Rifleman_AKS_2: SFPD_REBEL_Rifleman_AKS_1 {
@@ -56,8 +69,8 @@
 		uniformClass = "U_IG_Guerrilla_6_1";
 	};
 	
-	class SFPD_REBEL_Rifleman_TRG_1: SFPD_REBEL_Rifleman_AKM_1 {
-		displayName = "Rifleman (TRG) 1";
+	class SFPD_REBEL_Rifleman_TRG: SFPD_REBEL_Rifleman_AKM_1 {
+		displayName = "Rifleman (TRG)";
 		weapons[] = {"arifle_TRG20_F","Throw","Put"};
 		respawnWeapons[] = {"arifle_TRG20_F","Throw","Put"};
 		magazines[] = {SEVEN_TIMES(30Rnd_556x45_Stanag),"minigrenade"};
@@ -65,6 +78,10 @@
 		linkedItems[] = {"V_BandollierB_cbr","H_Hat_Safari_olive_F",BASIC_LINKED_GREEN};
 		respawnLinkedItems[] = {"V_BandollierB_cbr","H_Hat_Safari_olive_F",BASIC_LINKED_GREEN};
 		uniformClass = "U_I_C_Soldier_Para_1_F";
+	};
+	
+	class SFPD_REBEL_Rifleman_TRG_1: SFPD_REBEL_Rifleman_TRG {
+		displayName = "Rifleman (TRG) 1";
 	};
 	
 	class SFPD_REBEL_Rifleman_TRG_2: SFPD_REBEL_Rifleman_TRG_1 {

@@ -609,6 +609,13 @@
 	class SFPD_RHS_BLUFOR_WOODLAND_MRZR: rhsusf_mrzr4_w {
 		SFPD_VEHICLES_CFG(SFPD_RHS_BLUFOR_WOODLAND_Faction,SFPD_RHS_BLUFOR_WOODLAND_Rifleman)
 		SFPD_RHS_BLUFOR_Transport
+		hiddenSelectionsTextures[] = {
+			"\rhsusf\addons\rhsusf_mrzr\data\blue_grn_co.paa",
+			"\rhsusf\addons\rhsusf_mrzr\data\yel_grn_co.paa",
+			"\rhsusf\addons\rhsusf_mrzr\data\red_grn_co.paa",
+			"\rhsusf\addons\rhsusf_mrzr\data\grn_grn_co.paa",
+			"\rhsusf\addons\rhsusf_mrzr\data\merged\orng_grn_co.paa"
+		};
 	};
 	
 	class SFPD_RHS_BLUFOR_WOODLAND_RG33_M2: rhsusf_rg33_m2_usmc_wd {
@@ -800,6 +807,19 @@
 		class TransportBackpacks {};
 		
 		incomingMissileDetectionSystem = 16;
+		
+		class TextureSources {
+			class standard {
+				displayName = "Standard";
+				factions[] = {};
+				textures[] = {"\rhsusf\addons\rhsusf_a2port_air\ah64\data\ah64d_body_co.paa","\rhsusf\addons\rhsusf_a2port_air\ah64\data\ah64d_details_co.paa","\rhsusf\addons\rhsusf_a2port_air\ah64\data\ah64d_alfa_ca.paa"};
+			};
+			class Grey {
+				displayName = "Grey";
+				factions[] = {};
+				textures[] = {"\rhsusf\addons\rhsusf_a2port_air\ah64\data\ah64d_g_body_co.paa","\rhsusf\addons\rhsusf_a2port_air\ah64\data\ah64d_g_details_co.paa","\rhsusf\addons\rhsusf_a2port_air\ah64\data\ah64d_alfa_ca.paa"};
+			};
+		};
 	};
 	
 	class SFPD_RHS_BLUFOR_A10: B_Plane_CAS_01_dynamicLoadout_F {

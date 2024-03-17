@@ -107,37 +107,128 @@
 	class SFPD_OPFOR_DESERT_Mi290: O_Heli_Transport_04_F {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_HelicopterPilot)
 		SFPD_VEHICLES_EMPTY_CARGO
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_co.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa"};
+			};
+		};
 	};
 	
 	class SFPD_OPFOR_DESERT_Mi290_Ammo: O_Heli_Transport_04_ammo_F {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_HelicopterPilot)
 		SFPD_VEHICLES_EMPTY_CARGO
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"};
+			};
+		};
 	};
 	
 	class SFPD_OPFOR_DESERT_Mi290_Fuel: O_Heli_Transport_04_fuel_F {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_HelicopterPilot)
 		SFPD_VEHICLES_EMPTY_CARGO
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_fuel_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_fuel_black_CO.paa"};
+			};
+		};
 	};
 	
 	class SFPD_OPFOR_DESERT_Mi290_Cargo: O_Heli_Transport_04_box_F {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_HelicopterPilot)
 		SFPD_VEHICLES_EMPTY_CARGO
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"};
+			};
+		};
 	};
 	
 	
 	class SFPD_OPFOR_DESERT_Mi290_Bench: O_Heli_Transport_04_bench_F {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_HelicopterPilot)
 		SFPD_VEHICLES_EMPTY_CARGO
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_bench_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_bench_Black_CO.paa"};
+			};
+		};
 	};
 	
 	class SFPD_OPFOR_DESERT_Mi290_Medevac: O_Heli_Transport_04_medevac_F {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_HelicopterPilot)
 		SFPD_VEHICLES_EMPTY_CARGO
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"};
+			};
+		};
 	};
 	
 	class SFPD_OPFOR_DESERT_Mi290_Transport: O_Heli_Transport_04_covered_F {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_HelicopterPilot)
 		SFPD_VEHICLES_EMPTY_CARGO
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"};
+			};
+		};
 	};
 	
 	class SFPD_OPFOR_DESERT_Mi48: O_Heli_Attack_02_dynamicLoadout_F {
@@ -311,6 +402,19 @@
 			"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa"
 		};
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_co.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa"};
+			};
+		};
 	};
 	
 	class SFPD_OPFOR_WOODLAND_Mi290_Ammo: O_Heli_Transport_04_ammo_black_F {
@@ -322,6 +426,19 @@
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"
 		};
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"};
+			};
+		};
 	};
 	
 	class SFPD_OPFOR_WOODLAND_Mi290_Fuel: O_Heli_Transport_04_fuel_black_F {
@@ -331,6 +448,19 @@
 			"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_fuel_black_CO.paa"
+		};
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_fuel_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_fuel_black_CO.paa"};
+			};
 		};
 	};
 	
@@ -343,6 +473,19 @@
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"
 		};
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"};
+			};
+		};
 	};
 	
 	class SFPD_OPFOR_WOODLAND_Mi290_Bench: O_Heli_Transport_04_bench_black_F {
@@ -353,7 +496,19 @@
 			"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_bench_Black_CO.paa"
 		};
-
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_bench_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_bench_Black_CO.paa"};
+			};
+		};
 	};
 	
 	class SFPD_OPFOR_WOODLAND_Mi290_Medevac: O_Heli_Transport_04_medevac_black_F {
@@ -365,7 +520,19 @@
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"
 		};
-
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"};
+			};
+		};
 	};
 	
 	class SFPD_OPFOR_WOODLAND_Mi290_Transport: O_Heli_Transport_04_covered_black_F {
@@ -376,6 +543,19 @@
 			"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"
+		};
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"};
+			};
 		};
 	};
 	
@@ -566,6 +746,19 @@
 			"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa"
 		};
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_co.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa"};
+			};
+		};
 	};
 	
 	class SFPD_OPFOR_JUNGLE_Mi290_Ammo: O_Heli_Transport_04_ammo_black_F {
@@ -577,6 +770,19 @@
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"
 		};
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"};
+			};
+		};
 	};
 	
 	class SFPD_OPFOR_JUNGLE_Mi290_Fuel: O_Heli_Transport_04_fuel_black_F {
@@ -586,6 +792,19 @@
 			"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_fuel_black_CO.paa"
+		};
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_fuel_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_fuel_black_CO.paa"};
+			};
 		};
 	};
 	
@@ -598,6 +817,19 @@
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"
 		};
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"};
+			};
+		};
 	};
 	
 	class SFPD_OPFOR_JUNGLE_Mi290_Bench: O_Heli_Transport_04_bench_black_F {
@@ -607,6 +839,19 @@
 			"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_bench_Black_CO.paa"
+		};
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_bench_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_bench_Black_CO.paa"};
+			};
 		};
 
 	};
@@ -620,6 +865,19 @@
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"
 		};
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"};
+			};
+		};
 
 	};
 	
@@ -631,6 +889,19 @@
 			"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa",
 			"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"
+		};
+		
+		class TextureSources {
+			class Opfor {
+				displayName = "OPFOR";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_CO.paa"};
+			};
+			class Black {
+				displayName = "Black";
+				factions[] = {};
+				textures[] = {"A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa","A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"};
+			};
 		};
 	};
 	
