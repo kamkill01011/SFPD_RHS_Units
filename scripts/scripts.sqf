@@ -19,6 +19,7 @@ waitUntil {hintSilent str (screenToWorld [0.5,0.5]);!alive(_this # 1)};
 _u = (_this # 1);_u setUnitTrait ["camouflageCoef", 0];_u setUnitTrait ["audibleCoef", 0];
 [1, [0.3, 0, 0]] remoteExec ["setFog", 0];
 [player] spawn BIS_fnc_traceBullets;
+KAM_transfer_enabled = false;
 ////////// transfer group //////////
 _g = group (_this # 1);
 {

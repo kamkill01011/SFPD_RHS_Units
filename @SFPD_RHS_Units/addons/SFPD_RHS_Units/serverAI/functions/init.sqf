@@ -2,8 +2,15 @@
 
 _null = [] spawn {
 	if (!isServer) exitWith {};
+	KAM_transfer_enabled = true;
 	
 	waitUntil {
+	
+		waitUntil {
+			sleep 10;
+			KAM_transfer_enabled;
+		};
+		
 		{
 			_g = _x;
 			_units = (units _g);
