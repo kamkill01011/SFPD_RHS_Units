@@ -5,10 +5,12 @@ _null = [] spawn {
 	KAM_transfer_enabled = true;
 	
 	waitUntil {
-	
-		waitUntil {
-			sleep 10;
-			KAM_transfer_enabled;
+		
+		if (!KAM_transfer_enabled) then {
+			waitUntil {
+				sleep 10;
+				KAM_transfer_enabled;
+			};
 		};
 		
 		{
