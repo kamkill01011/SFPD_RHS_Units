@@ -24,32 +24,7 @@
 		}
 	};
 	
-	class SFPD_RHS_TALIBAN_DESERT_Rifleman_1: SFPD_RHS_TALIBAN_DESERT_Rifleman {
-		displayName = "Rifleman 1";
-	};
-	
-	class SFPD_RHS_TALIBAN_DESERT_Rifleman_2: SFPD_RHS_TALIBAN_DESERT_Rifleman_1 {
-		displayName = "Rifleman 2";
-		linkedItems[] = {"LOP_H_Turban",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"LOP_H_Turban",BASIC_LINKED_GREEN};
-		uniformClass = "LOP_U_AM_Fatigue_01_3";
-	};
-	
-	class SFPD_RHS_TALIBAN_DESERT_Rifleman_3: SFPD_RHS_TALIBAN_DESERT_Rifleman_1 {
-		displayName = "Rifleman 3";
-		linkedItems[] = {"LOP_H_Shemag_GRE",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"LOP_H_Shemag_GRE",BASIC_LINKED_GREEN};
-		uniformClass = "LOP_U_AM_Fatigue_01_2";
-	};
-	
-	class SFPD_RHS_TALIBAN_DESERT_Rifleman_4: SFPD_RHS_TALIBAN_DESERT_Rifleman_1 {
-		displayName = "Rifleman 4";
-		linkedItems[] = {"LOP_H_Worker_cap",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"LOP_H_Worker_cap",BASIC_LINKED_GREEN};
-		uniformClass = "LOP_U_AM_Fatigue_03";
-	};
-	
-	class SFPD_RHS_TALIBAN_DESERT_MG: SFPD_RHS_TALIBAN_DESERT_Rifleman_4 {
+	class SFPD_RHS_TALIBAN_DESERT_MG: SFPD_RHS_TALIBAN_DESERT_Rifleman {
 		backpack = "SFPD_RHS_INDEP_MG_Backpack";
 		displayName = "MG";
 		icon = "iconManMG";
@@ -59,7 +34,7 @@
 		respawnMagazines[] = {"rhs_100Rnd_762x54mmR_green","MiniGrenade"};
 	};
 	
-	class SFPD_RHS_TALIBAN_DESERT_AT: SFPD_RHS_TALIBAN_DESERT_Rifleman_1 {
+	class SFPD_RHS_TALIBAN_DESERT_AT: SFPD_RHS_TALIBAN_DESERT_Rifleman {
 		backpack = "SFPD_RHS_INDEP_AT_Backpack";
 		displayName = "AT";
 		icon = "iconManAT";
@@ -67,7 +42,7 @@
 		respawnWeapons[] += {"rhs_weap_rpg7"};
 	};
 	
-	class SFPD_RHS_TALIBAN_DESERT_Marksman: SFPD_RHS_TALIBAN_DESERT_Rifleman_2 {
+	class SFPD_RHS_TALIBAN_DESERT_Marksman: SFPD_RHS_TALIBAN_DESERT_Rifleman {
 		backpack = "";
 		displayName = "Marksman";
 		weapons[] = {"SFPD_RHS_M38","rhs_weap_makarov_pm","Throw","Put"};
@@ -78,7 +53,7 @@
 		respawnItems[] += {"ACE_RangeCard"};
 	};
 	
-	class SFPD_RHS_TALIBAN_DESERT_Commander: SFPD_RHS_TALIBAN_DESERT_Rifleman_1 {
+	class SFPD_RHS_TALIBAN_DESERT_Commander: SFPD_RHS_TALIBAN_DESERT_Rifleman {
 		displayName = "Commander";
 		icon = "iconManOfficer";
 		weapons[] = {"hgun_Pistol_heavy_02_F","Throw","Put"};
@@ -96,7 +71,7 @@
 		}
 	};
 	
-	class SFPD_RHS_TALIBAN_DESERT_AA: SFPD_RHS_TALIBAN_DESERT_Rifleman_3 {
+	class SFPD_RHS_TALIBAN_DESERT_AA: SFPD_RHS_TALIBAN_DESERT_Rifleman {
 		backpack = "SFPD_RHS_INDEP_AA_Backpack";
 		displayName = "AA";
 		icon = "iconManAT";
@@ -130,11 +105,7 @@
 		}
 	};
 	
-	class SFPD_RHS_INDEP_Rifleman_1: SFPD_RHS_INDEP_Rifleman {
-		displayName = "Rifleman 1";
-	};
-	
-	class SFPD_RHS_INDEP_NBC_Mask: SFPD_RHS_INDEP_Rifleman_1 {
+	class SFPD_RHS_INDEP_NBC_Mask: SFPD_RHS_INDEP_Rifleman {
 		displayName = "NBC (Mask)";
 		linkedItems[] = {"LOP_V_6Sh92_WDL","G_RegulatorMask_F",BASIC_LINKED_GREEN};
 		respawnLinkedItems[] = {"LOP_V_6Sh92_WDL","G_RegulatorMask_F",BASIC_LINKED_GREEN};
@@ -150,28 +121,7 @@
 		uniformClass = "U_C_CBRN_Suit_01_White_F";
 	};
 	
-	class SFPD_RHS_INDEP_Rifleman_2: SFPD_RHS_INDEP_Rifleman_1 {
-		displayName = "Rifleman 2";
-		linkedItems[] = {"LOP_V_6Sh92_CDF","LOP_H_Shemag_OLV",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"LOP_V_6Sh92_CDF","LOP_H_Shemag_OLV",BASIC_LINKED_GREEN};
-		uniformClass = "LOP_U_ISTS_Fatigue_10";
-	};
-	
-	class SFPD_RHS_INDEP_Rifleman_3: SFPD_RHS_INDEP_Rifleman_1 {
-		displayName = "Rifleman 3";
-		linkedItems[] = {"LOP_V_Chestrig_Kamysh","LOP_H_Shemag_TAN",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"LOP_V_Chestrig_Kamysh","LOP_H_Shemag_TAN",BASIC_LINKED_GREEN};
-		uniformClass = "LOP_U_ISTS_Fatigue_14";
-	};
-	
-	class SFPD_RHS_INDEP_Rifleman_4: SFPD_RHS_INDEP_Rifleman_1 {
-		displayName = "Rifleman 4";
-		linkedItems[] = {"LOP_V_6Sh92_OLV","LOP_H_Shemag_BLK",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"LOP_V_6Sh92_OLV","LOP_H_Shemag_BLK",BASIC_LINKED_GREEN};
-		uniformClass = "LOP_U_ISTS_Fatigue_05";
-	};
-	
-	class SFPD_RHS_INDEP_MG: SFPD_RHS_INDEP_Rifleman_4 {
+	class SFPD_RHS_INDEP_MG: SFPD_RHS_INDEP_Rifleman {
 		backpack = "SFPD_RHS_INDEP_MG_Backpack";
 		displayName = "MG";
 		icon = "iconManMG";
@@ -181,7 +131,7 @@
 		respawnMagazines[] = {"rhs_100Rnd_762x54mmR_green","MiniGrenade"};
 	};
 	
-	class SFPD_RHS_INDEP_AT: SFPD_RHS_INDEP_Rifleman_1 {
+	class SFPD_RHS_INDEP_AT: SFPD_RHS_INDEP_Rifleman {
 		backpack = "SFPD_RHS_INDEP_AT_Backpack";
 		displayName = "AT";
 		icon = "iconManAT";
@@ -189,7 +139,7 @@
 		respawnWeapons[] += {"rhs_weap_rpg7"};
 	};
 	
-	class SFPD_RHS_INDEP_Marksman: SFPD_RHS_INDEP_Rifleman_2 {
+	class SFPD_RHS_INDEP_Marksman: SFPD_RHS_INDEP_Rifleman {
 		backpack = "";
 		displayName = "Marksman";
 		weapons[] = {"SFPD_RHS_M38","rhs_weap_makarov_pm","Throw","Put"};
@@ -200,7 +150,7 @@
 		respawnItems[] += {"ACE_RangeCard"};
 	};
 	
-	class SFPD_RHS_INDEP_Commander: SFPD_RHS_INDEP_Rifleman_1 {
+	class SFPD_RHS_INDEP_Commander: SFPD_RHS_INDEP_Rifleman {
 		displayName = "Commander";
 		icon = "iconManOfficer";
 		weapons[] = {"hgun_Pistol_heavy_02_F","Throw","Put"};
@@ -218,7 +168,7 @@
 		}
 	};
 	
-	class SFPD_RHS_INDEP_AA: SFPD_RHS_INDEP_Rifleman_3 {
+	class SFPD_RHS_INDEP_AA: SFPD_RHS_INDEP_Rifleman {
 		backpack = "SFPD_RHS_INDEP_AA_Backpack";
 		displayName = "AA";
 		icon = "iconManAT";
@@ -226,7 +176,7 @@
 		respawnWeapons[] += {"rhs_weap_igla"};
 	};
 	
-	class SFPD_RHS_INDEP_Black_ISIS: SFPD_RHS_INDEP_Rifleman_1 {
+	class SFPD_RHS_INDEP_Black_ISIS: SFPD_RHS_INDEP_Rifleman {
 		displayName = "Black ISIS";
 		editorSubcategory = "EdSubcat_Personnel_SpecialForces";
 		weapons[] = {"SFPD_RHS_ISIS_M16","rhs_weap_savz61_folded","rhs_pdu4","Throw","Put"};
@@ -272,11 +222,7 @@
 		}
 	};
 	
-	class SFPD_RHS_INDEP_WOODLAND_Rifleman_1: SFPD_RHS_INDEP_WOODLAND_Rifleman {
-		displayName = "Rifleman 1";
-	};
-	
-	class SFPD_RHS_INDEP_WOODLAND_NBC_Mask: SFPD_RHS_INDEP_WOODLAND_Rifleman_1 {
+	class SFPD_RHS_INDEP_WOODLAND_NBC_Mask: SFPD_RHS_INDEP_WOODLAND_Rifleman {
 		displayName = "NBC (Mask)";
 		linkedItems[] = {"LOP_V_6Sh92_CDF","G_RegulatorMask_F",BASIC_LINKED_GREEN};
 		respawnLinkedItems[] = {"LOP_V_6Sh92_CDF","G_RegulatorMask_F",BASIC_LINKED_GREEN};
@@ -292,28 +238,7 @@
 		uniformClass = "U_C_CBRN_Suit_01_White_F";
 	};
 	
-	class SFPD_RHS_INDEP_WOODLAND_Rifleman_2: SFPD_RHS_INDEP_WOODLAND_Rifleman_1 {
-		displayName = "Rifleman 2";
-		linkedItems[] = {"LOP_V_6Sh92_WDL","rhs_balaclava1_olive",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"LOP_V_6Sh92_WDL","rhs_balaclava1_olive",BASIC_LINKED_GREEN};
-		uniformClass = "LOP_U_UA_Fatigue_04";
-	};
-	
-	class SFPD_RHS_INDEP_WOODLAND_Rifleman_3: SFPD_RHS_INDEP_WOODLAND_Rifleman_1 {
-		displayName = "Rifleman 3";
-		linkedItems[] = {"LOP_V_Chestrig_Kamysh","rhsgref_patrolcap_specter",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"LOP_V_Chestrig_Kamysh","rhsgref_patrolcap_specter",BASIC_LINKED_GREEN};
-		uniformClass = "LOP_U_IRA_Fatigue_DPM_GNSW";
-	};
-	
-	class SFPD_RHS_INDEP_WOODLAND_Rifleman_4: SFPD_RHS_INDEP_WOODLAND_Rifleman_1 {
-		displayName = "Rifleman 4";
-		linkedItems[] = {"LOP_V_6Sh92_OLV","rhs_beanie_green",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"LOP_V_6Sh92_OLV","rhs_beanie_green",BASIC_LINKED_GREEN};
-		uniformClass = "LOP_U_BH_Fatigue_GUE_FWDL";
-	};
-	
-	class SFPD_RHS_INDEP_WOODLAND_MG: SFPD_RHS_INDEP_WOODLAND_Rifleman_4 {
+	class SFPD_RHS_INDEP_WOODLAND_MG: SFPD_RHS_INDEP_WOODLAND_Rifleman {
 		backpack = "SFPD_RHS_INDEP_WOODLAND_MG_Backpack";
 		displayName = "MG";
 		icon = "iconManMG";
@@ -323,7 +248,7 @@
 		respawnMagazines[] = {"rhs_100Rnd_762x54mmR_green","MiniGrenade"};
 	};
 	
-	class SFPD_RHS_INDEP_WOODLAND_AT: SFPD_RHS_INDEP_WOODLAND_Rifleman_1 {
+	class SFPD_RHS_INDEP_WOODLAND_AT: SFPD_RHS_INDEP_WOODLAND_Rifleman {
 		backpack = "SFPD_RHS_INDEP_WOODLAND_AT_Backpack";
 		displayName = "AT";
 		icon = "iconManAT";
@@ -331,7 +256,7 @@
 		respawnWeapons[] += {"rhs_weap_rpg7"};
 	};
 	
-	class SFPD_RHS_INDEP_WOODLAND_Marksman: SFPD_RHS_INDEP_WOODLAND_Rifleman_2 {
+	class SFPD_RHS_INDEP_WOODLAND_Marksman: SFPD_RHS_INDEP_WOODLAND_Rifleman {
 		backpack = "";
 		displayName = "Marksman";
 		weapons[] = {"SFPD_RHS_M38","rhs_weap_makarov_pm","Throw","Put"};
@@ -342,7 +267,7 @@
 		respawnItems[] += {"ACE_RangeCard"};
 	};
 	
-	class SFPD_RHS_INDEP_WOODLAND_Commander: SFPD_RHS_INDEP_WOODLAND_Rifleman_1 {
+	class SFPD_RHS_INDEP_WOODLAND_Commander: SFPD_RHS_INDEP_WOODLAND_Rifleman {
 		displayName = "Commander";
 		icon = "iconManOfficer";
 		weapons[] = {"hgun_Pistol_heavy_02_F","Throw","Put"};
@@ -360,7 +285,7 @@
 		}
 	};
 	
-	class SFPD_RHS_INDEP_WOODLAND_AA: SFPD_RHS_INDEP_WOODLAND_Rifleman_3 {
+	class SFPD_RHS_INDEP_WOODLAND_AA: SFPD_RHS_INDEP_WOODLAND_Rifleman {
 		backpack = "SFPD_RHS_INDEP_WOODLAND_AA_Backpack";
 		displayName = "AA";
 		icon = "iconManAT";
@@ -381,11 +306,7 @@
 		}
 	};
 	
-	class SFPD_RHS_INDEP_WINTER_Rifleman_1: SFPD_RHS_INDEP_WINTER_Rifleman {
-		displayName = "Rifleman 1";
-	};
-	
-	class SFPD_RHS_INDEP_WINTER_NBC_Mask: SFPD_RHS_INDEP_WINTER_Rifleman_1 {
+	class SFPD_RHS_INDEP_WINTER_NBC_Mask: SFPD_RHS_INDEP_WINTER_Rifleman {
 		displayName = "NBC (Mask)";
 		linkedItems[] = {"V_TacChestrig_grn_F","G_RegulatorMask_F",BASIC_LINKED_GREEN};
 		respawnLinkedItems[] = {"V_TacChestrig_grn_F","G_RegulatorMask_F",BASIC_LINKED_GREEN};
@@ -401,28 +322,7 @@
 		uniformClass = "U_C_CBRN_Suit_01_White_F";
 	};
 	
-	class SFPD_RHS_INDEP_WINTER_Rifleman_2: SFPD_RHS_INDEP_WINTER_Rifleman_1 {
-		displayName = "Rifleman 2";
-		linkedItems[] = {"V_TacChestrig_grn_F","fsg_Balaclava_Snw",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"V_TacChestrig_grn_F","fsg_Balaclava_Snw",BASIC_LINKED_GREEN};
-		uniformClass = "rhsgref_uniform_ttsko_urban";
-	};
-	
-	class SFPD_RHS_INDEP_WINTER_Rifleman_3: SFPD_RHS_INDEP_WINTER_Rifleman_1 {
-		displayName = "Rifleman 3";
-		linkedItems[] = {"V_TacChestrig_grn_F","rhsgref_fieldcap_ttsko_urban",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"V_TacChestrig_grn_F","rhsgref_fieldcap_ttsko_urban",BASIC_LINKED_GREEN};
-		uniformClass = "rhsgref_uniform_para_ttsko_urban";
-	};
-	
-	class SFPD_RHS_INDEP_WINTER_Rifleman_4: SFPD_RHS_INDEP_WINTER_Rifleman_1 {
-		displayName = "Rifleman 4";
-		linkedItems[] = {"V_TacChestrig_grn_F","rhs_beanie",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"V_TacChestrig_grn_F","rhs_beanie",BASIC_LINKED_GREEN};
-		uniformClass = "rhsgref_uniform_para_ttsko_oxblood";
-	};
-	
-	class SFPD_RHS_INDEP_WINTER_MG: SFPD_RHS_INDEP_WINTER_Rifleman_4 {
+	class SFPD_RHS_INDEP_WINTER_MG: SFPD_RHS_INDEP_WINTER_Rifleman {
 		backpack = "SFPD_RHS_INDEP_WINTER_MG_Backpack";
 		displayName = "MG";
 		icon = "iconManMG";
@@ -432,7 +332,7 @@
 		respawnMagazines[] = {"rhs_100Rnd_762x54mmR_green","rhs_100Rnd_762x54mmR_green","MiniGrenade"};
 	};
 	
-	class SFPD_RHS_INDEP_WINTER_AT: SFPD_RHS_INDEP_WINTER_Rifleman_1 {
+	class SFPD_RHS_INDEP_WINTER_AT: SFPD_RHS_INDEP_WINTER_Rifleman {
 		backpack = "SFPD_RHS_INDEP_WINTER_AT_Backpack";
 		displayName = "AT";
 		icon = "iconManAT";
@@ -440,7 +340,7 @@
 		respawnWeapons[] += {"rhs_weap_rpg7"};
 	};
 	
-	class SFPD_RHS_INDEP_WINTER_Marksman: SFPD_RHS_INDEP_WINTER_Rifleman_2 {
+	class SFPD_RHS_INDEP_WINTER_Marksman: SFPD_RHS_INDEP_WINTER_Rifleman {
 		backpack = "";
 		displayName = "Marksman";
 		weapons[] = {"SFPD_RHS_M38","rhs_weap_makarov_pm","Throw","Put"};
@@ -451,7 +351,7 @@
 		respawnItems[] += {"ACE_RangeCard"};
 	};
 	
-	class SFPD_RHS_INDEP_WINTER_Commander: SFPD_RHS_INDEP_WINTER_Rifleman_1 {
+	class SFPD_RHS_INDEP_WINTER_Commander: SFPD_RHS_INDEP_WINTER_Rifleman {
 		displayName = "Commander";
 		icon = "iconManOfficer";
 		weapons[] = {"hgun_Pistol_heavy_02_F","Throw","Put"};
@@ -469,7 +369,7 @@
 		}
 	};
 	
-	class SFPD_RHS_INDEP_WINTER_AA: SFPD_RHS_INDEP_WINTER_Rifleman_3 {
+	class SFPD_RHS_INDEP_WINTER_AA: SFPD_RHS_INDEP_WINTER_Rifleman {
 		backpack = "SFPD_RHS_INDEP_WINTER_AA_Backpack";
 		displayName = "AA";
 		icon = "iconManAT";
