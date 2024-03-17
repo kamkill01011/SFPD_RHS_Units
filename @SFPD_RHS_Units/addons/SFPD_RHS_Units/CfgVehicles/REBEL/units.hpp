@@ -22,25 +22,7 @@
 		}
 	};
 	
-	class SFPD_REBEL_Rifleman_AKM_1: SFPD_REBEL_Rifleman_AKM {
-		displayName = "Rifleman (AKM) 1";
-	};
-	
-	class SFPD_REBEL_Rifleman_AKM_2: SFPD_REBEL_Rifleman_AKM_1 {
-		displayName = "Rifleman (AKM) 2";
-		linkedItems[] = {"V_Chestrig_khk","H_Bandanna_sgg",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"V_Chestrig_khk","H_Bandanna_sgg",BASIC_LINKED_GREEN};
-		uniformClass = "U_IG_Guerilla2_1";
-	};
-	
-	class SFPD_REBEL_Rifleman_AKM_3: SFPD_REBEL_Rifleman_AKM_1 {
-		displayName = "Rifleman (AKM) 3";
-		linkedItems[] = {"V_BandollierB_oli","H_Shemag_olive",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"V_BandollierB_oli","H_Shemag_olive",BASIC_LINKED_GREEN};
-		uniformClass = "U_IG_Guerilla2_2";
-	};
-	
-	class SFPD_REBEL_Rifleman_AKS: SFPD_REBEL_Rifleman_AKM_1 {
+	class SFPD_REBEL_Rifleman_AKS: SFPD_REBEL_Rifleman_AKM {
 		displayName = "Rifleman (AKS)";
 		weapons[] = {"arifle_AKS_F","Throw","Put"};
 		respawnWeapons[] = {"arifle_AKS_F","Throw","Put"};
@@ -51,25 +33,7 @@
 		uniformClass = "U_IG_Guerilla2_3";
 	};
 	
-	class SFPD_REBEL_Rifleman_AKS_1: SFPD_REBEL_Rifleman_AKS {
-		displayName = "Rifleman (AKS) 1";
-	};
-	
-	class SFPD_REBEL_Rifleman_AKS_2: SFPD_REBEL_Rifleman_AKS_1 {
-		displayName = "Rifleman (AKS) 2";
-		linkedItems[] = {"V_Chestrig_blk","H_ShemagOpen_tan",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"V_Chestrig_blk","H_ShemagOpen_tan",BASIC_LINKED_GREEN};
-		uniformClass = "U_IG_leader";
-	};
-	
-	class SFPD_REBEL_Rifleman_AKS_3: SFPD_REBEL_Rifleman_AKS_1 {
-		displayName = "Rifleman (AKS) 3";
-		linkedItems[] = {"V_Chestrig_oli","H_Bandanna_camo",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"V_Chestrig_oli","H_Bandanna_camo",BASIC_LINKED_GREEN};
-		uniformClass = "U_IG_Guerrilla_6_1";
-	};
-	
-	class SFPD_REBEL_Rifleman_TRG: SFPD_REBEL_Rifleman_AKM_1 {
+	class SFPD_REBEL_Rifleman_TRG: SFPD_REBEL_Rifleman_AKM {
 		displayName = "Rifleman (TRG)";
 		weapons[] = {"arifle_TRG20_F","Throw","Put"};
 		respawnWeapons[] = {"arifle_TRG20_F","Throw","Put"};
@@ -80,25 +44,7 @@
 		uniformClass = "U_I_C_Soldier_Para_1_F";
 	};
 	
-	class SFPD_REBEL_Rifleman_TRG_1: SFPD_REBEL_Rifleman_TRG {
-		displayName = "Rifleman (TRG) 1";
-	};
-	
-	class SFPD_REBEL_Rifleman_TRG_2: SFPD_REBEL_Rifleman_TRG_1 {
-		displayName = "Rifleman (TRG) 2";
-		linkedItems[] = {"V_BandollierB_khk","H_Cap_blk",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"V_BandollierB_khk","H_Cap_blk",BASIC_LINKED_GREEN};
-		uniformClass = "U_I_C_Soldier_Para_2_F";
-	};
-	
-	class SFPD_REBEL_Rifleman_TRG_3: SFPD_REBEL_Rifleman_TRG_1 {
-		displayName = "Rifleman (TRG) 3";
-		linkedItems[] = {"V_BandollierB_ghex_F","H_Cap_grn",BASIC_LINKED_GREEN};
-		respawnLinkedItems[] = {"V_BandollierB_ghex_F","H_Cap_grn",BASIC_LINKED_GREEN};
-		uniformClass = "U_I_C_Soldier_Para_3_F";
-	};
-	
-	class SFPD_REBEL_AT_AKM: SFPD_REBEL_Rifleman_AKM_1 {
+	class SFPD_REBEL_AT_AKM: SFPD_REBEL_Rifleman_AKM {
 		backpack = "SFPD_REBEL_AT_Backpack";
 		displayName = "AT (AKM)";
 		icon = "iconManAT";
@@ -109,7 +55,7 @@
 		uniformClass = "U_I_C_Soldier_Para_4_F";
 	};
 	
-	class SFPD_REBEL_AT_AKS: SFPD_REBEL_Rifleman_AKS_1 {
+	class SFPD_REBEL_AT_AKS: SFPD_REBEL_Rifleman_AKS {
 		backpack = "SFPD_REBEL_AT_Backpack";
 		displayName = "AT (AKS)";
 		icon = "iconManAT";
@@ -120,7 +66,7 @@
 		uniformClass = "U_I_C_Soldier_Bandit_1_F";
 	};
 	
-	class SFPD_REBEL_AT_TRG: SFPD_REBEL_Rifleman_TRG_1 {
+	class SFPD_REBEL_AT_TRG: SFPD_REBEL_Rifleman_TRG {
 		backpack = "SFPD_REBEL_AT_Backpack";
 		displayName = "AT (TRG)";
 		icon = "iconManAT";
@@ -131,7 +77,7 @@
 		uniformClass = "U_I_C_Soldier_Bandit_2_F";
 	};
 	
-	class SFPD_REBEL_Shotgun: SFPD_REBEL_Rifleman_AKM_1 {
+	class SFPD_REBEL_Shotgun: SFPD_REBEL_Rifleman_AKM {
 		displayName = "Shotgun";
 		weapons[] = {"sgun_HunterShotgun_01_F","Throw","Put"};
 		respawnWeapons[] = {"sgun_HunterShotgun_01_F","Throw","Put"};
@@ -142,7 +88,7 @@
 		uniformClass = "U_I_C_Soldier_Bandit_3_F";
 	};
 	
-	class SFPD_REBEL_Shotgun_sawoff: SFPD_REBEL_Rifleman_AKM_1 {
+	class SFPD_REBEL_Shotgun_sawoff: SFPD_REBEL_Rifleman_AKM {
 		displayName = "Shotgun sawoff";
 		weapons[] = {"sgun_HunterShotgun_01_sawedoff_F","Throw","Put"};
 		respawnWeapons[] = {"sgun_HunterShotgun_01_sawedoff_F","Throw","Put"};
@@ -153,7 +99,7 @@
 		uniformClass = "U_I_C_Soldier_Para_4_F";
 	};
 	
-	class SFPD_REBEL_Rifle: SFPD_REBEL_Rifleman_AKM_1 {
+	class SFPD_REBEL_Rifle: SFPD_REBEL_Rifleman_AKM {
 		displayName = "Rifle";
 		weapons[] = {"srifle_DMR_06_hunter_F","Throw","Put"};
 		respawnWeapons[] = {"srifle_DMR_06_hunter_F","Throw","Put"};
@@ -164,7 +110,7 @@
 		uniformClass = "U_I_C_Soldier_Bandit_2_F";
 	};
 	
-	class SFPD_REBEL_Pistol: SFPD_REBEL_Rifleman_AKM_1 {
+	class SFPD_REBEL_Pistol: SFPD_REBEL_Rifleman_AKM {
 		displayName = "Pistol";
 		weapons[] = {"hgun_Pistol_heavy_02_F","Throw","Put"};
 		respawnWeapons[] = {"hgun_Pistol_heavy_02_F","Throw","Put"};
@@ -175,7 +121,7 @@
 		uniformClass = "U_I_C_Soldier_Bandit_1_F";
 	};
 	
-	class SFPD_REBEL_LMG: SFPD_REBEL_Rifleman_AKM_1 {
+	class SFPD_REBEL_LMG: SFPD_REBEL_Rifleman_AKM {
 		backpack = "SFPD_REBEL_LMG_Backpack";
 		displayName = "LMG";
 		icon = "iconManMG";
@@ -188,7 +134,7 @@
 		uniformClass = "U_I_C_Soldier_Bandit_4_F";
 	};
 	
-	class SFPD_REBEL_Marksman: SFPD_REBEL_Rifleman_AKM_1 {
+	class SFPD_REBEL_Marksman: SFPD_REBEL_Rifleman_AKM {
 		displayName = "Marksman";
 		weapons[] = {"srifle_DMR_06_hunter_khs_F","Throw","Put"};
 		respawnWeapons[] = {"srifle_DMR_06_hunter_khs_F","Throw","Put"};
