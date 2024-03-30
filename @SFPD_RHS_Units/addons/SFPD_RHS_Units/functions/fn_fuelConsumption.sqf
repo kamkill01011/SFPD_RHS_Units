@@ -22,22 +22,34 @@ if (!_isOk) exitWith {};
 		_FUEL_CONSUMPTION = 1;
 	};
 	
-	_LAST_TIME = time;
+	//_LAST_TIME = time;
 	_lastDriver = driver _v;
+	_wasAi = true;
 	waitUntil {
-		sleep 0.1;
+		sleep 1;
 		
 		_currDriver = driver _v;
 		if (!(isNull _currDriver)) then {
 			_lastDriver = _currDriver;
 		};
 		_ai = (isNull _lastDriver) || {!(isPlayer _lastDriver)};
+		if (_ai != _wasAi) then {
+			_newFuelConsumtion = _FUEL_CONSUMPTION;
+			if (_ai) then {
+				_newFuelConsumtion = 1;
+			};
+			[[_v, _newFuelConsumtion], {
+				params ["_veh", "_newFuelConsumtion"];
+				_veh setFuelConsumptionCoef _newFuelConsumtion;
+			}] remoteExec ["call", _v];
+		};
+		_wasAi = _ai;
 		
-		_cur_time = time;
+		/*_cur_time = time;
 		_diff_time = _cur_time - _LAST_TIME;
-		_LAST_TIME = _cur_time;
+		_LAST_TIME = _cur_time;*/
 		
-		if (!_ai) then {
+		/*if (!_ai) then {
 			[[_v, _MAX_FUEL, _diff_time, _FUEL_CONSUMPTION], {
 				params ["_veh", "_M_FUEL", "_d_time", "_FUEL_CONSUMPTION"];
 				_rpm = _veh getSoundController "rpm";
@@ -48,13 +60,13 @@ if (!_isOk) exitWith {};
 				_veh setFuel ((fuel _veh) - _fuelReduction);
 			}] remoteExec ["call", _v];
 			
-			/*_rpm = _v getSoundController "rpm";
-			_r = (_rpm / 60) * _diff_time;
-			_liters = _r / 1000;// 1L per 1000 rotations
-			_fuelReduction = _liters / _MAX_FUEL;*/
+			//_rpm = _v getSoundController "rpm";
+			//_r = (_rpm / 60) * _diff_time;
+			//_liters = _r / 1000;// 1L per 1000 rotations
+			//_fuelReduction = _liters / _MAX_FUEL;
 			
 			//[_v,((fuel _veh) - _fuelReduction))] remoteExec ['setfuel',_v];
-		};
+		};*/
 		
 		!alive _v;
 	};
