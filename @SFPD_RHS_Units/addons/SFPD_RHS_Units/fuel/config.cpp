@@ -31,200 +31,291 @@ class CfgPatches {
 
 class CfgVehicles {
 	
-	class Helicopter_Base_H;
-	class Heli_light_03_base_F: Helicopter_Base_H {
-		//KAM_fuel_consumption = 2;
-	};
-	class RHS_UH1_Base: Heli_light_03_base_F {
-		//KAM_fuel_consumption = 1;
-	};
-	
-	class Heli_Transport_02_base_F: Helicopter_Base_H {
-		//KAM_fuel_consumption = 4;
-	};
-	class Heli_Transport_03_base_F: Helicopter_Base_H {
-		//KAM_fuel_consumption = 2;
-	};
-	class Heli_Transport_04_base_F: Helicopter_Base_H {
-		//KAM_fuel_consumption = 2;
-	};
-	
-	class Heli_Attack_01_base_F;
-	class Heli_Attack_01_dynamicLoadout_base_F: Heli_Attack_01_base_F {
-		//KAM_fuel_consumption = 2;
-	};
-	
-	class Heli_Attack_02_base_F;
-	class Heli_Attack_02_dynamicLoadout_base_F: Heli_Attack_02_base_F {
-		//KAM_fuel_consumption = 4;
-	};
-	class RHS_Ka52_base: Heli_Attack_02_base_F {
-		//KAM_fuel_consumption = 2;
-	};
-	
-	class Heli_Light_02_base_F;
-	class RHS_Mi8_base: Heli_Light_02_base_F {
-		//KAM_fuel_consumption = 2;
-	};
-	
-	class RHS_AH64_base;
-	class RHS_AH64D: RHS_AH64_base {
-		//KAM_fuel_consumption = 0.1;
-	};
-	
-	class Plane_Base_F;
-	class Plane_Fighter_01_Base_F: Plane_Base_F {
-		//KAM_fuel_consumption = 20;
-	};
-	class Plane_Fighter_02_Base_F: Plane_Base_F {
-		//KAM_fuel_consumption = 20;
-	};
-	class Plane_Fighter_04_Base_F: Plane_Base_F {
-		//KAM_fuel_consumption = 20;
-	};
-	
-	class Car_F;
-	class LSV_01_base_F: Car_F {
-		//KAM_fuel_consumption = 2;
-	};
-	class LSV_02_base_F: Car_F {
-		//KAM_fuel_consumption = 2;
-	};
-	class MRAP_01_base_F: Car_F {
-		//KAM_fuel_consumption = 4;
-	};
-	class rhsusf_hmmwe_base: MRAP_01_base_F {
-		//KAM_fuel_consumption = 2;
-	};
-	class rhsusf_mrzr_base: MRAP_01_base_F {
-		//KAM_fuel_consumption = 1;
-	};
-	class MRAP_02_base_F: Car_F {
-		//KAM_fuel_consumption = 4;
-	};
-	class rhs_tigr_base: MRAP_02_base_F {
-		//KAM_fuel_consumption = 2;
-	};
-	class MRAP_03_base_F: Car_F {
-		//KAM_fuel_consumption = 4;
-	};
-	
-	class Truck_F: Car_F {
-		//KAM_fuel_consumption = 4;
-	};
-	class rhs_truck: Truck_F {
-		//KAM_fuel_consumption = 2;
-	};
-	class Truck_01_base_F;
-	class rhsusf_fmtv_base: Truck_01_base_F {
-		//KAM_fuel_consumption = 2;
-	};
-	class Truck_02_base_F;
-	class Truck_02_transport_base_F: Truck_02_base_F {
-		//KAM_fuel_consumption = 8;
-	};
-	class Truck_03_base_F: Truck_F {
-		//KAM_fuel_consumption = 8;
-	};
-	
-	class Wheeled_Apc_F: Car_F {
-		//KAM_fuel_consumption = 4;
-	};
-	
-	class AFV_Wheeled_01_base_F: Wheeled_Apc_F {
-		//KAM_fuel_consumption = 2;
-	};
-	class rhs_btr_base: Wheeled_Apc_F {
-		//KAM_fuel_consumption = 2;
-	};
-	class rhsusf_stryker_base: Wheeled_Apc_F {
-		//KAM_fuel_consumption = 2;
-	};
-	
-	class xs_Snowmobile_base: Car_F {
-		//KAM_fuel_consumption = 2;
-	};
-	
 	class All;
 	class AllVehicles: All {
 		KAM_fuel_consumption = 1;
 	};
 	
+	class Helicopter_Base_F;
+	class Heli_Attack_01_base_F: Helicopter_Base_F {
+		KAM_fuel_consumption = 3;
+	};
+	class RHS_AH64_base: Heli_Attack_01_base_F {
+		KAM_fuel_consumption = 1;
+	};
+	class Heli_Attack_02_base_F: Helicopter_Base_F {
+		KAM_fuel_consumption = 6;
+	};
+	class RHS_Ka52_base: Heli_Attack_02_base_F {
+		KAM_fuel_consumption = 5;
+	};
+	class RHS_Mi24_base: Heli_Attack_02_base_F {
+		KAM_fuel_consumption = 1.5;
+	};
+	class rhs_mi28_base: Heli_Attack_02_base_F {
+		KAM_fuel_consumption = 1.5;
+	};
+	class Helicopter_Base_H: Helicopter_Base_F {
+		KAM_fuel_consumption = 2.5;
+	};
+	class Heli_Transport_01_base_F: Helicopter_Base_H {
+		KAM_fuel_consumption = 4;
+	};
+	class Heli_Transport_02_base_F: Helicopter_Base_H {
+		KAM_fuel_consumption = 6;
+	};
+	class Heli_Transport_03_base_F: Helicopter_Base_H {
+		KAM_fuel_consumption = 4;
+	};
+	class Heli_Transport_04_base_F: Helicopter_Base_H {
+		KAM_fuel_consumption = 4;
+	};
+	class RHS_MELB_base: Helicopter_Base_H {
+		KAM_fuel_consumption = 2;
+	};
+	
+	class Plane;
+	class Plane_Base_F: Plane {
+		KAM_fuel_consumption = 1;
+	};
+	class Plane_Fighter_01_Base_F: Plane_Base_F {
+		KAM_fuel_consumption = 1.5;
+	};
+	class Plane_Fighter_02_Base_F: Plane_Base_F {
+		KAM_fuel_consumption = 2.5;
+	};
+	class Plane_Fighter_04_Base_F: Plane_Base_F {
+		KAM_fuel_consumption = 1.5;
+	};
+	
+	class Car;
+	class Car_F: Car {
+		KAM_fuel_consumption = 1;
+	};
+	class Hatchback_01_base_F: Car_F {
+		KAM_fuel_consumption = 20;
+	};
+	class LSV_01_base_F: Car_F {
+		KAM_fuel_consumption = 60;
+	};
+	class LSV_02_base_F: Car_F {
+		KAM_fuel_consumption = 40;
+	};
+	class MRAP_01_base_F: Car_F {
+		KAM_fuel_consumption = 140;
+	};
+	class MRAP_01_base_F: rhsusf_hmmwe_base {
+		KAM_fuel_consumption = 45;
+	};
+	class MRAP_01_base_F: rhsusf_m1151_base {
+		KAM_fuel_consumption = 45;
+	};
+	class MRAP_01_base_F: rhsusf_MATV_base {
+		KAM_fuel_consumption = 50;
+	};
+	class MRAP_01_base_F: rhsusf_mrzr_base {
+		KAM_fuel_consumption = 25;
+	};
+	class MRAP_01_base_F: rhsusf_RG33_base {
+		KAM_fuel_consumption = 55;
+	};
+	class MRAP_02_base_F: Car_F {
+		KAM_fuel_consumption = 200;
+	};
+	class rhs_tigr_base: MRAP_02_base_F {
+		KAM_fuel_consumption = 40;
+	};
+	class MRAP_03_base_F: Car_F {
+		KAM_fuel_consumption = 400;
+	};
+	class Offroad_01_base_F: Car_F {
+		KAM_fuel_consumption = 60;
+	};
+	class Offroad_02_base_F: Car_F {
+		KAM_fuel_consumption = 40;
+	};
+	class Quadbike_01_base_F: Car_F {
+		KAM_fuel_consumption = 40;
+	};
+	class SUV_01_base_F: Car_F {
+		KAM_fuel_consumption = 50;
+	};
+	
+	class Truck_F: Car_F {
+		KAM_fuel_consumption = 70;
+	};
+	class OTR21_Base: Truck_F {
+		KAM_fuel_consumption = 20;
+	};
+	class rhs_zil131_base: Truck_F {
+		KAM_fuel_consumption = 35;
+	};
+	class Truck_01_base_F: Truck_F {
+		KAM_fuel_consumption = 170;
+	};
+	class rhsusf_caiman_base: Truck_01_base_F {
+		KAM_fuel_consumption = 50;
+	};
+	class rhsusf_fmtv_base: Truck_01_base_F {
+		KAM_fuel_consumption = 50;
+	};
+	class rhsusf_HEMTT_A4_base: Truck_01_base_F {
+		KAM_fuel_consumption = 60;
+	};
+	class rhsusf_himars_base: Truck_01_base_F {
+		KAM_fuel_consumption = 45;
+	};
+	class Truck_02_base_F: Truck_F {
+		KAM_fuel_consumption = 70;
+	};
+	class Truck_02_transport_base_F: Truck_02_base_F {
+		KAM_fuel_consumption = 275;
+	};
+	class Truck_03_base_F: Truck_F {
+		KAM_fuel_consumption = 350;
+	};
+	class Van_01_base_F: Truck_F {
+		KAM_fuel_consumption = 40;
+	};
+	class Van_02_base_F: Truck_F {
+		KAM_fuel_consumption = 20;
+	};
+	
+	class Wheeled_Apc_F: Car_F {
+		KAM_fuel_consumption = 50;
+	};
+	class APC_Wheeled_01_base_F: Wheeled_Apc_F {
+		KAM_fuel_consumption = 225;
+	};
+	class APC_Wheeled_02_base_F: Wheeled_Apc_F {
+		KAM_fuel_consumption = 175;
+	};
+	class APC_Wheeled_03_base_F: Wheeled_Apc_F {
+		KAM_fuel_consumption = 175;
+	};
+	class rhs_btr_base: Wheeled_Apc_F {
+		KAM_fuel_consumption = 15;
+	};
+	class rhsgref_BRDM2: Wheeled_Apc_F {
+		KAM_fuel_consumption = 120;
+	};
+	class rhsusf_M1117_base: Wheeled_Apc_F {
+		KAM_fuel_consumption = 60;
+	};
+	class rhsusf_stryker_base: Wheeled_Apc_F {
+		KAM_fuel_consumption = 45;
+	};
+	
+	class xs_Snowmobile_base: Car_F {
+		KAM_fuel_consumption = 70;
+	};
+	
 	class Tank;
 	class Tank_F: Tank {
-		//KAM_fuel_consumption = 2;
+		KAM_fuel_consumption = 1;
 	};
-	
 	class APC_Tracked_01_base_F: Tank_F {
-		//KAM_fuel_consumption = 8;
+		KAM_fuel_consumption = 115;
 	};
 	class APC_Tracked_02_base_F: Tank_F {
-		//KAM_fuel_consumption = 8;
+		KAM_fuel_consumption = 215;
 	};
-	
 	class rhs_zsutank_base: APC_Tracked_02_base_F {
-		//KAM_fuel_consumption = 4;
+		KAM_fuel_consumption = 40;
 	};
-	
-	class APC_Tracked_03_base_F;
-	class I_APC_tracked_03_base_F: APC_Tracked_03_base_F {
-		//KAM_fuel_consumption = 2;
+	class rhsusf_m113tank_base: APC_Tracked_02_base_F {
+		KAM_fuel_consumption = 40;
 	};
-	
+	class APC_Tracked_03_base_F: Tank_F {
+		KAM_fuel_consumption = 125;
+	};
+	class RHS_M2A2_Base: APC_Tracked_03_base_F {
+		KAM_fuel_consumption = 25;
+	};
 	class LT_01_base_F: Tank_F {
-		//KAM_fuel_consumption = 2;
+		KAM_fuel_consumption = 40;
 	};
-	
 	class MBT_01_base_F: Tank_F {
-		//KAM_fuel_consumption = 4;
+		KAM_fuel_consumption = 90;
 	};
-	
-	class MBT_01_arty_base_F;
+	class MBT_01_arty_base_F: MBT_01_base_F {
+		KAM_fuel_consumption = 90;
+	};
 	class rhsusf_m109tank_base: MBT_01_arty_base_F {
-		//KAM_fuel_consumption = 2;
+		KAM_fuel_consumption = 25;
 	};
-	
+	class MBT_01_mlrs_base_F: MBT_01_base_F {
+		KAM_fuel_consumption = 90;
+	};
 	class rhsusf_m1a1tank_base: MBT_01_base_F {
-		//KAM_fuel_consumption = 2;
+		KAM_fuel_consumption = 20;
 	};
-	
 	class MBT_02_base_F: Tank_F {
-		//KAM_fuel_consumption = 4;
+		KAM_fuel_consumption = 125;
 	};
 	class MBT_03_base_F: Tank_F {
-		//KAM_fuel_consumption = 4;
+		KAM_fuel_consumption = 115;
+	};
+	class MBT_04_base_F: Tank_F {
+		KAM_fuel_consumption = 35;
 	};
 	class rhs_2s1tank_base: Tank_F {
-		//KAM_fuel_consumption = 4;
+		KAM_fuel_consumption = 40;
 	};
 	class rhs_2s3tank_base: Tank_F {
-		//KAM_fuel_consumption = 4;
+		KAM_fuel_consumption = 40;
 	};
 	class rhs_a3spruttank_base: Tank_F {
-		//KAM_fuel_consumption = 4;
+		KAM_fuel_consumption = 750;
 	};
-	class rhs_t14_base: Tank_F {
-		//KAM_fuel_consumption = 8;
+	class rhs_a3t72tank_base: Tank_F {
+		KAM_fuel_consumption = 45;
 	};
-	class rhs_t15_base: Tank_F {
-		//KAM_fuel_consumption = 8;
+    class rhs_bmd_base: Tank_F {
+		KAM_fuel_consumption = 30;
 	};
-	class UGV_02_Base_F: Tank_F {
-		//KAM_fuel_consumption = 1;
+    class rhs_bmp1tank_base: Tank_F {
+		KAM_fuel_consumption = 30;
+	};
+    class rhs_bmp3tank_base: Tank_F {
+		KAM_fuel_consumption = 40;
+	};
+    class rhs_t14_base: Tank_F {
+		KAM_fuel_consumption = 750;
+	};
+    class rhs_t15_base: Tank_F {
+		KAM_fuel_consumption = 750;
 	};
 	
-	class Boat_Civil_01_base_F;
-	class C_Boat_Civil_01_F: Boat_Civil_01_base_F {
-		//KAM_fuel_consumption = 2;
+	class Ship;
+	class Ship_F: Ship {
+		KAM_fuel_consumption = 1;
 	};
-	
-	class Boat_F;
-	class Boat_Armed_01_base_F: Boat_F {
-		//KAM_fuel_consumption = 2;
+	class Boat_Civil_01_base_F: Ship_F {
+		KAM_fuel_consumption = 15;
 	};
-	
-	class RHS_Ship;
-	class rhsusf_mkvsoc: RHS_Ship {
-		//KAM_fuel_consumption = 4;
+	class Boat_F: Ship_F {
+		KAM_fuel_consumption = 15;
+	};
+	class Boat_Transport_02_base_F: Boat_F {
+		KAM_fuel_consumption = 20;
+	};
+	class Rubber_duck_base_F: Boat_F {
+		KAM_fuel_consumption = 6;
+	};
+	class rhsgref_canoe_base: Rubber_duck_base_F {
+		KAM_fuel_consumption = 0.1;
+	};
+	class Scooter_Transport_01_base_F: Rubber_duck_base_F {
+		KAM_fuel_consumption = 65;
+	};
+	class SDV_01_base_F: Boat_F {
+		KAM_fuel_consumption = 3;
+	};
+	class Boat_F: rhs_bmk_t_base {
+		KAM_fuel_consumption = 4;
+	};
+	class Boat_F: RHS_Ship {
+		KAM_fuel_consumption = 60;
 	};
 };
