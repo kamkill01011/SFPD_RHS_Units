@@ -131,7 +131,7 @@ class SFPD_RHS_TALIBAN_DESERT_Faction {
 	side = 3;
 };
 
-class SFPD_RHS_INDEP_DESERT_Faction {
+class SFPD_RHS_INDEP_Faction {
 	displayName = "[SFPD RHS] ISIS (Desert)";
 	priority = 1;
 	side = 3;

@@ -18,17 +18,17 @@
 			};
 		};
 		
-		class SFPD_RHS_INDEP_DESERT_Faction {
+		class SFPD_RHS_INDEP_Faction {
 			name = "[SFPD RHS] ISIS (Desert)";
 			class Infantry {
 				name = "Infantry";
-				SFPD_GROUP_FT_CFG(2,SFPD_RHS_INDEP_DESERT_Faction,\A3\ui_f\data\map\markers\nato\n_inf.paa,SFPD_RHS_INDEP_Rifleman,SFPD_RHS_INDEP_Rifleman,SFPD_RHS_INDEP_AT,SFPD_RHS_INDEP_MG)
-				SFPD_GROUP_SQUAD_CFG(2,SFPD_RHS_INDEP_DESERT_Faction,\A3\ui_f\data\map\markers\nato\n_inf.paa,SFPD_RHS_INDEP_Rifleman,SFPD_RHS_INDEP_Rifleman,SFPD_RHS_INDEP_Rifleman,SFPD_RHS_INDEP_AT,SFPD_RHS_INDEP_MG,SFPD_RHS_INDEP_Rifleman,SFPD_RHS_INDEP_Rifleman,SFPD_RHS_INDEP_Marksman)
+				SFPD_GROUP_FT_CFG(2,SFPD_RHS_INDEP_Faction,\A3\ui_f\data\map\markers\nato\n_inf.paa,SFPD_RHS_INDEP_Rifleman,SFPD_RHS_INDEP_Rifleman,SFPD_RHS_INDEP_AT,SFPD_RHS_INDEP_MG)
+				SFPD_GROUP_SQUAD_CFG(2,SFPD_RHS_INDEP_Faction,\A3\ui_f\data\map\markers\nato\n_inf.paa,SFPD_RHS_INDEP_Rifleman,SFPD_RHS_INDEP_Rifleman,SFPD_RHS_INDEP_Rifleman,SFPD_RHS_INDEP_AT,SFPD_RHS_INDEP_MG,SFPD_RHS_INDEP_Rifleman,SFPD_RHS_INDEP_Rifleman,SFPD_RHS_INDEP_Marksman)
 				
 				class SFPD_RHS_INDEP_DESERT_GROUP_RT {
 					name = "Rifle Team";
 					side = 2;
-					faction = "SFPD_RHS_INDEP_DESERT_Faction";
+					faction = "SFPD_RHS_INDEP_Faction";
 					icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
 					SFPD_GROUP_UNIT0_CFG(2,SFPD_RHS_INDEP_Rifleman,SERGEANT)
 					SFPD_GROUP_UNIT1_CFG(2,SFPD_RHS_INDEP_Rifleman,PRIVATE)
@@ -39,7 +39,7 @@
 				class SFPD_RHS_INDEP_DESERT_GROUP_SFT {
 					name = "Black ISIS Team";
 					side = 2;
-					faction = "SFPD_RHS_INDEP_DESERT_Faction";
+					faction = "SFPD_RHS_INDEP_Faction";
 					icon = "\A3\ui_f\data\map\markers\nato\n_recon.paa";
 					SFPD_GROUP_UNIT0_CFG(2,SFPD_RHS_INDEP_Black_ISIS,LIEUTENANT)
 					SFPD_GROUP_UNIT1_CFG(2,SFPD_RHS_INDEP_Black_ISIS,LIEUTENANT)
