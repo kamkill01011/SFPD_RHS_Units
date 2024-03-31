@@ -1626,6 +1626,7 @@ class CfgPatches {
 			"SFPD_RHS_BLUFOR_Blackfish_armed",
 			"SFPD_RHS_BLUFOR_Blackhawk",
 			"SFPD_RHS_BLUFOR_Blackhawk_med",
+			"SFPD_RHS_BLUFOR_Blackhawk_ESSS",
 			"SFPD_RHS_BLUFOR_MH6",
 			"SFPD_RHS_BLUFOR_AH6",
 			"SFPD_RHS_BLUFOR_UH1Y",
@@ -2672,6 +2673,7 @@ class CfgVehicles {
 	class RHS_UH60M_MEV2_d: RHS_UH60M_MEV2 {
 		class AnimationSources;
 	};
+	class RHS_UH60M_ESSS_d;
 	//
 	class RHS_MELB_MH6M;
 	class RHS_MELB_AH6M;

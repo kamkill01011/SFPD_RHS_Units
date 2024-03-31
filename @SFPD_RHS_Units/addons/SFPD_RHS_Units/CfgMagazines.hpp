@@ -71,7 +71,15 @@ class ACE_CTS3: ACE_CTS9 {
 
 class 300Rnd_20mm_shells;
 class PylonWeapon_300Rnd_20mm_shells: 300Rnd_20mm_shells {
-	hardpoints[] += {"B_BOMB_PYLON"};
+	hardpoints[] += {"B_BOMB_PYLON", "RHS_HP_HELLFIRE_RACK"};
+};
+class rhs_mag_gau19_air_base;
+class rhsusf_mag_gau19_melb_left: rhs_mag_gau19_air_base {
+	hardpoints[] += {"RHS_HP_HELLFIRE_RACK"};
+};
+class rhs_mag_m134_pylon_base;
+class rhs_mag_m134_pylon_3000: rhs_mag_m134_pylon_base {
+	hardpoints[] += {"RHS_HP_HELLFIRE_RACK"};
 };
 
 class 450Rnd_127x108_Ball;
