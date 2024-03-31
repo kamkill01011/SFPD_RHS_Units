@@ -21,10 +21,10 @@ _null = [] spawn {
 	KAM_SUPPRESS_DBLUR ppEffectCommit 0;
 	KAM_SUPPRESS_DBLUR ppEffectEnable true;
 	
-	KAM_SUPPRESS_RBLUR = ppEffectCreate ["RadialBlur", 1003];
-	KAM_SUPPRESS_RBLUR ppEffectAdjust [0, 0, 0, 0];
-	KAM_SUPPRESS_RBLUR ppEffectCommit 0;
-	KAM_SUPPRESS_RBLUR ppEffectEnable true;
+	//KAM_SUPPRESS_RBLUR = ppEffectCreate ["RadialBlur", 1003];
+	//KAM_SUPPRESS_RBLUR ppEffectAdjust [0, 0, 0, 0];
+	//KAM_SUPPRESS_RBLUR ppEffectCommit 0;
+	//KAM_SUPPRESS_RBLUR ppEffectEnable true;
 	
 	KAM_EH = KAM_CURRENT_UNIT addEventHandler ["Suppressed", {
 		params ["_unit", "_distance", "_shooter", "_instigator", "_ammoObject", "_ammoClassName", "_ammoConfig"];
@@ -85,8 +85,8 @@ _null = [] spawn {
 		KAM_SUPPRESS_CC ppEffectCommit 0;
 		KAM_SUPPRESS_DBLUR ppEffectAdjust [KAM_SUPPRESS_VALUE / KAM_SUPPRESS_VALUE_MAX];
 		KAM_SUPPRESS_DBLUR ppEffectCommit 0;
-		KAM_SUPPRESS_RBLUR ppEffectAdjust [KAM_SUPPRESS_VALUE / 1000, KAM_SUPPRESS_VALUE / 1000, 0.2, 0.2];
-		KAM_SUPPRESS_RBLUR ppEffectCommit 0;
+		//KAM_SUPPRESS_RBLUR ppEffectAdjust [KAM_SUPPRESS_VALUE / 1000, KAM_SUPPRESS_VALUE / 1000, 0.2, 0.2];
+		//KAM_SUPPRESS_RBLUR ppEffectCommit 0;
 		
 		if (KAM_SUPPRESS_VALUE > (KAM_SUPPRESS_VALUE_MAX * 0.7)) then {
 			addCamShake [0.2, 0.2, 80];
