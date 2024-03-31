@@ -136,6 +136,8 @@
 
 #define SFPD_RHS_SAV_Transport SFPD_Transport(rhssaf_30rnd_556x45_EPR_G36,10,SFPD_RHS_rhsusf_200rnd_556x45_tracer_box,3,rhssaf_mag_15Rnd_9x19_FMJ,,rhs_weap_rpg75,rhsusf_acc_M952V,TRANSPORT_BACKPACKS(B_Kitbag_rgr,2))
 
+#define SFPD_RHS_FR_Transport SFPD_Transport(rhs_mag_30Rnd_556x45_M855A1_PMAG,10,SFPD_RHS_rhsusf_200rnd_556x45_tracer_box,3,rhsusf_mag_17Rnd_9x19_JHP,,rhs_weap_M136_hedp,rhsusf_acc_M952V,TRANSPORT_BACKPACKS(OFrP_Bag_Felin_45L,2))
+
 #define SFPD_RHS_INDEP_Transport \
 	class TransportMagazines {}; \
 	class TransportWeapons {}; \
@@ -1781,6 +1783,35 @@ class CfgPatches {
 			"SFPD_RHS_BLUFOR_BOX_Cargo",
 			"SFPD_RHS_OPFOR_BOX_Cargo",
 			
+			//FR
+			"SFPD_RHS_FR_WOODLAND_Rifleman",
+			"SFPD_RHS_FR_WOODLAND_NBC_Mask",
+			"SFPD_RHS_FR_WOODLAND_NBC_Suit",
+			"SFPD_RHS_FR_WOODLAND_Rifleman_light",
+			"SFPD_RHS_FR_WOODLAND_Leader",
+			"SFPD_RHS_FR_WOODLAND_Medic",
+			"SFPD_RHS_FR_WOODLAND_Grenadier",
+			"SFPD_RHS_FR_WOODLAND_AT",
+			"SFPD_RHS_FR_WOODLAND_LMG",
+			"SFPD_RHS_FR_WOODLAND_Marksman",
+			"SFPD_RHS_FR_WOODLAND_MMG",
+			"SFPD_RHS_FR_WOODLAND_Commander",
+			"SFPD_RHS_FR_WOODLAND_AA",
+			"SFPD_RHS_FR_WOODLAND_Recon_DMR",
+			"SFPD_RHS_FR_WOODLAND_SF_Leader",
+			"SFPD_RHS_FR_WOODLAND_SF_Grenadier",
+			"SFPD_RHS_FR_WOODLAND_SF_AT",
+			"SFPD_RHS_FR_WOODLAND_SF_LMG",
+			"SFPD_RHS_FR_WOODLAND_SF",
+			"SFPD_RHS_FR_WOODLAND_Recon_Rifle",
+			"SFPD_RHS_FR_WOODLAND_Sniper",
+			"SFPD_RHS_FR_WOODLAND_Spotter",
+			"SFPD_RHS_FR_WOODLAND_OFrP_P4_FR_CE",
+			"SFPD_RHS_FR_WOODLAND_OFrP_P4_AANF1_FR_CE",
+			"SFPD_RHS_FR_WOODLAND_OFrP_P4_PATSAS_M2_AANF1_1_FR_CE",
+			"SFPD_RHS_FR_Ammo",
+			"SFPD_RHS_FR_Weapons",
+			
 			"KAM_rhs_pontoon_end_static",
 			"KAM_rhs_pontoon_start_static",
 			"KAM_rhs_Land_TentA_F",
@@ -1949,7 +1980,15 @@ class CfgPatches {
 			"SFPD_RHS_G36KV",
 			"SFPD_RHS_G36KV_GL",
 			"SFPD_RHS_MINIMI_PARA",
-			"SFPD_RHS_M14_RAIL"
+			"SFPD_RHS_M14_RAIL",
+			
+			"SFPD_RHS_HK416_Default",
+			"SFPD_RHS_HK416_GL_Default",
+			"SFPD_RHS_M249_Default_FR",
+			"SFPD_RHS_M240_Default_FR",
+			"SFPD_RHS_HK416_Silenced",
+			"SFPD_RHS_HK416_GL_Silenced",
+			"SFPD_RHS_M249_Silenced_FR"
 		};
         requiredVersion = 0.1;
         requiredAddons[] = {
@@ -2563,6 +2602,7 @@ class CfgVehicles {
         displayname = "Winter Kitbag";
 		hiddenselectionstextures[] = {"\SFPD_RHS_Units\backpack_fast_co.paa"};
 	};
+	class OFrP_Bag_Felin_45L;
 	
 	//Vehicles
 	class I_C_Boat_Transport_02_F;
@@ -3666,6 +3706,10 @@ class CfgVehicles {
 		scope = 2;
 		scopeCurator = 2;
 	};
+	
+	class OFrP_P4_FR_CE;
+	class OFrP_P4_AANF1_FR_CE;
+	class OFrP_P4_PATSAS_M2_AANF1_1_FR_CE;
 	
 	//REMOVE_ZEUS
 	REMOVE_ZEUS(rhsgref_BRDM2,Wheeled_APC_F)
@@ -6461,6 +6505,11 @@ class CfgVehicles {
 #include "CfgVehicles\RHS_INS\vehicles.hpp"
 #include "CfgVehicles\RHS_INS\supply.hpp"
 
+#include "CfgVehicles\RHS_FR\units.hpp"
+#include "CfgVehicles\RHS_FR\backpack.hpp"
+#include "CfgVehicles\RHS_FR\vehicles.hpp"
+#include "CfgVehicles\RHS_FR\supply.hpp"
+
 };
 
 class ace_csw_groups {
@@ -6813,6 +6862,8 @@ class cfgWeapons {
 	class rhs_weap_m38_rail;
 	class rhs_weap_aks74;
 	class rhs_weap_m16a4_imod;
+	class rhs_weap_hk416d10;
+	class rhs_weap_hk416d10_m320;
 	
 	class rhs_pkp_base;
     class rhs_weap_pkp: rhs_pkp_base {
@@ -7395,6 +7446,8 @@ class cfgWeapons {
 
 #include "CfgWeapons\RHS_INS.hpp"
 
+#include "CfgWeapons\RHS_FR.hpp"
+
 };
 
 class cfgGroups {
@@ -7419,6 +7472,8 @@ class cfgGroups {
 #include "CfgGroups\NATO.hpp"
 
 #include "CfgGroups\RHS_US.hpp"
+
+#include "CfgGroups\RHS_FR.hpp"
 	};
 	
 	class SFPD_East {
