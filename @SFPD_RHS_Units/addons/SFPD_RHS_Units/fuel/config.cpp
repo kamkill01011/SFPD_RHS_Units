@@ -141,6 +141,10 @@ class CfgVehicles {
 		KAM_fuel_consumption = 50;
 	};
 	
+	class OFrP_P4_Base: Car_F {
+		KAM_fuel_consumption = 15;
+	};
+	
 	class Truck_F: Car_F {
 		KAM_fuel_consumption = 35;
 	};

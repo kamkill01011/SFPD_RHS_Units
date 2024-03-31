@@ -150,7 +150,7 @@ class SFPD_RHS_INDEP_WINTER_Faction {
 };
 
 class SFPD_RHS_FR_WOODLAND_Faction {
-	displayName = "[SFPD] FR";
+	displayName = "[SFPD RHS] FR";
 	priority = 2;
 	side = 1;
 };

@@ -1,5 +1,6 @@
 	//Woodland
 	class SFPD_RHS_FR_WOODLAND_Rifleman: B_Soldier_base_F {
+		identityTypes[] = {"LanguageFRE_F","Head_NATO","G_NATO_default"};
 		side = 1;
 		faction = "SFPD_RHS_FR_WOODLAND_Faction";
 		backpack = "OFrP_Bag_Felin_45L";
