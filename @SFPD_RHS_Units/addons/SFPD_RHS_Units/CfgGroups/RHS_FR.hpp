@@ -1,0 +1,10 @@
+		class SFPD_RHS_FR_WOODLAND_Faction {
+			name = "[SFPD RHS] FR";
+			class Infantry {
+				name = "Infantry";
+				SFPD_GROUP_FT_CFG(1,SFPD_RHS_FR_WOODLAND_Faction,\A3\ui_f\data\map\markers\nato\b_inf.paa,SFPD_RHS_FR_WOODLAND_Leader,SFPD_RHS_FR_WOODLAND_Rifleman,SFPD_RHS_FR_WOODLAND_AT,SFPD_RHS_FR_WOODLAND_LMG)
+				SFPD_GROUP_SQUAD_CFG(1,SFPD_RHS_FR_WOODLAND_Faction,\A3\ui_f\data\map\markers\nato\b_inf.paa,SFPD_RHS_FR_WOODLAND_Leader,SFPD_RHS_FR_WOODLAND_Medic,SFPD_RHS_FR_WOODLAND_Rifleman,SFPD_RHS_FR_WOODLAND_LMG,SFPD_RHS_FR_WOODLAND_Rifleman,SFPD_RHS_FR_WOODLAND_Medic,SFPD_RHS_FR_WOODLAND_AT,SFPD_RHS_FR_WOODLAND_Marksman)
+				SFPD_GROUP_PATROL_CFG(1,SFPD_RHS_FR_WOODLAND_Faction,\A3\ui_f\data\map\markers\nato\b_inf.paa,SFPD_RHS_FR_WOODLAND_Rifleman_light,SFPD_RHS_FR_WOODLAND_Rifleman_light)
+				SFPD_GROUP_SFT_CFG(1,SFPD_RHS_FR_WOODLAND_Faction,\A3\ui_f\data\map\markers\nato\b_recon.paa,SFPD_RHS_FR_WOODLAND_SF_Leader,SFPD_RHS_FR_WOODLAND_SF_Grenadier,SFPD_RHS_FR_WOODLAND_SF_AT,SFPD_RHS_FR_WOODLAND_SF_LMG)
+			};
+		};

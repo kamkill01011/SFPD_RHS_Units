@@ -18,13 +18,13 @@
 		camouflage = 1;
 	};
 	
-	class SFPD_AAF_LDF_Mask: SFPD_LDF_Rifleman {
+	class SFPD_LDF_NBC_Mask: SFPD_LDF_Rifleman {
 		displayName = "NBC (Mask)";
 		linkedItems[] = {"V_CarrierRigKBT_01_light_EAF_F","H_HelmetHBK_chops_F","G_RegulatorMask_F",BASIC_LINKED_GREEN,"NVGoggles_INDEP"};
 		respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_EAF_F","H_HelmetHBK_chops_F","G_RegulatorMask_F",BASIC_LINKED_GREEN,"NVGoggles_INDEP"};
 	};
 	
-	class SFPD_AAF_LDF_Suit: SFPD_AAF_LDF_Mask {
+	class SFPD_LDF_NBC_Suit: SFPD_LDF_NBC_Mask {
 		displayName = "NBC (Suit)";
 		uniformClass = "U_C_CBRN_Suit_01_White_F";
 	};

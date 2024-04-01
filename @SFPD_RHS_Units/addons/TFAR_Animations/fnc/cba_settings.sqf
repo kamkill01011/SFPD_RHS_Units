@@ -86,26 +86,3 @@
         ] call CBA_Settings_fnc_init;
     } forEach [["PRC152",0],["PRC154",2],["PRC148",2],["fadak",0],["rf7800",0],["pnr1000",0],["Others", 2]];
 
-//-- Controls
-    #include "\a3\editor_f\Data\Scripts\dikCodes.h";
-    disableSerialization;
-    [
-        "TFAR - Animations", 
-        "radioAnims_cba_listenKey", 
-        "Hold Up Radio", 
-        {
-            if (call TFAR_fnc_haveSWRadio) exitWith {radioAnims_TFAR_currentRadio = call TFAR_fnc_activeSwRadio; call fn_radioAnims_hand};
-            if (call TFAR_fnc_haveLRRadio) exitWith {radioAnims_TFAR_currentRadio = call TFAR_fnc_activelRRadio; call fn_radioAnims_hand};
-        }, 
-        {
-            if (call TFAR_fnc_haveSWRadio || call TFAR_fnc_haveLRRadio) exitWith {
-                if (!isNil "radioAnims_radioModel") then {
-                    deletevehicle radioAnims_radioModel;
-                    radioAnims_radioModel = nil;
-                };
-                player playActionNow "radioAnims_Stop";
-                radioAnims_playerAnimated = nil;
-            };
-        }, 
-        [DIK_T, [false, false, false]]
-    ] call cba_fnc_addKeybind;

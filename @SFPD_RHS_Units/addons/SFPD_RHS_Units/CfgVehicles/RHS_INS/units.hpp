@@ -83,7 +83,7 @@
 	class SFPD_RHS_INDEP_Rifleman: I_Soldier_base_F {
 		identityTypes[] = {"LanguagePER_F","Head_TK","G_IRAN_default"};
 		genericNames = "TakistaniMen";
-		faction = "SFPD_RHS_INDEP_DESERT_Faction";
+		faction = "SFPD_RHS_INDEP_Faction";
 		author = "Kamkill";
 		scope = 2;
 		displayName = "Rifleman";

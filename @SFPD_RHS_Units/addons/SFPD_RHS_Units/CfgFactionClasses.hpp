@@ -131,7 +131,7 @@ class SFPD_RHS_TALIBAN_DESERT_Faction {
 	side = 3;
 };
 
-class SFPD_RHS_INDEP_DESERT_Faction {
+class SFPD_RHS_INDEP_Faction {
 	displayName = "[SFPD RHS] ISIS (Desert)";
 	priority = 1;
 	side = 3;
@@ -147,4 +147,10 @@ class SFPD_RHS_INDEP_WINTER_Faction {
 	displayName = "[SFPD RHS] Insurgents (Winter)";
 	priority = 2;
 	side = 3;
+};
+
+class SFPD_RHS_FR_WOODLAND_Faction {
+	displayName = "[SFPD RHS] FR";
+	priority = 2;
+	side = 1;
 };

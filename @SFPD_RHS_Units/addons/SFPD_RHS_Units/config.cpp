@@ -136,6 +136,8 @@
 
 #define SFPD_RHS_SAV_Transport SFPD_Transport(rhssaf_30rnd_556x45_EPR_G36,10,SFPD_RHS_rhsusf_200rnd_556x45_tracer_box,3,rhssaf_mag_15Rnd_9x19_FMJ,,rhs_weap_rpg75,rhsusf_acc_M952V,TRANSPORT_BACKPACKS(B_Kitbag_rgr,2))
 
+#define SFPD_RHS_FR_Transport SFPD_Transport(rhs_mag_30Rnd_556x45_M855A1_PMAG,10,SFPD_RHS_rhsusf_200rnd_556x45_tracer_box,3,rhsusf_mag_17Rnd_9x19_JHP,,rhs_weap_M136_hedp,rhsusf_acc_M952V,TRANSPORT_BACKPACKS(OFrP_Bag_Felin_45L,2))
+
 #define SFPD_RHS_INDEP_Transport \
 	class TransportMagazines {}; \
 	class TransportWeapons {}; \
@@ -1624,6 +1626,7 @@ class CfgPatches {
 			"SFPD_RHS_BLUFOR_Blackfish_armed",
 			"SFPD_RHS_BLUFOR_Blackhawk",
 			"SFPD_RHS_BLUFOR_Blackhawk_med",
+			"SFPD_RHS_BLUFOR_Blackhawk_ESSS",
 			"SFPD_RHS_BLUFOR_MH6",
 			"SFPD_RHS_BLUFOR_AH6",
 			"SFPD_RHS_BLUFOR_UH1Y",
@@ -1780,6 +1783,35 @@ class CfgPatches {
 			"SFPD_RHS_OPFOR_Rappeling",
 			"SFPD_RHS_BLUFOR_BOX_Cargo",
 			"SFPD_RHS_OPFOR_BOX_Cargo",
+			
+			//FR
+			"SFPD_RHS_FR_WOODLAND_Rifleman",
+			"SFPD_RHS_FR_WOODLAND_NBC_Mask",
+			"SFPD_RHS_FR_WOODLAND_NBC_Suit",
+			"SFPD_RHS_FR_WOODLAND_Rifleman_light",
+			"SFPD_RHS_FR_WOODLAND_Leader",
+			"SFPD_RHS_FR_WOODLAND_Medic",
+			"SFPD_RHS_FR_WOODLAND_Grenadier",
+			"SFPD_RHS_FR_WOODLAND_AT",
+			"SFPD_RHS_FR_WOODLAND_LMG",
+			"SFPD_RHS_FR_WOODLAND_Marksman",
+			"SFPD_RHS_FR_WOODLAND_MMG",
+			"SFPD_RHS_FR_WOODLAND_Commander",
+			"SFPD_RHS_FR_WOODLAND_AA",
+			"SFPD_RHS_FR_WOODLAND_Recon_DMR",
+			"SFPD_RHS_FR_WOODLAND_SF_Leader",
+			"SFPD_RHS_FR_WOODLAND_SF_Grenadier",
+			"SFPD_RHS_FR_WOODLAND_SF_AT",
+			"SFPD_RHS_FR_WOODLAND_SF_LMG",
+			"SFPD_RHS_FR_WOODLAND_SF",
+			"SFPD_RHS_FR_WOODLAND_Recon_Rifle",
+			"SFPD_RHS_FR_WOODLAND_Sniper",
+			"SFPD_RHS_FR_WOODLAND_Spotter",
+			"SFPD_RHS_FR_WOODLAND_OFrP_P4_FR_CE",
+			"SFPD_RHS_FR_WOODLAND_OFrP_P4_AANF1_FR_CE",
+			"SFPD_RHS_FR_WOODLAND_OFrP_P4_PATSAS_M2_AANF1_1_FR_CE",
+			"SFPD_RHS_FR_Ammo",
+			"SFPD_RHS_FR_Weapons",
 			
 			"KAM_rhs_pontoon_end_static",
 			"KAM_rhs_pontoon_start_static",
@@ -1949,7 +1981,15 @@ class CfgPatches {
 			"SFPD_RHS_G36KV",
 			"SFPD_RHS_G36KV_GL",
 			"SFPD_RHS_MINIMI_PARA",
-			"SFPD_RHS_M14_RAIL"
+			"SFPD_RHS_M14_RAIL",
+			
+			"SFPD_RHS_HK416_Default",
+			"SFPD_RHS_HK416_GL_Default",
+			"SFPD_RHS_M249_Default_FR",
+			"SFPD_RHS_M240_Default_FR",
+			"SFPD_RHS_HK416_Silenced",
+			"SFPD_RHS_HK416_GL_Silenced",
+			"SFPD_RHS_M249_Silenced_FR"
 		};
         requiredVersion = 0.1;
         requiredAddons[] = {
@@ -2563,6 +2603,7 @@ class CfgVehicles {
         displayname = "Winter Kitbag";
 		hiddenselectionstextures[] = {"\SFPD_RHS_Units\backpack_fast_co.paa"};
 	};
+	class OFrP_Bag_Felin_45L;
 	
 	//Vehicles
 	class I_C_Boat_Transport_02_F;
@@ -2632,6 +2673,7 @@ class CfgVehicles {
 	class RHS_UH60M_MEV2_d: RHS_UH60M_MEV2 {
 		class AnimationSources;
 	};
+	class RHS_UH60M_ESSS_d;
 	//
 	class RHS_MELB_MH6M;
 	class RHS_MELB_AH6M;
@@ -3666,6 +3708,154 @@ class CfgVehicles {
 		scope = 2;
 		scopeCurator = 2;
 	};
+	
+	// FR
+	class OFrP_Soldier_NE_T4S2_UBAS_CE01_FRBV_SDTBV;
+	class OFrP_Soldier_NE_T4S2_UBAS_CE01_FRBV_1CLBV;
+	class OFrP_Soldier_NE_T4S2_UBAS_CE01_FRBV_CPLBV;
+	class OFrP_Soldier_NE_T4S2_UBAS_CE01_FRBV_LTNBV;
+	class OFrP_Soldier_NE_T4S2_UBAS_CE01_FRBV_SGTBV;
+	class OFrP_Soldier_NE_T4S2_UBAS_DA01_FRBV_SDTBV;
+	class OFrP_Soldier_NE_T4S2_UBAS_DA01_FRBV_1CLBV;
+	class OFrP_Soldier_NE_T4S2_UBAS_DA01_FRBV_CPLBV;
+	class OFrP_Soldier_NE_T4S2_UBAS_DA01_FRBV_LTNBV;
+	class OFrP_Soldier_NE_T4S2_UBAS_DA01_FRBV_SGTBV;
+	class OFrP_Soldier_NE_T4S2_Full_DA_FRBV_SDTBV;
+	class OFrP_Soldier_NE_T4S2_Full_DA_FRBV_1CLBV;
+	class OFrP_Soldier_NE_T4S2_Full_DA_FRBV_CPLBV;
+	class OFrP_Soldier_NE_T4S2_Full_DA_FRBV_LTNBV;
+	class OFrP_Soldier_NE_T4S2_Full_DA_FRBV_SGTBV;
+	class OFrP_Soldier_NE_T4S2_Full_CE_FRBV_SDTBV;
+	class OFrP_Soldier_NE_T4S2_Full_CE_FRBV_1CLBV;
+	class OFrP_Soldier_NE_T4S2_Full_CE_FRBV_CPLBV;
+	class OFrP_Soldier_NE_T4S2_Full_CE_FRBV_LTNBV;
+	class OFrP_Soldier_NE_T4S2_Full_CE_FRBV_SGTBV;
+	class OFrP_Soldier_NE_T4S2_Short_SE_FRBV_SDTBV;
+	class OFrP_Soldier_NE_T4S2_Short_SE_FRBV_1CLBV;
+	class OFrP_Soldier_NE_T4S2_Short_SE_FRBV_CPLBV;
+	class OFrP_Soldier_NE_T4S2_Short_SE_FRBV_LTNBV;
+	class OFrP_Soldier_NE_T4S2_Short_SE_FRBV_SGTBV;
+	class OFrP_Soldier_NE_T4S2_Full_base;
+	class OFrP_Soldier_NE_T4S2_Short_base;
+	class OFrP_Soldier_NE_T4S2_UBAS_base;
+	REMOVE_ZEUS(OFrP_Soldier_2019_AC_AT4CS_CE,OFrP_Soldier_NE_T4S2_UBAS_CE01_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_Grenadier_CE,OFrP_Soldier_NE_T4S2_UBAS_CE01_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_MachineGunner01_CE,OFrP_Soldier_NE_T4S2_UBAS_CE01_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_Rifleman_CE,OFrP_Soldier_NE_T4S2_UBAS_CE01_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_AC_ERYX_CE,OFrP_Soldier_2019_AC_AT4CS_CE)
+	REMOVE_ZEUS(OFrP_Soldier_2019_MachineGunner02_CE,OFrP_Soldier_2019_MachineGunner01_CE)
+	REMOVE_ZEUS(OFrP_Soldier_2019_TP_HK417_CE,OFrP_Soldier_NE_T4S2_UBAS_CE01_FRBV_1CLBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_Radio_CE,OFrP_Soldier_NE_T4S2_UBAS_CE01_FRBV_1CLBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_Medic_CE,OFrP_Soldier_NE_T4S2_UBAS_CE01_FRBV_CPLBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_TL_CE,OFrP_Soldier_NE_T4S2_UBAS_CE01_FRBV_CPLBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_PL_CE,OFrP_Soldier_NE_T4S2_UBAS_CE01_FRBV_LTNBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_SL_CE,OFrP_Soldier_NE_T4S2_UBAS_CE01_FRBV_SGTBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_AC_AT4CS_DA,OFrP_Soldier_NE_T4S2_UBAS_DA01_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_Grenadier_DA,OFrP_Soldier_NE_T4S2_UBAS_DA01_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_MachineGunner01_DA,OFrP_Soldier_NE_T4S2_UBAS_DA01_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_Rifleman_DA,OFrP_Soldier_NE_T4S2_UBAS_DA01_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_AC_ERYX_DA,OFrP_Soldier_2019_AC_AT4CS_DA)
+	REMOVE_ZEUS(OFrP_Soldier_2019_MachineGunner02_DA,OFrP_Soldier_2019_MachineGunner01_DA)
+	REMOVE_ZEUS(OFrP_Soldier_2019_TP_HK417_DA,OFrP_Soldier_NE_T4S2_UBAS_DA01_FRBV_1CLBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_Radio_DA,OFrP_Soldier_NE_T4S2_UBAS_DA01_FRBV_1CLBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_Medic_DA,OFrP_Soldier_NE_T4S2_UBAS_DA01_FRBV_CPLBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_TL_DA,OFrP_Soldier_NE_T4S2_UBAS_DA01_FRBV_CPLBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_PL_DA,OFrP_Soldier_NE_T4S2_UBAS_DA01_FRBV_LTNBV)
+	REMOVE_ZEUS(OFrP_Soldier_2019_SL_DA,OFrP_Soldier_NE_T4S2_UBAS_DA01_FRBV_SGTBV)
+	REMOVE_ZEUS(OFrP_Soldier_Barkhane_AC_AT4CS,OFrP_Soldier_NE_T4S2_Full_DA_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_Barkhane_Grenadier,OFrP_Soldier_NE_T4S2_Full_DA_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_Barkhane_MachineGunner01,OFrP_Soldier_NE_T4S2_Full_DA_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_Barkhane_Rifleman,OFrP_Soldier_NE_T4S2_Full_DA_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_Barkhane_AC_ERYX,OFrP_Soldier_Barkhane_AC_AT4CS)
+	REMOVE_ZEUS(OFrP_Soldier_Barkhane_MachineGunner02,OFrP_Soldier_Barkhane_MachineGunner01)
+	REMOVE_ZEUS(OFrP_Soldier_Barkhane_TP_FrF2,OFrP_Soldier_NE_T4S2_Full_DA_FRBV_1CLBV)
+	REMOVE_ZEUS(OFrP_Soldier_Barkhane_TP_HK417,OFrP_Soldier_NE_T4S2_Full_DA_FRBV_1CLBV)
+	REMOVE_ZEUS(OFrP_Soldier_Barkhane_Radio,OFrP_Soldier_NE_T4S2_Full_DA_FRBV_1CLBV)
+	REMOVE_ZEUS(OFrP_Soldier_Barkhane_Medic,OFrP_Soldier_NE_T4S2_Full_DA_FRBV_CPLBV)
+	REMOVE_ZEUS(OFrP_Soldier_Barkhane_TL,OFrP_Soldier_NE_T4S2_Full_DA_FRBV_CPLBV)
+	REMOVE_ZEUS(OFrP_Soldier_Barkhane_PL,OFrP_Soldier_NE_T4S2_Full_DA_FRBV_LTNBV)
+	REMOVE_ZEUS(OFrP_Soldier_Barkhane_SL,OFrP_Soldier_NE_T4S2_Full_DA_FRBV_SGTBV)
+	REMOVE_ZEUS(OFrP_Soldier_Felin_AC_AT4CS_CE,OFrP_Soldier_NE_T4S2_Full_CE_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_Felin_Grenadier_CE,OFrP_Soldier_NE_T4S2_Full_CE_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_Felin_MachineGunner01_CE,OFrP_Soldier_NE_T4S2_Full_CE_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_Felin_Rifleman_CE,OFrP_Soldier_NE_T4S2_Full_CE_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_Felin_AC_ERYX_CE,OFrP_Soldier_Felin_AC_AT4CS_CE)
+	REMOVE_ZEUS(OFrP_Soldier_Felin_TP_FrF2_CE,OFrP_Soldier_NE_T4S2_Full_CE_FRBV_1CLBV)
+	REMOVE_ZEUS(OFrP_Soldier_Felin_Radio_CE,OFrP_Soldier_NE_T4S2_Full_CE_FRBV_1CLBV)
+	REMOVE_ZEUS(OFrP_Soldier_Felin_Medic_CE,OFrP_Soldier_NE_T4S2_Full_CE_FRBV_CPLBV)
+	REMOVE_ZEUS(OFrP_Soldier_Felin_TL_CE,OFrP_Soldier_NE_T4S2_Full_CE_FRBV_CPLBV)
+	REMOVE_ZEUS(OFrP_Soldier_Felin_PL_CE,OFrP_Soldier_NE_T4S2_Full_CE_FRBV_LTNBV)
+	REMOVE_ZEUS(OFrP_Soldier_Felin_SL_CE,OFrP_Soldier_NE_T4S2_Full_CE_FRBV_SGTBV)
+	REMOVE_ZEUS(OFrP_Soldier_Serval_AC_AT4CS,OFrP_Soldier_NE_T4S2_Short_SE_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_Serval_Grenadier,OFrP_Soldier_NE_T4S2_Short_SE_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_Serval_MachineGunner01,OFrP_Soldier_NE_T4S2_Short_SE_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_Serval_Rifleman,OFrP_Soldier_NE_T4S2_Short_SE_FRBV_SDTBV)
+	REMOVE_ZEUS(OFrP_Soldier_Serval_AC_ERYX,OFrP_Soldier_Serval_AC_AT4CS)
+	REMOVE_ZEUS(OFrP_Soldier_Serval_MachineGunner02,OFrP_Soldier_Serval_MachineGunner01)
+	REMOVE_ZEUS(OFrP_Soldier_Serval_TP_FrF2,OFrP_Soldier_NE_T4S2_Short_SE_FRBV_1CLBV)
+	REMOVE_ZEUS(OFrP_Soldier_Serval_TP_HK417,OFrP_Soldier_NE_T4S2_Short_SE_FRBV_1CLBV)
+	REMOVE_ZEUS(OFrP_Soldier_Serval_Radio,OFrP_Soldier_NE_T4S2_Short_SE_FRBV_1CLBV)
+	REMOVE_ZEUS(OFrP_Soldier_Serval_Medic,OFrP_Soldier_NE_T4S2_Short_SE_FRBV_CPLBV)
+	REMOVE_ZEUS(OFrP_Soldier_Serval_TL,OFrP_Soldier_NE_T4S2_Short_SE_FRBV_CPLBV)
+	REMOVE_ZEUS(OFrP_Soldier_Serval_PL,OFrP_Soldier_NE_T4S2_Short_SE_FRBV_LTNBV)
+	REMOVE_ZEUS(OFrP_Soldier_Serval_SL,OFrP_Soldier_NE_T4S2_Short_SE_FRBV_SGTBV)
+	REMOVE_ZEUS(OFrP_Soldier_NE_T4S2_Full_CE,OFrP_Soldier_NE_T4S2_Full_base)
+	REMOVE_ZEUS(OFrP_Soldier_NE_T4S2_Full_DA,OFrP_Soldier_NE_T4S2_Full_base)
+	REMOVE_ZEUS(OFrP_Soldier_NE_T4S2_Full_SE,OFrP_Soldier_NE_T4S2_Full_base)
+	REMOVE_ZEUS(OFrP_Soldier_NE_T4S2_Short_CE,OFrP_Soldier_NE_T4S2_Short_base)
+	REMOVE_ZEUS(OFrP_Soldier_NE_T4S2_Short_DA,OFrP_Soldier_NE_T4S2_Short_base)
+	REMOVE_ZEUS(OFrP_Soldier_NE_T4S2_Short_SE,OFrP_Soldier_NE_T4S2_Short_base)
+	REMOVE_ZEUS(OFrP_Soldier_NE_T4S2_UBAS_CE01,OFrP_Soldier_NE_T4S2_UBAS_base)
+	REMOVE_ZEUS(OFrP_Soldier_NE_T4S2_UBAS_CE02,OFrP_Soldier_NE_T4S2_UBAS_base)
+	REMOVE_ZEUS(OFrP_Soldier_NE_T4S2_UBAS_DA01,OFrP_Soldier_NE_T4S2_UBAS_base)
+	REMOVE_ZEUS(OFrP_Soldier_NE_T4S2_UBAS_SE01,OFrP_Soldier_NE_T4S2_UBAS_base)
+	REMOVE_ZEUS(OFrP_Soldier_NE_T4S2_UBAS_SE02,OFrP_Soldier_NE_T4S2_UBAS_base)
+	class OFrP_V_AANF1_Static_base;
+	class OFrP_MILAN_F1_Base;
+	class OFrP_MILAN_F1_MIRA_Base;
+	class OFrP_MILAN_F2_Base;
+	class OFrP_MILAN_F2_MIRA_Base;
+	class OFrP_P4_FR;
+	class OFrP_P4_AANF1_FR;
+	class OFrP_P4_ConvEx1_FR;
+	class OFrP_P4_ConvEx2_FR;
+	class OFrP_P4_ConvEx3_FR;
+	class OFrP_P4_M2_FR;
+	class OFrP_P4_MILAN_FR;
+	class OFrP_P4_PATSAS_M2_AANF1_base;
+	class OFrP_P4_PATSAS_M2_2AANF1_base;
+	class OFrP_P4_PATSAS_MILAN_AANF1_base;
+	class OFrP_VPS2_MAG58_LGA40_Base;
+	class OFrP_VPS2_MAG58_M2_Base;
+	REMOVE_ZEUS(OFrP_V_AANF1_Static,OFrP_V_AANF1_Static_base)
+	REMOVE_ZEUS(OFrP_MILAN_F1_FR,OFrP_MILAN_F1_Base)
+	REMOVE_ZEUS(OFrP_MILAN_F1_MIRA_FR,OFrP_MILAN_F1_MIRA_Base)
+	REMOVE_ZEUS(OFrP_MILAN_F2_FR,OFrP_MILAN_F2_Base)
+	REMOVE_ZEUS(OFrP_MILAN_F2_MIRA_FR,OFrP_MILAN_F2_MIRA_Base)
+	REMOVE_ZEUS(OFrP_P4_FR_CE,OFrP_P4_FR)
+	REMOVE_ZEUS(OFrP_P4_AANF1_FR_CE,OFrP_P4_AANF1_FR)
+	REMOVE_ZEUS(OFrP_P4_ConvEx1_FR_CE,OFrP_P4_ConvEx1_FR)
+	REMOVE_ZEUS(OFrP_P4_ConvEx2_FR_CE,OFrP_P4_ConvEx2_FR)
+	REMOVE_ZEUS(OFrP_P4_ConvEx3_FR_CE,OFrP_P4_ConvEx3_FR)
+	REMOVE_ZEUS(OFrP_P4_M2_FR_CE,OFrP_P4_M2_FR)
+	REMOVE_ZEUS(OFrP_P4_MILAN_FR_CE,OFrP_P4_MILAN_FR)
+	REMOVE_ZEUS(OFrP_P4_PATSAS_M2_AANF1_2_FR_CE,OFrP_P4_PATSAS_M2_AANF1_base)
+	REMOVE_ZEUS(OFrP_P4_PATSAS_M2_AANF1_1_FR_CE,OFrP_P4_PATSAS_M2_AANF1_base)
+	REMOVE_ZEUS(OFrP_P4_PATSAS_M2_2AANF1_FR_CE,OFrP_P4_PATSAS_M2_2AANF1_base)
+	REMOVE_ZEUS(OFrP_P4_PATSAS_MILAN_AANF1_FR_CE,OFrP_P4_PATSAS_MILAN_AANF1_base)
+	REMOVE_ZEUS(OFrP_P4_FR_DA,OFrP_P4_FR)
+	REMOVE_ZEUS(OFrP_P4_AANF1_FR_DA,OFrP_P4_AANF1_FR)
+	REMOVE_ZEUS(OFrP_P4_ConvEx1_FR_DA,OFrP_P4_ConvEx1_FR)
+	REMOVE_ZEUS(OFrP_P4_ConvEx2_FR_DA,OFrP_P4_ConvEx2_FR)
+	REMOVE_ZEUS(OFrP_P4_ConvEx3_FR_DA,OFrP_P4_ConvEx3_FR)
+	REMOVE_ZEUS(OFrP_P4_M2_FR_DA,OFrP_P4_M2_FR)
+	REMOVE_ZEUS(OFrP_P4_MILAN_FR_DA,OFrP_P4_MILAN_FR)
+	REMOVE_ZEUS(OFrP_P4_PATSAS_M2_AANF1_2_FR_DA,OFrP_P4_PATSAS_M2_AANF1_base)
+	REMOVE_ZEUS(OFrP_P4_PATSAS_M2_AANF1_1_FR_DA,OFrP_P4_PATSAS_M2_AANF1_base)
+	REMOVE_ZEUS(OFrP_P4_PATSAS_M2_2AANF1_FR_DA,OFrP_P4_PATSAS_M2_2AANF1_base)
+	REMOVE_ZEUS(OFrP_P4_PATSAS_MILAN_AANF1_FR_DA,OFrP_P4_PATSAS_MILAN_AANF1_base)
+	REMOVE_ZEUS(OFrP_VPS2_MAG58_LGA40,OFrP_VPS2_MAG58_LGA40_Base)
+	REMOVE_ZEUS(OFrP_VPS2_MAG58_M2,OFrP_VPS2_MAG58_M2_Base)
 	
 	//REMOVE_ZEUS
 	REMOVE_ZEUS(rhsgref_BRDM2,Wheeled_APC_F)
@@ -6461,6 +6651,11 @@ class CfgVehicles {
 #include "CfgVehicles\RHS_INS\vehicles.hpp"
 #include "CfgVehicles\RHS_INS\supply.hpp"
 
+#include "CfgVehicles\RHS_FR\units.hpp"
+#include "CfgVehicles\RHS_FR\backpack.hpp"
+#include "CfgVehicles\RHS_FR\vehicles.hpp"
+#include "CfgVehicles\RHS_FR\supply.hpp"
+
 };
 
 class ace_csw_groups {
@@ -6813,6 +7008,8 @@ class cfgWeapons {
 	class rhs_weap_m38_rail;
 	class rhs_weap_aks74;
 	class rhs_weap_m16a4_imod;
+	class rhs_weap_hk416d10;
+	class rhs_weap_hk416d10_m320;
 	
 	class rhs_pkp_base;
     class rhs_weap_pkp: rhs_pkp_base {
@@ -7395,6 +7592,8 @@ class cfgWeapons {
 
 #include "CfgWeapons\RHS_INS.hpp"
 
+#include "CfgWeapons\RHS_FR.hpp"
+
 };
 
 class cfgGroups {
@@ -7419,6 +7618,8 @@ class cfgGroups {
 #include "CfgGroups\NATO.hpp"
 
 #include "CfgGroups\RHS_US.hpp"
+
+#include "CfgGroups\RHS_FR.hpp"
 	};
 	
 	class SFPD_East {
