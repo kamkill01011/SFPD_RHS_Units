@@ -8,7 +8,6 @@ this removeWeaponTurret ["Laserdesignator_pilotCamera",[-1]];
 {if (side _x == east) then {_x removeWeapon "Binocular"}} forEach allUnits;
 (_this # 1) removeWeaponGlobal "GMG_40mm";
 _u = (_this # 1);_u setUnitTrait ["camouflageCoef", 0];_u setUnitTrait ["audibleCoef", 0];
-_u = (_this # 1);[[_u], {params ["_u"];_u setUnitLoadout "SFPD_OPFOR_Diver";}] remoteExec ["call", _u];
 [(_this # 1)] call UAV_fnc_disable_autonomous;
 [(_this # 1),3] call BIS_fnc_dataTerminalAnimate;
 this switchMove "Acts_Dance_01";//Acts_Dance_02
