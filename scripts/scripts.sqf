@@ -20,6 +20,33 @@ _u = (_this # 1);_u setUnitTrait ["camouflageCoef", 0];_u setUnitTrait ["audible
 [1, [0.3, 0, 0]] remoteExec ["setFog", 0];
 [player] spawn BIS_fnc_traceBullets;
 KAM_transfer_enabled = false;
+/////////////// set loadout
+_u = (_this # 1);copyToClipboard (typeOf _u);
+_u = (_this # 1);[[_u], {params ["_u"];_u setUnitLoadout "SFPD_OPFOR_Diver";}] remoteExec ["call", _u];
+/////////////// set faction
+_u = (_this # 1);_type = (typeOf _u);_faction = getText (configFile >> "CfgVehicles" >> _type >> "faction");_prefix = _faction select [0, (count _faction) - 8];copyToClipboard _prefix;
+
+_newFactionPrefix = "SFPD_BLUFOR_DESERT";
+_unit = _this # 1;
+_type = (typeOf _unit);
+_faction = getText (configFile >> "CfgVehicles" >> _type >> "faction");
+_prefix = _faction select [0, (count _faction) - 8];
+_sufix = _type select [(count _prefix), (count _type)];
+_newType = _newFactionPrefix + _sufix;
+_exist = isClass (configFile >> "CfgVehicles" >> _newType);
+if (!_exist) then {_newType = _newFactionPrefix + "_Rifleman";};
+[[_unit, _newType], {params ["_unit", "_loadout"];_unit setUnitLoadout _loadout;}] remoteExec ["call", _unit];
+////////// reveal //////////
+_p = (_this # 0);
+_r = 100;
+_rs = _r * _r;
+_l = allUnits select {(_x distanceSqr _p) < _rs};
+{
+	_u = _x;
+	{
+		_u reveal [_x, 4];
+	} forEach allPlayers;
+} forEach _l;
 ////////// transfer group //////////
 _g = group (_this # 1);
 {
@@ -35,6 +62,15 @@ _g = group (_this # 1);
 		_x setVariable ["KAM_tmpLoadout", nil, true];
 	} forEach units _g;
 }] remoteExec ["spawn", 2, false];
+////////// trenches height //////////
+_center = _this # 0;
+_range = 1000;
+_trenches = nearestObjects [_center, ["Land_fort_rampart","Land_fort_rampart_EP1","CUP_Winter_obj_fort_rampart_ep1"], _range, true];
+{
+	_posATL = getPosATL _x;
+	_posATL set [2,-0.1];
+	_x setPosATL _posATL;
+} forEach _trenches;
 ////////// bomb //////////
 [_this # 0,_timer,_infoDevices,_dummyDevices,_fakeDevices,_timeTofind,_chanceTofind] execVM "bomb.sqf";
 [_this # 0,50,["Land_Laptop_unfolded_F"],["Land_Laptop_02_unfolded_F"],["Land_Laptop_device_F"],5,0.5] execVM "bomb.sqf";
@@ -47,26 +83,6 @@ _v = (_this # 1);
 		_veh lockTurret [_x, true];
 	} forEach (allTurrets [_veh, false]);
 }] remoteExec ["call", _v];
-////////// reveal //////////
-_p = (_this # 0);
-_r = 100;
-_rs = _r * _r;
-_l = allUnits select {(_x distanceSqr _p) < _rs};
-{
-	_u = _x;
-	{
-		_u reveal [_x, 4];
-	} forEach allPlayers;
-} forEach _l;
-////////// trenches height //////////
-_center = _this # 0;
-_range = 1000;
-_trenches = nearestObjects [_center, ["Land_fort_rampart","Land_fort_rampart_EP1","CUP_Winter_obj_fort_rampart_ep1"], _range, true];
-{
-	_posATL = getPosATL _x;
-	_posATL set [2,-0.1];
-	_x setPosATL _posATL;
-} forEach _trenches;
 ////////// fuel stations //////////
 _pos = (_this # 0);
 _range = 2;
