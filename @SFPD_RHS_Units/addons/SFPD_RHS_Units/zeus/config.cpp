@@ -27,9 +27,6 @@ class CfgPatches {
 			"SFPD_RHS_Units_Zeus_setStationFuel_Module",
 			"SFPD_RHS_Units_Zeus_showVehicleFuelInfo_Module",
 			"SFPD_RHS_Units_Zeus_giveTracer_Module",
-			"SFPD_RHS_Units_Zeus_giveAK_Module",
-			"SFPD_RHS_Units_Zeus_givePistol_Module",
-			"SFPD_RHS_Units_Zeus_giveRifle_Module",
 			"SFPD_RHS_Units_Zeus_garbageSmall_Module",
 			"SFPD_RHS_Units_Zeus_garbageBig_Module",
 			"SFPD_RHS_Units_Zeus_garbageClean_Module",
@@ -45,7 +42,8 @@ class CfgPatches {
 			"SFPD_RHS_Units_Zeus_CPSpawn_Module",
 			"SFPD_RHS_Units_Zeus_CPPath_Module",
 			"SFPD_RHS_Units_Zeus_CPCover_Module",
-			"SFPD_RHS_Units_Zeus_breachableDoors_Module"
+			"SFPD_RHS_Units_Zeus_breachableDoors_Module",
+			"SFPD_RHS_Units_Zeus_addWeapon_Module"
 		};
 		weapons[] = {};
 		requiredVersion = 0.1;
@@ -126,27 +124,6 @@ class CfgVehicles {
 		category = "SFPD_Zeus_equipment";
 		displayName = "add blindfold";
 		function = "zeus_fnc_addBlindfold";
-		isGlobal = 1;// TODO
-	};
-	
-	class SFPD_RHS_Units_Zeus_giveAK_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
-		category = "SFPD_Zeus_equipment";
-		displayName = "give AK";
-		function = "zeus_fnc_giveAK";
-		isGlobal = 1;// TODO
-	};
-	
-	class SFPD_RHS_Units_Zeus_givePistol_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
-		category = "SFPD_Zeus_equipment";
-		displayName = "give Pistol";
-		function = "zeus_fnc_givePistol";
-		isGlobal = 1;// TODO
-	};
-	
-	class SFPD_RHS_Units_Zeus_giveRifle_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
-		category = "SFPD_Zeus_equipment";
-		displayName = "give Rifle";
-		function = "zeus_fnc_giveRifle";
 		isGlobal = 1;// TODO
 	};
 	
@@ -368,14 +345,16 @@ class CfgVehicles {
 	class SFPD_RHS_Units_Zeus_CPPath_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
 		category = "SFPD_Zeus_area";
 		displayName = "CP Path";
-		function = "zeus_fnc_CPPathEnter";
+		function = "zeus_fnc_CPPath";
+		isGlobal = 1;// TODO
 		curatorCanAttach = 0;
 	};
 	
 	class SFPD_RHS_Units_Zeus_CPCover_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
 		category = "SFPD_Zeus_area";
 		displayName = "CP Cover";
-		function = "zeus_fnc_CPCoverEnter";
+		function = "zeus_fnc_CPCover";
+		isGlobal = 1;// TODO
 		curatorCanAttach = 0;
 	};
 	
@@ -384,6 +363,12 @@ class CfgVehicles {
 		displayName = "breachable doors";
 		function = "zeus_fnc_breachableDoors";
 		curatorCanAttach = 0;
+	};
+	
+	class SFPD_RHS_Units_Zeus_addWeapon_Module: SFPD_RHS_Units_Zeus_medicalStatus_Module {
+		category = "SFPD_Zeus_equipment";
+		displayName = "give weapon";
+		function = "zeus_fnc_addWeaponEnter";
 	};
 };
 
@@ -431,9 +416,6 @@ class CfgFunctions {
 			class showVehicleFuelInfo {};
 			class giveTracerEnter {};
 			class giveTracerExit {};
-			class giveAK {};
-			class givePistol {};
-			class giveRifle {};
 			class garbageSmallEnter {};
 			class garbageSmallExit {};
 			class garbageBigEnter {};
@@ -454,11 +436,12 @@ class CfgFunctions {
 			class CPZoneEnter {};
 			class CPZoneExit {};
 			class CPSpawn {};
-			class CPPathEnter {};
-			class CPPathExit {};
-			class CPCoverEnter {};
-			class CPCoverExit {};
+			class CPPath {};
+			class CPCover {};
 			class breachableDoors {};
+			class addWeaponEnter {};
+			class addWeaponInit {};
+			class addWeaponExit {};
 		};
 	};
 };

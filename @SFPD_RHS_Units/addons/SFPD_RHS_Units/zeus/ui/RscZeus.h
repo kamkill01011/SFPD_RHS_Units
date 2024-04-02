@@ -876,91 +876,6 @@ class RscCPZoneModule: RscTestModule {
 	};
 };
 
-class RscCPPathModule: RscTestModule {
-	onUnload = "_this call zeus_fnc_CPPathExit;";
-	class Controls: Controls {
-		class ControlMain: ControlMain {};
-		class ControlFrame: ControlFrame {
-			text = "CP Zone";
-		};
-		class ControlOK: ControlOK {};
-		class ControlSlider: ControlSlider {
-			idc = 101;
-			y = KAM_Y * 1;
-			KAM_MIN = 1;
-			KAM_SEL = 3;
-			KAM_MAX = 10;
-		};
-		class ControlSlider2: ControlSlider {
-			idc = 102;
-			y = KAM_Y * 2;
-			KAM_MIN = 1;
-			KAM_SEL = 5;
-			KAM_MAX = 20;
-		};
-		class ControlLabel1: ControlLabel {
-			y = KAM_Y * 1;
-			text = "radius";
-		};
-		class ControlLabel2: ControlLabel {
-			y = KAM_Y * 2;
-			text = "civilian capacity";
-		};
-	};
-};
-
-class RscCPCoverModule: RscTestModule {
-	onUnload = "_this call zeus_fnc_CPCoverExit;";
-	class Controls: Controls {
-		class ControlMain: ControlMain {};
-		class ControlFrame: ControlFrame {
-			text = "CP Zone";
-		};
-		class ControlOK: ControlOK {};
-		class ControlSlider: ControlSlider {
-			idc = 101;
-			y = KAM_Y * 1;
-			KAM_MIN = 1;
-			KAM_SEL = 5;
-			KAM_MAX = 20;
-		};
-		class ControlSlider2: ControlSlider {
-			idc = 102;
-			y = KAM_Y * 2;
-			KAM_MIN = 1;
-			KAM_SEL = 10;
-			KAM_MAX = 50;
-		};
-		class ControlComboBox: ControlComboBox {
-			idc = 103;
-			y = KAM_Y * 3;
-			class Items {
-				class Item0 {
-					text = "No";
-					data = "false";
-					default = 1;
-				};
-				class Item1 {
-					text = "Yes";
-					data = "true";
-				};
-			};
-		};
-		class ControlLabel1: ControlLabel {
-			y = KAM_Y * 1;
-			text = "radius";
-		};
-		class ControlLabel2: ControlLabel {
-			y = KAM_Y * 2;
-			text = "civilian capacity";
-		};
-		class ControlLabel3: ControlLabel {
-			y = KAM_Y * 3;
-			text = "use building";
-		};
-	};
-};
-
 class RscSetStationFuelModule: RscTestModule {
 	onUnload = "_this call zeus_fnc_setStationFuelExit;";
 	class Controls: Controls {
@@ -979,6 +894,72 @@ class RscSetStationFuelModule: RscTestModule {
 		class ControlLabel1: ControlLabel {
 			y = KAM_Y * 1;
 			text = "fuel [L]";
+		};
+	};
+};
+
+#define WEAPON_DIALOG_ITEM(ID,TEXT,PICTURE) \
+	class Item##ID { \
+		value = ID; \
+		text = TEXT; \
+		picture = PICTURE; \
+		colorPicture[] = {1,1,1,1}; \
+	};
+
+class RscAddWeaponModule: RscTestModule {
+	onLoad = "_this call zeus_fnc_addWeaponInit;";
+	onUnload = "_this call zeus_fnc_addWeaponExit;";
+	class Controls: Controls {
+		class ControlMain: ControlMain {};
+		class ControlFrame: ControlFrame {
+			text = "add weapon";
+		};
+		class ControlOK: ControlOK {};
+		class ControlComboBox: ControlComboBox {
+			colorBackground[] = {0.25,0.25,0.25,1};
+			colorSelect[] = {1,1,1,1};
+			colorPicture[] = {1,1,1,1};
+			colorPictureSelect[] = {1,1,1,1};
+			colorPictureSelected[] = {1,1,1,1};
+			idc = 101;
+			y = KAM_Y * 1;
+			class Items {
+				WEAPON_DIALOG_ITEM(0,"Camera",				"\lxWS\weapons_f_lxWS\Camera\data\ui\gear_camera_CA.paa")
+				WEAPON_DIALOG_ITEM(1,"Type 115",			"\A3\Weapons_F_Exp\Rifles\ARX\Data\UI\arifle_ARX_blk_F_X_CA.paa")
+				WEAPON_DIALOG_ITEM(2,"sawed-off",			"a3\Weapons_F_Enoch\Shotguns\HunterShotgun_01\Data\UI\gear_HunterShotgun_01_sawedoff_X_CA.paa")
+				WEAPON_DIALOG_ITEM(3,"Veles",				"\lxRF\weapons_rf\Rifles\ASH12\data\ui\icon_arifle_ASH12_urban_RF_CA.paa")
+				WEAPON_DIALOG_ITEM(4,"Veles GL",			"\lxRF\weapons_rf\Rifles\ASH12\data\ui\icon_arifle_ASH12_GL_urban_RF_CA.paa")
+				WEAPON_DIALOG_ITEM(5,"auto shotgun AA12",	"\lxWS\weapons_1_f_lxws\Shotguns\AA40\Data\ui\icon_sgun_aa40_lxWS_CA.paa")
+				WEAPON_DIALOG_ITEM(6,"FAL",					"\lxWS\weapons_f_lxWS\Rifles\slr\Data\UI\icon_lxWS_arifle_SLR_X_CA.paa")
+				WEAPON_DIALOG_ITEM(7,"FAL GL",				"\lxWS\weapons_f_lxWS\Rifles\Slr\data\ui\icon_lxWS_arifle_SLR_GL_X_CA.paa")
+				WEAPON_DIALOG_ITEM(8,"Galil arm",			"\lxWS\weapons_f_lxWS\Rifles\Galat\Data\UI\icon_lxWS_arifle_Galat_F_X_CA.paa")
+				WEAPON_DIALOG_ITEM(9,"GLX 160",				"\lxWS\weapons_1_f_lxws\Rifles\GLX\data\ui\icon_glaunch_GLX_lxWS_CA.paa")
+				WEAPON_DIALOG_ITEM(10,"Velktor R5",			"\lxws\weapons_1_f_lxWS\rifles\VelkoR5\Data\UI\icon_arifle_VelkoR5_lxWS_CA.paa")
+				WEAPON_DIALOG_ITEM(11,"Velktor R5 GL",		"\lxws\weapons_1_f_lxWS\rifles\VelkoR5\Data\UI\icon_arifle_VelkoR5_GL_lxWS_CA.paa")
+				WEAPON_DIALOG_ITEM(12,"Vektor SS-77",		"\lxWS\weapons_1_f_lxws\Machineguns\s77\data\ui\icon_LMG_S77_lxWS_CA.paa")
+				WEAPON_DIALOG_ITEM(13,"XMS",				"\lxWS\weapons_f_lxWS\Data\UI\XMS_Base_X_CA.paa")
+				WEAPON_DIALOG_ITEM(14,"XMS GL",				"\lxWS\weapons_f_lxWS\Data\UI\XMS_GL_X_CA.paa")
+				WEAPON_DIALOG_ITEM(15,"XMS SG",				"\lxWS\weapons_f_lxWS\Data\UI\XMS_SG_X_CA.paa")
+				WEAPON_DIALOG_ITEM(16,"FAMAS",				"\ofrp_a3_weapons\rifles\famas\data\ui\ofrp_pic_famas_f1_x_ca.paa")
+				WEAPON_DIALOG_ITEM(17,"FAMAS GL",			"\ofrp_a3_weapons\rifles\famas\data\ui\OFrP_pic_Famas_F1_GLM203_x_ca.paa")
+				WEAPON_DIALOG_ITEM(18,"AKM",				"\rhsafrf\addons\rhs_inventoryicons\data\weapons\rhs_weap_akm_ca.paa")
+				WEAPON_DIALOG_ITEM(19,"bolt rifle",			"\rhsgref\addons\rhsgref_inventoryicons\data\weapons\rhs_weap_m38_ca.paa")
+				WEAPON_DIALOG_ITEM(20,"VHS-D2",				"\rhsgref\addons\rhsgref_inventoryicons\data\weapons\rhs_weap_vhsd2_ct15x_ca.paa")
+				WEAPON_DIALOG_ITEM(21,"VHS-D2 GL",			"\rhsgref\addons\rhsgref_inventoryicons\data\weapons\rhs_weap_vhsd2_bg_ct15x_ca.paa")
+				WEAPON_DIALOG_ITEM(22,"M32 MGL",			"\rhsusf\addons\rhsusf_inventoryicons\data\weapons\rhs_weap_m32_ca.paa")
+				WEAPON_DIALOG_ITEM(23,"M590A1 shotgun",		"\rhsusf\addons\rhsusf_inventoryicons\data\weapons\rhs_weap_M590_8RD_ca.paa")
+				WEAPON_DIALOG_ITEM(24,"SCAR-H",				"\rhsusf\addons\rhsusf_inventoryicons\data\weapons\rhs_weap_mk17_STD_ca.paa")
+				WEAPON_DIALOG_ITEM(25,"FNX",				"a3\Weapons_F_Enoch\Pistols\Pistol_Heavy_01\Data\UI\gear_pistol_heavy_01_green_X_ca.paa")
+				WEAPON_DIALOG_ITEM(26,"G19A",				"lxRF\weapons_rf\Pistols\Glock\data\ui\gear_glock_auto_x_ca.paa")
+				WEAPON_DIALOG_ITEM(27,"G19A drum",			"lxRF\weapons_rf\Pistols\Glock\data\ui\gear_glock_auto_x_ca.paa")
+				WEAPON_DIALOG_ITEM(28,"Deagle",				"\lxRF\weapons_rf\Pistols\DEagle\data\ui\gear_deagle_classic_ca.paa")
+				WEAPON_DIALOG_ITEM(29,"Deagle gold",		"\lxRF\weapons_rf\Pistols\DEagle\data\ui\gear_deagle_gold_ca.paa")
+				WEAPON_DIALOG_ITEM(30,"M320 GL",			"\rhsusf\addons\rhsusf_inventoryicons\data\weapons\rhs_weap_M320_ca.paa")
+			};
+		};
+		class ControlLabel1: ControlLabel {
+			y = KAM_Y * 1;
+			text = "Item to add";
 		};
 	};
 };
