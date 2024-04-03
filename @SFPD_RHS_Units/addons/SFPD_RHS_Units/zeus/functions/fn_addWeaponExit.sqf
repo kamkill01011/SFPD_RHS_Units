@@ -11,12 +11,12 @@ _weapons = [
 	[3, "Camera_lxWS", [], []],
 	[0, "arifle_ARX_blk_F", ["muzzle_snds_65_TI_blk_F", "acc_pointer_IR", "optic_Arco_blk_F", "bipod_02_F_blk"], [["30Rnd_65x39_caseless_green", 8], ["10Rnd_50BW_Mag_F", 8]]],//Type 115
 	[0, "sgun_HunterShotgun_01_sawedoff_F", [], [["2Rnd_12Gauge_Pellets", 20]]],//sawed-off
-	[0, "arifle_ash12_urban_RF", ["rhsusf_acc_M952V", "optic_Aco", "bipod_02_F_blk"], [["20Rnd_127x55_Mag_RF", 8]]],//Veles
-	[0, "arifle_ash12_GL_urban_RF", ["rhsusf_acc_M952V", "optic_Aco"], [["20Rnd_127x55_Mag_RF", 8], ["1Rnd_HE_Grenade_shell", 10], ["1Rnd_Smoke_Grenade_shell", 5]]],//Veles GL
-	[0, "sgun_aa40_lxWS", ["rhsusf_acc_M952V", "optic_r1_low_lxWS"], [["20Rnd_12Gauge_AA40_Pellets_lxWS", 8], ["20Rnd_12Gauge_AA40_Slug_lxWS", 8]]],//auto shotgun AA12
+	[0, "arifle_ash12_blk_RF", ["rhsusf_acc_M952V", "optic_Aco", "bipod_02_F_blk"], [["20Rnd_127x55_Mag_RF", 8]]],//Veles
+	[0, "arifle_ash12_GL_blk_RF", ["rhsusf_acc_M952V", "optic_Aco"], [["20Rnd_127x55_Mag_RF", 8], ["1Rnd_HE_Grenade_shell", 10], ["1Rnd_Smoke_Grenade_shell", 5]]],//Veles GL
+	[0, "sgun_aa40_lxWS", ["rhsusf_acc_M952V", "optic_r1_low_lxWS"], [["20Rnd_12Gauge_AA40_Pellets_lxWS", 4], ["20Rnd_12Gauge_AA40_Slug_lxWS", 4]]],//auto shotgun AA12
 	[0, "arifle_SLR_lxWS", ["acc_flashlight"], [["20Rnd_762x51_slr_lxWS", 8]]],//FAL
 	[0, "arifle_SLR_GL_lxWS", ["acc_flashlight"], [["20Rnd_762x51_slr_lxWS", 8], ["1Rnd_40mm_HE_lxWS", 10], ["1Rnd_50mm_Smoke_lxWS", 5], ["1Rnd_58mm_AT_lxWS", 5]]],//FAL GL
-	[0, "arifle_Galat_lxWS", ["rhsusf_acc_M952V", "optic_r1_low_lxWS"], [["30Rnd_762x39_Mag_F", 8]]],//Galil arm
+	[0, "arifle_Galat_lxWS", ["rhsusf_acc_M952V"], [["30Rnd_762x39_Mag_F", 8]]],//Galil arm
 	[0, "glaunch_GLX_lxWS", [], [["1Rnd_HE_Grenade_shell", 10]]],//GLX 160
 	[0, "arifle_VelkoR5_lxWS", ["rhsusf_acc_M952V", "optic_r1_high_lxWS"], [["35Rnd_556x45_Velko_reload_tracer_red_lxWS", 8]]],//Velktor R5
 	[0, "arifle_VelkoR5_GL_lxWS", ["rhsusf_acc_M952V", "optic_r1_high_lxWS"], [["35Rnd_556x45_Velko_reload_tracer_red_lxWS", 8], ["1Rnd_HE_Grenade_shell", 10], ["1Rnd_Smoke_Grenade_shell", 5]]],//Velktor R5 GL
@@ -43,33 +43,41 @@ _weapons = [
 ];
 _weapon = _weapons # _weaponIndex;
 
-[
-	[_unit, _weapon], 
+if (_unit isKindOf "CAManBase") then {
+	[
+		[_unit, _weapon], 
+		{
+			params ["_unit", "_weapon"];
+			_weapon params ["_weaponType", "_weap", "_items", "_mags"];
+			_currWeapon = [
+				primaryWeapon _unit,
+				handgunWeapon _unit,
+				secondaryWeapon _unit,
+				binocular _unit
+			] # _weaponType;
+			_currCompMags = compatibleMagazines _currWeapon;
+			
+			{_unit removeMagazines _x;} forEach _currCompMags;
+			_unit removeWeapon _currWeapon;
+			
+			{
+				_x params ["_mag", "_count"];
+				for "_i" from 1 to _count do {_unit addMagazine _mag;};
+			} forEach _mags;
+			_unit addWeapon _weap;
+			{
+				_unit addPrimaryWeaponItem _x;
+			} forEach _items;
+			
+		}
+	] remoteExec ["call", _unit];
+} else {
+	_weapon params ["_weaponType", "_weap", "_items", "_mags"];
 	{
-		params ["_unit", "_weapon"];
-		_weapon params ["_weaponType", "_weap", "_items", "_mags"];
-		_currWeapon = [
-			primaryWeapon _unit,
-			handgunWeapon _unit,
-			secondaryWeapon _unit,
-			binocular _unit
-		] # _weaponType;
-		_currCompMags = compatibleMagazines _currWeapon;
-		
-		{_unit removeMagazines _x;} forEach _currCompMags;
-		_unit removeWeapon _currWeapon;
-		
-		{
-			_x params ["_mag", "_count"];
-			for "_i" from 1 to _count do {_unit addMagazine _mag;};
-		} forEach _mags;
-		_unit addWeapon _weap;
-		{
-			_unit addPrimaryWeaponItem _x;
-		} forEach _items;
-		
-	}
-] remoteExec ["call", _unit];
+		_x params ["_mag", "_count"];
+		_unit addMagazineCargoGlobal [_mag, _count];
+	} forEach _mags;
+};
 
 
 localNamespace setVariable ["KAM_zeus_last_add_weapon", _weaponIndex];
