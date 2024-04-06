@@ -21,9 +21,9 @@ _weapons = [
 	[0, "arifle_VelkoR5_lxWS", ["rhsusf_acc_M952V", "optic_r1_high_lxWS"], [["35Rnd_556x45_Velko_reload_tracer_red_lxWS", 8]]],//Velktor R5
 	[0, "arifle_VelkoR5_GL_lxWS", ["rhsusf_acc_M952V", "optic_r1_high_lxWS"], [["35Rnd_556x45_Velko_reload_tracer_red_lxWS", 8], ["1Rnd_HE_Grenade_shell", 10], ["1Rnd_Smoke_Grenade_shell", 5]]],//Velktor R5 GL
 	[0, "LMG_S77_lxWS", ["rhsusf_acc_M952V", "optic_r1_high_lxWS"], [["100Rnd_762x51_S77_Green_Tracer_lxWS", 8]]],//Vektor SS-77
-	[0, "arifle_XMS_Base_lxWS", ["rhsusf_acc_M952V", "optic_r1_high_lxWS"], [["30Rnd_556x45_Stanag", 8]]],//XMS
-	[0, "arifle_XMS_GL_lxWS", ["rhsusf_acc_M952V", "optic_r1_high_lxWS"], [["30Rnd_556x45_Stanag", 8], ["1Rnd_HE_Grenade_shell", 10], ["1Rnd_Smoke_Grenade_shell", 5]]],//XMS GL
-	[0, "arifle_XMS_Shot_lxWS", ["rhsusf_acc_M952V", "optic_r1_high_lxWS"], [["30Rnd_556x45_Stanag", 8], ["6Rnd_12Gauge_Slug", 8], ["6Rnd_12Gauge_Pellets", 8]]],//XMS SG
+	[0, "arifle_XMS_Base_lxWS", ["rhsusf_acc_M952V", "optic_r1_low_lxWS"], [["30Rnd_556x45_Stanag", 8]]],//XMS
+	[0, "arifle_XMS_GL_lxWS", ["rhsusf_acc_M952V", "optic_r1_low_lxWS"], [["30Rnd_556x45_Stanag", 8], ["1Rnd_HE_Grenade_shell", 10], ["1Rnd_Smoke_Grenade_shell", 5]]],//XMS GL
+	[0, "arifle_XMS_Shot_lxWS", ["rhsusf_acc_M952V", "optic_r1_low_lxWS"], [["30Rnd_556x45_Stanag", 8], ["6Rnd_12Gauge_Slug", 8], ["6Rnd_12Gauge_Pellets", 8]]],//XMS SG
 	[0, "OFrP_FAMAS_F1", [], [["OFrP_25Rnd_556x45", 8]]],//FAMAS
 	[0, "OFrP_FAMAS_F1_GLM203", [], [["OFrP_25Rnd_556x45", 8], ["1Rnd_HE_Grenade_shell", 10], ["1Rnd_Smoke_Grenade_shell", 5]]],//FAMAS GL
 	[0, "rhs_weap_akm", ["rhs_acc_dtkakm", "rhs_acc_2dpZenit"], [["rhs_30Rnd_762x39mm_bakelite", 8]]],//AKM

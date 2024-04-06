@@ -2,7 +2,7 @@
 	class SFPD_MX_Default: arifle_MX_F {
         scope = 2;
         class LinkedItems {
-			SFPD_WEAPON_OPTIC_CFG(optic_Hamr)
+			SFPD_WEAPON_OPTIC_CFG(optic_Holosight)
 			SFPD_WEAPON_ACC_CFG(acc_pointer_IR)
 			SFPD_WEAPON_UNDER_CFG(bipod_01_F_snd)
         };
@@ -11,7 +11,7 @@
 	class SFPD_MX_GL_Default: arifle_MX_GL_F {
         scope = 2;
         class LinkedItems {
-			SFPD_WEAPON_OPTIC_CFG(optic_Hamr)
+			SFPD_WEAPON_OPTIC_CFG(optic_Holosight)
 			SFPD_WEAPON_ACC_CFG(acc_pointer_IR)
         };
     };
@@ -19,7 +19,7 @@
 	class SFPD_LMG_03_Default: LMG_03_F {
         scope = 2;
         class LinkedItems {
-			SFPD_WEAPON_OPTIC_CFG(optic_Hamr)
+			SFPD_WEAPON_OPTIC_CFG(optic_Holosight_blk_F)
 			SFPD_WEAPON_ACC_CFG(acc_pointer_IR)
         };
     };
@@ -45,7 +45,7 @@
 	class SFPD_MMG_Default: MMG_02_black_F {
         scope = 2;
         class LinkedItems {
-			SFPD_WEAPON_OPTIC_CFG(optic_Hamr)
+			SFPD_WEAPON_OPTIC_CFG(optic_Holosight_blk_F)
 			SFPD_WEAPON_ACC_CFG(acc_pointer_IR)
 			SFPD_WEAPON_UNDER_CFG(bipod_01_F_blk)
         };
@@ -71,7 +71,7 @@
 	class SFPD_MXC_Silenced: arifle_MXC_F {
 		scope = 2;
         class LinkedItems {
-			SFPD_WEAPON_OPTIC_CFG(optic_MRCO)
+			SFPD_WEAPON_OPTIC_CFG(optic_Holosight)
 			SFPD_WEAPON_MUZZLE_CFG(muzzle_snds_H)
 			SFPD_WEAPON_ACC_CFG(acc_pointer_IR)
         };
@@ -88,7 +88,7 @@
 	class SFPD_WOODLAND_MX: arifle_MX_khk_F {
 		scope = 2;
         class LinkedItems {
-			SFPD_WEAPON_OPTIC_CFG(optic_Hamr_khk_F)
+			SFPD_WEAPON_OPTIC_CFG(optic_Holosight_khk_F)
 			SFPD_WEAPON_ACC_CFG(acc_pointer_IR)
 			SFPD_WEAPON_UNDER_CFG(bipod_01_F_khk)
         };
@@ -97,7 +97,7 @@
 	class SFPD_WOODLAND_MX_GL: arifle_MX_GL_khk_F {
 		scope = 2;
         class LinkedItems {
-			SFPD_WEAPON_OPTIC_CFG(optic_Hamr_khk_F)
+			SFPD_WEAPON_OPTIC_CFG(optic_Holosight_khk_F)
 			SFPD_WEAPON_ACC_CFG(acc_pointer_IR)
         };
 	};
@@ -140,7 +140,7 @@
 	class SFPD_WOODLAND_MXC_Silenced: arifle_MXC_khk_F {
 		scope = 2;
         class LinkedItems {
-			SFPD_WEAPON_OPTIC_CFG(optic_MRCO)
+			SFPD_WEAPON_OPTIC_CFG(optic_Holosight_khk_F)
 			SFPD_WEAPON_MUZZLE_CFG(muzzle_snds_H_khk_F)
 			SFPD_WEAPON_ACC_CFG(acc_pointer_IR)
         };
@@ -190,7 +190,7 @@
 	class SFPD_JUNGLE_SPAR_16_Default: arifle_SPAR_01_khk_F {
         scope = 2;
         class LinkedItems {
-			SFPD_WEAPON_OPTIC_CFG(optic_ERCO_khk_F)
+			SFPD_WEAPON_OPTIC_CFG(optic_Holosight_khk_F)
 			SFPD_WEAPON_ACC_CFG(acc_pointer_IR)
 			SFPD_WEAPON_UNDER_CFG(bipod_01_F_khk)
         };
@@ -199,7 +199,7 @@
 	class SFPD_JUNGLE_SPAR_16_GL_Default: arifle_SPAR_01_GL_khk_F {
         scope = 2;
         class LinkedItems {
-			SFPD_WEAPON_OPTIC_CFG(optic_ERCO_khk_F)
+			SFPD_WEAPON_OPTIC_CFG(optic_Holosight_khk_F)
 			SFPD_WEAPON_ACC_CFG(acc_pointer_IR)
         };
     };
@@ -207,7 +207,7 @@
 	class SFPD_JUNGLE_SPAR_16S_Default: arifle_SPAR_02_khk_F {
         scope = 2;
         class LinkedItems {
-			SFPD_WEAPON_OPTIC_CFG(optic_ERCO_khk_F)
+			SFPD_WEAPON_OPTIC_CFG(optic_Holosight_khk_F)
 			SFPD_WEAPON_ACC_CFG(acc_pointer_IR)
 			SFPD_WEAPON_UNDER_CFG(bipod_01_F_khk)
         };
@@ -259,7 +259,7 @@
 	class SFPD_JUNGLE_SPAR_16_Silenced: arifle_SPAR_01_khk_F {
 		scope = 2;
         class LinkedItems {
-			SFPD_WEAPON_OPTIC_CFG(optic_ERCO_khk_F)
+			SFPD_WEAPON_OPTIC_CFG(optic_Holosight_khk_F)
 			SFPD_WEAPON_MUZZLE_CFG(muzzle_snds_m_khk_F)
 			SFPD_WEAPON_ACC_CFG(acc_pointer_IR)
 			SFPD_WEAPON_UNDER_CFG(bipod_01_F_khk)
@@ -277,7 +277,7 @@
 	class SFPD_BLACK_AK12_Silenced: arifle_AK12_F {
 		scope = 2;
         class LinkedItems {
-			SFPD_WEAPON_OPTIC_CFG(optic_Hamr)
+			SFPD_WEAPON_OPTIC_CFG(optic_Holosight_blk_F)
 			SFPD_WEAPON_MUZZLE_CFG(muzzle_snds_B)
 			SFPD_WEAPON_ACC_CFG(acc_pointer_IR)
         };
@@ -286,7 +286,7 @@
 	class SFPD_BLACK_AK12_GL_Silenced: arifle_AK12_GL_F {
 		scope = 2;
         class LinkedItems {
-			SFPD_WEAPON_OPTIC_CFG(optic_Hamr)
+			SFPD_WEAPON_OPTIC_CFG(optic_Holosight_blk_F)
 			SFPD_WEAPON_MUZZLE_CFG(muzzle_snds_B)
 			SFPD_WEAPON_ACC_CFG(acc_pointer_IR)
         };
@@ -335,7 +335,7 @@
 	class SFPD_LMG_03_Silenced: LMG_03_F {
         scope = 2;
         class LinkedItems {
-			SFPD_WEAPON_OPTIC_CFG(optic_Hamr)
+			SFPD_WEAPON_OPTIC_CFG(optic_Holosight_blk_F)
 			SFPD_WEAPON_MUZZLE_CFG(muzzle_snds_M)
 			SFPD_WEAPON_ACC_CFG(acc_pointer_IR)
         };
