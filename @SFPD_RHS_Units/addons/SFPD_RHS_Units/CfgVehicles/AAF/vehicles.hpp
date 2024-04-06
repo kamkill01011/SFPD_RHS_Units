@@ -38,6 +38,16 @@
 		SFPD_AAF_Transport
 	};
 	
+	class SFPD_AAF_Kamaz_cargo: I_Truck_02_cargo_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_AAF_Faction,SFPD_AAF_Rifleman)
+		SFPD_AAF_Transport
+	};
+	
+	class SFPD_AAF_Kamaz_flatbed: I_Truck_02_flatbed_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_AAF_Faction,SFPD_AAF_Rifleman)
+		SFPD_AAF_Transport
+	};
+	
 	class SFPD_AAF_Pandur: I_APC_Wheeled_03_cannon_F {
 		SFPD_VEHICLES_CFG(SFPD_AAF_Faction,SFPD_AAF_TankCrew)
 		SFPD_AAF_Transport

@@ -837,6 +837,9 @@ class CfgPatches {
 			"SFPD_BLUFOR_DESERT_HEMTT",
 			"SFPD_BLUFOR_DESERT_HEMTT_cargo",
 			"SFPD_BLUFOR_DESERT_Badger",
+			"SFPD_BLUFOR_DESERT_Badger_ATGM",
+			"SFPD_BLUFOR_DESERT_Badger_GMG",
+			"SFPD_BLUFOR_DESERT_Badger_mortar",
 			"SFPD_BLUFOR_DESERT_Namer",
 			"SFPD_BLUFOR_DESERT_Nemmera",
 			"SFPD_BLUFOR_DESERT_Merkava",
@@ -873,6 +876,9 @@ class CfgPatches {
 			"SFPD_BLUFOR_WOODLAND_HEMTT",
 			"SFPD_BLUFOR_WOODLAND_HEMTT_cargo",
 			"SFPD_BLUFOR_WOODLAND_Badger",
+			"SFPD_BLUFOR_WOODLAND_Badger_ATGM",
+			"SFPD_BLUFOR_WOODLAND_Badger_GMG",
+			"SFPD_BLUFOR_WOODLAND_Badger_mortar",
 			"SFPD_BLUFOR_WOODLAND_Namer",
 			"SFPD_BLUFOR_WOODLAND_Nemmera",
 			"SFPD_BLUFOR_WOODLAND_Merkava",
@@ -909,6 +915,9 @@ class CfgPatches {
 			"SFPD_BLUFOR_JUNGLE_HEMTT",
 			"SFPD_BLUFOR_JUNGLE_HEMTT_cargo",
 			"SFPD_BLUFOR_JUNGLE_Badger",
+			"SFPD_BLUFOR_JUNGLE_Badger_ATGM",
+			"SFPD_BLUFOR_JUNGLE_Badger_GMG",
+			"SFPD_BLUFOR_JUNGLE_Badger_mortar",
 			"SFPD_BLUFOR_JUNGLE_Namer",
 			"SFPD_BLUFOR_JUNGLE_Nemmera",
 			"SFPD_BLUFOR_JUNGLE_Merkava",
@@ -950,6 +959,12 @@ class CfgPatches {
 			"SFPD_OPFOR_DESERT_Typhoon_Medical",
 			"SFPD_OPFOR_DESERT_Typhoon_Transport",
 			"SFPD_OPFOR_DESERT_Typhoon_Device",
+			"SFPD_OPFOR_DESERT_Stalker_iskatel",
+			"SFPD_OPFOR_DESERT_ARMA_hmg",
+			"SFPD_OPFOR_DESERT_ARMA_unarmed",
+			"SFPD_OPFOR_DESERT_Typhoon_cargo",
+			"SFPD_OPFOR_DESERT_Typhoon_flatbed",
+			"SFPD_OPFOR_DESERT_T100_railgun",
 			"SFPD_OPFOR_DESERT_AA",
 			"SFPD_OPFOR_DESERT_Howitzer",
 			"SFPD_OPFOR_DESERT_Ifrit_HMG",
@@ -986,6 +1001,12 @@ class CfgPatches {
 			"SFPD_OPFOR_WOODLAND_Typhoon_Medical",
 			"SFPD_OPFOR_WOODLAND_Typhoon_Transport",
 			"SFPD_OPFOR_WOODLAND_Typhoon_Device",
+			"SFPD_OPFOR_WOODLAND_Stalker_iskatel",
+			"SFPD_OPFOR_WOODLAND_ARMA_hmg",
+			"SFPD_OPFOR_WOODLAND_ARMA_unarmed",
+			"SFPD_OPFOR_WOODLAND_Typhoon_cargo",
+			"SFPD_OPFOR_WOODLAND_Typhoon_flatbed",
+			"SFPD_OPFOR_WOODLAND_T100_railgun",
 			"SFPD_OPFOR_WOODLAND_AA",
 			"SFPD_OPFOR_WOODLAND_Howitzer",
 			"SFPD_OPFOR_WOODLAND_Ifrit_HMG",
@@ -1022,6 +1043,12 @@ class CfgPatches {
 			"SFPD_OPFOR_JUNGLE_Typhoon_Medical",
 			"SFPD_OPFOR_JUNGLE_Typhoon_Transport",
 			"SFPD_OPFOR_JUNGLE_Typhoon_Device",
+			"SFPD_OPFOR_JUNGLE_Stalker_iskatel",
+			"SFPD_OPFOR_JUNGLE_ARMA_hmg",
+			"SFPD_OPFOR_JUNGLE_ARMA_unarmed",
+			"SFPD_OPFOR_JUNGLE_Typhoon_cargo",
+			"SFPD_OPFOR_JUNGLE_Typhoon_flatbed",
+			"SFPD_OPFOR_JUNGLE_T100_railgun",
 			"SFPD_OPFOR_JUNGLE_AA",
 			"SFPD_OPFOR_JUNGLE_Howitzer",
 			"SFPD_OPFOR_JUNGLE_Ifrit_HMG",
@@ -1056,6 +1083,8 @@ class CfgPatches {
 			"SFPD_AAF_Kamaz_Ammo",
 			"SFPD_AAF_Kamaz_Fuel",
 			"SFPD_AAF_Kamaz_Medical",
+			"SFPD_AAF_Kamaz_cargo",
+			"SFPD_AAF_Kamaz_flatbed",
 			"SFPD_AAF_Pandur",
 			"SFPD_AAF_FV510",
 			"SFPD_AAF_Leopard",
@@ -1083,6 +1112,8 @@ class CfgPatches {
 			"SFPD_LDF_Kamaz_Fuel",
 			"SFPD_LDF_Kamaz_Medical",
 			"SFPD_LDF_Kamaz_MLRS",
+			"SFPD_LDF_Kamaz_cargo",
+			"SFPD_LDF_Kamaz_flatbed",
 			"SFPD_LDF_FV510",
 			"SFPD_LDF_Boat",
 			"SFPD_LDF_RHIB",
@@ -1099,6 +1130,11 @@ class CfgPatches {
 			"SFPD_REBEL_Van",
 			"SFPD_REBEL_Truck",
 			"SFPD_REBEL_Truck_Fuel",
+			"SFPD_REBEL_Truck_AA",
+			"SFPD_REBEL_Offroad_armor",
+			"SFPD_REBEL_Offroad_AT_armor",
+			"SFPD_REBEL_Offroad_MG_armor",
+			"SFPD_REBEL_static_AA",
 			"SFPD_BLUFOR_BOX_Medical",
 			"SFPD_BLUFOR_DESERT_BOX_Ammo",
 			"SFPD_BLUFOR_WOODLAND_BOX_Ammo",
@@ -3897,6 +3933,7 @@ class CfgVehicles {
 	REMOVE_ZEUS(I_soldier_UAV_F,I_Soldier_base_F)
 	REMOVE_ZEUS(I_soldier_UAV_06_F,I_soldier_UAV_F)
 	REMOVE_ZEUS(I_soldier_UAV_06_medical_F,I_soldier_UAV_F)
+	REMOVE_ZEUS(I_soldier_UAV_lxWS,I_soldier_UAV_F)
 	REMOVE_ZEUS(I_diver_F,I_Soldier_diver_base_F)
 	REMOVE_ZEUS(I_diver_exp_F,I_Soldier_diver_base_F)
 	REMOVE_ZEUS(I_diver_TL_F,I_Soldier_diver_base_F)
@@ -4005,6 +4042,7 @@ class CfgVehicles {
 	REMOVE_ZEUS(O_soldier_UAV_F,O_Soldier_base_F)
 	REMOVE_ZEUS(O_soldier_UAV_06_F,O_soldier_UAV_F)
 	REMOVE_ZEUS(O_soldier_UAV_06_medical_F,O_soldier_UAV_F)
+	REMOVE_ZEUS(O_soldier_UAV_lxWS,O_soldier_UAV_F)
 	REMOVE_ZEUS(O_diver_F,O_Soldier_diver_base_F)
 	REMOVE_ZEUS(O_diver_exp_F,O_Soldier_diver_base_F)
 	REMOVE_ZEUS(O_diver_TL_F,O_Soldier_diver_base_F)
@@ -4189,6 +4227,7 @@ class CfgVehicles {
 	REMOVE_ZEUS(B_Patrol_Soldier_AT_F,B_soldier_AT_F)
 	REMOVE_ZEUS(B_Patrol_Soldier_TL_F,B_Soldier_TL_F)
 	REMOVE_ZEUS(B_Patrol_Soldier_UAV_F,B_soldier_UAV_F)
+	REMOVE_ZEUS(B_soldier_UAV_lxWS,B_soldier_UAV_F)
 	REMOVE_ZEUS(B_diver_F,B_Soldier_diver_base_F)
 	REMOVE_ZEUS(B_diver_exp_F,B_Soldier_diver_base_F)
 	REMOVE_ZEUS(B_diver_TL_F,B_Soldier_diver_base_F)
@@ -5888,6 +5927,57 @@ class CfgVehicles {
 	REMOVE_ZEUS(rhssaf_army_o_kraz255b1_pmp,rhssaf_army_kraz255b1_pmp)
 	REMOVE_ZEUS(rhsgref_ins_arifleman_rpk,rhsgref_ins_uniform_izlom)
 	
+	class O_MBT_02_railgun_base_F;
+	REMOVE_ZEUS(O_MBT_02_railgun_F,O_MBT_02_railgun_base_F)
+	REMOVE_ZEUS(O_T_MBT_02_railgun_ghex_F,O_MBT_02_railgun_base_F)
+	class UAV_02_Base_lxWS;
+	class APC_Wheeled_01_base_F;
+	class APC_Wheeled_02_hmg_base_lxws;
+	class APC_Wheeled_02_unarmed_base_lxws;
+	class Truck_02_cargo_base_lxWS;
+	class Truck_02_flatbed_base_lxWS;
+	class O_SFIA_Truck_02_aa_lxWS;
+	class Offroad_01_armor_base_lxWS;
+	class Offroad_01_armor_AT_lxWS;
+	class Offroad_01_armor_armed_lxWS;
+	class O_SFIA_ZU23_lxWS;
+	REMOVE_ZEUS(APC_Wheeled_01_atgm_base_lxWS,APC_Wheeled_01_base_F)
+	REMOVE_ZEUS(APC_Wheeled_01_command_base_lxWS,APC_Wheeled_01_base_F)
+	REMOVE_ZEUS(APC_Wheeled_01_mortar_base_lxWS,APC_Wheeled_01_base_F)
+	REMOVE_ZEUS(B_T_APC_Wheeled_01_atgm_lxWS,APC_Wheeled_01_atgm_base_lxWS)
+	REMOVE_ZEUS(B_T_APC_Wheeled_01_command_lxWS,APC_Wheeled_01_command_base_lxWS)
+	REMOVE_ZEUS(B_T_APC_Wheeled_01_mortar_lxWS,APC_Wheeled_01_mortar_base_lxWS)
+	REMOVE_ZEUS(O_APC_Tracked_02_30mm_lxWS,O_APC_Tracked_02_cannon_F)
+	REMOVE_ZEUS(O_APC_Wheeled_02_hmg_lxWS,APC_Wheeled_02_hmg_base_lxws)
+	REMOVE_ZEUS(O_APC_Wheeled_02_unarmed_lxWS,APC_Wheeled_02_unarmed_base_lxws)
+	REMOVE_ZEUS(O_Truck_02_cargo_lxWS,Truck_02_cargo_base_lxWS)
+	REMOVE_ZEUS(O_Truck_02_flatbed_lxWS,Truck_02_flatbed_base_lxWS)
+	REMOVE_ZEUS(O_T_APC_Tracked_02_30mm_lxWS,O_APC_Tracked_02_30mm_lxWS)
+	REMOVE_ZEUS(O_T_APC_Wheeled_02_hmg_lxWS,O_APC_Wheeled_02_hmg_lxWS)
+	REMOVE_ZEUS(O_T_APC_Wheeled_02_unarmed_lxWS,O_APC_Wheeled_02_unarmed_lxWS)
+	REMOVE_ZEUS(O_T_Truck_02_cargo_lxWS,O_Truck_02_cargo_lxWS)
+	REMOVE_ZEUS(O_T_Truck_02_flatbed_lxWS,O_Truck_02_flatbed_lxWS)
+	REMOVE_ZEUS(I_Truck_02_cargo_lxWS,Truck_02_cargo_base_lxWS)
+	REMOVE_ZEUS(I_Truck_02_flatbed_lxWS,Truck_02_flatbed_base_lxWS)
+	REMOVE_ZEUS(I_E_Truck_02_cargo_lxWS,I_Truck_02_cargo_lxWS)
+	REMOVE_ZEUS(I_E_Truck_02_flatbed_lxWS,I_Truck_02_flatbed_lxWS)
+	REMOVE_ZEUS(I_Tura_Truck_02_aa_lxWS,O_SFIA_Truck_02_aa_lxWS)
+	REMOVE_ZEUS(I_Tura_Offroad_armor_lxWS,Offroad_01_armor_base_lxWS)
+	REMOVE_ZEUS(I_Tura_Offroad_armor_AT_lxWS,Offroad_01_armor_AT_lxWS)
+	REMOVE_ZEUS(I_Tura_Offroad_armor_armed_lxWS,Offroad_01_armor_armed_lxWS)
+	REMOVE_ZEUS(I_Tura_ZU23_lxWS,O_SFIA_ZU23_lxWS)
+	REMOVE_ZEUS(I_A_Truck_02_aa_lxWS,Truck_02_aa_base_lxWS)
+	REMOVE_ZEUS(O_A_crew_lxWS,O_crew_F)
+	REMOVE_ZEUS(O_A_medic_lxWS,O_medic_F)
+	REMOVE_ZEUS(O_A_officer_lxWS,O_officer_F)
+	REMOVE_ZEUS(O_A_Soldier_AR_lxWS,O_Soldier_AR_F)
+	REMOVE_ZEUS(O_A_Soldier_lxWS,O_Soldier_F)
+	REMOVE_ZEUS(O_A_Soldier_GL_lxWS,O_Soldier_GL_F)
+	REMOVE_ZEUS(O_A_Soldier_LAT_lxWS,O_Soldier_LAT_F)
+	REMOVE_ZEUS(O_A_Soldier_TL_lxWS,O_Soldier_TL_F)
+	REMOVE_ZEUS(O_A_HeavyGunner_lxWS,O_A_Soldier_AR_lxWS)
+
+	
 	//change faction
 	class rhs_p37_turret_vpvo : rhs_p37_turret_base {
 		faction = "SFPD_RHS_OPFOR_WOODLAND_Faction";
@@ -6013,6 +6103,11 @@ class CfgVehicles {
 	};
 	
 	class B_UAV_02_dynamicLoadout_F : UAV_02_dynamicLoadout_base_F {
+		faction = "SFPD_BLUFOR_DESERT_Faction";
+		scopeCurator = 2;
+	};
+	
+	class B_UAV_02_lxWS : UAV_02_Base_lxWS {
 		faction = "SFPD_BLUFOR_DESERT_Faction";
 		scopeCurator = 2;
 	};
@@ -6221,6 +6316,11 @@ class CfgVehicles {
 		scopeCurator = 2;
 	};
 	
+	class O_UAV_02_lxWS : UAV_02_Base_lxWS {
+		faction = "SFPD_OPFOR_DESERT_Faction";
+		scopeCurator = 2;
+	};
+	
 	class I_UGV_02_Science_F : UGV_02_Science_Base_F {
 		faction = "SFPD_AAF_Faction";
 	};
@@ -6260,6 +6360,11 @@ class CfgVehicles {
 	};
 	
 	class I_UAV_02_dynamicLoadout_F : UAV_02_dynamicLoadout_base_F {
+		faction = "SFPD_AAF_Faction";
+		scopeCurator = 2;
+	};
+	
+	class I_UAV_02_lxWS : UAV_02_Base_lxWS {
 		faction = "SFPD_AAF_Faction";
 		scopeCurator = 2;
 	};

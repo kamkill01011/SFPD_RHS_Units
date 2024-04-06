@@ -48,6 +48,16 @@
 		SFPD_LDF_Transport
 	};
 	
+	class SFPD_LDF_Kamaz_cargo: I_E_Truck_02_cargo_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_LDF_Faction,SFPD_LDF_Rifleman)
+		SFPD_LDF_Transport
+	};
+	
+	class SFPD_LDF_Kamaz_flatbed: I_E_Truck_02_flatbed_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_LDF_Faction,SFPD_LDF_Rifleman)
+		SFPD_LDF_Transport
+	};
+	
 	class SFPD_LDF_FV510: I_E_APC_tracked_03_cannon_F {
 		SFPD_VEHICLES_CFG(SFPD_LDF_Faction,SFPD_LDF_TankCrew)
 		SFPD_LDF_Transport

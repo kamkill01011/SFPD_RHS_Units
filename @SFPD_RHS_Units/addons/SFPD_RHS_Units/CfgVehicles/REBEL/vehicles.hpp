@@ -33,3 +33,23 @@
 	class SFPD_REBEL_Truck_Fuel: I_G_Van_01_fuel_F {
 		SFPD_VEHICLES_CFG(SFPD_REBEL_Faction,SFPD_REBEL_Rifleman_TRG)
 	};
+	
+	class SFPD_REBEL_Truck_AA: I_Tura_Truck_02_aa_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_REBEL_Faction,SFPD_REBEL_Rifleman_TRG)
+	};
+	
+	class SFPD_REBEL_Offroad_armor: I_Tura_Offroad_armor_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_REBEL_Faction,SFPD_REBEL_Rifleman_TRG)
+	};
+	
+	class SFPD_REBEL_Offroad_AT_armor: I_Tura_Offroad_armor_AT_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_REBEL_Faction,SFPD_REBEL_Rifleman_TRG)
+	};
+	
+	class SFPD_REBEL_Offroad_MG_armor: I_Tura_Offroad_armor_armed_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_REBEL_Faction,SFPD_REBEL_Rifleman_TRG)
+	};
+	
+	class SFPD_REBEL_static_AA: I_Tura_ZU23_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_REBEL_Faction,SFPD_REBEL_Rifleman_TRG)
+	};

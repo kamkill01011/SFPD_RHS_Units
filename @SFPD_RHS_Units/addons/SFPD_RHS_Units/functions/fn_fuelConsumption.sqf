@@ -34,7 +34,7 @@ if (!_isOk) exitWith {};
 		};
 		_ai = (isNull _lastDriver) || {!(isPlayer _lastDriver)};
 		_modifier = missionNamespace getVariable ["KAM_fuel_consumption_modifier", 1];
-		if (_ai != _wasAi) || (_modifier != _lastModifier)) then {
+		if ((_ai != _wasAi) || (_modifier != _lastModifier)) then {
 			_newFuelConsumtion = _FUEL_CONSUMPTION * _modifier;
 			if (_ai) then {
 				_newFuelConsumtion = 1;
