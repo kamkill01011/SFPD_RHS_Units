@@ -24,6 +24,7 @@ if (!_isOk) exitWith {};
 	
 	_lastDriver = driver _v;
 	_wasAi = true;
+	_lastModifier = missionNamespace getVariable ["KAM_fuel_consumption_modifier", 1];
 	waitUntil {
 		sleep 1;
 		
@@ -32,8 +33,9 @@ if (!_isOk) exitWith {};
 			_lastDriver = _currDriver;
 		};
 		_ai = (isNull _lastDriver) || {!(isPlayer _lastDriver)};
-		if (_ai != _wasAi) then {
-			_newFuelConsumtion = _FUEL_CONSUMPTION;
+		_modifier = missionNamespace getVariable ["KAM_fuel_consumption_modifier", 1];
+		if (_ai != _wasAi) || (_modifier != _lastModifier)) then {
+			_newFuelConsumtion = _FUEL_CONSUMPTION * _modifier;
 			if (_ai) then {
 				_newFuelConsumtion = 1;
 			};
@@ -43,6 +45,7 @@ if (!_isOk) exitWith {};
 			}] remoteExec ["call", _v];
 		};
 		_wasAi = _ai;
+		_lastModifier = _modifier;
 		
 		!alive _v;
 	};
