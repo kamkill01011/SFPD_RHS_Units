@@ -13,6 +13,26 @@
 		SFPD_AAF_Transport
 	};
 	
+	class SFPD_AAF_Pickup_aa: I_Pickup_aat_rf {
+		SFPD_VEHICLES_CFG(SFPD_AAF_Faction,SFPD_AAF_Rifleman)
+		SFPD_AAF_Transport
+	};
+	
+	class SFPD_AAF_Pickup: I_Pickup_rf {
+		SFPD_VEHICLES_CFG(SFPD_AAF_Faction,SFPD_AAF_Rifleman)
+		SFPD_AAF_Transport
+	};
+	
+	class SFPD_AAF_Pickup_Comms: I_Pickup_Comms_rf {
+		SFPD_VEHICLES_CFG(SFPD_AAF_Faction,SFPD_AAF_Rifleman)
+		SFPD_AAF_Transport
+	};
+	
+	class SFPD_AAF_Pickup_mmg: I_Pickup_mmg_rf {
+		SFPD_VEHICLES_CFG(SFPD_AAF_Faction,SFPD_AAF_Rifleman)
+		SFPD_AAF_Transport
+	};
+	
 	class SFPD_AAF_Kamaz_Transport: I_Truck_02_transport_F {
 		SFPD_VEHICLES_CFG(SFPD_AAF_Faction,SFPD_AAF_Rifleman)
 		SFPD_AAF_Transport
@@ -114,6 +134,16 @@
 	};
 	
 	class SFPD_AAF_Merlin: I_Heli_Transport_02_F {
+		SFPD_VEHICLES_CFG(SFPD_AAF_Faction,SFPD_AAF_HelicopterPilot)
+		SFPD_VEHICLES_EMPTY_CARGO
+	};
+	
+	class SFPD_AAF_rai_360m_unarmed: I_Heli_EC_01A_military_RF {
+		SFPD_VEHICLES_CFG(SFPD_AAF_Faction,SFPD_AAF_HelicopterPilot)
+		SFPD_VEHICLES_EMPTY_CARGO
+	};
+	
+	class SFPD_AAF_rai_360m: I_Heli_EC_02_RF {
 		SFPD_VEHICLES_CFG(SFPD_AAF_Faction,SFPD_AAF_HelicopterPilot)
 		SFPD_VEHICLES_EMPTY_CARGO
 	};

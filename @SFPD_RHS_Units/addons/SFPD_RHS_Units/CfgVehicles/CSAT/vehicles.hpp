@@ -29,6 +29,16 @@
 		SFPD_OPFOR_DESERT_Transport
 	};
 	
+	class SFPD_OPFOR_DESERT_Pickup: O_Pickup_rf {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_DESERT_Rifleman)
+		SFPD_OPFOR_DESERT_Transport
+	};
+	
+	class SFPD_OPFOR_DESERT_Pickup_Comms: O_Pickup_Comms_rf {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_DESERT_Rifleman)
+		SFPD_OPFOR_DESERT_Transport
+	};
+	
 	class SFPD_OPFOR_DESERT_Qilin_Amred: O_LSV_02_armed_F {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_DESERT_Rifleman)
 		SFPD_OPFOR_DESERT_Transport
@@ -347,6 +357,16 @@
 	};
 	
 	class SFPD_OPFOR_WOODLAND_Ifrit: O_T_MRAP_02_ghex_F {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_WOODLAND_Faction,SFPD_OPFOR_WOODLAND_Rifleman)
+		SFPD_OPFOR_WOODLAND_Transport
+	};
+	
+	class SFPD_OPFOR_WOODLAND_Pickup: O_T_Pickup_rf {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_WOODLAND_Faction,SFPD_OPFOR_WOODLAND_Rifleman)
+		SFPD_OPFOR_WOODLAND_Transport
+	};
+	
+	class SFPD_OPFOR_WOODLAND_Pickup_Comms: O_T_Pickup_Comms_rf {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_WOODLAND_Faction,SFPD_OPFOR_WOODLAND_Rifleman)
 		SFPD_OPFOR_WOODLAND_Transport
 	};
@@ -718,6 +738,16 @@
 	};
 	
 	class SFPD_OPFOR_JUNGLE_Ifrit: O_T_MRAP_02_ghex_F {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_JUNGLE_Faction,SFPD_OPFOR_JUNGLE_Rifleman)
+		SFPD_OPFOR_JUNGLE_Transport
+	};
+	
+	class SFPD_OPFOR_JUNGLE_Pickup: O_T_Pickup_rf {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_JUNGLE_Faction,SFPD_OPFOR_JUNGLE_Rifleman)
+		SFPD_OPFOR_JUNGLE_Transport
+	};
+	
+	class SFPD_OPFOR_JUNGLE_Pickup_Comms: O_T_Pickup_Comms_rf {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_JUNGLE_Faction,SFPD_OPFOR_JUNGLE_Rifleman)
 		SFPD_OPFOR_JUNGLE_Transport
 	};

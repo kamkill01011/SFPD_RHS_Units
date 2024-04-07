@@ -870,6 +870,14 @@ class CfgPatches {
 			"SFPD_BLUFOR_DESERT_BlackWasp",
 			"SFPD_BLUFOR_DESERT_Rhino",
 			"SFPD_BLUFOR_DESERT_Prowler_AT",
+			"SFPD_BLUFOR_DESERT_Pickup_aa",
+			"SFPD_BLUFOR_DESERT_Pickup",
+			"SFPD_BLUFOR_DESERT_Pickup_Comms",
+			"SFPD_BLUFOR_DESERT_Pickup_mmg",
+			"SFPD_BLUFOR_DESERT_ah11f",
+			"SFPD_BLUFOR_DESERT_ah11f_unarmed",
+			"SFPD_BLUFOR_DESERT_mh_245",
+			"SFPD_BLUFOR_DESERT_mh_245_unarmed",
 			"SFPD_BLUFOR_WOODLAND_Prowler_U",
 			"SFPD_BLUFOR_WOODLAND_Prowler_A",
 			"SFPD_BLUFOR_WOODLAND_Hunter",
@@ -909,6 +917,10 @@ class CfgPatches {
 			"SFPD_BLUFOR_WOODLAND_BlackWasp",
 			"SFPD_BLUFOR_WOODLAND_Rhino",
 			"SFPD_BLUFOR_WOODLAND_Prowler_AT",
+			"SFPD_BLUFOR_WOODLAND_Pickup_aa",
+			"SFPD_BLUFOR_WOODLAND_Pickup",
+			"SFPD_BLUFOR_WOODLAND_Pickup_Comms",
+			"SFPD_BLUFOR_WOODLAND_Pickup_mmg",
 			"SFPD_BLUFOR_JUNGLE_Prowler_U",
 			"SFPD_BLUFOR_JUNGLE_Prowler_A",
 			"SFPD_BLUFOR_JUNGLE_Hunter",
@@ -948,6 +960,10 @@ class CfgPatches {
 			"SFPD_BLUFOR_JUNGLE_BlackWasp",
 			"SFPD_BLUFOR_JUNGLE_Rhino",
 			"SFPD_BLUFOR_JUNGLE_Prowler_AT",
+			"SFPD_BLUFOR_JUNGLE_Pickup_aa",
+			"SFPD_BLUFOR_JUNGLE_Pickup",
+			"SFPD_BLUFOR_JUNGLE_Pickup_Comms",
+			"SFPD_BLUFOR_JUNGLE_Pickup_mmg",
 			"SFPD_BLUFOR_SDV",
 			"SFPD_OPFOR_DESERT_Stalker",
 			"SFPD_OPFOR_DESERT_ARMA",
@@ -991,6 +1007,8 @@ class CfgPatches {
 			"SFPD_OPFOR_DESERT_Qilin_AT",
 			"SFPD_OPFOR_DESERT_T140",
 			"SFPD_OPFOR_DESERT_T140K",
+			"SFPD_OPFOR_DESERT_Pickup",
+			"SFPD_OPFOR_DESERT_Pickup_Comms",
 			"SFPD_OPFOR_WOODLAND_Stalker",
 			"SFPD_OPFOR_WOODLAND_ARMA",
 			"SFPD_OPFOR_WOODLAND_Ifrit",
@@ -1033,6 +1051,8 @@ class CfgPatches {
 			"SFPD_OPFOR_WOODLAND_Qilin_AT",
 			"SFPD_OPFOR_WOODLAND_T140",
 			"SFPD_OPFOR_WOODLAND_T140K",
+			"SFPD_OPFOR_WOODLAND_Pickup",
+			"SFPD_OPFOR_WOODLAND_Pickup_Comms",
 			"SFPD_OPFOR_JUNGLE_Stalker",
 			"SFPD_OPFOR_JUNGLE_ARMA",
 			"SFPD_OPFOR_JUNGLE_Ifrit",
@@ -1075,6 +1095,8 @@ class CfgPatches {
 			"SFPD_OPFOR_JUNGLE_Qilin_AT",
 			"SFPD_OPFOR_JUNGLE_T140",
 			"SFPD_OPFOR_JUNGLE_T140K",
+			"SFPD_OPFOR_JUNGLE_Pickup",
+			"SFPD_OPFOR_JUNGLE_Pickup_Comms",
 			"SFPD_OPFOR_SDV",
 			"SFPD_AAF_Quad",
 			"SFPD_AAF_Fennek",
@@ -1102,6 +1124,12 @@ class CfgPatches {
 			"SFPD_AAF_Nyx_Radar",
 			"SFPD_AAF_Nyx_Cannon",
 			"SFPD_AAF_Nyx_AA",
+			"SFPD_AAF_Pickup_aa",
+			"SFPD_AAF_Pickup",
+			"SFPD_AAF_Pickup_Comms",
+			"SFPD_AAF_Pickup_mmg",
+			"SFPD_AAF_rai_360m_unarmed",
+			"SFPD_AAF_rai_360m",
 			"SFPD_LDF_Quad",
 			"SFPD_LDF_Offroad",
 			"SFPD_LDF_Offroad_covered",
@@ -1121,6 +1149,13 @@ class CfgPatches {
 			"SFPD_LDF_SDV",
 			"SFPD_LDF_Wildcat_Unarmed",
 			"SFPD_LDF_Wildcat_Armed",
+			"SFPD_LDF_Pickup",
+			"SFPD_LDF_Pickup_Comms",
+			"SFPD_LDF_Pickup_Covered",
+			"SFPD_LDF_ah_11f",
+			"SFPD_LDF_ah_11f_unarmed",
+			"SFPD_LDF_rai_360m_unarmed",
+			"SFPD_LDF_rai_360m",
 			"SFPD_REBEL_Offroad",
 			"SFPD_REBEL_Offroad_MG",
 			"SFPD_REBEL_Offroad_AT",
@@ -1134,6 +1169,9 @@ class CfgPatches {
 			"SFPD_REBEL_Offroad_armor",
 			"SFPD_REBEL_Offroad_AT_armor",
 			"SFPD_REBEL_Offroad_MG_armor",
+			"SFPD_REBEL_Pickup_01_armor",
+			"SFPD_REBEL_Pickup_01_mmg_armor",
+			"SFPD_REBEL_Pickup_mrl",
 			"SFPD_REBEL_static_AA",
 			"SFPD_BLUFOR_BOX_Medical",
 			"SFPD_BLUFOR_DESERT_BOX_Ammo",
@@ -5941,6 +5979,7 @@ class CfgVehicles {
 	class Offroad_01_armor_AT_lxWS;
 	class Offroad_01_armor_armed_lxWS;
 	class O_SFIA_ZU23_lxWS;
+	class Truck_02_aa_base_lxWS;
 	REMOVE_ZEUS(APC_Wheeled_01_atgm_base_lxWS,APC_Wheeled_01_base_F)
 	REMOVE_ZEUS(APC_Wheeled_01_command_base_lxWS,APC_Wheeled_01_base_F)
 	REMOVE_ZEUS(APC_Wheeled_01_mortar_base_lxWS,APC_Wheeled_01_base_F)
@@ -5976,6 +6015,38 @@ class CfgVehicles {
 	REMOVE_ZEUS(O_A_Soldier_LAT_lxWS,O_Soldier_LAT_F)
 	REMOVE_ZEUS(O_A_Soldier_TL_lxWS,O_Soldier_TL_F)
 	REMOVE_ZEUS(O_A_HeavyGunner_lxWS,O_A_Soldier_AR_lxWS)
+	class B_Pickup_aat_rf;
+	class B_Pickup_rf;
+	class B_Pickup_Comms_rf;
+	class B_Pickup_mmg_rf;
+	class B_Heli_light_03_dynamicLoadout_RF;
+	class B_Heli_light_03_unarmed_RF;
+	class B_Heli_EC_03_RF;
+	class B_Heli_EC_04_military_RF;
+	class B_T_Pickup_aat_rf;
+	class B_T_Pickup_rf;
+	class B_T_Pickup_Comms_rf;
+	class B_T_Pickup_mmg_rf;
+	class O_Pickup_rf;
+	class O_Pickup_Comms_rf;
+	class O_T_Pickup_rf;
+	class O_T_Pickup_Comms_rf;
+	class I_Pickup_aat_rf;
+	class I_Pickup_rf;
+	class I_Pickup_Comms_rf;
+	class I_Pickup_mmg_rf;
+	class I_Heli_EC_01A_military_RF;
+	class I_Heli_EC_02_RF;
+	class I_E_Pickup_rf;
+	class I_E_Pickup_Comms_rf;
+	class I_E_Pickup_Covered_rf;
+	class I_E_Heli_light_03_dynamicLoadout_RF;
+	class I_E_Heli_light_03_unarmed_RF;
+	class I_E_Heli_EC_01A_military_RF;
+	class I_E_EC_02_RF;
+	class I_Tura_Pickup_01_RF;
+	class I_Tura_Pickup_01_mmg_rf;
+	class I_G_Pickup_mrl_rf;
 
 	
 	//change faction
@@ -5989,6 +6060,19 @@ class CfgVehicles {
 	
 	class B_W_Static_Designator_01_F : Static_Designator_01_base_F {
 		faction = "SFPD_BLUFOR_WOODLAND_Faction";
+	};
+	
+	class TwinMortar_base_RF;
+	class B_TwinMortar_RF : TwinMortar_base_RF {
+		faction = "SFPD_BLUFOR_DESERT_Faction";
+	};
+	
+	class B_T_TwinMortar_RF : B_TwinMortar_RF {
+		faction = "SFPD_BLUFOR_JUNGLE_Faction";
+	};
+	
+	class I_TwinMortar_RF : B_TwinMortar_RF {
+		faction = "SFPD_AAF_Faction";
 	};
 	
 	class B_Ship_MRLS_01_F : B_Ship_MRLS_01_base_F {
@@ -6008,6 +6092,20 @@ class CfgVehicles {
 	class B_Mortar_01_F : Mortar_01_base_F {
 		faction = "SFPD_BLUFOR_DESERT_Faction";
 		crew = "SFPD_BLUFOR_DESERT_Rifleman";
+	};
+	
+	class CommandoMortar_base_RF;
+	class B_CommandoMortar_RF : CommandoMortar_base_RF {
+		faction = "SFPD_BLUFOR_DESERT_Faction";
+		crew = "SFPD_BLUFOR_DESERT_Rifleman";
+	};
+	class O_CommandoMortar_RF : B_CommandoMortar_RF {
+		faction = "SFPD_OPFOR_DESERT_Faction";
+		crew = "SFPD_OPFOR_DESERT_Rifleman";
+	};
+	class I_CommandoMortar_RF : B_CommandoMortar_RF {
+		faction = "SFPD_AAF_Faction";
+		crew = "SFPD_AAF_Rifleman";
 	};
 	
 	class B_AAA_System_01_F : AAA_System_01_base_F {

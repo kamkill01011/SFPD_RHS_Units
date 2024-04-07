@@ -50,6 +50,18 @@
 		SFPD_VEHICLES_CFG(SFPD_REBEL_Faction,SFPD_REBEL_Rifleman_TRG)
 	};
 	
+	class SFPD_REBEL_Pickup_01_armor: I_Tura_Pickup_01_RF {
+		SFPD_VEHICLES_CFG(SFPD_REBEL_Faction,SFPD_REBEL_Rifleman_TRG)
+	};
+	
+	class SFPD_REBEL_Pickup_01_mmg_armor: I_Tura_Pickup_01_mmg_rf {
+		SFPD_VEHICLES_CFG(SFPD_REBEL_Faction,SFPD_REBEL_Rifleman_TRG)
+	};
+	
+	class SFPD_REBEL_Pickup_mrl: I_G_Pickup_mrl_rf {
+		SFPD_VEHICLES_CFG(SFPD_REBEL_Faction,SFPD_REBEL_Rifleman_TRG)
+	};
+	
 	class SFPD_REBEL_static_AA: I_Tura_ZU23_lxWS {
 		SFPD_VEHICLES_CFG(SFPD_REBEL_Faction,SFPD_REBEL_Rifleman_TRG)
 	};
