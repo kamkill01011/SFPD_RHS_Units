@@ -18,6 +18,21 @@
 		SFPD_LDF_Transport
 	};
 	
+	class SFPD_LDF_Pickup: I_E_Pickup_rf {
+		SFPD_VEHICLES_CFG(SFPD_LDF_Faction,SFPD_LDF_Rifleman)
+		SFPD_LDF_Transport
+	};
+	
+	class SFPD_LDF_Pickup_Comms: I_E_Pickup_Comms_rf {
+		SFPD_VEHICLES_CFG(SFPD_LDF_Faction,SFPD_LDF_Rifleman)
+		SFPD_LDF_Transport
+	};
+	
+	class SFPD_LDF_Pickup_Covered: I_E_Pickup_Covered_rf {
+		SFPD_VEHICLES_CFG(SFPD_LDF_Faction,SFPD_LDF_Rifleman)
+		SFPD_LDF_Transport
+	};
+	
 	class SFPD_LDF_Van_MP: I_E_Van_02_transport_MP_F {
 		SFPD_VEHICLES_CFG(SFPD_LDF_Faction,SFPD_LDF_Assaulter)
 		SFPD_LDF_Transport
@@ -44,6 +59,16 @@
 	};
 	
 	class SFPD_LDF_Kamaz_MLRS: I_E_Truck_02_MRL_F {
+		SFPD_VEHICLES_CFG(SFPD_LDF_Faction,SFPD_LDF_Rifleman)
+		SFPD_LDF_Transport
+	};
+	
+	class SFPD_LDF_Kamaz_cargo: I_E_Truck_02_cargo_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_LDF_Faction,SFPD_LDF_Rifleman)
+		SFPD_LDF_Transport
+	};
+	
+	class SFPD_LDF_Kamaz_flatbed: I_E_Truck_02_flatbed_lxWS {
 		SFPD_VEHICLES_CFG(SFPD_LDF_Faction,SFPD_LDF_Rifleman)
 		SFPD_LDF_Transport
 	};
@@ -79,6 +104,26 @@
 	};
 	
 	class SFPD_LDF_Wildcat_Armed: I_E_Heli_light_03_dynamicLoadout_F {
+		SFPD_VEHICLES_CFG(SFPD_LDF_Faction,SFPD_LDF_HelicopterPilot)
+		SFPD_VEHICLES_EMPTY_CARGO
+	};
+	
+	class SFPD_LDF_ah_11f: I_E_Heli_light_03_dynamicLoadout_RF {
+		SFPD_VEHICLES_CFG(SFPD_LDF_Faction,SFPD_LDF_HelicopterPilot)
+		SFPD_VEHICLES_EMPTY_CARGO
+	};
+	
+	class SFPD_LDF_ah_11f_unarmed: I_E_Heli_light_03_unarmed_RF {
+		SFPD_VEHICLES_CFG(SFPD_LDF_Faction,SFPD_LDF_HelicopterPilot)
+		SFPD_VEHICLES_EMPTY_CARGO
+	};
+	
+	class SFPD_LDF_rai_360m_unarmed: I_E_Heli_EC_01A_military_RF {
+		SFPD_VEHICLES_CFG(SFPD_LDF_Faction,SFPD_LDF_HelicopterPilot)
+		SFPD_VEHICLES_EMPTY_CARGO
+	};
+	
+	class SFPD_LDF_rai_360m: I_E_EC_02_RF {
 		SFPD_VEHICLES_CFG(SFPD_LDF_Faction,SFPD_LDF_HelicopterPilot)
 		SFPD_VEHICLES_EMPTY_CARGO
 	};

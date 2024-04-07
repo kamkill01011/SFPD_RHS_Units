@@ -4,12 +4,37 @@
 		SFPD_OPFOR_DESERT_Transport
 	};
 	
+	class SFPD_OPFOR_DESERT_Stalker_iskatel: O_APC_Tracked_02_30mm_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_DESERT_TankCrew)
+		SFPD_OPFOR_DESERT_Transport
+	};
+	
 	class SFPD_OPFOR_DESERT_ARMA: O_APC_Wheeled_02_rcws_v2_F {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_DESERT_TankCrew)
 		SFPD_OPFOR_DESERT_Transport
 	};
 	
+	class SFPD_OPFOR_DESERT_ARMA_hmg: O_APC_Wheeled_02_hmg_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_DESERT_TankCrew)
+		SFPD_OPFOR_DESERT_Transport
+	};
+	
+	class SFPD_OPFOR_DESERT_ARMA_unarmed: O_APC_Wheeled_02_unarmed_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_DESERT_TankCrew)
+		SFPD_OPFOR_DESERT_Transport
+	};
+	
 	class SFPD_OPFOR_DESERT_Ifrit: O_MRAP_02_F {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_DESERT_Rifleman)
+		SFPD_OPFOR_DESERT_Transport
+	};
+	
+	class SFPD_OPFOR_DESERT_Pickup: O_Pickup_rf {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_DESERT_Rifleman)
+		SFPD_OPFOR_DESERT_Transport
+	};
+	
+	class SFPD_OPFOR_DESERT_Pickup_Comms: O_Pickup_Comms_rf {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_DESERT_Rifleman)
 		SFPD_OPFOR_DESERT_Transport
 	};
@@ -50,6 +75,16 @@
 	};
 	
 	class SFPD_OPFOR_DESERT_Typhoon_Device: O_Truck_03_device_F {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_DESERT_Rifleman)
+		SFPD_OPFOR_DESERT_Transport
+	};
+	
+	class SFPD_OPFOR_DESERT_Typhoon_cargo: O_Truck_02_cargo_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_DESERT_Rifleman)
+		SFPD_OPFOR_DESERT_Transport
+	};
+	
+	class SFPD_OPFOR_DESERT_Typhoon_flatbed: O_Truck_02_flatbed_lxWS {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_DESERT_Rifleman)
 		SFPD_OPFOR_DESERT_Transport
 	};
@@ -266,6 +301,11 @@
 		SFPD_OPFOR_DESERT_Transport
 	};
 	
+	class SFPD_OPFOR_DESERT_T100_railgun: O_MBT_02_railgun_F {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_DESERT_TankCrew)
+		SFPD_OPFOR_DESERT_Transport
+	};
+	
 	class SFPD_OPFOR_DESERT_Xian_inf: O_T_VTOL_02_infantry_dynamicLoadout_F {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_DESERT_Faction,SFPD_OPFOR_PlanePilot)
 		SFPD_VEHICLES_EMPTY_CARGO
@@ -296,12 +336,37 @@
 		SFPD_OPFOR_WOODLAND_Transport
 	};
 	
+	class SFPD_OPFOR_WOODLAND_Stalker_iskatel: O_T_APC_Tracked_02_30mm_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_WOODLAND_Faction,SFPD_OPFOR_WOODLAND_TankCrew)
+		SFPD_OPFOR_WOODLAND_Transport
+	};
+	
 	class SFPD_OPFOR_WOODLAND_ARMA: O_T_APC_Wheeled_02_rcws_v2_ghex_F {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_WOODLAND_Faction,SFPD_OPFOR_WOODLAND_TankCrew)
 		SFPD_OPFOR_WOODLAND_Transport
 	};
 	
+	class SFPD_OPFOR_WOODLAND_ARMA_hmg: O_APC_Wheeled_02_hmg_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_WOODLAND_Faction,SFPD_OPFOR_WOODLAND_TankCrew)
+		SFPD_OPFOR_WOODLAND_Transport
+	};
+	
+	class SFPD_OPFOR_WOODLAND_ARMA_unarmed: O_APC_Wheeled_02_unarmed_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_WOODLAND_Faction,SFPD_OPFOR_WOODLAND_TankCrew)
+		SFPD_OPFOR_WOODLAND_Transport
+	};
+	
 	class SFPD_OPFOR_WOODLAND_Ifrit: O_T_MRAP_02_ghex_F {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_WOODLAND_Faction,SFPD_OPFOR_WOODLAND_Rifleman)
+		SFPD_OPFOR_WOODLAND_Transport
+	};
+	
+	class SFPD_OPFOR_WOODLAND_Pickup: O_T_Pickup_rf {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_WOODLAND_Faction,SFPD_OPFOR_WOODLAND_Rifleman)
+		SFPD_OPFOR_WOODLAND_Transport
+	};
+	
+	class SFPD_OPFOR_WOODLAND_Pickup_Comms: O_T_Pickup_Comms_rf {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_WOODLAND_Faction,SFPD_OPFOR_WOODLAND_Rifleman)
 		SFPD_OPFOR_WOODLAND_Transport
 	};
@@ -342,6 +407,16 @@
 	};
 	
 	class SFPD_OPFOR_WOODLAND_Typhoon_Device: O_T_Truck_03_device_ghex_F {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_WOODLAND_Faction,SFPD_OPFOR_WOODLAND_Rifleman)
+		SFPD_OPFOR_WOODLAND_Transport
+	};
+	
+	class SFPD_OPFOR_WOODLAND_Typhoon_cargo: O_T_Truck_02_cargo_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_WOODLAND_Faction,SFPD_OPFOR_WOODLAND_Rifleman)
+		SFPD_OPFOR_WOODLAND_Transport
+	};
+	
+	class SFPD_OPFOR_WOODLAND_Typhoon_flatbed: O_T_Truck_02_flatbed_lxWS {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_WOODLAND_Faction,SFPD_OPFOR_WOODLAND_Rifleman)
 		SFPD_OPFOR_WOODLAND_Transport
 	};
@@ -611,6 +686,11 @@
 		SFPD_OPFOR_WOODLAND_Transport
 	};
 	
+	class SFPD_OPFOR_WOODLAND_T100_railgun: O_T_MBT_02_railgun_ghex_F {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_WOODLAND_Faction,SFPD_OPFOR_WOODLAND_TankCrew)
+		SFPD_OPFOR_WOODLAND_Transport
+	};
+	
 	class SFPD_OPFOR_WOODLAND_T140: O_T_MBT_04_cannon_F {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_WOODLAND_Faction,SFPD_OPFOR_WOODLAND_TankCrew)
 		SFPD_OPFOR_WOODLAND_Transport
@@ -637,12 +717,37 @@
 		SFPD_OPFOR_JUNGLE_Transport
 	};
 	
+	class SFPD_OPFOR_JUNGLE_Stalker_iskatel: O_T_APC_Tracked_02_30mm_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_JUNGLE_Faction,SFPD_OPFOR_JUNGLE_TankCrew)
+		SFPD_OPFOR_JUNGLE_Transport
+	};
+	
 	class SFPD_OPFOR_JUNGLE_ARMA: O_T_APC_Wheeled_02_rcws_v2_ghex_F {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_JUNGLE_Faction,SFPD_OPFOR_JUNGLE_TankCrew)
 		SFPD_OPFOR_JUNGLE_Transport
 	};
 	
+	class SFPD_OPFOR_JUNGLE_ARMA_hmg: O_T_APC_Wheeled_02_hmg_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_JUNGLE_Faction,SFPD_OPFOR_JUNGLE_TankCrew)
+		SFPD_OPFOR_JUNGLE_Transport
+	};
+	
+	class SFPD_OPFOR_JUNGLE_ARMA_unarmed: O_T_APC_Wheeled_02_unarmed_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_JUNGLE_Faction,SFPD_OPFOR_JUNGLE_TankCrew)
+		SFPD_OPFOR_JUNGLE_Transport
+	};
+	
 	class SFPD_OPFOR_JUNGLE_Ifrit: O_T_MRAP_02_ghex_F {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_JUNGLE_Faction,SFPD_OPFOR_JUNGLE_Rifleman)
+		SFPD_OPFOR_JUNGLE_Transport
+	};
+	
+	class SFPD_OPFOR_JUNGLE_Pickup: O_T_Pickup_rf {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_JUNGLE_Faction,SFPD_OPFOR_JUNGLE_Rifleman)
+		SFPD_OPFOR_JUNGLE_Transport
+	};
+	
+	class SFPD_OPFOR_JUNGLE_Pickup_Comms: O_T_Pickup_Comms_rf {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_JUNGLE_Faction,SFPD_OPFOR_JUNGLE_Rifleman)
 		SFPD_OPFOR_JUNGLE_Transport
 	};
@@ -683,6 +788,16 @@
 	};
 	
 	class SFPD_OPFOR_JUNGLE_Typhoon_Device: O_T_Truck_03_device_ghex_F {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_JUNGLE_Faction,SFPD_OPFOR_JUNGLE_Rifleman)
+		SFPD_OPFOR_JUNGLE_Transport
+	};
+	
+	class SFPD_OPFOR_JUNGLE_Typhoon_cargo: O_T_Truck_02_cargo_lxWS {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_JUNGLE_Faction,SFPD_OPFOR_JUNGLE_Rifleman)
+		SFPD_OPFOR_JUNGLE_Transport
+	};
+	
+	class SFPD_OPFOR_JUNGLE_Typhoon_flatbed: O_T_Truck_02_flatbed_lxWS {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_JUNGLE_Faction,SFPD_OPFOR_JUNGLE_Rifleman)
 		SFPD_OPFOR_JUNGLE_Transport
 	};
@@ -953,6 +1068,11 @@
 	};
 	
 	class SFPD_OPFOR_JUNGLE_T100: O_T_MBT_02_cannon_ghex_F {
+		SFPD_VEHICLES_CFG(SFPD_OPFOR_JUNGLE_Faction,SFPD_OPFOR_JUNGLE_TankCrew)
+		SFPD_OPFOR_JUNGLE_Transport
+	};
+	
+	class SFPD_OPFOR_JUNGLE_T100_railgun: O_T_MBT_02_railgun_ghex_F {
 		SFPD_VEHICLES_CFG(SFPD_OPFOR_JUNGLE_Faction,SFPD_OPFOR_JUNGLE_TankCrew)
 		SFPD_OPFOR_JUNGLE_Transport
 	};
