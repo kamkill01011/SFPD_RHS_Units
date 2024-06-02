@@ -25,7 +25,7 @@ _u = (_this # 1);[[_u], {params ["_u"];_u setUnitLoadout "SFPD_OPFOR_Diver";}] r
 /////////////// set faction
 _u = (_this # 1);_type = (typeOf _u);_faction = getText (configFile >> "CfgVehicles" >> _type >> "faction");_prefix = _faction select [0, (count _faction) - 8];copyToClipboard _prefix;
 
-_newFactionPrefix = "SFPD_BLUFOR_DESERT";
+_newFactionPrefix = "SFPD_RHS_FR_WOODLAND";
 _unit = _this # 1;
 _type = (typeOf _unit);
 _faction = getText (configFile >> "CfgVehicles" >> _type >> "faction");
