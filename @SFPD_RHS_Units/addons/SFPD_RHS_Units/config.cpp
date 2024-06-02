@@ -7562,6 +7562,46 @@ class cfgWeapons {
 		};
 	};
 	
+	class OFrP_Vest_SMB_TL_Base;
+	class OFrP_Vest_SMB_Teamleader_Kaki: OFrP_Vest_SMB_TL_Base {
+		class ItemInfo {
+			_generalMacro = "VestItem";
+			author = "Bohemia Interactive";
+			containerClass = "Supply160";
+			hiddenSelections[] = {"camo","ofrp_smb_poche","ofrp_smb_poche1","ofrp_smb_poche2","ofrp_smb_poche3","ofrp_smb_poche4"};
+			hiddenSelectionsTextures[] = {"\ofrp_a3_characters\vests\smb\data\OFrP_SMB_Kaki_co.paa","\ofrp_a3_characters\vests\smb\data\OFrP_SMB_poche_Kaki_co.paa","\ofrp_a3_characters\vests\smb\data\OFrP_SMB_poche1_Kaki_co.paa","\ofrp_a3_characters\vests\smb\data\OFrP_SMB_poche2_Kaki_co.paa","\ofrp_a3_characters\vests\smb\data\OFrP_SMB_poche3_Kaki_co.paa","\ofrp_a3_characters\vests\smb\data\OFrP_SMB_poche4_Kaki_co.paa"};
+			mass = 160;
+			overlaySelectionsInfo[] = {"Ghillie_hide"};
+			scope = 0;
+			showHolsteredPistol = 0;
+			type = 701;
+			uniformModel = "\ofrp_a3_characters\vests\smb\OFrP_Vest_SMB_Teamleader.p3d";
+			uniformType = "Default";
+			class HitpointsProtectionInfo {
+				class Chest {
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Diaphragm {
+					HitpointName = "HitDiaphragm";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Abdomen {
+					hitpointName = "HitAbdomen";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Body {
+					hitpointName = "HitBody";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+			};
+		};
+	};
+	
 	
 	//Uniforms
     class UniformItem; 
