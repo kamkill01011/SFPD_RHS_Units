@@ -24,6 +24,15 @@
         };
     };
 	
+	class SFPD_RHS_HK417_Default_FR: arifle_SPAR_03_blk_F {
+        scope = 2;
+        class LinkedItems {
+			SFPD_WEAPON_OPTIC_CFG(optic_AMS)
+			SFPD_WEAPON_ACC_CFG(rhsusf_acc_M952V)
+			SFPD_WEAPON_UNDER_CFG(bipod_01_F_blk)
+        };
+    };
+	
 	class SFPD_RHS_M240_Default_FR: rhs_weap_m240B {
         scope = 2;
         class LinkedItems {

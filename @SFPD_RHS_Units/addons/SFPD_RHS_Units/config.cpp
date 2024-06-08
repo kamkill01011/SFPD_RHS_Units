@@ -7131,6 +7131,7 @@ class cfgWeapons {
 	class arifle_SPAR_01_GL_khk_F;
 	class arifle_SPAR_02_khk_F;
 	class arifle_SPAR_03_khk_F;
+	class arifle_SPAR_03_blk_F;
 	class srifle_DMR_02_camo_F;
 	class SMG_03C_TR_black;
 	class srifle_LRR_tna_F;

@@ -3,7 +3,7 @@
         displayname = "[SFPD RHS] FR Ammo";
         scope = 2;
 		class TransportMagazines {
-			SFPD_SUPPLY_AMMO(rhs_mag_30Rnd_556x45_M855A1_PMAG,SFPD_RHS_rhsusf_200rnd_556x45_tracer_box,5,rhsusf_mag_17Rnd_9x19_JHP,rhsusf_20Rnd_762x51_SR25_m118_special_Mag,rhsusf_5Rnd_300winmag_xm2010)
+			SFPD_SUPPLY_AMMO(rhs_mag_30Rnd_556x45_M855A1_PMAG,SFPD_RHS_rhsusf_200rnd_556x45_tracer_box,5,rhsusf_mag_17Rnd_9x19_JHP,20Rnd_762x51_Mag,rhsusf_5Rnd_300winmag_xm2010)
         };
 		class TransportWeapons {};
 		class TransportItems {};
