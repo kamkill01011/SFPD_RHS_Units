@@ -73,6 +73,21 @@ _trenches = nearestObjects [_center, ["Land_fort_rampart","Land_fort_rampart_EP1
 	_posATL set [2,-0.1];
 	_x setPosATL _posATL;
 } forEach _trenches;
+////////// destroy wild fire //////////
+if (!isServer) exitwith {};
+[] spawn {
+	while {true} do {
+		sleep 5;
+		{
+			_shower = _x;
+			_FireIntensity = (_x getVariable ["lxRF_FireIntensity", 1]);
+			if (_FireIntensity <= 0) then {
+				deleteVehicle _x;
+				deleteVehicle (_x setVariable ["lxRF_curatorModuleWildfire_wildfire", objNull]);
+			};
+		} forEach entities "Module_WildFire_RF";
+	};
+};
 ////////// bomb //////////
 [_this # 0,_timer,_infoDevices,_dummyDevices,_fakeDevices,_timeTofind,_chanceTofind] execVM "bomb.sqf";
 [_this # 0,50,["Land_Laptop_unfolded_F"],["Land_Laptop_02_unfolded_F"],["Land_Laptop_device_F"],5,0.5] execVM "bomb.sqf";
