@@ -23,7 +23,7 @@ private _isSpectating = _unit getVariable ["TFAR_forceSpectator",false];
 private _isolated_and_inside = false; //_isInVehicle && {_unit call TFAR_fnc_vehicleIsIsolatedAndInside};
 private _vehicle = "no"; //if (_isInVehicle) then {_unit call TFAR_fnc_vehicleId} else {"no"};
 private _isInVehicle = !isNull (objectParent _unit);
-if ((_isInVehicle || {!isNil {_unit getVariable "TFAR_vehicleIDOverride"}}) && !_isSpectating) then { // _isInVehicle
+if ((_isInVehicle || {!(_unit isNil "TFAR_vehicleIDOverride")}) && !_isSpectating) then { // _isInVehicle
     _vehicle = _unit call TFAR_fnc_vehicleId;
 
     if (_isInVehicle) then {
@@ -32,7 +32,7 @@ if ((_isInVehicle || {!isNil {_unit getVariable "TFAR_vehicleIDOverride"}}) && !
 };
 
 private _eyeDepth = _pos select 2;//Inlined version of TFAR_fnc_eyeDepth to save performance
-private _can_speak = (_eyeDepth > 0 || _isolated_and_inside); //Inlined version of TFAR_fnc_canSpeak to save performance
+private _can_speak = (_eyeDepth > 0 || _isolated_and_inside) && (alive _unit || _isSpectating); //Inlined version of TFAR_fnc_canSpeak to save performance
 private _isRemotePlayer = !(_unit isEqualTo TFAR_currentUnit);
 private _useSw = true;
 private _useLr = true;
@@ -105,12 +105,12 @@ if (_jamming > 0) then {
 
 
 private _data = [
-    "POS	%1	%2	%3	%4	%5	%6	%7	%8	%9	%10	%11	%12	%13",
+    "POS	%1	%2	%3	%4	%5	%6	%7	%8	%9	%10	%11	%12	%13~",
     _unitName,
     _pos, _curViewDir,//Position
     _can_speak, _useSw, _useLr, _useDd, _vehicle,
     _terrainInterception,
-    _unit getVariable ["tf_voiceVolume", 1.0],//Externally used API variable. Don't change name
+    if (_isSpectating) then { 1 } else { _unit getVariable ["tf_voiceVolume", 1.0] }, //Externally used API variable. Don't change name
     _object_interception, //Interceptions
     _isSpectating, _isEnemy
     ];
