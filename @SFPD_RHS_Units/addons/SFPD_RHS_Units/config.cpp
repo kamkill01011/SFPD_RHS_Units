@@ -888,6 +888,10 @@ class CfgPatches {
 			"SFPD_BLUFOR_DESERT_B_Heli_Transport_01_pylons_F",
 			"SFPD_BLUFOR_DESERT_EF_B_AH99J_NATO",
 			"SFPD_BLUFOR_DESERT_B_Heli_Attack_01_pylons_dynamicLoadout_F",
+			"SFPD_BLUFOR_DESERT_EF_B_AAV9_MJTF_Des",
+			"SFPD_BLUFOR_DESERT_EF_B_AAV9_50mm_MJTF_Des",
+			"SFPD_BLUFOR_DESERT_EF_B_LCC_MJTF_Des",
+			"SFPD_BLUFOR_DESERT_EF_B_LCC_SideLoad_MJTF_Des",
 			"SFPD_BLUFOR_WOODLAND_Prowler_U",
 			"SFPD_BLUFOR_WOODLAND_Prowler_A",
 			"SFPD_BLUFOR_WOODLAND_Hunter",
@@ -941,6 +945,10 @@ class CfgPatches {
 			"SFPD_BLUFOR_WOODLAND_B_Heli_Transport_01_pylons_F",
 			"SFPD_BLUFOR_WOODLAND_EF_B_AH99J_NATO",
 			"SFPD_BLUFOR_WOODLAND_B_Heli_Attack_01_pylons_dynamicLoadout_F",
+			"SFPD_BLUFOR_WOODLAND_EF_B_AAV9_MJTF_Wdl",
+			"SFPD_BLUFOR_WOODLAND_EF_B_AAV9_50mm_MJTF_Wdl",
+			"SFPD_BLUFOR_WOODLAND_EF_B_LCC_MJTF_Des",
+			"SFPD_BLUFOR_WOODLAND_EF_B_LCC_SideLoad_MJTF_Des",
 			"SFPD_BLUFOR_JUNGLE_Prowler_U",
 			"SFPD_BLUFOR_JUNGLE_Prowler_A",
 			"SFPD_BLUFOR_JUNGLE_Hunter",
@@ -994,6 +1002,10 @@ class CfgPatches {
 			"SFPD_BLUFOR_JUNGLE_B_Heli_Transport_01_pylons_F",
 			"SFPD_BLUFOR_JUNGLE_EF_B_AH99J_NATO",
 			"SFPD_BLUFOR_JUNGLE_B_Heli_Attack_01_pylons_dynamicLoadout_F",
+			"SFPD_BLUFOR_JUNGLE_EF_B_AAV9_MJTF_Wdl",
+			"SFPD_BLUFOR_JUNGLE_EF_B_AAV9_50mm_MJTF_Wdl",
+			"SFPD_BLUFOR_JUNGLE_EF_B_LCC_MJTF_Des",
+			"SFPD_BLUFOR_JUNGLE_EF_B_LCC_SideLoad_MJTF_Des",
 			"SFPD_BLUFOR_SDV",
 			"SFPD_OPFOR_DESERT_Stalker",
 			"SFPD_OPFOR_DESERT_ARMA",
@@ -2736,6 +2748,13 @@ class CfgVehicles {
 	class EF_B_MRAP_01_AT_NATO_T;
 	class EF_B_MRAP_01_LAAD_NATO_T;
 	class B_T_Truck_01_FFT_rf;
+	
+	class EF_B_AAV9_MJTF_Des;
+	class EF_B_AAV9_50mm_MJTF_Des;
+	class EF_B_LCC_MJTF_Des;
+	class EF_B_LCC_SideLoad_MJTF_Des;
+	class EF_B_AAV9_MJTF_Wdl;
+	class EF_B_AAV9_50mm_MJTF_Wdl;
 	
 	//RHS
 	class rhssaf_m1151_olive;
