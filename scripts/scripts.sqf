@@ -25,7 +25,7 @@ _u = (_this # 1);[[_u], {params ["_u"];_u setUnitLoadout "SFPD_OPFOR_Diver";}] r
 /////////////// set faction
 _u = (_this # 1);_type = (typeOf _u);_faction = getText (configFile >> "CfgVehicles" >> _type >> "faction");_prefix = _faction select [0, (count _faction) - 8];copyToClipboard _prefix;
 
-_newFactionPrefix = "SFPD_BLUFOR_DESERT";
+_newFactionPrefix = "SFPD_RHS_FR_WOODLAND";
 _unit = _this # 1;
 _type = (typeOf _unit);
 _faction = getText (configFile >> "CfgVehicles" >> _type >> "faction");
@@ -46,6 +46,29 @@ _l = allUnits select {(_x distanceSqr _p) < _rs};
 		_u reveal [_x, 4];
 	} forEach allPlayers;
 } forEach _l;
+////////// remove artillery mags //////////
+_mags = (magazines (_this # 1)) select {["_LG", _x, true] call BIS_fnc_inString || {["_guided", _x] call BIS_fnc_inString || {["_cluster", _x] call BIS_fnc_inString || {["_mine", _x] call BIS_fnc_inString}}}};
+{ (_this # 1) removeMagazineGlobal _x } forEach _mags;
+////////// Spawn Amphibious Warfare Ship [LPD 36] //////////
+_direction = 0;
+_pos = (ASLToATL (screenToWorld [0.5,0.5]));
+_obj = createVehicle ["Land_EF_LPD_base",  _pos, [], 0, "CAN_COLLIDE"];
+{
+	(_x # 0) attachTo [_obj];
+} forEach (_obj getVariable ["bis_carrierParts", []]);
+_obj setVectorDirAndUp [[sin _direction, cos _direction, 0], [0, 0, 1]];
+[_obj] call zen_common_fnc_updateEditableObjects;
+_obj addEventHandler ["Deleted", {
+	params ["_destroyer"];
+	{
+		_x params ["_part"];
+		deleteVehicle _part;
+	} forEach (_destroyer getVariable ["bis_carrierParts", []]);
+}];
+/////
+{
+	detach (_x # 0);
+} forEach ((_this # 1) getVariable ["bis_carrierParts", []]);
 ////////// transfer group //////////
 _g = group (_this # 1);
 {
@@ -70,6 +93,21 @@ _trenches = nearestObjects [_center, ["Land_fort_rampart","Land_fort_rampart_EP1
 	_posATL set [2,-0.1];
 	_x setPosATL _posATL;
 } forEach _trenches;
+////////// destroy wild fire //////////
+if (!isServer) exitwith {};
+[] spawn {
+	while {true} do {
+		sleep 5;
+		{
+			_shower = _x;
+			_FireIntensity = (_x getVariable ["lxRF_FireIntensity", 1]);
+			if (_FireIntensity <= 0) then {
+				deleteVehicle _x;
+				deleteVehicle (_x setVariable ["lxRF_curatorModuleWildfire_wildfire", objNull]);
+			};
+		} forEach entities "Module_WildFire_RF";
+	};
+};
 ////////// bomb //////////
 [_this # 0,_timer,_infoDevices,_dummyDevices,_fakeDevices,_timeTofind,_chanceTofind] execVM "bomb.sqf";
 [_this # 0,50,["Land_Laptop_unfolded_F"],["Land_Laptop_02_unfolded_F"],["Land_Laptop_device_F"],5,0.5] execVM "bomb.sqf";

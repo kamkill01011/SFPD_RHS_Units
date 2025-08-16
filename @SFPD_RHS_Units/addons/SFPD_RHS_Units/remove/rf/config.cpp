@@ -52,7 +52,13 @@ class CfgVehicles {
 	class Wall_F;
 	class B_soldier_UAV_F;
 	class B_support_AMort_F;
+	class B_ION_soldier_LAT2_lxWS;
 	class B_soldier_LAT2_F;
+	class B_UN_soldier_LAT2_lxWS;
+	class Pickup_01_rcws_base_rf;
+	class C_Truck_01_FFT_rf;
+	class I_Tura_Pickup_01_hmg_rf;
+	class I_Tura_Pickup_01_Rocket_rf;
 	class B_Soldier_GL_F;
 	class B_Soldier_F;
 	class B_Soldier_SL_F;
@@ -92,6 +98,11 @@ class CfgVehicles {
 	class Heli_EC_01A_military_base_RF;
 	class Heli_light_03_unarmed_base_F;
 	class Heli_light_03_dynamicLoadout_base_F;
+	class O_Truck_03_transport_F;
+	class I_Soldier_LAT2_F;
+	class I_E_Soldier_LAT_F;
+	class Pickup_01_hmg_base_rf;
+	class B_D_CTRG_Soldier_LAT2_lxWS;
 	REMOVE_ZEUS(Slingload_MortarContainer_Base_RF,ThingX)
 	REMOVE_ZEUS(Slingload_MortarContainerLid_Base_RF,Slingload_MortarContainer_Base_RF)
 	REMOVE_ZEUS(Slingload_MortarContainerLid_Tan_RF,Slingload_MortarContainerLid_Base_RF)
@@ -102,19 +113,6 @@ class CfgVehicles {
 	REMOVE_ZEUS(Slingload_MortarContainer_Olive_RF,Slingload_MortarContainer_Base_RF)
 	REMOVE_ZEUS(Slingload_MortarContainer_nato_RF,Slingload_MortarContainer_Base_RF)
 	REMOVE_ZEUS(Slingload_MortarContainer_AAF_RF,Slingload_MortarContainer_Base_RF)
-	REMOVE_ZEUS(B_Slingload_01_Repair_F,Slingload_01_Base_F)
-	REMOVE_ZEUS(B_Slingload_01_Medevac_F,Slingload_01_Base_F)
-	REMOVE_ZEUS(B_Slingload_01_Fuel_F,Slingload_01_Base_F)
-	REMOVE_ZEUS(B_Slingload_01_Cargo_F,Slingload_01_Base_F)
-	REMOVE_ZEUS(B_Slingload_01_Ammo_F,Slingload_01_Base_F)
-	REMOVE_ZEUS(Land_Pod_Heli_Transport_04_repair_F,Pod_Heli_Transport_04_base_F)
-	REMOVE_ZEUS(Land_Pod_Heli_Transport_04_repair_black_F,Land_Pod_Heli_Transport_04_repair_F)
-	REMOVE_ZEUS(Land_Pod_Heli_Transport_04_fuel_F,Pod_Heli_Transport_04_base_F)
-	REMOVE_ZEUS(Land_Pod_Heli_Transport_04_fuel_black_F,Land_Pod_Heli_Transport_04_fuel_F)
-	REMOVE_ZEUS(Land_Pod_Heli_Transport_04_box_F,Pod_Heli_Transport_04_base_F)
-	REMOVE_ZEUS(Land_Pod_Heli_Transport_04_box_black_F,Land_Pod_Heli_Transport_04_box_F)
-	REMOVE_ZEUS(Land_Pod_Heli_Transport_04_ammo_F,Pod_Heli_Transport_04_base_F)
-	REMOVE_ZEUS(Land_Pod_Heli_Transport_04_ammo_black_F,Land_Pod_Heli_Transport_04_ammo_F)
 	REMOVE_ZEUS(Weapon_launch_launch_B_Titan_short_F,Launcher_Base_F)
 	REMOVE_ZEUS(Weapon_launch_O_Titan_short_F,Weapon_launch_launch_B_Titan_short_F)
 	REMOVE_ZEUS(Weapon_launch_I_Titan_short_F,Weapon_launch_launch_B_Titan_short_F)
@@ -179,12 +177,6 @@ class CfgVehicles {
 	REMOVE_ZEUS(O_QRF_medic_RF,O_medic_F)
 	REMOVE_ZEUS(C_Soldier_VR_F,C_man_1)
 	REMOVE_ZEUS(I_E_CommandoMortar_RF,I_CommandoMortar_RF)
-	REMOVE_ZEUS(Land_Pod_Heli_Transport_04_medevac_F,Pod_Heli_Transport_04_crewed_base_F)
-	REMOVE_ZEUS(Land_Pod_Heli_Transport_04_medevac_black_F,Land_Pod_Heli_Transport_04_medevac_F)
-	REMOVE_ZEUS(Land_Pod_Heli_Transport_04_covered_F,Pod_Heli_Transport_04_crewed_base_F)
-	REMOVE_ZEUS(Land_Pod_Heli_Transport_04_covered_black_F,Land_Pod_Heli_Transport_04_covered_F)
-	REMOVE_ZEUS(Land_Pod_Heli_Transport_04_bench_F,Pod_Heli_Transport_04_crewed_base_F)
-	REMOVE_ZEUS(Land_Pod_Heli_Transport_04_bench_black_F,Land_Pod_Heli_Transport_04_bench_F)
 	REMOVE_ZEUS(I_E_Pickup_Covered_rf,Pickup_covered_base_rf)
 	REMOVE_ZEUS(O_Pickup_Comms_rf,Pickup_comms_base_rf)
 	REMOVE_ZEUS(O_T_Pickup_Comms_rf,O_Pickup_Comms_rf)
@@ -237,4 +229,24 @@ class CfgVehicles {
 	REMOVE_ZEUS(B_Heli_light_03_dynamicLoadout_RF,Heli_light_03_dynamicLoadout_base_F)
 	REMOVE_ZEUS(I_Heli_light_03_dynamicLoadout_RF,B_Heli_light_03_dynamicLoadout_RF)
 	REMOVE_ZEUS(I_E_Heli_light_03_dynamicLoadout_RF,I_Heli_light_03_dynamicLoadout_RF)
+	REMOVE_ZEUS(B_ION_soldier_LAT_RF,B_ION_soldier_LAT2_lxWS)
+	REMOVE_ZEUS(B_QRF_soldier_LAT_RF,B_soldier_LAT2_F)
+	REMOVE_ZEUS(B_UN_soldier_LAT_rf,B_UN_soldier_LAT2_lxWS)
+	REMOVE_ZEUS(B_ION_Pickup_rcws_rf,Pickup_01_rcws_base_rf)
+	REMOVE_ZEUS(B_Truck_01_FFT_rf,C_Truck_01_FFT_rf)
+	REMOVE_ZEUS(B_T_Truck_01_FFT_rf,C_Truck_01_FFT_rf)
+	REMOVE_ZEUS(B_Tura_Pickup_01_hmg_RF,I_Tura_Pickup_01_hmg_rf)
+	REMOVE_ZEUS(B_Tura_Pickup_01_Rocket_rf,I_Tura_Pickup_01_Rocket_rf)
+	REMOVE_ZEUS(O_Pickup_rcws_rf,Pickup_01_rcws_base_rf)
+	REMOVE_ZEUS(O_Truck_03_cargo_RF,O_Truck_03_transport_F)
+	REMOVE_ZEUS(O_T_Pickup_rcws_rf,O_Pickup_rcws_rf)
+	REMOVE_ZEUS(O_T_Truck_03_cargo_RF,O_Truck_03_cargo_RF)
+	REMOVE_ZEUS(O_Tura_Pickup_01_hmg_RF,I_Tura_Pickup_01_hmg_rf)
+	REMOVE_ZEUS(O_Tura_Pickup_01_Rocket_rf,I_Tura_Pickup_01_Rocket_rf)
+	REMOVE_ZEUS(I_Soldier_LAT_RF,I_Soldier_LAT2_F)
+	REMOVE_ZEUS(I_E_Soldier_LAT_RF,I_E_Soldier_LAT_F)
+	REMOVE_ZEUS(I_Pickup_hmg_rf,Pickup_01_hmg_base_rf)
+	REMOVE_ZEUS(I_Pickup_rcws_rf,Pickup_01_rcws_base_rf)
+	REMOVE_ZEUS(I_E_Pickup_aat_rf,Pickup_01_aat_base_rf)
+	REMOVE_ZEUS(B_D_CTRG_Soldier_LAT_RF,B_D_CTRG_Soldier_LAT2_lxWS)
 };

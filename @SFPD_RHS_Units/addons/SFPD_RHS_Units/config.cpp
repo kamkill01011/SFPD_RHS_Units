@@ -878,6 +878,20 @@ class CfgPatches {
 			"SFPD_BLUFOR_DESERT_ah11f_unarmed",
 			"SFPD_BLUFOR_DESERT_mh_245",
 			"SFPD_BLUFOR_DESERT_mh_245_unarmed",
+			"SFPD_BLUFOR_DESERT_EF_B_MRAP_01_FSV_NATO",
+			"SFPD_BLUFOR_DESERT_EF_B_MRAP_01_AT_NATO",
+			"SFPD_BLUFOR_DESERT_EF_B_MRAP_01_LAAD_NATO",
+			"SFPD_BLUFOR_DESERT_B_Truck_01_FFT_rf",
+			"SFPD_BLUFOR_DESERT_EF_B_CombatBoat_Unarmed_NATO",
+			"SFPD_BLUFOR_DESERT_EF_B_CombatBoat_HMG_NATO",
+			"SFPD_BLUFOR_DESERT_EF_B_CombatBoat_AT_NATO",
+			"SFPD_BLUFOR_DESERT_B_Heli_Transport_01_pylons_F",
+			"SFPD_BLUFOR_DESERT_EF_B_AH99J_NATO",
+			"SFPD_BLUFOR_DESERT_B_Heli_Attack_01_pylons_dynamicLoadout_F",
+			"SFPD_BLUFOR_DESERT_EF_B_AAV9_MJTF_Des",
+			"SFPD_BLUFOR_DESERT_EF_B_AAV9_50mm_MJTF_Des",
+			"SFPD_BLUFOR_DESERT_EF_B_LCC_MJTF_Des",
+			"SFPD_BLUFOR_DESERT_EF_B_LCC_SideLoad_MJTF_Des",
 			"SFPD_BLUFOR_WOODLAND_Prowler_U",
 			"SFPD_BLUFOR_WOODLAND_Prowler_A",
 			"SFPD_BLUFOR_WOODLAND_Hunter",
@@ -921,6 +935,20 @@ class CfgPatches {
 			"SFPD_BLUFOR_WOODLAND_Pickup",
 			"SFPD_BLUFOR_WOODLAND_Pickup_Comms",
 			"SFPD_BLUFOR_WOODLAND_Pickup_mmg",
+			"SFPD_BLUFOR_WOODLAND_EF_B_MRAP_01_FSV_NATO_T",
+			"SFPD_BLUFOR_WOODLAND_EF_B_MRAP_01_AT_NATO_T",
+			"SFPD_BLUFOR_WOODLAND_EF_B_MRAP_01_LAAD_NATO_T",
+			"SFPD_BLUFOR_WOODLAND_B_T_Truck_01_FFT_rf",
+			"SFPD_BLUFOR_WOODLAND_EF_B_CombatBoat_Unarmed_NATO",
+			"SFPD_BLUFOR_WOODLAND_EF_B_CombatBoat_HMG_NATO",
+			"SFPD_BLUFOR_WOODLAND_EF_B_CombatBoat_AT_NATO",
+			"SFPD_BLUFOR_WOODLAND_B_Heli_Transport_01_pylons_F",
+			"SFPD_BLUFOR_WOODLAND_EF_B_AH99J_NATO",
+			"SFPD_BLUFOR_WOODLAND_B_Heli_Attack_01_pylons_dynamicLoadout_F",
+			"SFPD_BLUFOR_WOODLAND_EF_B_AAV9_MJTF_Wdl",
+			"SFPD_BLUFOR_WOODLAND_EF_B_AAV9_50mm_MJTF_Wdl",
+			"SFPD_BLUFOR_WOODLAND_EF_B_LCC_MJTF_Des",
+			"SFPD_BLUFOR_WOODLAND_EF_B_LCC_SideLoad_MJTF_Des",
 			"SFPD_BLUFOR_JUNGLE_Prowler_U",
 			"SFPD_BLUFOR_JUNGLE_Prowler_A",
 			"SFPD_BLUFOR_JUNGLE_Hunter",
@@ -964,6 +992,20 @@ class CfgPatches {
 			"SFPD_BLUFOR_JUNGLE_Pickup",
 			"SFPD_BLUFOR_JUNGLE_Pickup_Comms",
 			"SFPD_BLUFOR_JUNGLE_Pickup_mmg",
+			"SFPD_BLUFOR_JUNGLE_EF_B_MRAP_01_FSV_NATO_T",
+			"SFPD_BLUFOR_JUNGLE_EF_B_MRAP_01_AT_NATO_T",
+			"SFPD_BLUFOR_JUNGLE_EF_B_MRAP_01_LAAD_NATO_T",
+			"SFPD_BLUFOR_JUNGLE_B_T_Truck_01_FFT_rf",
+			"SFPD_BLUFOR_JUNGLE_EF_B_CombatBoat_Unarmed_NATO",
+			"SFPD_BLUFOR_JUNGLE_EF_B_CombatBoat_HMG_NATO",
+			"SFPD_BLUFOR_JUNGLE_EF_B_CombatBoat_AT_NATO",
+			"SFPD_BLUFOR_JUNGLE_B_Heli_Transport_01_pylons_F",
+			"SFPD_BLUFOR_JUNGLE_EF_B_AH99J_NATO",
+			"SFPD_BLUFOR_JUNGLE_B_Heli_Attack_01_pylons_dynamicLoadout_F",
+			"SFPD_BLUFOR_JUNGLE_EF_B_AAV9_MJTF_Wdl",
+			"SFPD_BLUFOR_JUNGLE_EF_B_AAV9_50mm_MJTF_Wdl",
+			"SFPD_BLUFOR_JUNGLE_EF_B_LCC_MJTF_Des",
+			"SFPD_BLUFOR_JUNGLE_EF_B_LCC_SideLoad_MJTF_Des",
 			"SFPD_BLUFOR_SDV",
 			"SFPD_OPFOR_DESERT_Stalker",
 			"SFPD_OPFOR_DESERT_ARMA",
@@ -1009,6 +1051,10 @@ class CfgPatches {
 			"SFPD_OPFOR_DESERT_T140K",
 			"SFPD_OPFOR_DESERT_Pickup",
 			"SFPD_OPFOR_DESERT_Pickup_Comms",
+			"SFPD_OPFOR_DESERT_O_Truck_03_cargo_RF",
+			"SFPD_OPFOR_DESERT_EF_O_CombatBoat_Unarmed_OPF",
+			"SFPD_OPFOR_DESERT_EF_O_CombatBoat_HMG_OPF",
+			"SFPD_OPFOR_DESERT_EF_O_CombatBoat_AT_OPF",
 			"SFPD_OPFOR_WOODLAND_Stalker",
 			"SFPD_OPFOR_WOODLAND_ARMA",
 			"SFPD_OPFOR_WOODLAND_Ifrit",
@@ -1053,6 +1099,10 @@ class CfgPatches {
 			"SFPD_OPFOR_WOODLAND_T140K",
 			"SFPD_OPFOR_WOODLAND_Pickup",
 			"SFPD_OPFOR_WOODLAND_Pickup_Comms",
+			"SFPD_OPFOR_WOODLAND_O_T_Truck_03_cargo_RF",
+			"SFPD_OPFOR_WOODLAND_EF_O_CombatBoat_Unarmed_OPF",
+			"SFPD_OPFOR_WOODLAND_EF_O_CombatBoat_HMG_OPF",
+			"SFPD_OPFOR_WOODLAND_EF_O_CombatBoat_AT_OPF",
 			"SFPD_OPFOR_JUNGLE_Stalker",
 			"SFPD_OPFOR_JUNGLE_ARMA",
 			"SFPD_OPFOR_JUNGLE_Ifrit",
@@ -1097,6 +1147,10 @@ class CfgPatches {
 			"SFPD_OPFOR_JUNGLE_T140K",
 			"SFPD_OPFOR_JUNGLE_Pickup",
 			"SFPD_OPFOR_JUNGLE_Pickup_Comms",
+			"SFPD_OPFOR_JUNGLE_O_T_Truck_03_cargo_RF",
+			"SFPD_OPFOR_JUNGLE_EF_O_CombatBoat_Unarmed_OPF",
+			"SFPD_OPFOR_JUNGLE_EF_O_CombatBoat_HMG_OPF",
+			"SFPD_OPFOR_JUNGLE_EF_O_CombatBoat_AT_OPF",
 			"SFPD_OPFOR_SDV",
 			"SFPD_AAF_Quad",
 			"SFPD_AAF_Fennek",
@@ -1130,6 +1184,9 @@ class CfgPatches {
 			"SFPD_AAF_Pickup_mmg",
 			"SFPD_AAF_rai_360m_unarmed",
 			"SFPD_AAF_rai_360m",
+			"SFPD_AAF_EF_I_CombatBoat_Unarmed_AAF",
+			"SFPD_AAF_EF_I_CombatBoat_HMG_AAF",
+			"SFPD_AAF_EF_I_CombatBoat_AT_AAF",
 			"SFPD_LDF_Quad",
 			"SFPD_LDF_Offroad",
 			"SFPD_LDF_Offroad_covered",
@@ -1173,6 +1230,8 @@ class CfgPatches {
 			"SFPD_REBEL_Pickup_01_mmg_armor",
 			"SFPD_REBEL_Pickup_mrl",
 			"SFPD_REBEL_static_AA",
+			"SFPD_REBEL_I_Tura_Pickup_fuel_rf",
+			"SFPD_REBEL_I_Tura_Pickup_01_Rocket_rf",
 			"SFPD_BLUFOR_BOX_Medical",
 			"SFPD_BLUFOR_DESERT_BOX_Ammo",
 			"SFPD_BLUFOR_WOODLAND_BOX_Ammo",
@@ -1254,7 +1313,8 @@ class CfgPatches {
 			"SFPD_OPFOR_JUNGLE_BOX_Cargo",
 			"SFPD_AAF_BOX_Cargo",
 			"SFPD_LDF_BOX_Cargo",
-			
+			"B_GEN_APC_Wheeled_02_hmg_lxWS",
+			"B_GEN_crew_lxWS",
 			//RHS
 			"SFPD_RHS_BLUFOR_DESERT_Rifleman",
 			"SFPD_RHS_BLUFOR_DESERT_NBC_Mask",
@@ -1884,6 +1944,7 @@ class CfgPatches {
 			"SFPD_RHS_FR_WOODLAND_OFrP_P4_FR_CE",
 			"SFPD_RHS_FR_WOODLAND_OFrP_P4_AANF1_FR_CE",
 			"SFPD_RHS_FR_WOODLAND_OFrP_P4_PATSAS_M2_AANF1_1_FR_CE",
+			"SFPD_RHS_FR_WOODLAND_OFrP_VPS2_MAG58_M2",
 			"SFPD_RHS_FR_Ammo",
 			"SFPD_RHS_FR_Weapons",
 			
@@ -2691,6 +2752,41 @@ class CfgVehicles {
 	class I_G_Van_01_transport_F;
 	class I_G_Van_01_fuel_F;
 	
+	class EF_B_MRAP_01_FSV_NATO;
+	class EF_B_MRAP_01_AT_NATO;
+	class EF_B_MRAP_01_LAAD_NATO;
+	class B_Truck_01_FFT_rf;
+	class EF_B_CombatBoat_Unarmed_NATO;
+	class EF_B_CombatBoat_HMG_NATO;
+	class EF_B_CombatBoat_AT_NATO;
+	class B_Heli_Transport_01_pylons_F;
+	class B_Heli_Attack_01_pylons_dynamicLoadout_F;
+	class EF_B_AH99J_NATO;
+	class EF_B_MRAP_01_FSV_NATO_T;
+	class EF_B_MRAP_01_AT_NATO_T;
+	class EF_B_MRAP_01_LAAD_NATO_T;
+	class B_T_Truck_01_FFT_rf;
+	
+	class EF_B_AAV9_MJTF_Des;
+	class EF_B_AAV9_50mm_MJTF_Des;
+	class EF_B_LCC_MJTF_Des;
+	class EF_B_LCC_SideLoad_MJTF_Des;
+	class EF_B_AAV9_MJTF_Wdl;
+	class EF_B_AAV9_50mm_MJTF_Wdl;
+	
+	class O_Truck_03_cargo_RF;
+	class EF_O_CombatBoat_Unarmed_OPF;
+	class EF_O_CombatBoat_HMG_OPF;
+	class EF_O_CombatBoat_AT_OPF;
+	class O_T_Truck_03_cargo_RF;
+	
+	class EF_I_CombatBoat_Unarmed_AAF;
+	class EF_I_CombatBoat_HMG_AAF;	
+	class EF_I_CombatBoat_AT_AAF;
+	
+	class I_Tura_Pickup_fuel_rf;
+	class I_Tura_Pickup_01_Rocket_rf;
+	
 	//RHS
 	class rhssaf_m1151_olive;
 	class rhssaf_m1151_olive_pkm;
@@ -3244,6 +3340,7 @@ class CfgVehicles {
 	class B_Ship_Gun_01_base_F;
 	class SAM_System_01_base_F;
 	class AAA_System_01_base_F;
+	class EF_LPD_Turret_1_Base;
 	class Static_Designator_01_base_F;
 	class SAM_System_02_base_F;
 	class UAV_05_Base_F;
@@ -6112,6 +6209,10 @@ class CfgVehicles {
 		faction = "SFPD_BLUFOR_DESERT_Faction";
 	};
 	
+	class EF_LPD_Turret_1_MJTF_Des : EF_LPD_Turret_1_Base {
+		faction = "SFPD_BLUFOR_DESERT_Faction";
+	};
+	
 	class B_Static_Designator_01_F : Static_Designator_01_base_F {
 		faction = "SFPD_BLUFOR_DESERT_Faction";
 	};
@@ -7131,6 +7232,7 @@ class cfgWeapons {
 	class arifle_SPAR_01_GL_khk_F;
 	class arifle_SPAR_02_khk_F;
 	class arifle_SPAR_03_khk_F;
+	class arifle_SPAR_03_blk_F;
 	class srifle_DMR_02_camo_F;
 	class SMG_03C_TR_black;
 	class srifle_LRR_tna_F;
@@ -7557,6 +7659,46 @@ class cfgWeapons {
 					hitpointName = "HitBody";
 					armor = 16;
 					PassThrough = 0.3;
+				};
+			};
+		};
+	};
+	
+	class OFrP_Vest_SMB_TL_Base;
+	class OFrP_Vest_SMB_Teamleader_Kaki: OFrP_Vest_SMB_TL_Base {
+		class ItemInfo {
+			_generalMacro = "VestItem";
+			author = "Bohemia Interactive";
+			containerClass = "Supply160";
+			hiddenSelections[] = {"camo","ofrp_smb_poche","ofrp_smb_poche1","ofrp_smb_poche2","ofrp_smb_poche3","ofrp_smb_poche4"};
+			hiddenSelectionsTextures[] = {"\ofrp_a3_characters\vests\smb\data\OFrP_SMB_Kaki_co.paa","\ofrp_a3_characters\vests\smb\data\OFrP_SMB_poche_Kaki_co.paa","\ofrp_a3_characters\vests\smb\data\OFrP_SMB_poche1_Kaki_co.paa","\ofrp_a3_characters\vests\smb\data\OFrP_SMB_poche2_Kaki_co.paa","\ofrp_a3_characters\vests\smb\data\OFrP_SMB_poche3_Kaki_co.paa","\ofrp_a3_characters\vests\smb\data\OFrP_SMB_poche4_Kaki_co.paa"};
+			mass = 160;
+			overlaySelectionsInfo[] = {"Ghillie_hide"};
+			scope = 0;
+			showHolsteredPistol = 0;
+			type = 701;
+			uniformModel = "\ofrp_a3_characters\vests\smb\OFrP_Vest_SMB_Teamleader.p3d";
+			uniformType = "Default";
+			class HitpointsProtectionInfo {
+				class Chest {
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Diaphragm {
+					HitpointName = "HitDiaphragm";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Abdomen {
+					hitpointName = "HitAbdomen";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Body {
+					hitpointName = "HitBody";
+					armor = 20;
+					PassThrough = 0.2;
 				};
 			};
 		};

@@ -24,8 +24,8 @@ _weapons = [
 	[0, "arifle_XMS_Base_lxWS", ["rhsusf_acc_M952V", "optic_r1_low_lxWS"], [["30Rnd_556x45_Stanag", 8]]],//XMS
 	[0, "arifle_XMS_GL_lxWS", ["rhsusf_acc_M952V", "optic_r1_low_lxWS"], [["30Rnd_556x45_Stanag", 8], ["1Rnd_HE_Grenade_shell", 10], ["1Rnd_Smoke_Grenade_shell", 5]]],//XMS GL
 	[0, "arifle_XMS_Shot_lxWS", ["rhsusf_acc_M952V", "optic_r1_low_lxWS"], [["30Rnd_556x45_Stanag", 8], ["6Rnd_12Gauge_Slug", 8], ["6Rnd_12Gauge_Pellets", 8]]],//XMS SG
-	[0, "OFrP_FAMAS_F1", [], [["OFrP_25Rnd_556x45", 8]]],//FAMAS
-	[0, "OFrP_FAMAS_F1_GLM203", [], [["OFrP_25Rnd_556x45", 8], ["1Rnd_HE_Grenade_shell", 10], ["1Rnd_Smoke_Grenade_shell", 5]]],//FAMAS GL
+	[0, "OFrP_FAMAS_F1", ["rhsusf_acc_eotech_xps3", "rhsusf_acc_M952V"], [["OFrP_25Rnd_556x45", 8]]],//FAMAS
+	[0, "OFrP_FAMAS_F1_GLM203", ["rhsusf_acc_eotech_xps3", "rhsusf_acc_M952V"], [["OFrP_25Rnd_556x45", 8], ["1Rnd_HE_Grenade_shell", 10], ["1Rnd_Smoke_Grenade_shell", 5]]],//FAMAS GL
 	[0, "rhs_weap_akm", ["rhs_acc_dtkakm", "rhs_acc_2dpZenit"], [["rhs_30Rnd_762x39mm_bakelite", 8]]],//AKM
 	[0, "rhs_weap_m38", [], [["rhsgref_5Rnd_762x54_m38", 20]]],//bolt rifle
 	[0, "rhs_weap_vhsd2_ct15x", ["rhsusf_acc_M952V"], [["rhsgref_30rnd_556x45_vhs2", 8]]],//VHS-D2

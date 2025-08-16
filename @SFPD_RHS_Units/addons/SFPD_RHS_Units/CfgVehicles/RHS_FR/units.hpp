@@ -80,10 +80,10 @@
 	
 	class SFPD_RHS_FR_WOODLAND_Marksman: SFPD_RHS_FR_WOODLAND_Rifleman {
 		displayName = "Woodland Marksman";
-		weapons[] = {"SFPD_RHS_WINTER_MK11_Default","SFPD_RHS_Glock17","ACE_Vector","Throw","Put"};
-		respawnWeapons[] = {"SFPD_RHS_WINTER_MK11_Default","SFPD_RHS_Glock17","ACE_Vector","Throw","Put"};
-		magazines[] = {SIX_TIMES(rhsusf_20Rnd_762x51_SR25_m118_special_Mag),"rhsusf_mag_17Rnd_9x19_JHP","rhsusf_mag_17Rnd_9x19_JHP",BASIC_GRENS};
-		respawnMagazines[] = {SIX_TIMES(rhsusf_20Rnd_762x51_SR25_m118_special_Mag),"rhsusf_mag_17Rnd_9x19_JHP","rhsusf_mag_17Rnd_9x19_JHP",BASIC_GRENS};
+		weapons[] = {"SFPD_RHS_HK417_Default_FR","SFPD_RHS_Glock17","ACE_Vector","Throw","Put"};
+		respawnWeapons[] = {"SFPD_RHS_HK417_Default_FR","SFPD_RHS_Glock17","ACE_Vector","Throw","Put"};
+		magazines[] = {SIX_TIMES(20Rnd_762x51_Mag),"rhsusf_mag_17Rnd_9x19_JHP","rhsusf_mag_17Rnd_9x19_JHP",BASIC_GRENS};
+		respawnMagazines[] = {SIX_TIMES(20Rnd_762x51_Mag),"rhsusf_mag_17Rnd_9x19_JHP","rhsusf_mag_17Rnd_9x19_JHP",BASIC_GRENS};
 		items[] += {"ACE_RangeCard","ACE_Kestrel4500"};
 		respawnItems[] += {"ACE_RangeCard","ACE_Kestrel4500"};
 	};

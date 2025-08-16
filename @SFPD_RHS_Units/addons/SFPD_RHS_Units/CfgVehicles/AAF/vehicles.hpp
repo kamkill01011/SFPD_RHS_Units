@@ -157,3 +157,18 @@
 		SFPD_VEHICLES_CFG(SFPD_AAF_Faction,SFPD_AAF_PlanePilot)
 		SFPD_VEHICLES_EMPTY_CARGO
 	};
+	
+	class SFPD_AAF_EF_I_CombatBoat_Unarmed_AAF: EF_I_CombatBoat_Unarmed_AAF {
+		SFPD_VEHICLES_CFG(SFPD_AAF_Faction,SFPD_AAF_Rifleman)
+		SFPD_AAF_Transport
+	};
+	
+	class SFPD_AAF_EF_I_CombatBoat_HMG_AAF: EF_I_CombatBoat_HMG_AAF {
+		SFPD_VEHICLES_CFG(SFPD_AAF_Faction,SFPD_AAF_Rifleman)
+		SFPD_AAF_Transport
+	};
+	
+	class SFPD_AAF_EF_I_CombatBoat_AT_AAF: EF_I_CombatBoat_AT_AAF {
+		SFPD_VEHICLES_CFG(SFPD_AAF_Faction,SFPD_AAF_Rifleman)
+		SFPD_AAF_Transport
+	};
