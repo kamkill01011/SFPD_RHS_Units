@@ -134,6 +134,12 @@ class ace_compat_rhs_afrf3_mag_9m133f: rhs_mag_9m133f {
 };
 
 
+class CA_Magazine;
+class OFrP_25Rnd_556x45: CA_Magazine {
+	mass = 7;
+};
+
+
 class RPG7_F;
 class SFPD_RPG7_F: RPG7_F {
 	displayname = "OK BOOMER";
