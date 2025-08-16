@@ -451,4 +451,10 @@ class CfgVehicles {
 	REMOVE_ZEUS(B_D_Heli_Attack_01_dynamicLoadout_lxWS,B_Heli_Attack_01_dynamicLoadout_F)
 	REMOVE_ZEUS(O_GEN_APC_Wheeled_02_hmg_lxWS,O_SFIA_APC_Wheeled_02_hmg_lxWS)
 	REMOVE_ZEUS(O_GEN_crew_lxWS,O_crew_F)
+	REMOVE_ZEUS(B_ION_soldier_LAT2_lxWS,B_soldier_LAT2_F)
+	REMOVE_ZEUS(B_UN_soldier_LAT2_lxWS,B_soldier_LAT2_F)
+	REMOVE_ZEUS(B_APC_Wheeled_01_atgm_lxWS,APC_Wheeled_01_atgm_base_lxWS)
+	REMOVE_ZEUS(B_APC_Wheeled_01_command_lxWS,APC_Wheeled_01_command_base_lxWS)
+	REMOVE_ZEUS(B_APC_Wheeled_01_mortar_lxWS,APC_Wheeled_01_mortar_base_lxWS)
+	REMOVE_ZEUS(B_D_CTRG_Soldier_sniper_lxWS,B_D_CTRG_Soldier_M_lxWS)
 };
