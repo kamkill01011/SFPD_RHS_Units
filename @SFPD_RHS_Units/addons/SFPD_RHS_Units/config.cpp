@@ -878,6 +878,16 @@ class CfgPatches {
 			"SFPD_BLUFOR_DESERT_ah11f_unarmed",
 			"SFPD_BLUFOR_DESERT_mh_245",
 			"SFPD_BLUFOR_DESERT_mh_245_unarmed",
+			"SFPD_BLUFOR_DESERT_EF_B_MRAP_01_FSV_NATO",
+			"SFPD_BLUFOR_DESERT_EF_B_MRAP_01_AT_NATO",
+			"SFPD_BLUFOR_DESERT_EF_B_MRAP_01_LAAD_NATO",
+			"SFPD_BLUFOR_DESERT_B_Truck_01_FFT_rf",
+			"SFPD_BLUFOR_DESERT_EF_B_CombatBoat_Unarmed_NATO",
+			"SFPD_BLUFOR_DESERT_EF_B_CombatBoat_HMG_NATO",
+			"SFPD_BLUFOR_DESERT_EF_B_CombatBoat_AT_NATO",
+			"SFPD_BLUFOR_DESERT_B_Heli_Transport_01_pylons_F",
+			"SFPD_BLUFOR_DESERT_EF_B_AH99J_NATO",
+			"SFPD_BLUFOR_DESERT_B_Heli_Attack_01_pylons_dynamicLoadout_F",
 			"SFPD_BLUFOR_WOODLAND_Prowler_U",
 			"SFPD_BLUFOR_WOODLAND_Prowler_A",
 			"SFPD_BLUFOR_WOODLAND_Hunter",
@@ -921,6 +931,16 @@ class CfgPatches {
 			"SFPD_BLUFOR_WOODLAND_Pickup",
 			"SFPD_BLUFOR_WOODLAND_Pickup_Comms",
 			"SFPD_BLUFOR_WOODLAND_Pickup_mmg",
+			"SFPD_BLUFOR_WOODLAND_EF_B_MRAP_01_FSV_NATO_T",
+			"SFPD_BLUFOR_WOODLAND_EF_B_MRAP_01_AT_NATO_T",
+			"SFPD_BLUFOR_WOODLAND_EF_B_MRAP_01_LAAD_NATO_T",
+			"SFPD_BLUFOR_WOODLAND_B_T_Truck_01_FFT_rf",
+			"SFPD_BLUFOR_WOODLAND_EF_B_CombatBoat_Unarmed_NATO",
+			"SFPD_BLUFOR_WOODLAND_EF_B_CombatBoat_HMG_NATO",
+			"SFPD_BLUFOR_WOODLAND_EF_B_CombatBoat_AT_NATO",
+			"SFPD_BLUFOR_WOODLAND_B_Heli_Transport_01_pylons_F",
+			"SFPD_BLUFOR_WOODLAND_EF_B_AH99J_NATO",
+			"SFPD_BLUFOR_WOODLAND_B_Heli_Attack_01_pylons_dynamicLoadout_F",
 			"SFPD_BLUFOR_JUNGLE_Prowler_U",
 			"SFPD_BLUFOR_JUNGLE_Prowler_A",
 			"SFPD_BLUFOR_JUNGLE_Hunter",
@@ -964,6 +984,16 @@ class CfgPatches {
 			"SFPD_BLUFOR_JUNGLE_Pickup",
 			"SFPD_BLUFOR_JUNGLE_Pickup_Comms",
 			"SFPD_BLUFOR_JUNGLE_Pickup_mmg",
+			"SFPD_BLUFOR_JUNGLE_EF_B_MRAP_01_FSV_NATO_T",
+			"SFPD_BLUFOR_JUNGLE_EF_B_MRAP_01_AT_NATO_T",
+			"SFPD_BLUFOR_JUNGLE_EF_B_MRAP_01_LAAD_NATO_T",
+			"SFPD_BLUFOR_JUNGLE_B_T_Truck_01_FFT_rf",
+			"SFPD_BLUFOR_JUNGLE_EF_B_CombatBoat_Unarmed_NATO",
+			"SFPD_BLUFOR_JUNGLE_EF_B_CombatBoat_HMG_NATO",
+			"SFPD_BLUFOR_JUNGLE_EF_B_CombatBoat_AT_NATO",
+			"SFPD_BLUFOR_JUNGLE_B_Heli_Transport_01_pylons_F",
+			"SFPD_BLUFOR_JUNGLE_EF_B_AH99J_NATO",
+			"SFPD_BLUFOR_JUNGLE_B_Heli_Attack_01_pylons_dynamicLoadout_F",
 			"SFPD_BLUFOR_SDV",
 			"SFPD_OPFOR_DESERT_Stalker",
 			"SFPD_OPFOR_DESERT_ARMA",
@@ -2692,6 +2722,21 @@ class CfgVehicles {
 	class I_G_Van_01_transport_F;
 	class I_G_Van_01_fuel_F;
 	
+	class EF_B_MRAP_01_FSV_NATO;
+	class EF_B_MRAP_01_AT_NATO;
+	class EF_B_MRAP_01_LAAD_NATO;
+	class B_Truck_01_FFT_rf;
+	class EF_B_CombatBoat_Unarmed_NATO;
+	class EF_B_CombatBoat_HMG_NATO;
+	class EF_B_CombatBoat_AT_NATO;
+	class B_Heli_Transport_01_pylons_F;
+	class B_Heli_Attack_01_pylons_dynamicLoadout_F;
+	class EF_B_AH99J_NATO;
+	class EF_B_MRAP_01_FSV_NATO_T;
+	class EF_B_MRAP_01_AT_NATO_T;
+	class EF_B_MRAP_01_LAAD_NATO_T;
+	class B_T_Truck_01_FFT_rf;
+	
 	//RHS
 	class rhssaf_m1151_olive;
 	class rhssaf_m1151_olive_pkm;
@@ -3245,6 +3290,7 @@ class CfgVehicles {
 	class B_Ship_Gun_01_base_F;
 	class SAM_System_01_base_F;
 	class AAA_System_01_base_F;
+	class EF_LPD_Turret_1_Base;
 	class Static_Designator_01_base_F;
 	class SAM_System_02_base_F;
 	class UAV_05_Base_F;
@@ -6110,6 +6156,10 @@ class CfgVehicles {
 	};
 	
 	class B_AAA_System_01_F : AAA_System_01_base_F {
+		faction = "SFPD_BLUFOR_DESERT_Faction";
+	};
+	
+	class EF_LPD_Turret_1_MJTF_Des : EF_LPD_Turret_1_Base {
 		faction = "SFPD_BLUFOR_DESERT_Faction";
 	};
 	
