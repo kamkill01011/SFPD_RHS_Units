@@ -49,6 +49,26 @@ _l = allUnits select {(_x distanceSqr _p) < _rs};
 ////////// remove artillery mags //////////
 _mags = (magazines (_this # 1)) select {["_LG", _x, true] call BIS_fnc_inString || {["_guided", _x] call BIS_fnc_inString || {["_cluster", _x] call BIS_fnc_inString || {["_mine", _x] call BIS_fnc_inString}}}};
 { (_this # 1) removeMagazineGlobal _x } forEach _mags;
+////////// Spawn Amphibious Warfare Ship [LPD 36] //////////
+_direction = 0;
+_pos = (ASLToATL (screenToWorld [0.5,0.5]));
+_obj = createVehicle ["Land_EF_LPD_base",  _pos, [], 0, "CAN_COLLIDE"];
+{
+	(_x # 0) attachTo [_obj];
+} forEach (_obj getVariable ["bis_carrierParts", []]);
+_obj setVectorDirAndUp [[sin _direction, cos _direction, 0], [0, 0, 1]];
+[_obj] call zen_common_fnc_updateEditableObjects;
+_obj addEventHandler ["Deleted", {
+	params ["_destroyer"];
+	{
+		_x params ["_part"];
+		deleteVehicle _part;
+	} forEach (_destroyer getVariable ["bis_carrierParts", []]);
+}];
+/////
+{
+	detach (_x # 0);
+} forEach ((_this # 1) getVariable ["bis_carrierParts", []]);
 ////////// transfer group //////////
 _g = group (_this # 1);
 {

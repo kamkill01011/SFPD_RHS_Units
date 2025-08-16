@@ -1313,7 +1313,8 @@ class CfgPatches {
 			"SFPD_OPFOR_JUNGLE_BOX_Cargo",
 			"SFPD_AAF_BOX_Cargo",
 			"SFPD_LDF_BOX_Cargo",
-			
+			"B_GEN_APC_Wheeled_02_hmg_lxWS",
+			"B_GEN_crew_lxWS",
 			//RHS
 			"SFPD_RHS_BLUFOR_DESERT_Rifleman",
 			"SFPD_RHS_BLUFOR_DESERT_NBC_Mask",
