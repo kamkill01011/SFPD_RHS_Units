@@ -1051,6 +1051,10 @@ class CfgPatches {
 			"SFPD_OPFOR_DESERT_T140K",
 			"SFPD_OPFOR_DESERT_Pickup",
 			"SFPD_OPFOR_DESERT_Pickup_Comms",
+			"SFPD_OPFOR_DESERT_O_Truck_03_cargo_RF",
+			"SFPD_OPFOR_DESERT_EF_O_CombatBoat_Unarmed_OPF",
+			"SFPD_OPFOR_DESERT_EF_O_CombatBoat_HMG_OPF",
+			"SFPD_OPFOR_DESERT_EF_O_CombatBoat_AT_OPF",
 			"SFPD_OPFOR_WOODLAND_Stalker",
 			"SFPD_OPFOR_WOODLAND_ARMA",
 			"SFPD_OPFOR_WOODLAND_Ifrit",
@@ -1095,6 +1099,10 @@ class CfgPatches {
 			"SFPD_OPFOR_WOODLAND_T140K",
 			"SFPD_OPFOR_WOODLAND_Pickup",
 			"SFPD_OPFOR_WOODLAND_Pickup_Comms",
+			"SFPD_OPFOR_WOODLAND_O_T_Truck_03_cargo_RF",
+			"SFPD_OPFOR_WOODLAND_EF_O_CombatBoat_Unarmed_OPF",
+			"SFPD_OPFOR_WOODLAND_EF_O_CombatBoat_HMG_OPF",
+			"SFPD_OPFOR_WOODLAND_EF_O_CombatBoat_AT_OPF",
 			"SFPD_OPFOR_JUNGLE_Stalker",
 			"SFPD_OPFOR_JUNGLE_ARMA",
 			"SFPD_OPFOR_JUNGLE_Ifrit",
@@ -1139,6 +1147,10 @@ class CfgPatches {
 			"SFPD_OPFOR_JUNGLE_T140K",
 			"SFPD_OPFOR_JUNGLE_Pickup",
 			"SFPD_OPFOR_JUNGLE_Pickup_Comms",
+			"SFPD_OPFOR_JUNGLE_O_T_Truck_03_cargo_RF",
+			"SFPD_OPFOR_JUNGLE_EF_O_CombatBoat_Unarmed_OPF",
+			"SFPD_OPFOR_JUNGLE_EF_O_CombatBoat_HMG_OPF",
+			"SFPD_OPFOR_JUNGLE_EF_O_CombatBoat_AT_OPF",
 			"SFPD_OPFOR_SDV",
 			"SFPD_AAF_Quad",
 			"SFPD_AAF_Fennek",
@@ -1172,6 +1184,9 @@ class CfgPatches {
 			"SFPD_AAF_Pickup_mmg",
 			"SFPD_AAF_rai_360m_unarmed",
 			"SFPD_AAF_rai_360m",
+			"SFPD_AAF_EF_I_CombatBoat_Unarmed_AAF",
+			"SFPD_AAF_EF_I_CombatBoat_HMG_AAF",
+			"SFPD_AAF_EF_I_CombatBoat_AT_AAF",
 			"SFPD_LDF_Quad",
 			"SFPD_LDF_Offroad",
 			"SFPD_LDF_Offroad_covered",
@@ -1215,6 +1230,8 @@ class CfgPatches {
 			"SFPD_REBEL_Pickup_01_mmg_armor",
 			"SFPD_REBEL_Pickup_mrl",
 			"SFPD_REBEL_static_AA",
+			"SFPD_REBEL_I_Tura_Pickup_fuel_rf",
+			"SFPD_REBEL_I_Tura_Pickup_01_Rocket_rf",
 			"SFPD_BLUFOR_BOX_Medical",
 			"SFPD_BLUFOR_DESERT_BOX_Ammo",
 			"SFPD_BLUFOR_WOODLAND_BOX_Ammo",
@@ -2755,6 +2772,19 @@ class CfgVehicles {
 	class EF_B_LCC_SideLoad_MJTF_Des;
 	class EF_B_AAV9_MJTF_Wdl;
 	class EF_B_AAV9_50mm_MJTF_Wdl;
+	
+	class O_Truck_03_cargo_RF;
+	class EF_O_CombatBoat_Unarmed_OPF;
+	class EF_O_CombatBoat_HMG_OPF;
+	class EF_O_CombatBoat_AT_OPF;
+	class O_T_Truck_03_cargo_RF;
+	
+	class EF_I_CombatBoat_Unarmed_AAF;
+	class EF_I_CombatBoat_HMG_AAF;	
+	class EF_I_CombatBoat_AT_AAF;
+	
+	class I_Tura_Pickup_fuel_rf;
+	class I_Tura_Pickup_01_Rocket_rf;
 	
 	//RHS
 	class rhssaf_m1151_olive;

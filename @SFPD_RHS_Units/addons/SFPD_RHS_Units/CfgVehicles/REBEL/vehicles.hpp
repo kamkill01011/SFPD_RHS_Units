@@ -65,3 +65,11 @@
 	class SFPD_REBEL_static_AA: I_Tura_ZU23_lxWS {
 		SFPD_VEHICLES_CFG(SFPD_REBEL_Faction,SFPD_REBEL_Rifleman_TRG)
 	};
+	
+	class SFPD_REBEL_I_Tura_Pickup_fuel_rf: I_Tura_Pickup_fuel_rf {
+		SFPD_VEHICLES_CFG(SFPD_REBEL_Faction,SFPD_REBEL_Rifleman_AKS)
+	};
+	
+	class SFPD_REBEL_I_Tura_Pickup_01_Rocket_rf: I_Tura_Pickup_01_Rocket_rf {
+		SFPD_VEHICLES_CFG(SFPD_REBEL_Faction,SFPD_REBEL_Rifleman_AKS)
+	};
