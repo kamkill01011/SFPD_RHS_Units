@@ -47,7 +47,8 @@ _l = allUnits select {(_x distanceSqr _p) < _rs};
 	} forEach allPlayers;
 } forEach _l;
 ////////// remove artillery mags //////////
-_mags = (magazines (_this # 1)) select {["_LG", _x, true] call BIS_fnc_inString || {["_guided", _x] call BIS_fnc_inString || {["_cluster", _x] call BIS_fnc_inString || {["_mine", _x] call BIS_fnc_inString}}}};
+//_mags = (magazines (_this # 1)) select {["_LG", _x, true] call BIS_fnc_inString || {["_guided", _x] call BIS_fnc_inString || {["_cluster", _x] call BIS_fnc_inString || {["_mine", _x] call BIS_fnc_inString}}}};
+_mags = (magazines (_this # 1)) select {["_guided", _x, true] call BIS_fnc_inString || {["_cluster", _x] call BIS_fnc_inString || {["_mine", _x] call BIS_fnc_inString}}};
 { (_this # 1) removeMagazineGlobal _x } forEach _mags;
 ////////// Spawn Amphibious Warfare Ship [LPD 36] //////////
 _direction = 0;
