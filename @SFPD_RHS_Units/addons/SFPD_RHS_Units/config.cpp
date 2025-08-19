@@ -7222,7 +7222,50 @@ class cfgWeapons {
 	class weapon_ShipCannon_120mm: mortar_155mm_AMOS {
 		magazineReloadTime = 3;
 		class Single1: Mode_SemiAuto {
-			reloadTime = 3;
+aiDispersionCoefX = 1.4;
+aiDispersionCoefY = 1.7;
+aiRateOfFire = 1;
+aiRateOfFireDispersion = 1;
+aiRateOfFireDistance = 10;
+artilleryCharge = 0.18;
+artilleryDispersion = 0.8;
+autoFire = 0;
+burst = 1;
+burstRangeMax = -1;
+canShootInWater = 0;
+dispersion = 0.0002;
+displayName = "Semi (close)";
+ffCount = 1;
+ffFrequency = 11;
+ffMagnitude = 0.5;
+flash = "gunfire";
+flashSize = 0.1;
+maxRange = 2;
+maxRangeProbab = 0.01;
+midRange = 1;
+midRangeProbab = 0.01;
+minRange = 0;
+minRangeProbab = 0.01;
+multiplier = 1;
+recoil = "recoil_single_primary_3outof10";
+recoilProne = "recoil_single_primary_prone_3outof10";
+reloadSound[] = {"A3\sounds_f\dummysound",1,1,20};
+reloadTime = 2;//8
+requiredOpticType = -1;
+showToPlayer = 1;
+sound[] = {"",10,1};
+soundBegin[] = {"sound",1};
+soundBeginWater[] = {"sound",1};
+soundBurst = 0;
+soundClosure[] = {"sound",1};
+soundContinuous = 0;
+soundEnd[] = {};
+soundLoop[] = {};
+sounds[] = {"StandardSound"};
+textureType = "semi";
+useAction = 0;
+useActionTitle = "";
+weaponSoundEffect = "";
 		};
 	};
 	
