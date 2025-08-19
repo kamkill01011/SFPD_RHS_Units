@@ -7216,6 +7216,27 @@ class cfgWeapons {
         };
 	};
 	
+	
+	class Mode_SemiAuto;
+	class mortar_155mm_AMOS;
+	class weapon_ShipCannon_120mm: mortar_155mm_AMOS {
+		magazineReloadTime = 3;
+		class Single1: Mode_SemiAuto {
+			reloadTime = 3;
+		};
+	};
+	
+	class MissileLauncher;
+	class weapon_VLSBase: MissileLauncher {
+		class Cruise;
+	}
+	class weapon_VLS_01: weapon_VLSBase {
+		magazineReloadTime = 3;
+		class Cruise: Cruise {
+			reloadTime = 1;
+		};
+	};
+	
 	//Weapons
 	class arifle_MX_F;
 	class arifle_MX_GL_F;

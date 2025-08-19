@@ -140,6 +140,12 @@ class OFrP_25Rnd_556x45: CA_Magazine {
 };
 
 
+class 2Rnd_155mm_Mo_LG;
+class magazine_ShipCannon_120mm_HE_LG_shells_x2: 2Rnd_155mm_Mo_LG {
+	count = 8;
+};
+
+
 class RPG7_F;
 class SFPD_RPG7_F: RPG7_F {
 	displayname = "OK BOOMER";
