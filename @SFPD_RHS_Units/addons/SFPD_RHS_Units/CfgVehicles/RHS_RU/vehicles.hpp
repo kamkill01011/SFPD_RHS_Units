@@ -1032,6 +1032,7 @@
 		SFPD_VEHICLES_EMPTY_CARGO
 		
 		incomingMissileDetectionSystem = 16;
+		slingLoadMaxCargoMass = 5000;
 	};
 	
 	class SFPD_RHS_OPFOR_MI24: rhsgref_mi24g_UPK23 {
