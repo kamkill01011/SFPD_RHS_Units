@@ -19,6 +19,8 @@ _u = (_this # 1);_u setUnitTrait ["camouflageCoef", 0];_u setUnitTrait ["audible
 [1, [0.3, 0, 0]] remoteExec ["setFog", 0];
 [player] spawn BIS_fnc_traceBullets;
 KAM_transfer_enabled = false;
+
+create3DENEntity ["Object", "Land_Airport_right_F", screenToWorld [0.5,0.5]]; create3DENEntity ["Object", "Land_Airport_center_F", screenToWorld [0.5,0.5]]; create3DENEntity ["Object", "Land_Airport_left_F", screenToWorld [0.5,0.5]];
 /////////////// set loadout
 _u = (_this # 1);copyToClipboard (typeOf _u);
 _u = (_this # 1);[[_u], {params ["_u"];_u setUnitLoadout "SFPD_OPFOR_Diver";}] remoteExec ["call", _u];
